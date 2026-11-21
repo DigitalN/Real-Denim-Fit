@@ -1,0 +1,118 @@
+{
+  "id": "dusty-dee",
+  "brand": "nudie",
+  "name": "Dusty Dee",
+  "brand_label": "Regular Fit, Bootcut Leg",
+  "line": "women",
+  "products": [
+    {
+      "id": "dusty-dee-dry-weird",
+      "name": "Dry Weird",
+      "url": "https://www.nudiejeans.com/en-US/product/dusty-dee-dry-weird",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 12.1,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 220,
+        "currency": "USD",
+        "url": "https://www.nudiejeans.com/en-US/product/dusty-dee-dry-weird",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 3,
+        "width": 3,
+        "note": "May shrink up to 3%",
+        "source": {
+          "url": "https://www.nudiejeans.com/en-US/product/dusty-dee-dry-weird",
+          "seen": "2026-11-21"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.nudiejeans.com/en-US/product/dusty-dee-dry-weird",
+            "seen": "2026-11-21"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "W24/L28", "waist_tag": 24, "length_tag": 28, "measurements": {"waist": 34.1, "front_rise": 22.7, "back_rise": 34.6, "seat": 43.6, "thigh": 28.4, "knee": 22.2, "leg_opening": 26.6, "inseam": 71}},
+            {"label": "W24/L30", "waist_tag": 24, "length_tag": 30, "measurements": {"waist": 34.1, "front_rise": 22.7, "back_rise": 34.6, "seat": 43.6, "thigh": 28.4, "knee": 22.2, "leg_opening": 26.6, "inseam": 76}},
+            {"label": "W24/L32", "waist_tag": 24, "length_tag": 32, "measurements": {"waist": 34.1, "front_rise": 22.7, "back_rise": 34.6, "seat": 43.6, "thigh": 28.4, "knee": 22.2, "leg_opening": 26.6, "inseam": 81}},
+            {"label": "W24/L34", "waist_tag": 24, "length_tag": 34, "measurements": {"waist": 34.1, "front_rise": 22.7, "back_rise": 34.6, "seat": 43.6, "thigh": 28.4, "knee": 22.2, "leg_opening": 26.6, "inseam": 86}},
+            {"label": "W24/L36", "waist_tag": 24, "length_tag": 36, "measurements": {"waist": 34.1, "front_rise": 22.7, "back_rise": 34.6, "seat": 43.6, "thigh": 28.4, "knee": 22.2, "leg_opening": 26.6, "inseam": 91}},
+            {"label": "W25/L28", "waist_tag": 25, "length_tag": 28, "measurements": {"waist": 35.4, "front_rise": 23.2, "back_rise": 35.2, "seat": 44.9, "thigh": 29.2, "knee": 22.6, "leg_opening": 27, "inseam": 71}},
+            {"label": "W25/L30", "waist_tag": 25, "length_tag": 30, "measurements": {"waist": 35.4, "front_rise": 23.2, "back_rise": 35.2, "seat": 44.9, "thigh": 29.2, "knee": 22.6, "leg_opening": 27, "inseam": 76}},
+            {"label": "W25/L32", "waist_tag": 25, "length_tag": 32, "measurements": {"waist": 35.4, "front_rise": 23.2, "back_rise": 35.2, "seat": 44.9, "thigh": 29.2, "knee": 22.6, "leg_opening": 27, "inseam": 81}},
+            {"label": "W25/L34", "waist_tag": 25, "length_tag": 34, "measurements": {"waist": 35.4, "front_rise": 23.2, "back_rise": 35.2, "seat": 44.9, "thigh": 29.2, "knee": 22.6, "leg_opening": 27, "inseam": 86}},
+            {"label": "W25/L36", "waist_tag": 25, "length_tag": 36, "measurements": {"waist": 35.4, "front_rise": 23.2, "back_rise": 35.2, "seat": 44.9, "thigh": 29.2, "knee": 22.6, "leg_opening": 27, "inseam": 91}},
+            {"label": "W26/L28", "waist_tag": 26, "length_tag": 28, "measurements": {"waist": 36.6, "front_rise": 23.7, "back_rise": 35.8, "seat": 46.1, "thigh": 30, "knee": 23, "leg_opening": 27.4, "inseam": 71}},
+            {"label": "W26/L30", "waist_tag": 26, "length_tag": 30, "measurements": {"waist": 36.6, "front_rise": 23.7, "back_rise": 35.8, "seat": 46.1, "thigh": 30, "knee": 23, "leg_opening": 27.4, "inseam": 76}},
+            {"label": "W26/L32", "waist_tag": 26, "length_tag": 32, "measurements": {"waist": 36.6, "front_rise": 23.7, "back_rise": 35.8, "seat": 46.1, "thigh": 30, "knee": 23, "leg_opening": 27.4, "inseam": 81}},
+            {"label": "W26/L34", "waist_tag": 26, "length_tag": 34, "measurements": {"waist": 36.6, "front_rise": 23.7, "back_rise": 35.8, "seat": 46.1, "thigh": 30, "knee": 23, "leg_opening": 27.4, "inseam": 86}},
+            {"label": "W26/L36", "waist_tag": 26, "length_tag": 36, "measurements": {"waist": 36.6, "front_rise": 23.7, "back_rise": 35.8, "seat": 46.1, "thigh": 30, "knee": 23, "leg_opening": 27.4, "inseam": 91}},
+            {"label": "W27/L28", "waist_tag": 27, "length_tag": 28, "measurements": {"waist": 37.9, "front_rise": 24.2, "back_rise": 36.4, "seat": 47.4, "thigh": 30.8, "knee": 23.4, "leg_opening": 27.8, "inseam": 71}},
+            {"label": "W27/L30", "waist_tag": 27, "length_tag": 30, "measurements": {"waist": 37.9, "front_rise": 24.2, "back_rise": 36.4, "seat": 47.4, "thigh": 30.8, "knee": 23.4, "leg_opening": 27.8, "inseam": 76}},
+            {"label": "W27/L32", "waist_tag": 27, "length_tag": 32, "measurements": {"waist": 37.9, "front_rise": 24.2, "back_rise": 36.4, "seat": 47.4, "thigh": 30.8, "knee": 23.4, "leg_opening": 27.8, "inseam": 81}},
+            {"label": "W27/L34", "waist_tag": 27, "length_tag": 34, "measurements": {"waist": 37.9, "front_rise": 24.2, "back_rise": 36.4, "seat": 47.4, "thigh": 30.8, "knee": 23.4, "leg_opening": 27.8, "inseam": 86}},
+            {"label": "W27/L36", "waist_tag": 27, "length_tag": 36, "measurements": {"waist": 37.9, "front_rise": 24.2, "back_rise": 36.4, "seat": 47.4, "thigh": 30.8, "knee": 23.4, "leg_opening": 27.8, "inseam": 91}},
+            {"label": "W28/L28", "waist_tag": 28, "length_tag": 28, "measurements": {"waist": 39.1, "front_rise": 24.7, "back_rise": 37, "seat": 48.6, "thigh": 31.6, "knee": 23.8, "leg_opening": 28.2, "inseam": 71}},
+            {"label": "W28/L30", "waist_tag": 28, "length_tag": 30, "measurements": {"waist": 39.1, "front_rise": 24.7, "back_rise": 37, "seat": 48.6, "thigh": 31.6, "knee": 23.8, "leg_opening": 28.2, "inseam": 76}},
+            {"label": "W28/L32", "waist_tag": 28, "length_tag": 32, "measurements": {"waist": 39.1, "front_rise": 24.7, "back_rise": 37, "seat": 48.6, "thigh": 31.6, "knee": 23.8, "leg_opening": 28.2, "inseam": 81}},
+            {"label": "W28/L34", "waist_tag": 28, "length_tag": 34, "measurements": {"waist": 39.1, "front_rise": 24.7, "back_rise": 37, "seat": 48.6, "thigh": 31.6, "knee": 23.8, "leg_opening": 28.2, "inseam": 86}},
+            {"label": "W28/L36", "waist_tag": 28, "length_tag": 36, "measurements": {"waist": 39.1, "front_rise": 24.7, "back_rise": 37, "seat": 48.6, "thigh": 31.6, "knee": 23.8, "leg_opening": 28.2, "inseam": 91}},
+            {"label": "W29/L28", "waist_tag": 29, "length_tag": 28, "measurements": {"waist": 40.4, "front_rise": 25.2, "back_rise": 37.6, "seat": 49.9, "thigh": 32.4, "knee": 24.2, "leg_opening": 28.6, "inseam": 71}},
+            {"label": "W29/L30", "waist_tag": 29, "length_tag": 30, "measurements": {"waist": 40.4, "front_rise": 25.2, "back_rise": 37.6, "seat": 49.9, "thigh": 32.4, "knee": 24.2, "leg_opening": 28.6, "inseam": 76}},
+            {"label": "W29/L32", "waist_tag": 29, "length_tag": 32, "measurements": {"waist": 40.4, "front_rise": 25.2, "back_rise": 37.6, "seat": 49.9, "thigh": 32.4, "knee": 24.2, "leg_opening": 28.6, "inseam": 81}},
+            {"label": "W29/L34", "waist_tag": 29, "length_tag": 34, "measurements": {"waist": 40.4, "front_rise": 25.2, "back_rise": 37.6, "seat": 49.9, "thigh": 32.4, "knee": 24.2, "leg_opening": 28.6, "inseam": 86}},
+            {"label": "W29/L36", "waist_tag": 29, "length_tag": 36, "measurements": {"waist": 40.4, "front_rise": 25.2, "back_rise": 37.6, "seat": 49.9, "thigh": 32.4, "knee": 24.2, "leg_opening": 28.6, "inseam": 91}},
+            {"label": "W30/L28", "waist_tag": 30, "length_tag": 28, "measurements": {"waist": 41.6, "front_rise": 25.7, "back_rise": 38.2, "seat": 51.1, "thigh": 33.2, "knee": 24.6, "leg_opening": 29, "inseam": 71}},
+            {"label": "W30/L30", "waist_tag": 30, "length_tag": 30, "measurements": {"waist": 41.6, "front_rise": 25.7, "back_rise": 38.2, "seat": 51.1, "thigh": 33.2, "knee": 24.6, "leg_opening": 29, "inseam": 76}},
+            {"label": "W30/L32", "waist_tag": 30, "length_tag": 32, "measurements": {"waist": 41.6, "front_rise": 25.7, "back_rise": 38.2, "seat": 51.1, "thigh": 33.2, "knee": 24.6, "leg_opening": 29, "inseam": 81}},
+            {"label": "W30/L34", "waist_tag": 30, "length_tag": 34, "measurements": {"waist": 41.6, "front_rise": 25.7, "back_rise": 38.2, "seat": 51.1, "thigh": 33.2, "knee": 24.6, "leg_opening": 29, "inseam": 86}},
+            {"label": "W30/L36", "waist_tag": 30, "length_tag": 36, "measurements": {"waist": 41.6, "front_rise": 25.7, "back_rise": 38.2, "seat": 51.1, "thigh": 33.2, "knee": 24.6, "leg_opening": 29, "inseam": 91}},
+            {"label": "W31/L28", "waist_tag": 31, "length_tag": 28, "measurements": {"waist": 42.9, "front_rise": 26.2, "back_rise": 38.8, "seat": 52.4, "thigh": 34, "knee": 25, "leg_opening": 29.4, "inseam": 71}},
+            {"label": "W31/L30", "waist_tag": 31, "length_tag": 30, "measurements": {"waist": 42.9, "front_rise": 26.2, "back_rise": 38.8, "seat": 52.4, "thigh": 34, "knee": 25, "leg_opening": 29.4, "inseam": 76}},
+            {"label": "W31/L32", "waist_tag": 31, "length_tag": 32, "measurements": {"waist": 42.9, "front_rise": 26.2, "back_rise": 38.8, "seat": 52.4, "thigh": 34, "knee": 25, "leg_opening": 29.4, "inseam": 81}},
+            {"label": "W31/L34", "waist_tag": 31, "length_tag": 34, "measurements": {"waist": 42.9, "front_rise": 26.2, "back_rise": 38.8, "seat": 52.4, "thigh": 34, "knee": 25, "leg_opening": 29.4, "inseam": 86}},
+            {"label": "W31/L36", "waist_tag": 31, "length_tag": 36, "measurements": {"waist": 42.9, "front_rise": 26.2, "back_rise": 38.8, "seat": 52.4, "thigh": 34, "knee": 25, "leg_opening": 29.4, "inseam": 91}},
+            {"label": "W32/L28", "waist_tag": 32, "length_tag": 28, "measurements": {"waist": 44.1, "front_rise": 26.7, "back_rise": 39.4, "seat": 53.6, "thigh": 34.8, "knee": 25.4, "leg_opening": 29.8, "inseam": 71}},
+            {"label": "W32/L30", "waist_tag": 32, "length_tag": 30, "measurements": {"waist": 44.1, "front_rise": 26.7, "back_rise": 39.4, "seat": 53.6, "thigh": 34.8, "knee": 25.4, "leg_opening": 29.8, "inseam": 76}},
+            {"label": "W32/L32", "waist_tag": 32, "length_tag": 32, "measurements": {"waist": 44.1, "front_rise": 26.7, "back_rise": 39.4, "seat": 53.6, "thigh": 34.8, "knee": 25.4, "leg_opening": 29.8, "inseam": 81}},
+            {"label": "W32/L34", "waist_tag": 32, "length_tag": 34, "measurements": {"waist": 44.1, "front_rise": 26.7, "back_rise": 39.4, "seat": 53.6, "thigh": 34.8, "knee": 25.4, "leg_opening": 29.8, "inseam": 86}},
+            {"label": "W32/L36", "waist_tag": 32, "length_tag": 36, "measurements": {"waist": 44.1, "front_rise": 26.7, "back_rise": 39.4, "seat": 53.6, "thigh": 34.8, "knee": 25.4, "leg_opening": 29.8, "inseam": 91}},
+            {"label": "W33/L28", "waist_tag": 33, "length_tag": 28, "measurements": {"waist": 45.4, "front_rise": 27.2, "back_rise": 40, "seat": 54.9, "thigh": 35.6, "knee": 25.8, "leg_opening": 30.2, "inseam": 71}},
+            {"label": "W33/L30", "waist_tag": 33, "length_tag": 30, "measurements": {"waist": 45.4, "front_rise": 27.2, "back_rise": 40, "seat": 54.9, "thigh": 35.6, "knee": 25.8, "leg_opening": 30.2, "inseam": 76}},
+            {"label": "W33/L32", "waist_tag": 33, "length_tag": 32, "measurements": {"waist": 45.4, "front_rise": 27.2, "back_rise": 40, "seat": 54.9, "thigh": 35.6, "knee": 25.8, "leg_opening": 30.2, "inseam": 81}},
+            {"label": "W33/L34", "waist_tag": 33, "length_tag": 34, "measurements": {"waist": 45.4, "front_rise": 27.2, "back_rise": 40, "seat": 54.9, "thigh": 35.6, "knee": 25.8, "leg_opening": 30.2, "inseam": 86}},
+            {"label": "W33/L36", "waist_tag": 33, "length_tag": 36, "measurements": {"waist": 45.4, "front_rise": 27.2, "back_rise": 40, "seat": 54.9, "thigh": 35.6, "knee": 25.8, "leg_opening": 30.2, "inseam": 91}},
+            {"label": "W34/L28", "waist_tag": 34, "length_tag": 28, "measurements": {"waist": 46.6, "front_rise": 27.7, "back_rise": 40.6, "seat": 56.1, "thigh": 36.4, "knee": 26.2, "leg_opening": 30.6, "inseam": 71}},
+            {"label": "W34/L30", "waist_tag": 34, "length_tag": 30, "measurements": {"waist": 46.6, "front_rise": 27.7, "back_rise": 40.6, "seat": 56.1, "thigh": 36.4, "knee": 26.2, "leg_opening": 30.6, "inseam": 76}},
+            {"label": "W34/L32", "waist_tag": 34, "length_tag": 32, "measurements": {"waist": 46.6, "front_rise": 27.7, "back_rise": 40.6, "seat": 56.1, "thigh": 36.4, "knee": 26.2, "leg_opening": 30.6, "inseam": 81}},
+            {"label": "W34/L34", "waist_tag": 34, "length_tag": 34, "measurements": {"waist": 46.6, "front_rise": 27.7, "back_rise": 40.6, "seat": 56.1, "thigh": 36.4, "knee": 26.2, "leg_opening": 30.6, "inseam": 86}},
+            {"label": "W34/L36", "waist_tag": 34, "length_tag": 36, "measurements": {"waist": 46.6, "front_rise": 27.7, "back_rise": 40.6, "seat": 56.1, "thigh": 36.4, "knee": 26.2, "leg_opening": 30.6, "inseam": 91}},
+            {"label": "W36/L28", "waist_tag": 36, "length_tag": 28, "measurements": {"waist": 49.1, "front_rise": 28.7, "back_rise": 41.8, "seat": 58.6, "thigh": 38, "knee": 27, "leg_opening": 31.4, "inseam": 71}},
+            {"label": "W36/L30", "waist_tag": 36, "length_tag": 30, "measurements": {"waist": 49.1, "front_rise": 28.7, "back_rise": 41.8, "seat": 58.6, "thigh": 38, "knee": 27, "leg_opening": 31.4, "inseam": 76}},
+            {"label": "W36/L32", "waist_tag": 36, "length_tag": 32, "measurements": {"waist": 49.1, "front_rise": 28.7, "back_rise": 41.8, "seat": 58.6, "thigh": 38, "knee": 27, "leg_opening": 31.4, "inseam": 81}},
+            {"label": "W36/L34", "waist_tag": 36, "length_tag": 34, "measurements": {"waist": 49.1, "front_rise": 28.7, "back_rise": 41.8, "seat": 58.6, "thigh": 38, "knee": 27, "leg_opening": 31.4, "inseam": 86}},
+            {"label": "W36/L36", "waist_tag": 36, "length_tag": 36, "measurements": {"waist": 49.1, "front_rise": 28.7, "back_rise": 41.8, "seat": 58.6, "thigh": 38, "knee": 27, "leg_opening": 31.4, "inseam": 91}},
+            {"label": "W38/L28", "waist_tag": 38, "length_tag": 28, "measurements": {"waist": 51.6, "front_rise": 29.7, "back_rise": 43, "seat": 61.1, "thigh": 39.6, "knee": 27.8, "leg_opening": 32.2, "inseam": 71}},
+            {"label": "W38/L30", "waist_tag": 38, "length_tag": 30, "measurements": {"waist": 51.6, "front_rise": 29.7, "back_rise": 43, "seat": 61.1, "thigh": 39.6, "knee": 27.8, "leg_opening": 32.2, "inseam": 76}},
+            {"label": "W38/L32", "waist_tag": 38, "length_tag": 32, "measurements": {"waist": 51.6, "front_rise": 29.7, "back_rise": 43, "seat": 61.1, "thigh": 39.6, "knee": 27.8, "leg_opening": 32.2, "inseam": 81}},
+            {"label": "W38/L34", "waist_tag": 38, "length_tag": 34, "measurements": {"waist": 51.6, "front_rise": 29.7, "back_rise": 43, "seat": 61.1, "thigh": 39.6, "knee": 27.8, "leg_opening": 32.2, "inseam": 86}},
+            {"label": "W38/L36", "waist_tag": 38, "length_tag": 36, "measurements": {"waist": 51.6, "front_rise": 29.7, "back_rise": 43, "seat": 61.1, "thigh": 39.6, "knee": 27.8, "leg_opening": 32.2, "inseam": 91}}
+          ]
+        }
+      ]
+    }
+  ]
+}
