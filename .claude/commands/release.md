@@ -40,7 +40,7 @@ The user doesn't know Rust or GitHub Actions. Explain each decision in a sentenc
 
 - Start it: `gh workflow run release.yml --ref main -f version=<version>`.
 - Find the run for the commit you pushed: `gh run list --workflow release.yml --limit 5 --json databaseId,headSha,status,createdAt`. Pick the one whose `headSha` is `git rev-parse HEAD`. It can take a few seconds to appear.
-- Wait with `gh run watch <id> --exit-status`. A build takes 15–30 minutes, so run it in the background and don't poll.
+- Wait with `gh run watch <id> --exit-status`. A run that starts cold takes 15–30 minutes, and one that reuses the last release's cache is quicker. Either way, run it in the background and don't poll.
 - If it fails, show the user the failing step from `gh run view <id> --log-failed` and explain it plainly. Don't publish anything.
   - **A flaky step**, such as a network error or the DMG step timing out: `gh run rerun <id> --failed` is safe. The workflow reuses the same tag and draft.
   - **A fault in the code:** the tag already points at the old commit. Fix it in a normal change first. Then ask the user before deleting the draft and its tag with `gh release delete v<version> --cleanup-tag --yes`, and start again from step 2 with the same version.

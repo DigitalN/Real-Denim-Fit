@@ -65,7 +65,9 @@ Run `/release` in Claude Code, from an up-to-date `main` with CI passing. It:
    - only fixes and catalogue refreshes: patch (0.2.0 → 0.2.1)
    - 1.0 only when you ask for it
 2. **Sets it** in `src-tauri/tauri.conf.json` and `src-tauri/Cargo.toml`, then commits `Release <version>` and pushes it to `main`.
-3. **Runs the Release workflow** and waits for it. That takes 15–30 minutes.
+3. **Runs the Release workflow** and waits for it.
+   - A run that starts cold takes 15–30 minutes. That's the first release, the first after the dependencies or the build settings in the root `Cargo.toml` change, and any release more than 7 days after the last one, because GitHub deletes unused caches after a week.
+   - Otherwise the run reuses the last release's compiled dependencies and a ready-made Tauri command-line tool, and only rebuilds the app itself.
 4. **Checks the draft.** It must have the `.dmg`, the Windows `-setup.exe` and `latest.json`, and `latest.json` must cover Apple silicon Macs, Intel Macs and Windows.
 5. **Writes the release notes**, in the style of Mac Engine Room's: what's new, then install steps for both systems, including the one-time warning on each.
 6. **Asks you once**, then publishes. From then on, every copy updates the next time it opens.
