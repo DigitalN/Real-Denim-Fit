@@ -1,11 +1,14 @@
 # 3sixteen: extraction notes
 
-Last full run: 2026-11-20. 48 products in 7 cuts, 529 sizes.
+Last full run: 2026-11-20. 48 products in 7 cuts, 529 sizes. 6 of the products were sold out on that day.
 
 ## Where things are
 
 - **Product list:** `https://www.3sixteen.com/products.json?limit=250&page=N` (2 pages). Prices are USD.
-- **Which products are jeans:** titles shaped like `CS-100x ~ Classic Straight - Indigo Selvedge`, where the two letters are the cut (CS, CT, RS, NT, ST) and the code is the fabric, plus two collaborations (below). Left out: `bs-103x` (a jean short) and all trousers, work pants and shorts.
+- **Which products are jeans:** titles shaped like `CS-100x ~ Classic Straight - Indigo Selvedge`, where the two letters are the cut (CS, CT, RS, NT, ST) and the code is the fabric, plus two collaborations (below). All of them are denim.
+- **Left out:** `bs-103x` (a jean short), and trousers and work pants even where the fabric is denim (Harvest Pant ~ Grey Denim, Officer Chino ~ Nep Denim).
+- **Sold-out products are included** with `"status": "current"`. `products.json` still lists them, with every variant `"available": false`; the catalogue never records stock.
+- **`line` is `null` on every cut:** the site doesn't file its jeans as men's, women's or unisex. The menu goes Shop → Denim, and `/collections.json` has no gendered collections.
 - **Charts:** the product page's "Measurements" button fetches a Shopify section. Get it directly with `https://www.3sixteen.com/products/<handle>?sections=sizing-modal`, which returns JSON whose `sizing-modal` key holds the modal's HTML. It comes in two formats:
   - **Lists** (most products): one `<ul>` per column. The first is the labels (Sizing, Waist, Front Rise, Back Rise, Inseam, Thigh, Knee, Opening), then one per size. Numbers use fraction glyphs (`11½`, `15⅜`), recorded as decimals (11.5, 15.375). The same lists are in `products.json` `body_html` after `!measurements!`; on this run all 367 sizes agreed.
   - **A `<table>`** (newer products such as the 105x/225x "5 Series", RS-120x, RS-203x, RS-220x, RS-222xs, RS-223xv, CS-220x, CS-222x, CS-223xv, RS-33x and Big Jean): decimals, and **not** in `body_html`, so you must use the section.
