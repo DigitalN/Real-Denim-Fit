@@ -51,6 +51,28 @@ Last full run: 2026-11-20. 30 products in 7 cuts, 294 sizes. None was sold out o
 - **Shared images:** the Stanton 11oz Indigo and Stealth share one image, as do the Strider 11oz Indigo and Stealth. The Stanton River and Vintage Wash use two uploads of a byte-identical image.
 - Chart sizes don't always match the sizes sold (for example, the SK chart has 26 and no 35). Only the chart's sizes are recorded.
 
+## How to rerun
+
+The script does everything except read the images. See [`tools/catalogue/rogue-territory/README.md`](../../tools/catalogue/rogue-territory/README.md) for details.
+
+```sh
+python3 tools/catalogue/rogue-territory/extract.py fetch   --work <scratchpad>/catalogue-rogue-territory
+# read every chart twice, independently: reads/<chart>-a.json and reads/<chart>-b.json
+python3 tools/catalogue/rogue-territory/extract.py compare --work <scratchpad>/catalogue-rogue-territory
+# give any disputed cells to a third reader (reads/<chart>-c.json), then compare again
+python3 tools/catalogue/rogue-territory/extract.py build   --work <scratchpad>/catalogue-rogue-territory
+```
+
+- **`fetch`:**
+  - takes about 35 requests, under a minute
+  - skips the non-denim products by their fabric line
+  - groups byte-identical images, such as the two washed-Stanton uploads
+  - gets the full-size original of `_480x480` renditions
+- **`compare`:** prints the tally that the PR needs.
+- **`build`:** leaves out disputed cells and implausible printed values, such as the Stealth Standard Issue's "5", and lists them for "Numbers to look at twice".
+- **The numbers committed on 2026-11-20 were read once,** before `/update-catalogue` required two independent reads. The next run should read every chart twice.
+- **Reproduction check, 2026-11-21:** fed that single reading as both A and B, `build` reproduced every committed file exactly. A live `fetch` found the same 30 products and 27 charts.
+
 ## Every chart image
 
 Check each product's numbers against its image.
