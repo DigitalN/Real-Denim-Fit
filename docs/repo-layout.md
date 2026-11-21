@@ -15,6 +15,7 @@ Where everything lives. Parts of the first build are being written in parallel, 
 | `tools/catalogue/<brand-id>/` | Each brand's extraction scripts, used by `/update-catalogue`: Python 3 with the standard library only, plus browser JavaScript snippets. Never built into the app or read by validation. |
 | `data/ease-table.json` | The ease table, with a source on every number. |
 | `.github/workflows/` | `ci.yml` (on pull requests) and `release.yml` (run by hand). |
+| `.claude/CLAUDE.md` | Instructions Claude Code reads in every session here. |
 | `.claude/commands/` | `update-catalogue.md` and `release.md`. |
 
 ## Building
