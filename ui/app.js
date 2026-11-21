@@ -57,7 +57,7 @@ function freshState(currency) {
     pairs: [],
     activePairId: null,
     filters: {
-      brands: null,
+      excluded_brands: [],
       price_min: null,
       price_max: null,
       try_on_only: false,
@@ -134,6 +134,12 @@ async function boot() {
       return;
     }
     S = saved || freshState(CAT.default_currency);
+    // Earlier builds saved the brands to keep; keep the same choice as the
+    // brands left out, so brands added since start ticked.
+    if (Array.isArray(S.filters.brands)) {
+      S.filters.excluded_brands = CAT.brands.map((b) => b.id).filter((id) => !S.filters.brands.includes(id));
+    }
+    delete S.filters.brands;
     // A pair removed while chosen (by older builds) leaves nothing to compare with.
     if (S.activePairId && !S.pairs.some((p) => p.id === S.activePairId)) S.activePairId = null;
     // Earlier builds had "doesn't matter" checkboxes; those become importance 1.
@@ -497,8 +503,11 @@ function compareHint() {
 
 function filtersForRust() {
   const f = S.filters;
+  const excluded = f.excluded_brands || [];
+  const { excluded_brands: _, ...rest } = f;
   return {
-    ...f,
+    ...rest,
+    brands: excluded.length ? CAT.brands.map((b) => b.id).filter((id) => !excluded.includes(id)) : null,
     include_washed: f.include_washed ?? false,
     mens: f.mens ?? true,
     womens: f.womens ?? true,
@@ -559,7 +568,6 @@ async function renderResults() {
   }
   const pairs = S.pairs;
   const f = S.filters;
-  const brandIds = CAT.brands.map((b) => b.id);
   $app.innerHTML = `
   <div class="results">
     <aside class="card filters" id="filters">
@@ -577,7 +585,7 @@ async function renderResults() {
       <label class="checkline"><input type="checkbox" id="f-womens" ${f.womens ?? true ? "checked" : ""}/> Women's</label>
       <p class="hint">Unisex cuts show with either. Cuts the brand doesn't file as men's or women's always show.</p>
       <h3>Brands</h3>
-      ${CAT.brands.map((b) => `<label class="checkline"><input type="checkbox" data-brand="${b.id}" ${!f.brands || f.brands.includes(b.id) ? "checked" : ""}/> ${esc(b.name)}</label>`).join("")}
+      ${CAT.brands.map((b) => `<label class="checkline"><input type="checkbox" data-brand="${b.id}" ${(f.excluded_brands || []).includes(b.id) ? "" : "checked"}/> ${esc(b.name)}</label>`).join("")}
       <label class="checkline"><input type="checkbox" id="f-tryon" ${f.try_on_only ? "checked" : ""} ${S.settings.tryOnBrands.length ? "" : "disabled"}/> Try-on brands only</label>
       ${S.settings.tryOnBrands.length ? "" : `<p class="hint">Mark brands you can try on in <a href="#/settings">Settings</a>.</p>`}
       <h3>Price (${esc(S.settings.currency)})</h3>
@@ -603,8 +611,9 @@ async function renderResults() {
   const onChange = () => {
     S.activePairId = $app.querySelector('input[name="compare"]:checked')?.value || null;
     document.getElementById("compare-hint").textContent = compareHint();
-    const chosen = [...$app.querySelectorAll("[data-brand]:checked")].map((c) => c.dataset.brand);
-    f.brands = chosen.length === brandIds.length ? null : chosen;
+    // The brands left out are saved, so a brand added in a later release
+    // starts ticked.
+    f.excluded_brands = [...$app.querySelectorAll("[data-brand]:not(:checked)")].map((c) => c.dataset.brand);
     f.try_on_only = document.getElementById("f-tryon").checked;
     f.mens = document.getElementById("f-mens").checked;
     f.womens = document.getElementById("f-womens").checked;
