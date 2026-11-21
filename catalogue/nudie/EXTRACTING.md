@@ -2,6 +2,22 @@
 
 Last full run: 2026-11-21, en-US store, USD. Dry jeans only (see "What's in"), men's and women's: 81 products and 5,278 sizes, in 17 cuts (12 men's, 5 women's).
 
+## How to rerun
+
+The tools are in `tools/catalogue/nudie/`. The top of each file explains it. `WORK` is any scratch folder; it caches pages, so a rerun only fetches what's missing.
+
+1. **Cookies (the user does this).** Open a Nudie product page in the built-in browser. Ask the user to click **Size Guide → Update Cookie Settings** and accept. Never click the consent dialog yourself.
+2. **Widget key.** Run `widget.js` in that tab. It should return `consent.ok: true` and an `apiKey`. With no key, the consent isn't in place, so go back to step 1.
+3. **Products.** Run `python3 tools/catalogue/nudie/fetch_products.py WORK`. It makes about 300 page requests, 2 s apart, so the first run takes about 15 minutes.
+   - Then read `WORK/classification.tsv`, especially the rows marked "flagged Dry but never called dry or raw" and any products that are new since the last run.
+4. **Measurements.** Run `python3 tools/catalogue/nudie/fetch_virtusize.py WORK --api-key KEY`. Don't commit the key anywhere.
+5. **Build.** Run `python3 tools/catalogue/nudie/build.py WORK --seen YYYY-MM-DD`. It writes `catalogue/nudie/` and prints a report: products with no Virtusize data, sizes missing from Virtusize, and name differences.
+6. **Spot-check.** Call `window.nudieOpenWidget("<uri>")` (defined by `widget.js`), pick a size and compare the labels with the files.
+
+On 2026-11-21 the chain was rerun on the 2026-11-21 data and reproduced the committed files byte for byte.
+- `fetch_products.py` classified 98 known pages exactly as before: 85 dry, 3 of them rinsed.
+- Three Virtusize records were fetched fresh, one through the store-product fallback.
+
 ## Where the numbers are
 
 - **Only in Virtusize.** Nudie publishes jeans measurements only through the Virtusize widget behind **Size Guide → Open in Virtusize** on each product page. The product data has a `measurementTable` field, but it's `null` for every jeans product. The help centre (`/en-US/help-center/topic/fits-products`) also points to the "Virtual Size Guide".
