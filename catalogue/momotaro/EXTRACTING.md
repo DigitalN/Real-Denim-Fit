@@ -35,8 +35,15 @@ From the [sizing guide](https://www.momotaro-jeans.com/en_US/sizing-guide.html):
   - Cashmere is "dry clean only", and "washing in water may cause significant shrinkage".
 - **Dyed specials** (Shikon, Black Sesame, Kyotomontsuki, BC, Moss, Onigurumi): they're product-dyed or garment-dyed. No page says raw or washed, so `sold: null`.
   - Most don't state a weight either. Onigurumi says "15oz".
-- **High Fade Blue:** bleached, with no weight and no wash state stated, so `null`.
+- **High Fade Blue:** "a subtle, pale blue wash on dark denim through bleaching", so `finish: "washed"` and `sold: "one-washed"`. No weight is stated.
 - **#100/#200/#400 11oz (men's):** they don't say rigid or washed, so `sold: null`. The women's 11oz pages say "Rigid denim (unwashed)".
+- **Finish** (2026-11-21), from each page's own words:
+  - **`raw` (21):** "Rigid (unwashed)". That covers Standard, Silk, Cashmere, Natural Indigo, Sakura Dyed and the women's 11oz.
+  - **`rinsed` (6):** Classic, Indigo and Black: "One wash (washed)", with no fading described.
+  - **`washed` (2):** High Fade Blue, #100 and #400 (bleached).
+  - **`null` (12), the doubtful calls:**
+    - The 9 product-dyed specials (Shikon ×2, Black Sesame ×2, Kyotomontsuki ×2, BC, Moss, Onigurumi): "Product dyed" / "garment-dyeing" / "piece-dyed". Dyed after sewing, so they're not raw. But the page says nothing about a rinse or fading, so `sold` is `null` as well.
+    - The 3 men's 11oz (#100/#200/#400): their pages don't say rigid or washed, though the women's 11oz pages say "Rigid denim(unwashed)".
 - **Shrinkage:** no product gives a figure, so it's `null` everywhere.
 - **Price:** each page has one price for every colour and size.
 

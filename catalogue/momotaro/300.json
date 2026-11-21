@@ -19,6 +19,7 @@
         "sanforized": null
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 307.6,
         "currency": "USD",
@@ -67,6 +68,7 @@
         "sanforized": null
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 307.6,
         "currency": "USD",
@@ -115,6 +117,7 @@
         "sanforized": false
       },
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {
         "amount": 276.8,
         "currency": "USD",
@@ -163,6 +166,7 @@
         "sanforized": false
       },
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {
         "amount": 276.8,
         "currency": "USD",
@@ -212,6 +216,7 @@
         "sanforized": null
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 717.8,
         "currency": "USD",
@@ -261,6 +266,7 @@
         "sanforized": null
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 1230.5,
         "currency": "USD",

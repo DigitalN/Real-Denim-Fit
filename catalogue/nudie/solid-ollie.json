@@ -20,6 +20,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 195,
         "currency": "USD",
@@ -130,6 +131,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 350,
         "currency": "USD",
@@ -240,6 +242,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 240,
         "currency": "USD",
@@ -341,6 +344,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 280,
         "currency": "USD",
@@ -451,6 +455,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 195,
         "currency": "USD",
@@ -561,6 +566,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 220,
         "currency": "USD",
@@ -671,6 +677,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 240,
         "currency": "USD",
@@ -772,6 +779,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 195,
         "currency": "USD",
@@ -882,6 +890,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 220,
         "currency": "USD",

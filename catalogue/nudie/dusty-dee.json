@@ -19,6 +19,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 220,
         "currency": "USD",
