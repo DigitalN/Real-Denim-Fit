@@ -63,6 +63,9 @@ From the [sizing guide](https://www.momotaro-jeans.com/en_US/sizing-guide.html):
   - #100 Straight in corduroy, smooth leather and suede leather
   - Denim Trousers, denim shorts, sashiko pants and other trousers
 
-## Women's cuts
+## Sold-out products and lines
 
-#110, #410, Super Wide Womens and Flare Womens are included as their own cuts (sizes 24–30). The catalogue has no men's/women's field, so their names are what tell them apart.
+- **Sold out:** search results include sold-out products, which carry an "Out of Stock" badge (`.pd-badge--no-stock` without `d-none`). So the search sweep above already finds them. About half of the jeans were sold out on 2026-11-21, and all of them are in the catalogue as `current`.
+  - `sitemap_0.xml` lists no product pages, so it's no help in finding products.
+  - A page lists every size the product comes in, whether or not it's in stock.
+- **Line:** Momotaro has one gender category, `/jeans/jeans-womens-jeans/` ("WOMENS JEANS"). #110, #410, Super Wide Womens and Flare Womens are filed there, so their `line` is `"women"`. Every other cut sits under plain "JEANS" with no men's or unisex label, so its `line` is `null`.
