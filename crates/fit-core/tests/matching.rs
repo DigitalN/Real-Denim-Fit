@@ -671,7 +671,9 @@ fn preparing_the_built_in_catalogue_is_quick() {
     let prepared = fit_core::matching::prepare(&catalogue);
     let took = start.elapsed();
     eprintln!("prepared {} products in {took:?}", prepared.items.len());
-    assert!(took < std::time::Duration::from_millis(1500), "took {took:?}");
+    // A loose wall-clock limit for unoptimised builds on shared CI runners
+    // (about 0.6 s on a laptop); comparing every pair took 9 s.
+    assert!(took < std::time::Duration::from_secs(5), "took {took:?}");
 }
 
 #[test]

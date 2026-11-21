@@ -178,5 +178,10 @@ fn the_whole_catalogue_classifies_quickly() {
     let r = rises(&entries);
     let took = start.elapsed();
     assert!(r.iter().filter(|x| x.is_some()).count() > 12_000);
-    assert!(took < std::time::Duration::from_millis(1000), "took {took:?}");
+    // A loose wall-clock limit: CI runs this unoptimised on shared runners,
+    // beside the pairwise reference test, and took 1.2 s there once. 5 s
+    // still catches a return to comparing every pair (12 s on this data, 9 s
+    // on the real catalogue); rises_match_the_pairwise_reference_on_a_large_catalogue
+    // proves the results are right.
+    assert!(took < std::time::Duration::from_secs(5), "took {took:?}");
 }
