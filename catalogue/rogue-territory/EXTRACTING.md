@@ -1,11 +1,17 @@
 # Rogue Territory: extraction notes
 
-Last full run: 2026-11-20. 35 products in 7 cuts, 339 sizes. **Every chart is read by eye from a JPEG** (`from_image: true`), so each number needs checking against its picture (list below).
+Last full run: 2026-11-20. 30 products in 7 cuts, 294 sizes. None was sold out on that day. **Every chart is read by eye from a JPEG** (`from_image: true`), so each number needs checking against its picture (list below).
 
 ## Where things are
 
 - **Product list:** `https://www.rogueterritory.com/products.json?limit=250` (one page). Prices are USD.
-- **Which products are jeans:** those tagged `DENIM`. The title is `<Cut> // <Fabric>`, for example `Stanton // 14.5oz Indigo`. Trousers, fatigue pants, officer trousers and shorts aren't tagged `DENIM` and are left out.
+- **Which products are jeans:** those tagged `DENIM` whose fabric is denim. The title is `<Cut> // <Fabric>`, for example `Stanton // 14.5oz Indigo`. Trousers, fatigue pants, officer trousers and shorts aren't tagged `DENIM`.
+- **Left out because they aren't denim**, though tagged `DENIM` and cut like jeans:
+  - `relaxed-strider-brown-neppy-herringbone` and `relaxed-strider-black-neppy-herringbone` (12oz herringbone twill)
+  - `relaxed-strider-mock-twist-selvedge-canvas` (14oz canvas)
+  - `double-knee-strider-black-canvas` and `double-knee-strider-camel-canvas` (12oz canvas)
+- **Sold-out products are included** with `"status": "current"`. `products.json` still lists them, with every variant `"available": false`; the catalogue never records stock. None was sold out on this run.
+- **`line` is `null` on every cut:** the site doesn't file its jeans as men's, women's or unisex. The menu goes DENIM → fit, and `/collections.json` has no gendered collections.
 - **Fit and fabric:** in `body_html`:
   - `FIT //` gives the brand label, for example "Slim Straight, Mid-Rise"
   - `DENIM //` gives weight, "100% cotton" and "sanforized"
@@ -25,9 +31,7 @@ Last full run: 2026-11-20. 35 products in 7 cuts, 339 sizes. **Every chart is re
 ## Fabric decisions
 
 - **`sanforized`:** taken from the `DENIM //` line where it says "sanforized". Otherwise it's `true` from the [FAQ](https://www.rogueterritory.com/pages/faq): "Our denim is sanforized (pre-shrunk) unless otherwise noted". That applies to stanton-11oz-stealth, strider-11oz-stealth, strider-13-5oz-indigo-x-black, strider-stealth-wash, and the four River and Vintage Wash products.
-- **Non-denim fabrics** tagged `DENIM` and sold in the jean cuts are included, with `sanforized` and `sold` set to `null`, because the FAQ covers only denim and the pages don't say. They are the Neppy Herringbone (12oz twill), the Mock Twist Selvedge Canvas (14oz) and the Double Knee canvas (12oz). Drop them if the catalogue should be denim only.
-- **Double Knee Strider** is in the Strider cut, because the brand says it's "in the Strider fit".
-- **`sold`:** River Wash, Vintage Wash, Stealth Wash and Rinsed are `"one-washed"`; the rest of the denim is `"raw"`.
+- **`sold`:** River Wash, Vintage Wash, Stealth Wash and Rinsed are `"one-washed"`; the rest are `"raw"`.
 - **`shrinkage`:** always `null`. The FAQ's advice to add 0.5″ to the inseam when hemming raw denim is general advice, not a product figure.
 - **Prices:** sale items have a `compare_at_price`, which is the list price and what's recorded. Variants with `compare_at_price` "0.00" are ignored.
 
@@ -37,7 +41,7 @@ Last full run: 2026-11-20. 35 products in 7 cuts, 339 sizes. **Every chart is re
 - **Stanton 11oz (Indigo and Stealth share one image), size 29:** knee 7.5, larger than size 30's 7.25, and unlike every other size, where knee equals leg opening. Recorded as printed; probably a typo on the brand's side.
 - **Stealth Strong Taper, size 36:** front rise jumps from 11.5 to 12.25, then 12.5 at 38. Recorded as printed (checked on the full-size original).
 - **Strider Vintage Wash, sizes 36/38/40:** waist 18 → 18.5 → 19.5 (the River Wash has 18.25 → 19 → 20). Recorded as printed.
-- **Shared images:** the Stanton 11oz Indigo and Stealth share one image, as do the Strider 11oz Indigo and Stealth, the two Neppy Herringbone colours and the two Double Knee colours. The Stanton River and Vintage Wash use two uploads of a byte-identical image.
+- **Shared images:** the Stanton 11oz Indigo and Stealth share one image, as do the Strider 11oz Indigo and Stealth. The Stanton River and Vintage Wash use two uploads of a byte-identical image.
 - Chart sizes don't always match the sizes sold (for example, the SK chart has 26 and no 35). Only the chart's sizes are recorded.
 
 ## Every chart image
@@ -49,9 +53,6 @@ Check each product's numbers against its image.
 | Relaxed Strider | [Relaxed Strider // 15oz Indigo Redline](https://www.rogueterritory.com/products/relaxed-strider-15oz-indigo-redline) | [Relaxed_Strider_15oz_Indigo_Redline_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Relaxed_Strider_15oz_Indigo_Redline_sizing.jpg?v=1793221978) |
 | Relaxed Strider | [Relaxed Strider // 17oz Cryptic Indigo x Black](https://www.rogueterritory.com/products/relaxed-strider-17oz-cryptic-indigo-x-black) | [Relaxed_Strider_17oz_Cryptic_Ind_Blk_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Relaxed_Strider_17oz_Cryptic_Ind_Blk_sizing.jpg?v=1776284972) |
 | Relaxed Strider | [Relaxed Strider // 17oz Cryptic Stealth](https://www.rogueterritory.com/products/relaxed-strider-17oz-cryptic-stealth) | [Relaxed_Strider_Cryptic_Stealth_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Relaxed_Strider_Cryptic_Stealth_sizing.jpg?v=1773329812) |
-| Relaxed Strider | [Relaxed Strider // Black Neppy Herringbone](https://www.rogueterritory.com/products/relaxed-strider-black-neppy-herringbone) | [Relaxed_Strider_Neppy_HB_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Relaxed_Strider_Neppy_HB_sizing.jpg?v=1770067148) |
-| Relaxed Strider | [Relaxed Strider // Brown Neppy Herringbone](https://www.rogueterritory.com/products/relaxed-strider-brown-neppy-herringbone) | [Relaxed_Strider_Neppy_HB_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Relaxed_Strider_Neppy_HB_sizing.jpg?v=1770067148) |
-| Relaxed Strider | [Relaxed Strider // Mock Twist Selvedge Canvas](https://www.rogueterritory.com/products/relaxed-strider-mock-twist-selvedge-canvas) | [Relaxed_Strider_Mock_Twist_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Relaxed_Strider_Mock_Twist_sizing.jpg?v=1768493523) |
 | SK | [SK // 15oz Indigo](https://www.rogueterritory.com/products/sk-15-oz) | [SK_15oz_Sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/SK_15oz_Sizing.jpg?v=1513927829) |
 | SK | [SK // 15oz Stealth](https://www.rogueterritory.com/products/stealth-sk) | [SK_Stealth_Sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/SK_Stealth_Sizing.jpg?v=1513927899) |
 | Silveridge | [Silveridge // 15oz Indigo](https://www.rogueterritory.com/products/silveridge-15oz-indigo) | [Indigo_Silveridge_sizing_082825.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Indigo_Silveridge_sizing_082825.jpg?v=1756406295) |
@@ -68,8 +69,6 @@ Check each product's numbers against its image.
 | Stanton | [Stanton // 22oz Indigo](https://www.rogueterritory.com/products/stanton-22oz-indigo-slub) | [22oz_Indigo_Stanton_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/22oz_Indigo_Stanton_sizing.jpg?v=1760656963) |
 | Stanton | [Stanton // Indigo River Wash](https://www.rogueterritory.com/products/stanton-indigo-river-wash) | [Washed_Stantons_sizing_012926_40fb4eff-b7ca-467c-8bf2-1a451f152e56.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Washed_Stantons_sizing_012926_40fb4eff-b7ca-467c-8bf2-1a451f152e56.jpg?v=1769719134) |
 | Stanton | [Stanton // Indigo Vintage Wash](https://www.rogueterritory.com/products/stanton-indigo-vintage-wash) | [Washed_Stantons_sizing_012926.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Washed_Stantons_sizing_012926.jpg?v=1769718938) |
-| Strider | [Double Knee Strider // Black Canvas](https://www.rogueterritory.com/products/double-knee-strider-black-canvas) | [Strider_Dbl_Knee_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Strider_Dbl_Knee_sizing.jpg?v=1751410782) |
-| Strider | [Double Knee Strider // Camel Canvas](https://www.rogueterritory.com/products/double-knee-strider-camel-canvas) | [Strider_Dbl_Knee_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Strider_Dbl_Knee_sizing.jpg?v=1751410782) |
 | Strider | [Strider // 11oz Indigo](https://www.rogueterritory.com/products/strider-11oz-indigo) | [11oz_denim_Striders_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/11oz_denim_Striders_sizing.jpg?v=1781906795) |
 | Strider | [Strider // 11oz Stealth](https://www.rogueterritory.com/products/strider-11oz-stealth) | [11oz_denim_Striders_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/11oz_denim_Striders_sizing.jpg?v=1781906795) |
 | Strider | [Strider // 13.5oz Indigo x Black](https://www.rogueterritory.com/products/strider-14-5oz-indigo-x-black) | [Strider_13.5oz_Ind_Blk_sizing.jpg](https://cdn.shopify.com/s/files/1/2633/5944/files/Strider_13.5oz_Ind_Blk_sizing.jpg?v=1734632911) |
