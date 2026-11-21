@@ -5,7 +5,7 @@ Desktop app (Tauri 2) that recommends raw denim jeans in a size from body measur
 - **Design:** read [docs/PLAN.md](../docs/PLAN.md) before changing behaviour. The decisions behind it are in [docs/adr/](../docs/adr/); check the matching ADR before reversing one.
 - **Words:** use [docs/GLOSSARY.md](../docs/GLOSSARY.md)'s terms in code, data and UI, and avoid the words it lists under _Avoid_.
 - **Catalogue data:** follow [docs/catalogue-format.md](../docs/catalogue-format.md) exactly. [docs/research/brand-size-charts.md](../docs/research/brand-size-charts.md) says what each brand publishes; each brand's `catalogue/<brand>/EXTRACTING.md` says how to read it.
-- **Ease table:** `data/ease-table.json`, background in [docs/research/ease.md](../docs/research/ease.md). Change it only by PR; the calibration test (`crates/fit-core/tests/calibration.rs`) must stay green.
+- **Ease table:** `crates/fit-core/data/ease-table.json`, background in [docs/research/ease.md](../docs/research/ease.md). Change it only by PR; the calibration test (`crates/fit-core/tests/calibration.rs`) must stay green.
 - **Where things live:** [docs/repo-layout.md](../docs/repo-layout.md). Those paths and names are fixed.
 
 ## Working here
