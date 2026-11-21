@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 310, "currency": "USD", "url": "https://www.3sixteen.com/products/throwing-fits-big-jean-stonewash-103xs", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [

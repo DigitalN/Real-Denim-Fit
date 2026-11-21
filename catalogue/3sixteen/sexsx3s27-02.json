@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15, "composition": null, "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 345, "currency": "USD", "url": "https://www.3sixteen.com/products/self-edge-x-samurai-x-3sixteen-sexsx3s27-02-jeans-straight-tapered", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
