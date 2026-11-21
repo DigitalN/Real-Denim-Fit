@@ -28,15 +28,19 @@ Last full run: 2026-11-20. 110 products in 6 cuts (555, 634, 666, 777, 888, 1955
 
 ## Fabric Focus → `sanforized`, `sold`, `shrinkage`
 
-| Fabric Focus heading | `sanforized` | `sold` | `shrinkage` |
-|---|---|---|---|
-| Sanforized & One-Washed | true | one-washed | null ("no further shrinkage") |
-| Sanforized, One-Washed & Overdyed | true | one-washed | null |
-| Unsanforized but One-Washed (19oz LHT) | false | one-washed | null (the brand expects little to no further shrinkage) |
-| Sanforized but Unwashed (25oz XHS) | true | raw | 1″ waist, 1″ inseam |
-| Unsanforized & Unwashed (21/23oz UHR) | false | raw | 1″ waist, up to 2″ inseam (recorded as 2) |
+| Fabric Focus heading | `sanforized` | `sold` | `finish` | `shrinkage` |
+|---|---|---|---|---|
+| Sanforized & One-Washed | true | one-washed | rinsed | null ("no further shrinkage") |
+| Sanforized, One-Washed & Overdyed | true | one-washed | rinsed | null |
+| Unsanforized but One-Washed (19oz LHT) | false | one-washed | rinsed | null (the brand expects little to no further shrinkage) |
+| Sanforized but Unwashed (25oz XHS) | true | raw | raw | 1″ waist, 1″ inseam |
+| Unsanforized & Unwashed (21/23oz UHR) | false | raw | raw | 1″ waist, up to 2″ inseam (recorded as 2) |
 
 None of the charts says which state it shows, so all are `"as-sold"`. The UHR fabric is 21oz raw and about 23oz after washing; `weight_oz` is 21.
+
+**`finish`:** no Iron Heart jean is faded at the factory, so none is `"washed"`. The one-wash is an industrial wash "to further reduce the risk of shrinkage", so it's `"rinsed"`. On this run that gave 95 rinsed and 15 raw. Calls that a name might suggest otherwise:
+- **Overdyed products** (22) are `"rinsed"`. They're one-washed, then dyed black after construction. That adds colour rather than fading it. The sulphur overdye does age the metal hardware, but the denim isn't faded. *This is the most doubtful call:* switch them to `"washed"` if overdyeing should count as a factory treatment.
+- **"18oz Vintage Selvedge"**, **"Superblack Non-Fade"**, **"Superblack (Fades To Grey)"** and **"13.5oz White"** are fabric names. Their pages say "Sanforized & One-Washed", with no fading treatment. The White's "pure white bleached warp and weft yarns" describes the yarn, not a faded garment. All are `"rinsed"`.
 
 ## Measuring method
 
