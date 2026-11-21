@@ -110,6 +110,7 @@ Ease is garment minus body, shown flat in inches here, for rigid denim after its
   - try-on brands only
   - **fabric weight** range
   - "Sanforized only", off by default
+  - "Include washed denim", off by default, which adds products whose **finish** is washed (stonewashed, vintage wash, faded); raw and rinsed products always show
   - "No stretch", off by default
   - "Current products only", on by default
   - leg shape and rise
@@ -126,7 +127,7 @@ Ease is garment minus body, shown flat in inches here, for rigid denim after its
 
 **Brands for the first build:** Iron Heart, Naked & Famous, 3sixteen, Nudie, Momotaro and Rogue Territory.
 
-**What's included:** every denim jeans product whose page is on the brand's site, including sold-out ones, from men's, women's and unisex lines. Anything that isn't denim is left out: duck canvas, herringbone, corduroy, and so on.
+**What's included:** every denim jeans product whose page is on the brand's site, including sold-out ones, from men's, women's and unisex lines, and in every finish: raw, rinsed and washed. Nudie is limited to its dry jeans. Anything that isn't denim is left out: duck canvas, herringbone, corduroy, and so on.
 
 **What's kept for every number:**
 - the source link and the date it was seen

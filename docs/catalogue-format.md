@@ -17,6 +17,7 @@ catalogue/
 - **Every denim jeans product whose page is on the brand's site**, whether or not it's sold out. The app never shows stock, and a sold-out pair can still be someone's reference pair or a secondhand find.
 - **Men's, women's and unisex cuts alike**, each with its `line`.
 - **Denim only.** Leave out duck canvas, herringbone, corduroy, linen, twill trousers, shorts, and worn or pre-owned pairs.
+- **Raw, rinsed and washed denim**, each with its `finish`. Nudie is the exception: it's limited to dry jeans by the user's choice.
 
 ## Rules
 
@@ -84,6 +85,7 @@ Any of them can also be `"unknown"`, which means the brand doesn't say where it 
         "sanforized": true
       },
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": { "amount": 293, "currency": "GBP", "url": "https://ironheart.co.uk/products/ih-634s", "seen": "2026-11-20" },
       "shrinkage": null,
       "charts": [
@@ -110,6 +112,13 @@ Any of them can also be `"unknown"`, which means the brand doesn't say where it 
 **On a product:**
 - `status` is `"current"`, or `"discontinued"` once the product is gone from the brand's site. `status_seen` is the date that was last checked.
 - `sold` is `"raw"` (unwashed) or `"one-washed"` (already washed by the brand). Use `null` if the brand doesn't say.
+- `finish` describes how the denim looks when it's sold:
+  - `"raw"`: never washed. `sold` is `"raw"`.
+  - `"rinsed"`: washed once to shrink it or set the dye, without fading it, like Iron Heart's one-wash or a "Rinsed Indigo". `sold` is `"one-washed"`.
+  - `"washed"`: faded on purpose at the factory, for example stonewashed, vintage or river wash, bleached, or "High Fade". `sold` is `"one-washed"`.
+  - `null`: the page doesn't make it clear.
+
+  Go by the product page's own description, not the fabric name alone. A raw fabric made to fade quickly, like Naked & Famous's "Dirty Fade Selvedge", is still `"raw"` if it's sold unwashed. The app hides washed products unless "Include washed denim" is switched on.
 - `fabric.weight_oz` and `fabric.composition` can each be `null` if they aren't stated.
 - **`shrinkage`** is `null` when the brand gives none, or when the product won't shrink. Otherwise it's one of these, each with a `source` like the one on a chart:
   - `{ "kind": "percent", "length": 2, "width": 5, ... }`: Nudie's "inseam 2%, width 4.5–6%" becomes the midpoints, with the brand's exact wording in `"note"`.
