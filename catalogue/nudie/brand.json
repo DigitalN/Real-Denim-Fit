@@ -1,0 +1,24 @@
+{
+  "id": "nudie",
+  "name": "Nudie Jeans",
+  "site": "https://www.nudiejeans.com",
+  "currency": "USD",
+  "sizing": "waist-and-length",
+  "tolerance": null,
+  "conventions": {
+    "waist": "flat",
+    "seat": "flat",
+    "thigh": "flat",
+    "knee": "flat",
+    "leg_opening": "flat"
+  },
+  "measuring_points": {
+    "thigh": "at-crotch",
+    "knee": "half-inseam",
+    "seat": "16cm-below-waistband"
+  },
+  "method_source": {
+    "url": "https://www.nudiejeans.com/en-US/help-center/topic/fits-products",
+    "seen": "2026-11-21"
+  }
+}

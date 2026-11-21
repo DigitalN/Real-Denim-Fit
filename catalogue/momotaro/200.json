@@ -1,0 +1,384 @@
+{
+  "id": "200",
+  "brand": "momotaro",
+  "name": "#200",
+  "brand_label": "Tapered",
+  "line": null,
+  "products": [
+    {
+      "id": "200-standard-14-7oz-indigo",
+      "name": "Standard 14.7oz, Indigo",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-200-standard-tapered-14.7oz/M200ST.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 14.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 307.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-200-standard-tapered-14.7oz/M200ST.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-200-standard-tapered-14.7oz/M200ST.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 25.7, "seat": 86.8, "thigh": 27.4, "leg_opening": 15.7, "inseam": 76.2}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 26.1, "seat": 89.3, "thigh": 28.2, "leg_opening": 16, "inseam": 76.2}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 26.5, "seat": 91.8, "thigh": 29, "leg_opening": 16.3, "inseam": 81.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 26.9, "seat": 94.3, "thigh": 29.8, "leg_opening": 16.6, "inseam": 81.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 27.3, "seat": 96.8, "thigh": 30.6, "leg_opening": 17.2, "inseam": 81.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81, "front_rise": 27.7, "seat": 99.3, "thigh": 31.4, "leg_opening": 17.5, "inseam": 81.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 28.1, "seat": 101.8, "thigh": 32.2, "leg_opening": 17.8, "inseam": 81.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 28.5, "seat": 104.3, "thigh": 33, "leg_opening": 18.1, "inseam": 81.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 28.9, "seat": 106.8, "thigh": 33.8, "leg_opening": 18.4, "inseam": 81.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 29.7, "seat": 111.8, "thigh": 35.4, "leg_opening": 18.7, "inseam": 81.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 30.5, "seat": 116.8, "thigh": 37, "leg_opening": 19.3, "inseam": 81.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 104, "front_rise": 31.3, "seat": 121.8, "thigh": 38.6, "leg_opening": 19.9, "inseam": 81.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 109, "front_rise": 32.1, "seat": 126.8, "thigh": 40.2, "leg_opening": 20.5, "inseam": 81.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "200-standard-14-7oz-black",
+      "name": "Standard 14.7oz, Black",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-200-standard-tapered-14.7oz/M200ST.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 14.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 307.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-200-standard-tapered-14.7oz/M200ST.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-200-standard-tapered-14.7oz/M200ST.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 25.7, "seat": 86.8, "thigh": 27.4, "leg_opening": 15.7, "inseam": 76.2}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 26.1, "seat": 89.3, "thigh": 28.2, "leg_opening": 16, "inseam": 76.2}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 26.5, "seat": 91.8, "thigh": 29, "leg_opening": 16.3, "inseam": 81.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 26.9, "seat": 94.3, "thigh": 29.8, "leg_opening": 16.6, "inseam": 81.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 27.3, "seat": 96.8, "thigh": 30.6, "leg_opening": 17.2, "inseam": 81.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81, "front_rise": 27.7, "seat": 99.3, "thigh": 31.4, "leg_opening": 17.5, "inseam": 81.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 28.1, "seat": 101.8, "thigh": 32.2, "leg_opening": 17.8, "inseam": 81.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 28.5, "seat": 104.3, "thigh": 33, "leg_opening": 18.1, "inseam": 81.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 28.9, "seat": 106.8, "thigh": 33.8, "leg_opening": 18.4, "inseam": 81.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 29.7, "seat": 111.8, "thigh": 35.4, "leg_opening": 18.7, "inseam": 81.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 30.5, "seat": 116.8, "thigh": 37, "leg_opening": 19.3, "inseam": 81.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 104, "front_rise": 31.3, "seat": 121.8, "thigh": 38.6, "leg_opening": 19.9, "inseam": 81.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 109, "front_rise": 32.1, "seat": 126.8, "thigh": 40.2, "leg_opening": 20.5, "inseam": 81.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "200-classic-15-7oz-indigo",
+      "name": "Classic 15.7oz, Indigo",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-200-classic-tapered-15.7oz/M200CL.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 15.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": false
+      },
+      "sold": "one-washed",
+      "list_price": {
+        "amount": 276.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-200-classic-tapered-15.7oz/M200CL.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-200-classic-tapered-15.7oz/M200CL.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 25.8, "seat": 86.8, "thigh": 27.4, "leg_opening": 15.7, "inseam": 78.7}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 26.2, "seat": 89.3, "thigh": 28.2, "leg_opening": 16, "inseam": 78.7}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 26.6, "seat": 91.8, "thigh": 29, "leg_opening": 16.3, "inseam": 81.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 27, "seat": 94.3, "thigh": 29.8, "leg_opening": 16.6, "inseam": 81.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 27.4, "seat": 96.8, "thigh": 30.6, "leg_opening": 17.2, "inseam": 81.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81, "front_rise": 27.8, "seat": 99.3, "thigh": 31.4, "leg_opening": 17.5, "inseam": 81.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 28.2, "seat": 101.8, "thigh": 32.2, "leg_opening": 17.8, "inseam": 81.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 28.6, "seat": 104.3, "thigh": 33, "leg_opening": 18.1, "inseam": 81.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 29, "seat": 106.8, "thigh": 33.8, "leg_opening": 18.4, "inseam": 81.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 29.8, "seat": 111.8, "thigh": 35.4, "leg_opening": 18.7, "inseam": 81.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 30.6, "seat": 116.8, "thigh": 37, "leg_opening": 19.3, "inseam": 82.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 104, "front_rise": 31.4, "seat": 121.8, "thigh": 38.6, "leg_opening": 19.9, "inseam": 82.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 109, "front_rise": 32.2, "seat": 126.8, "thigh": 40.2, "leg_opening": 20.5, "inseam": 82.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "200-classic-15-7oz-black",
+      "name": "Classic 15.7oz, Black",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-200-classic-tapered-15.7oz/M200CL.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 15.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": false
+      },
+      "sold": "one-washed",
+      "list_price": {
+        "amount": 276.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-200-classic-tapered-15.7oz/M200CL.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-200-classic-tapered-15.7oz/M200CL.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 25.8, "seat": 86.8, "thigh": 27.4, "leg_opening": 15.7, "inseam": 78.7}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 26.2, "seat": 89.3, "thigh": 28.2, "leg_opening": 16, "inseam": 78.7}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 26.6, "seat": 91.8, "thigh": 29, "leg_opening": 16.3, "inseam": 81.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 27, "seat": 94.3, "thigh": 29.8, "leg_opening": 16.6, "inseam": 81.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 27.4, "seat": 96.8, "thigh": 30.6, "leg_opening": 17.2, "inseam": 81.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81, "front_rise": 27.8, "seat": 99.3, "thigh": 31.4, "leg_opening": 17.5, "inseam": 81.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 28.2, "seat": 101.8, "thigh": 32.2, "leg_opening": 17.8, "inseam": 81.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 28.6, "seat": 104.3, "thigh": 33, "leg_opening": 18.1, "inseam": 81.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 29, "seat": 106.8, "thigh": 33.8, "leg_opening": 18.4, "inseam": 81.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 29.8, "seat": 111.8, "thigh": 35.4, "leg_opening": 18.7, "inseam": 81.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 30.6, "seat": 116.8, "thigh": 37, "leg_opening": 19.3, "inseam": 82.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 104, "front_rise": 31.4, "seat": 121.8, "thigh": 38.6, "leg_opening": 19.9, "inseam": 82.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 109, "front_rise": 32.2, "seat": 126.8, "thigh": 40.2, "leg_opening": 20.5, "inseam": 82.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "200-silk-15oz",
+      "name": "Silk 15oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-200-silk-tapered-15oz-zipper-fly/M200SL.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 15,
+        "composition": [
+          {"fibre": "cotton", "percent": 58},
+          {"fibre": "silk", "percent": 42}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 717.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-200-silk-tapered-15oz-zipper-fly/M200SL.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-200-silk-tapered-15oz-zipper-fly/M200SL.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 25.7, "seat": 86.8, "thigh": 27.4, "leg_opening": 15.7, "inseam": 76.2}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 26.1, "seat": 89.3, "thigh": 28.2, "leg_opening": 16, "inseam": 76.2}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 26.5, "seat": 91.8, "thigh": 29, "leg_opening": 16.3, "inseam": 81.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 26.9, "seat": 94.3, "thigh": 29.8, "leg_opening": 16.6, "inseam": 81.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 27.3, "seat": 96.8, "thigh": 30.6, "leg_opening": 17.2, "inseam": 81.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81.5, "front_rise": 27.7, "seat": 99.3, "thigh": 31.4, "leg_opening": 17.5, "inseam": 81.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 28.1, "seat": 101.8, "thigh": 32.2, "leg_opening": 17.8, "inseam": 81.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 28.5, "seat": 104.3, "thigh": 33, "leg_opening": 18.1, "inseam": 81.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 28.9, "seat": 106.8, "thigh": 33.8, "leg_opening": 18.4, "inseam": 81.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 29.7, "seat": 111.8, "thigh": 35.4, "leg_opening": 18.7, "inseam": 81.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 30.5, "seat": 116.8, "thigh": 37, "leg_opening": 19.3, "inseam": 83.8}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 104, "front_rise": 31.3, "seat": 121.8, "thigh": 38.6, "leg_opening": 19.9, "inseam": 83.8}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 109, "front_rise": 32.1, "seat": 126.8, "thigh": 40.2, "leg_opening": 20.5, "inseam": 83.8}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "200-cashmere-13-7oz",
+      "name": "Cashmere 13.7oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-200-cashmere-tapered-13.7oz-zipper-fly/M200CA.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 13.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 65},
+          {"fibre": "cashmere", "percent": 35}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 1230.5,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-200-cashmere-tapered-13.7oz-zipper-fly/M200CA.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-200-cashmere-tapered-13.7oz-zipper-fly/M200CA.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 26.7, "seat": 86.8, "thigh": 27.4, "leg_opening": 15.7, "inseam": 79.2}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 27.1, "seat": 89.3, "thigh": 28.2, "leg_opening": 16, "inseam": 79.2}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 27.5, "seat": 91.8, "thigh": 29, "leg_opening": 16.3, "inseam": 84.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 27.9, "seat": 94.3, "thigh": 29.8, "leg_opening": 16.6, "inseam": 84.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 28.3, "seat": 96.8, "thigh": 30.6, "leg_opening": 17.2, "inseam": 84.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81, "front_rise": 28.7, "seat": 99.3, "thigh": 31.4, "leg_opening": 17.5, "inseam": 84.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 29.1, "seat": 101.8, "thigh": 32.2, "leg_opening": 17.8, "inseam": 84.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 29.5, "seat": 104.3, "thigh": 33, "leg_opening": 18.1, "inseam": 84.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 29.9, "seat": 106.8, "thigh": 33.8, "leg_opening": 18.4, "inseam": 84.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 30.7, "seat": 111.8, "thigh": 35.4, "leg_opening": 18.7, "inseam": 84.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 31.5, "seat": 116.8, "thigh": 37, "leg_opening": 19.3, "inseam": 85.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 104, "front_rise": 32.3, "seat": 121.8, "thigh": 38.6, "leg_opening": 19.9, "inseam": 85.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 109, "front_rise": 33.1, "seat": 126.8, "thigh": 40.2, "leg_opening": 20.5, "inseam": 85.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "200-11oz",
+      "name": "11oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-200-tapered---11oz/MXJE1303.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 11,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 276.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-200-tapered---11oz/MXJE1303.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-200-tapered---11oz/MXJE1303.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 27.6, "seat": 91.8, "thigh": 29, "leg_opening": 16.3, "inseam": 83.8}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 28.4, "seat": 96.8, "thigh": 30.6, "leg_opening": 16.9, "inseam": 83.8}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 29.2, "seat": 101.8, "thigh": 32.2, "leg_opening": 17.5, "inseam": 83.8}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 30, "seat": 106.8, "thigh": 33.8, "leg_opening": 18.1, "inseam": 83.8}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 30.8, "seat": 111.8, "thigh": 35.4, "leg_opening": 18.7, "inseam": 83.8}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 31.6, "seat": 116.8, "thigh": 37, "leg_opening": 19.3, "inseam": 84.8}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "200-onigurumi-dyed",
+      "name": "Onigurumi Dyed",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-200-tapered---onigurumi-dyed/MMJE6300.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 15,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 369.1,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-200-tapered---onigurumi-dyed/MMJE6300.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-200-tapered---onigurumi-dyed/MMJE6300.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 75, "front_rise": 26.6, "seat": 91.8, "thigh": 29, "leg_opening": 16.3, "inseam": 81.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 77.5, "front_rise": 27, "seat": 94.3, "thigh": 29.8, "leg_opening": 16.6, "inseam": 81.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 80, "front_rise": 27.4, "seat": 96.8, "thigh": 30.6, "leg_opening": 16.9, "inseam": 81.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 82.5, "front_rise": 27.8, "seat": 99.3, "thigh": 31.4, "leg_opening": 17.2, "inseam": 81.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 85, "front_rise": 28.2, "seat": 101.8, "thigh": 32.2, "leg_opening": 17.5, "inseam": 81.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 87.5, "front_rise": 28.6, "seat": 104.3, "thigh": 33, "leg_opening": 17.8, "inseam": 81.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 90, "front_rise": 29, "seat": 106.8, "thigh": 33.8, "leg_opening": 18.1, "inseam": 81.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 95, "front_rise": 29.8, "seat": 111.8, "thigh": 35.4, "leg_opening": 18.7, "inseam": 81.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 100, "front_rise": 30.6, "seat": 116.8, "thigh": 37, "leg_opening": 19.3, "inseam": 82.3}}
+          ]
+        }
+      ]
+    }
+  ]
+}

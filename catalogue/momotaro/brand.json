@@ -1,0 +1,25 @@
+{
+  "id": "momotaro",
+  "name": "Momotaro Jeans",
+  "site": "https://www.momotaro-jeans.com",
+  "currency": "USD",
+  "sizing": "waist",
+  "tolerance": {
+    "value": 1,
+    "unit": "in"
+  },
+  "conventions": {
+    "waist": "around",
+    "seat": "around",
+    "thigh": "flat",
+    "leg_opening": "flat"
+  },
+  "measuring_points": {
+    "thigh": "at-crotch",
+    "seat": "unknown"
+  },
+  "method_source": {
+    "url": "https://www.momotaro-jeans.com/en_US/sizing-guide.html",
+    "seen": "2026-11-20"
+  }
+}

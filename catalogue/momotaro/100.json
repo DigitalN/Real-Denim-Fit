@@ -1,0 +1,682 @@
+{
+  "id": "100",
+  "brand": "momotaro",
+  "name": "#100",
+  "brand_label": "Straight",
+  "line": null,
+  "products": [
+    {
+      "id": "100-standard-14-7oz-indigo",
+      "name": "Standard 14.7oz, Indigo",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-standard-straight-14.7oz/M100ST.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 14.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 307.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-standard-straight-14.7oz/M100ST.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-standard-straight-14.7oz/M100ST.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 81.3}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 74.5, "front_rise": 29.1, "seat": 97.5, "thigh": 30.5, "leg_opening": 20.5, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 86.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 79.5, "front_rise": 29.9, "seat": 102.5, "thigh": 32.1, "leg_opening": 21.1, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 86.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 84.5, "front_rise": 30.7, "seat": 107.5, "thigh": 33.7, "leg_opening": 21.7, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 86.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 89.5, "front_rise": 31.5, "seat": 112.5, "thigh": 35.3, "leg_opening": 22.3, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 86.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 107, "front_rise": 34.3, "seat": 130, "thigh": 40.9, "leg_opening": 24.4, "inseam": 86.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 113, "front_rise": 35.1, "seat": 135, "thigh": 42.5, "leg_opening": 25, "inseam": 86.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-standard-14-7oz-black",
+      "name": "Standard 14.7oz, Black",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-standard-straight-14.7oz/M100ST.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 14.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 307.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-standard-straight-14.7oz/M100ST.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-standard-straight-14.7oz/M100ST.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 81.3}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 74.5, "front_rise": 29.1, "seat": 97.5, "thigh": 30.5, "leg_opening": 20.5, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 86.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 79.5, "front_rise": 29.9, "seat": 102.5, "thigh": 32.1, "leg_opening": 21.1, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 86.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 84.5, "front_rise": 30.7, "seat": 107.5, "thigh": 33.7, "leg_opening": 21.7, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 86.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 89.5, "front_rise": 31.5, "seat": 112.5, "thigh": 35.3, "leg_opening": 22.3, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 86.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 107, "front_rise": 34.3, "seat": 130, "thigh": 40.9, "leg_opening": 24.4, "inseam": 86.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 113, "front_rise": 35.1, "seat": 135, "thigh": 42.5, "leg_opening": 25, "inseam": 86.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-classic-15-7oz-indigo",
+      "name": "Classic 15.7oz, Indigo",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-classic-straight-15.7oz/M100CL.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 15.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": false
+      },
+      "sold": "one-washed",
+      "list_price": {
+        "amount": 276.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-classic-straight-15.7oz/M100CL.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-classic-straight-15.7oz/M100CL.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 83.8}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 74.5, "front_rise": 29.1, "seat": 97.5, "thigh": 30.5, "leg_opening": 20.5, "inseam": 83.8}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 88.8}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 79.5, "front_rise": 29.9, "seat": 102.5, "thigh": 32.1, "leg_opening": 21.1, "inseam": 88.8}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 88.8}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 84.5, "front_rise": 30.7, "seat": 107.5, "thigh": 33.7, "leg_opening": 21.7, "inseam": 88.8}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 88.8}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 89.5, "front_rise": 31.5, "seat": 112.5, "thigh": 35.3, "leg_opening": 22.3, "inseam": 88.8}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 88.8}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 88.8}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 88.8}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 107, "front_rise": 34.3, "seat": 130, "thigh": 40.9, "leg_opening": 24.4, "inseam": 88.8}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 113, "front_rise": 35.1, "seat": 135, "thigh": 42.5, "leg_opening": 25, "inseam": 88.8}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-classic-15-7oz-black",
+      "name": "Classic 15.7oz, Black",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-classic-straight-15.7oz/M100CL.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 15.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": false
+      },
+      "sold": "one-washed",
+      "list_price": {
+        "amount": 276.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-classic-straight-15.7oz/M100CL.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-classic-straight-15.7oz/M100CL.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 83.8}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 74.5, "front_rise": 29.1, "seat": 97.5, "thigh": 30.5, "leg_opening": 20.5, "inseam": 83.8}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 88.8}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 79.5, "front_rise": 29.9, "seat": 102.5, "thigh": 32.1, "leg_opening": 21.1, "inseam": 88.8}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 88.8}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 84.5, "front_rise": 30.7, "seat": 107.5, "thigh": 33.7, "leg_opening": 21.7, "inseam": 88.8}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 88.8}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 89.5, "front_rise": 31.5, "seat": 112.5, "thigh": 35.3, "leg_opening": 22.3, "inseam": 88.8}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 88.8}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 88.8}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 88.8}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 107, "front_rise": 34.3, "seat": 130, "thigh": 40.9, "leg_opening": 24.4, "inseam": 88.8}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 113, "front_rise": 35.1, "seat": 135, "thigh": 42.5, "leg_opening": 25, "inseam": 88.8}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-silk-15oz",
+      "name": "Silk 15oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-silk-straight-15oz-zipper-fly/M100SL.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 15,
+        "composition": [
+          {"fibre": "cotton", "percent": 58},
+          {"fibre": "silk", "percent": 42}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 717.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-silk-straight-15oz-zipper-fly/M100SL.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-silk-straight-15oz-zipper-fly/M100SL.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 81.3}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 74.5, "front_rise": 29.1, "seat": 97.5, "thigh": 30.5, "leg_opening": 20.5, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 86.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 79.5, "front_rise": 29.9, "seat": 102.5, "thigh": 32.1, "leg_opening": 21.1, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 86.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 84.5, "front_rise": 30.7, "seat": 107.5, "thigh": 33.7, "leg_opening": 21.7, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 86.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 89.5, "front_rise": 31.5, "seat": 112.5, "thigh": 35.3, "leg_opening": 22.3, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 86.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 107, "front_rise": 34.3, "seat": 130, "thigh": 40.9, "leg_opening": 24.4, "inseam": 87.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 113, "front_rise": 35.1, "seat": 135, "thigh": 42.5, "leg_opening": 25, "inseam": 87.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-cashmere-13-7oz",
+      "name": "Cashmere 13.7oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-cashmere-straight-13.7oz-zipper-fly/M100CA.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 13.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 65},
+          {"fibre": "cashmere", "percent": 35}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 1230.5,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-cashmere-straight-13.7oz-zipper-fly/M100CA.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-cashmere-straight-13.7oz-zipper-fly/M100CA.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 81.3}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 74.5, "front_rise": 29.1, "seat": 97.5, "thigh": 30.5, "leg_opening": 20.5, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 86.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 79.5, "front_rise": 29.9, "seat": 102.5, "thigh": 32.1, "leg_opening": 21.1, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 86.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 84.5, "front_rise": 30.7, "seat": 107.5, "thigh": 33.7, "leg_opening": 21.7, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 86.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 89.5, "front_rise": 31.5, "seat": 112.5, "thigh": 35.3, "leg_opening": 22.3, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 86.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 107, "front_rise": 34.3, "seat": 130, "thigh": 40.9, "leg_opening": 24.4, "inseam": 86.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 113, "front_rise": 35.1, "seat": 135, "thigh": 42.5, "leg_opening": 25, "inseam": 86.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-natural-indigo-12-2oz",
+      "name": "Natural Indigo 12.2oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-natural-indigo-straight-12.2oz/MMJZ0109.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 12.2,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 2563.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-natural-indigo-straight-12.2oz/MMJZ0109.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-natural-indigo-straight-12.2oz/MMJZ0109.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 87.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 87.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 87.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-11oz",
+      "name": "11oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---11oz/MXJE1405.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 11,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 276.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---11oz/MXJE1405.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---11oz/MXJE1405.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.7, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 88.8}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.4, "seat": 105, "thigh": 32.9, "inseam": 88.8}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.2, "seat": 110, "thigh": 34.5, "inseam": 88.8}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 32, "seat": 115, "thigh": 36.1, "inseam": 88.8}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.8, "seat": 120, "thigh": 37.7, "inseam": 88.8}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 33.6, "seat": 125, "thigh": 39.3, "inseam": 88.8}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-high-fade-blue",
+      "name": "High Fade Blue",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---high-fade-blue/MXJE1403.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": null,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 369.1,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---high-fade-blue/MXJE1403.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---high-fade-blue/MXJE1403.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 103, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 88.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-sakura-dyed",
+      "name": "Sakura Dyed",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---sakura-dyed/MXJE1404.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": null,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 430.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---sakura-dyed/MXJE1404.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---sakura-dyed/MXJE1404.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 86.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-shikon",
+      "name": "Shikon",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---shikon/MMJB6401.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": null,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 389.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---shikon/MMJB6401.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---shikon/MMJB6401.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 71, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 80.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 76, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 85.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 81, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 85.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 86, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 85.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 91, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 85.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 96, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 85.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 101, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 86.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-black-sesame",
+      "name": "Black Sesame",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---black-sesame/MMJB6402.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": null,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 389.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---black-sesame/MMJB6402.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---black-sesame/MMJB6402.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 87.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-kyotomontsuki-dyed",
+      "name": "Kyotomontsuki Dyed",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---kyotomontsuki-dyed/MMJB6404.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": null,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 389.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---kyotomontsuki-dyed/MMJB6404.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---kyotomontsuki-dyed/MMJB6404.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "seat": 115, "thigh": 36.1, "leg_opening": 22.6, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 87.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-bc",
+      "name": "BC",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---bc/MMJZ6402.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": null,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 428.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---bc/MMJZ6402.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---bc/MMJZ6402.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 81.3}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 74.5, "front_rise": 29.1, "seat": 97.5, "thigh": 30.5, "leg_opening": 20.5, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 86.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 79.5, "front_rise": 29.9, "seat": 102.5, "thigh": 32.1, "leg_opening": 21.1, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 86.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 84.5, "front_rise": 30.7, "seat": 107.5, "thigh": 33.7, "leg_opening": 21.7, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 86.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 89.5, "front_rise": 31.5, "seat": 112.5, "thigh": 35.3, "leg_opening": 22.3, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "thigh": 36.1, "leg_opening": 22.6, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 87.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 107, "front_rise": 34.3, "seat": 130, "thigh": 40.9, "leg_opening": 24.4, "inseam": 87.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 112, "front_rise": 35.1, "seat": 135, "thigh": 42.5, "leg_opening": 25, "inseam": 87.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100-moss",
+      "name": "Moss",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---moss/MMJZ6403.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": null,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 428.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---moss/MMJZ6403.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-100-straight---moss/MMJZ6403.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 28.7, "seat": 95, "thigh": 29.7, "leg_opening": 20.2, "inseam": 81.3}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 74.5, "front_rise": 29.1, "seat": 97.5, "thigh": 30.5, "leg_opening": 20.5, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 29.5, "seat": 100, "thigh": 31.3, "leg_opening": 20.8, "inseam": 86.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 79.5, "front_rise": 29.9, "seat": 102.5, "thigh": 32.1, "leg_opening": 21.1, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 30.3, "seat": 105, "thigh": 32.9, "leg_opening": 21.4, "inseam": 86.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 84.5, "front_rise": 30.7, "seat": 107.5, "thigh": 33.7, "leg_opening": 21.7, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 31.1, "seat": 110, "thigh": 34.5, "leg_opening": 22, "inseam": 86.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 89.5, "front_rise": 31.5, "seat": 112.5, "thigh": 35.3, "leg_opening": 22.3, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 31.9, "thigh": 36.1, "leg_opening": 22.6, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 32.7, "seat": 120, "thigh": 37.7, "leg_opening": 23.2, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 33.5, "seat": 125, "thigh": 39.3, "leg_opening": 23.8, "inseam": 87.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 107, "front_rise": 34.3, "seat": 130, "thigh": 40.9, "leg_opening": 24.4, "inseam": 87.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 112, "front_rise": 35.1, "seat": 135, "thigh": 42.5, "leg_opening": 25, "inseam": 87.3}}
+          ]
+        }
+      ]
+    }
+  ]
+}
