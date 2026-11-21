@@ -1,0 +1,11 @@
+{
+  "id": "rogue-territory",
+  "name": "Rogue Territory",
+  "site": "https://www.rogueterritory.com",
+  "currency": "USD",
+  "sizing": "waist",
+  "tolerance": {"value": 0.25, "unit": "in"},
+  "conventions": {"waist": "flat", "seat": "flat", "thigh": "flat", "knee": "flat", "leg_opening": "flat"},
+  "measuring_points": {"thigh": "1in-below-crotch", "knee": "13in-below-crotch", "seat": "unknown"},
+  "method_source": {"url": "https://www.rogueterritory.com/pages/sizing-guide", "seen": "2026-11-20"}
+}

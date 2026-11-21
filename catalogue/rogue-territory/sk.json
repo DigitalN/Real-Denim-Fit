@@ -1,0 +1,71 @@
+{
+  "id": "sk",
+  "brand": "rogue-territory",
+  "name": "SK",
+  "brand_label": "Skinny Leg, Mid-Rise",
+  "line": null,
+  "products": [
+    {
+      "id": "sk-15oz-indigo",
+      "name": "15oz Indigo",
+      "url": "https://www.rogueterritory.com/products/sk-15-oz",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 15.25, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
+      "sold": "raw",
+      "list_price": {"amount": 265, "currency": "USD", "url": "https://www.rogueterritory.com/products/sk-15-oz", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.rogueterritory.com/products/sk-15-oz", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": true,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 14.5, "front_rise": 9.5, "back_rise": 13.75, "thigh": 10.5, "knee": 6.75, "leg_opening": 6, "inseam": 36}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 15, "front_rise": 9.5, "back_rise": 14, "thigh": 10.75, "knee": 7, "leg_opening": 6.25, "inseam": 36}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 15.5, "front_rise": 9.75, "back_rise": 14.25, "thigh": 11, "knee": 7.25, "leg_opening": 6.5, "inseam": 36}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 16, "front_rise": 9.75, "back_rise": 14.25, "thigh": 11.25, "knee": 7.5, "leg_opening": 6.75, "inseam": 36}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 16.5, "front_rise": 10, "back_rise": 14.5, "thigh": 11.5, "knee": 7.75, "leg_opening": 7, "inseam": 36}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 17, "front_rise": 10.25, "back_rise": 14.75, "thigh": 11.75, "knee": 8, "leg_opening": 7.25, "inseam": 36}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 17.5, "front_rise": 10.25, "back_rise": 14.75, "thigh": 12, "knee": 8.25, "leg_opening": 7.5, "inseam": 36}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 18, "front_rise": 10.5, "back_rise": 15, "thigh": 12.25, "knee": 8.5, "leg_opening": 7.75, "inseam": 36}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 18.5, "front_rise": 10.5, "back_rise": 15, "thigh": 12.5, "knee": 8.75, "leg_opening": 8, "inseam": 36}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 19.5, "front_rise": 10.75, "back_rise": 15.5, "thigh": 13.25, "knee": 9.25, "leg_opening": 8.5, "inseam": 36}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sk-15oz-stealth",
+      "name": "15oz Stealth",
+      "url": "https://www.rogueterritory.com/products/stealth-sk",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 15, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
+      "sold": "raw",
+      "list_price": {"amount": 265, "currency": "USD", "url": "https://www.rogueterritory.com/products/stealth-sk", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.rogueterritory.com/products/stealth-sk", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": true,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 14.5, "front_rise": 9.5, "back_rise": 13.75, "thigh": 10.25, "knee": 6.75, "leg_opening": 6, "inseam": 36}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 15, "front_rise": 9.75, "back_rise": 14, "thigh": 10.5, "knee": 7, "leg_opening": 6.25, "inseam": 36}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 15.5, "front_rise": 9.75, "back_rise": 14, "thigh": 10.75, "knee": 7.25, "leg_opening": 6.5, "inseam": 36}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 16, "front_rise": 10, "back_rise": 14.25, "thigh": 11, "knee": 7.5, "leg_opening": 6.75, "inseam": 36}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 16.5, "front_rise": 10, "back_rise": 14.25, "thigh": 11.25, "knee": 7.75, "leg_opening": 7, "inseam": 36}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 17, "front_rise": 10.25, "back_rise": 14.5, "thigh": 11.5, "knee": 8, "leg_opening": 7.25, "inseam": 36}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 17.5, "front_rise": 10.25, "back_rise": 14.5, "thigh": 11.75, "knee": 8.25, "leg_opening": 7.5, "inseam": 36}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 18, "front_rise": 10.5, "back_rise": 14.75, "thigh": 12, "knee": 8.5, "leg_opening": 7.75, "inseam": 36}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 18.5, "front_rise": 10.75, "back_rise": 15, "thigh": 12.5, "knee": 8.75, "leg_opening": 8, "inseam": 36}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 19.5, "front_rise": 10.75, "back_rise": 15.25, "thigh": 13, "knee": 9.25, "leg_opening": 8.5, "inseam": 36}}
+          ]
+        }
+      ]
+    }
+  ]
+}

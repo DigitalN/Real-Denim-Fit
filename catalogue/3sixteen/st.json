@@ -1,0 +1,40 @@
+{
+  "id": "st",
+  "brand": "3sixteen",
+  "name": "ST",
+  "brand_label": "Slim Tapered",
+  "line": null,
+  "products": [
+    {
+      "id": "st-120x",
+      "name": "120x Shadow Selvedge",
+      "url": "https://www.3sixteen.com/products/st-120x-slim-leg-shadow-selvedge-denim",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
+      "sold": "raw",
+      "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/st-120x-slim-leg-shadow-selvedge-denim", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/st-120x-slim-leg-shadow-selvedge-denim", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 29, "front_rise": 10.25, "back_rise": 13.5, "inseam": 37, "thigh": 11, "knee": 8, "leg_opening": 7.5}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 30, "front_rise": 10.5, "back_rise": 13.75, "inseam": 37, "thigh": 11.25, "knee": 8.25, "leg_opening": 7.625}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 31, "front_rise": 10.75, "back_rise": 13.875, "inseam": 37, "thigh": 11.5, "knee": 8.375, "leg_opening": 7.75}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 32, "front_rise": 11, "back_rise": 14, "inseam": 37, "thigh": 11.875, "knee": 8.625, "leg_opening": 8}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 33, "front_rise": 11, "back_rise": 14.25, "inseam": 37, "thigh": 12, "knee": 8.75, "leg_opening": 8.25}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 34, "front_rise": 11.25, "back_rise": 14.375, "inseam": 37, "thigh": 12.25, "knee": 8.875, "leg_opening": 8.375}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 35, "front_rise": 11.5, "back_rise": 14.75, "inseam": 37, "thigh": 12.75, "knee": 9, "leg_opening": 8.5}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 37, "front_rise": 11.5, "back_rise": 14.75, "inseam": 37, "thigh": 13, "knee": 9.125, "leg_opening": 8.625}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 39, "front_rise": 11.75, "back_rise": 14.75, "inseam": 37, "thigh": 13.375, "knee": 9.25, "leg_opening": 8.875}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 41, "front_rise": 12, "back_rise": 15, "inseam": 37, "thigh": 14, "knee": 9.5, "leg_opening": 9.375}}
+          ]
+        }
+      ]
+    }
+  ]
+}
