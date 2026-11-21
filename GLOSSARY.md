@@ -14,6 +14,10 @@ _Avoid_: maker, label, manufacturer
 A brand's pattern for a pair of jeans, such as the Weird Guy, 634S or Lean Dean, made in a range of sizes and often in many fabrics.
 _Avoid_: fit, model, style
 
+**Line**:
+Whether a brand files a cut as men's, women's or unisex.
+_Avoid_: gender, category, department
+
 **Product**:
 One cut in one fabric: the thing someone buys, with its own sizes, list price and shrinkage.
 _Avoid_: item, SKU, jean
