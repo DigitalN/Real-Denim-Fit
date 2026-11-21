@@ -138,13 +138,55 @@ jobs:
         with:
           targets: ${{ matrix.rust-targets }}
 
+      # One cache per system, saved from these runs on main and restored by
+      # the next release. It holds the compiled dependencies for every target
+      # folder, so both halves of the universal macOS build, and ~/.cargo/bin.
+      # GitHub deletes a cache nobody has used for 7 days, so a release more
+      # than a week after the last one starts cold.
       - name: Cache cargo
         uses: Swatinem/rust-cache@v2
         with:
-          key: release
+          # rust-cache's own key covers the crates' Cargo.toml files (with
+          # their versions blanked) and Cargo.lock, but not the root
+          # Cargo.toml, where [profile.release] lives. Without this hash, a
+          # profile change would restore the old cache as an exact match,
+          # rebuild everything, then skip saving it as "up to date", and every
+          # later release would rebuild everything again. Version bumps don't
+          # touch the root Cargo.toml.
+          key: release-${{ hashFiles('Cargo.toml') }}
+          # Keep what was compiled even if a later step fails, such as an
+          # upload, so re-running the release doesn't start from scratch.
+          cache-on-failure: true
 
+      - name: Install cargo-binstall
+        id: binstall
+        continue-on-error: true
+        uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-binstall
+
+      # Tauri publishes a ready-made cargo-tauri with every tauri-cli release,
+      # as cargo-tauri-<target>.zip. The crate's binstall metadata marks only
+      # the two x86_64 targets as zip, so --pkg-fmt zip is needed on Apple
+      # silicon runners. --strategies crate-meta-data means "Tauri's own
+      # download or nothing", so it never quietly compiles; if the download
+      # fails, the step builds from source instead, which is slow but works.
       - name: Install the Tauri CLI
-        run: cargo install tauri-cli --version "^2.0" --locked
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          BINSTALL_OK: ${{ steps.binstall.outcome == 'success' }}
+        run: |
+          set -euo pipefail
+          if [ "$BINSTALL_OK" = "true" ] && cargo binstall tauri-cli --version '^2' \
+               --pkg-fmt zip --strategies crate-meta-data \
+               --disable-telemetry --no-confirm; then
+            echo "Installed the ready-made Tauri CLI."
+          else
+            echo "::warning::Couldn't download a ready-made Tauri CLI, so building it from source."
+            cargo install tauri-cli --version "^2.0" --locked
+          fi
+          cargo tauri --version
 
       - name: Build, sign the update files and upload to the draft
         uses: tauri-apps/tauri-action@v1
