@@ -1,0 +1,77 @@
+# Checks every pull request and every push to main.
+#
+# Runners: the Rust jobs run on macOS and Windows, the two systems the app
+# ships on, and not on Linux. Building `src-tauri` on Linux needs WebKitGTK
+# and friends installed with apt, for a build that nobody ever uses, and a
+# Linux-only package problem would fail CI without telling us anything about
+# the real app. On macOS and Windows the system webview is already there, so
+# there is nothing to install, and a break on either system shows up here
+# instead of in the middle of a release. The repo is public, so both runners
+# cost nothing.
+
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  rust:
+    name: Rust (${{ matrix.name }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: macOS
+            os: macos-latest
+            fmt: true
+          - name: Windows
+            os: windows-latest
+            fmt: false
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Cache cargo
+        uses: Swatinem/rust-cache@v2
+        with:
+          # Only main writes the cache, so pull requests can't fill it with
+          # anything that a later release build would then pick up.
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+
+      - name: Check formatting
+        if: matrix.fmt
+        run: cargo fmt --all --check
+
+      - name: Clippy
+        run: cargo clippy --workspace --all-targets --locked -- -D warnings
+
+      # This includes the catalogue validation tests.
+      - name: Tests
+        run: cargo test --workspace --locked
+
+  workflows:
+    name: Workflow files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: actionlint
+        uses: docker://rhysd/actionlint:1.7.12
+        with:
+          args: -color
