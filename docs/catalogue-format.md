@@ -12,6 +12,12 @@ catalogue/
     └── 555s.json
 ```
 
+## What goes in
+
+- **Every denim jeans product whose page is on the brand's site**, whether or not it's sold out. The app never shows stock, and a sold-out pair can still be someone's reference pair or a secondhand find.
+- **Men's, women's and unisex cuts alike**, each with its `line`.
+- **Denim only.** Leave out duck canvas, herringbone, corduroy, linen, twill trousers, shorts, and worn or pre-owned pairs.
+
 ## Rules
 
 - **Record numbers exactly as the brand publishes them**, in its unit and convention, with no converting or rounding. The app converts. That way a reviewer can check every number against the source page.
@@ -64,6 +70,7 @@ Any of them can also be `"unknown"`, which means the brand doesn't say where it 
   "brand": "iron-heart",
   "name": "634S",
   "brand_label": "Slim Straight",
+  "line": "men",
   "products": [
     {
       "id": "634s-21oz-indigo",
@@ -98,6 +105,7 @@ Any of them can also be `"unknown"`, which means the brand doesn't say where it 
 
 **On the cut:**
 - `brand_label` is the brand's own name for the fit. It's shown in the app but never used for matching ([ADR 0008](adr/0008-leg-shape-and-rise-from-the-numbers.md)). Use `null` if there isn't one.
+- `line` is `"men"`, `"women"` or `"unisex"`, as the brand files the cut. Use `null` if the brand doesn't say. It's shown as a label and drives a filter, but matching ignores it.
 
 **On a product:**
 - `status` is `"current"`, or `"discontinued"` once the product is gone from the brand's site. `status_seen` is the date that was last checked.

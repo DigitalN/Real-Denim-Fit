@@ -102,6 +102,7 @@ Ease is garment minus body, shown flat in inches here, for rigid denim after its
 - **Without a reference pair,** a one-line note sits at the top: "Matched from your body and typical ease. Adding a pair you know makes this sharper."
 - **Filters:**
   - brand and price, where the **list price** is converted to your currency and shown as "about"
+  - men's and women's cuts, both ticked by default, following each cut's **line**
   - try-on brands only
   - **fabric weight** range
   - "Sanforized only", off by default
@@ -120,6 +121,8 @@ Ease is garment minus body, shown flat in inches here, for rigid denim after its
 ## The catalogue
 
 **Brands for the first build:** Iron Heart, Naked & Famous, 3sixteen, Nudie, Momotaro and Rogue Territory.
+
+**What's included:** every denim jeans product whose page is on the brand's site, including sold-out ones, from men's, women's and unisex lines. Anything that isn't denim is left out: duck canvas, herringbone, corduroy, and so on.
 
 **What's kept for every number:**
 - the source link and the date it was seen
