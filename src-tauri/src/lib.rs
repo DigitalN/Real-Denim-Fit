@@ -10,11 +10,9 @@ use std::fs;
 use std::path::PathBuf;
 
 use fit_core::after_wash::{after_wash, Washed};
-use fit_core::catalogue::{Brand, Catalogue, Product};
+use fit_core::catalogue::{product_key, Brand, Catalogue, ChartState, Cut, Effective, Product};
 use fit_core::ease::EaseTable;
-use fit_core::matching::{
-    find_matches_prepared, pair_readings, prepare, Filters, Prepared, Results,
-};
+use fit_core::matching::{find_matches_prepared, pair_readings, prepare, Filters, Prepared, Results};
 use fit_core::pair_ease::{pair_ease, PairEase};
 use fit_core::profile::{Body, Profile, ReferencePair};
 use serde::Serialize;
@@ -58,26 +56,22 @@ fn load_state(app: tauri::AppHandle) -> Result<Value, String> {
 fn save_state(app: tauri::AppHandle, state: Value) -> Result<(), String> {
     let path = state_file(&app)?;
     let tmp = path.with_extension("json.tmp");
-    fs::write(
-        &tmp,
-        serde_json::to_vec_pretty(&state).map_err(|e| e.to_string())?,
-    )
-    .map_err(|e| e.to_string())?;
+    fs::write(&tmp, serde_json::to_vec_pretty(&state).map_err(|e| e.to_string())?).map_err(|e| e.to_string())?;
     fs::rename(&tmp, &path).map_err(|e| e.to_string())
 }
 
 #[derive(Serialize)]
 pub struct ProductSummary<'a> {
-    id: &'a str,
+    /// `<brand>/<product>`.
+    id: String,
+    cut_id: &'a str,
     cut: &'a str,
+    brand_label: Option<&'a str>,
     name: &'a str,
-    fabric: &'a str,
     fabric_weight_oz: Option<f64>,
-    fabric_state: Option<&'a str>,
-    composition: &'a str,
     elastane_percent: f64,
     sanforized: Option<bool>,
-    on_brands_site: bool,
+    current: bool,
     url: &'a str,
     list_price: Option<&'a fit_core::catalogue::ListPrice>,
     sizes: Vec<&'a str>,
@@ -88,7 +82,6 @@ pub struct BrandSummary<'a> {
     id: &'a str,
     name: &'a str,
     site: &'a str,
-    says_where_it_measures: bool,
     sold_in_lengths: bool,
     products: Vec<ProductSummary<'a>>,
 }
@@ -103,26 +96,23 @@ pub struct CatalogueIndex<'a> {
     default_currency: String,
 }
 
-fn summary(p: &Product) -> ProductSummary<'_> {
-    let sizes = p
-        .charts
-        .first()
-        .map(|c| c.sizes.iter().map(|s| s.size.as_str()).collect())
-        .unwrap_or_default();
+fn summary<'a>(brand: &'a Brand, cut: &'a Cut, p: &'a Product) -> ProductSummary<'a> {
+    let chart = p.chart(ChartState::AfterWash).or(p.chart(ChartState::AsSold));
     ProductSummary {
-        id: &p.id,
-        cut: &p.cut,
+        id: product_key(&brand.id, &p.id),
+        cut_id: &cut.id,
+        cut: &cut.name,
+        brand_label: cut.brand_label.as_deref(),
         name: &p.name,
-        fabric: &p.fabric,
-        fabric_weight_oz: p.fabric_weight_oz,
-        fabric_state: p.fabric_state.as_deref(),
-        composition: &p.composition,
-        elastane_percent: p.elastane_percent,
-        sanforized: p.sanforized,
-        on_brands_site: p.on_brands_site,
+        fabric_weight_oz: p.fabric.weight_oz,
+        elastane_percent: p.fabric.elastane_percent(),
+        sanforized: p.fabric.sanforized,
+        current: p.is_current(),
         url: &p.url,
         list_price: p.list_price.as_ref(),
-        sizes,
+        sizes: chart
+            .map(|c| c.sizes.iter().map(|s| s.label.as_str()).collect())
+            .unwrap_or_default(),
     }
 }
 
@@ -148,9 +138,8 @@ pub fn index(data: &Data) -> CatalogueIndex<'static> {
                 id: &b.id,
                 name: &b.name,
                 site: &b.site,
-                says_where_it_measures: b.says_where_it_measures,
-                sold_in_lengths: b.sold_in_lengths,
-                products: b.products.iter().map(summary).collect(),
+                sold_in_lengths: b.sold_in_lengths(),
+                products: b.products().map(|(c, p)| summary(b, c, p)).collect(),
             })
             .collect(),
         currencies,
@@ -173,41 +162,41 @@ pub fn matches(data: &Data, profile: &Profile, filters: &Filters) -> Results {
 #[derive(Serialize)]
 pub struct ProductDetails {
     brand: Brand,
+    cut_id: String,
+    cut: String,
+    brand_label: Option<String>,
     product: Product,
+    /// Each chart's conventions, measuring points and tolerance, with what
+    /// it inherits from the brand filled in.
+    effective: Vec<Effective>,
     washed: Option<Washed>,
 }
 
 /// Everything about one product: its charts with their sources, and its
 /// as-sold and after-wash measurements side by side.
 #[tauri::command]
-fn product_details(
-    data: tauri::State<'_, Data>,
-    product_id: String,
-) -> Result<ProductDetails, String> {
+fn product_details(data: tauri::State<'_, Data>, product_id: String) -> Result<ProductDetails, String> {
     details(&data, &product_id)
 }
 
 pub fn details(data: &Data, product_id: &str) -> Result<ProductDetails, String> {
-    let (brand, product) = data
-        .catalogue
-        .product(product_id)
-        .ok_or("No such product")?;
-    let mut brand = brand.clone();
-    brand.products.clear();
+    let (brand, cut, product) = data.catalogue.product(product_id).ok_or("No such product")?;
+    let mut shown = brand.clone();
+    shown.cuts.clear();
     Ok(ProductDetails {
-        brand,
+        brand: shown,
+        cut_id: cut.id.clone(),
+        cut: cut.name.clone(),
+        brand_label: cut.brand_label.clone(),
         product: product.clone(),
-        washed: after_wash(product),
+        effective: product.charts.iter().map(|c| c.effective(brand)).collect(),
+        washed: after_wash(brand, product),
     })
 }
 
 /// A reference pair's own ease against the body, and the room it suggests.
 #[tauri::command]
-fn reference_pair_ease(
-    data: tauri::State<'_, Data>,
-    body: Body,
-    pair: ReferencePair,
-) -> Option<PairEase> {
+fn reference_pair_ease(data: tauri::State<'_, Data>, body: Body, pair: ReferencePair) -> Option<PairEase> {
     own_ease(&data, &body, &pair)
 }
 

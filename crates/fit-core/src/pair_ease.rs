@@ -18,7 +18,7 @@ pub enum Place {
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct PointEase {
     pub measurement: Measurement,
-    /// Where on the pair, such as "at the crotch" or "13″ below the crotch".
+    /// Where on the pair, such as "at the crotch" or "33 cm (13″) below the crotch".
     pub at: &'static str,
     /// Ease all the way around, cm, as the body was measured.
     pub ease_around: f64,
@@ -44,25 +44,25 @@ pub fn pair_ease(body: &Body, pair: &PairReadings, ease: &EaseTable) -> PairEase
         ),
         (
             Measurement::Thigh,
-            "1″ below the crotch",
+            "2.5 cm (1″) below the crotch",
             pair.thigh_1in,
             body.thigh_at(ThighPoint::OneInchBelow),
         ),
         (
             Measurement::Knee,
-            "12″ below the crotch",
+            "30.5 cm (12″) below the crotch",
             pair.knee_12in,
             body.leg_at(KneePoint::Below12),
         ),
         (
             Measurement::Knee,
-            "13″ below the crotch",
+            "33 cm (13″) below the crotch",
             pair.knee_13in,
             body.leg_at(KneePoint::Below13),
         ),
         (
             Measurement::Knee,
-            "14″ below the crotch",
+            "35.5 cm (14″) below the crotch",
             pair.knee_14in,
             body.leg_at(KneePoint::Below14),
         ),
@@ -113,8 +113,5 @@ pub fn pair_ease(body: &Body, pair: &PairReadings, ease: &EaseTable) -> PairEase
             miss(*a).total_cmp(&miss(*b))
         })
     };
-    PairEase {
-        points,
-        suggested_room,
-    }
+    PairEase { points, suggested_room }
 }

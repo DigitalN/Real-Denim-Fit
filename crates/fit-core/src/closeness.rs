@@ -21,11 +21,7 @@ pub fn closeness(value: f64, target: &Target) -> f64 {
             } else if value > high + 1e-9 {
                 beyond(value - high)
             } else {
-                let half = if value >= middle {
-                    high - middle
-                } else {
-                    middle - low
-                };
+                let half = if value >= middle { high - middle } else { middle - low };
                 if half <= 0.0 {
                     100.0
                 } else {

@@ -106,9 +106,12 @@ textarea { min-height: 5rem; }
 .choice input { display: none; }
 .choice:has(input:checked) { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 
-.guide { display: grid; grid-template-columns: 220px 1fr; gap: 1.6rem; align-items: start; }
-.guide svg { width: 100%; height: auto; }
-@media (max-width: 760px) { .guide { grid-template-columns: 1fr; } .guide svg { max-width: 220px; } }
+.guide { display: grid; grid-template-columns: 280px 1fr; gap: 1.8rem; align-items: start; }
+.guide-drawing { color: var(--ink); width: 280px; aspect-ratio: 3 / 4; }
+.guide-drawing svg { width: 100%; height: 100%; display: block; }
+.steps { padding-left: 1.2rem; }
+.steps li { margin: 0.3rem 0; }
+@media (max-width: 760px) { .guide { grid-template-columns: 1fr; } .guide-drawing { width: 230px; } }
 .progress { height: 4px; background: var(--line); border-radius: 2px; margin: 0 0 1rem; }
 .progress > div { height: 100%; background: var(--accent); border-radius: 2px; }
 
@@ -155,7 +158,3 @@ tr.current td { background: var(--accent-soft); }
   border: 3px solid var(--line); border-top-color: var(--accent); animation: spin 0.9s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
-.drawing-line { stroke: var(--copper); }
-.drawing-body { fill: var(--accent-soft); stroke: var(--muted); }
-.drawing-mark { fill: var(--copper); }
-.drawing-text { fill: var(--muted); font-size: 11px; font-family: inherit; }

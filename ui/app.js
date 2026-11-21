@@ -164,158 +164,187 @@ function shownValue(m, cm) {
   return m === "waist" ? cm * 2 : cm;
 }
 
-// ------------------------------------------------------------ welcome ----
+// ---------------------------------------------------------- the guide ----
+// The guide's words and drawings come from ui/guide/steps.json and its SVGs
+// (written separately); this file only maps each screen to the value it
+// stores.
 
-function renderWelcome() {
-  $app.innerHTML = `
-  <div class="narrow">
-    <h1>Real Denim Fit</h1>
-    <p>Find raw denim jeans worth looking into, in the right size, from your own measurements.</p>
-    <div class="card">
-      <h2 style="margin-top:0">Before you start</h2>
-      <ul>
-        <li>Use a <b>soft tape measure</b>. Keep it snug against you without pressing in.</li>
-        <li>Measure over <b>thin underwear</b>, not over jeans.</li>
-        <li>Have a few strips of masking tape and a pen to hand for marking spots on your leg.</li>
-        <li>It takes about five minutes. Everything you enter stays on this computer.</li>
-      </ul>
-      <label>Units</label>
-      ${choiceGroup("units", [["cm", "Centimetres"], ["in", "Inches"]], S.settings.units)}
-    </div>
-    <div class="actions"><span></span><button class="primary" id="start">Start measuring</button></div>
-  </div>`;
-  $app.querySelectorAll('input[name="units"]').forEach((r) =>
-    r.addEventListener("change", () => {
-      S.settings.units = r.value;
-      save();
-    }),
-  );
-  document.getElementById("start").onclick = () => (location.hash = "#/guide/0");
+let GUIDE = null;
+const SVG_CACHE = new Map();
+
+async function loadGuide() {
+  if (GUIDE) return GUIDE;
+  try {
+    const r = await fetch("guide/steps.json");
+    GUIDE = r.ok ? await r.json() : [];
+  } catch {
+    GUIDE = [];
+  }
+  return GUIDE;
 }
 
-// --------------------------------------------------------- body guide ----
+async function guideDrawing(image) {
+  if (!image) return "";
+  if (!SVG_CACHE.has(image)) {
+    try {
+      const r = await fetch(`guide/${image}`);
+      SVG_CACHE.set(image, r.ok ? await r.text() : "");
+    } catch {
+      SVG_CACHE.set(image, "");
+    }
+  }
+  return SVG_CACHE.get(image);
+}
 
-const BODY_STEPS = [
-  {
-    title: "Waist",
-    drawing: "waist",
-    fields: [["waist", "Around your waist"]],
-    lines: [
-      "Measure where you wear your jeans. That's often lower than your natural waist, around the top of your hip bones.",
-      "Keep the tape level all the way round and breathe out normally.",
-    ],
-    mistake: "Measuring your natural waist, above the belly button, when your jeans sit lower.",
-  },
-  {
-    title: "Seat",
-    drawing: "seat",
-    fields: [["seat", "Around the fullest part"]],
-    lines: ["Stand with your feet together and measure around the fullest part of your seat.", "Check in a mirror that the tape is level at the back."],
-    mistake: "The tape riding up at the back, which makes the seat look smaller than it is.",
-  },
-  {
-    title: "Thigh",
-    drawing: "thigh",
-    fields: [
-      ["thigh_top", "Around the fullest part at the top"],
-      ["thigh_1in", "Again, 2.5 cm (1″) lower"],
-    ],
-    lines: ["Stand with your weight on both feet and measure around the top of one leg, as high as the tape goes.", "Then slide the tape 2.5 cm (1″) down and measure again."],
-    mistake: "Tensing the leg or pulling the tape tight, which makes the thigh look smaller.",
-  },
-  {
-    title: "Inseam you want",
-    drawing: "inseam",
-    fields: [["inseam_wanted", "From the crotch to where you want the hem"]],
-    lines: [
-      "Measure down the inside of your leg, from the crotch to where you want the jeans to end, in the shoes you'll wear.",
-      "Want cuffs or a stack? Add the extra now: about 5–8 cm (2–3″) for a double cuff, 3–8 cm for a stack.",
-    ],
-    mistake: "Measuring down the outside of the leg, or reading an old pair's inseam that was already too short.",
-  },
-  {
-    title: "Leg",
-    drawing: "leg",
-    fields: [
-      ["leg_12in", "Around the leg 30.5 cm (12″) below the crotch"],
-      ["leg_13in", "33 cm (13″) below"],
-      ["leg_14in", "35.5 cm (14″) below"],
-      ["leg_half_inseam", "Halfway down the inseam"],
-    ],
-    lines: [
-      "Brands measure the knee at different heights, so measure around your leg at each one. Put a strip of tape on the inside of your leg at each spot first.",
-      "Stand straight with the knee relaxed, not bent.",
-    ],
-    mistake: "Measuring the heights from the floor instead of down from the crotch.",
-  },
-];
+/** The stored value a guide screen fills in, or null for intro screens. */
+function guideField(step) {
+  const m = step.measurement;
+  if (!m) return null;
+  const point = step.point;
+  if (step.for === "body") {
+    if (m === "thigh") return point === "1in-below-crotch" ? "thigh_1in" : "thigh_top";
+    if (m === "knee") return { "12in-below-crotch": "leg_12in", "13in-below-crotch": "leg_13in", "14in-below-crotch": "leg_14in", "half-inseam": "leg_half_inseam" }[point];
+    if (m === "inseam") return "inseam_wanted";
+    return m; // waist, seat
+  }
+  if (m === "thigh") return point === "1in-below-crotch" ? "thigh_1in" : "thigh_crotch";
+  if (m === "knee") return { "12in-below-crotch": "knee_12in", "13in-below-crotch": "knee_13in", "14in-below-crotch": "knee_14in", "half-inseam": "knee_half_inseam" }[point];
+  return m; // waist, front_rise, back_rise, seat, leg_opening, inseam
+}
 
-function renderBodyGuide(stepText) {
-  const i = Math.max(0, Math.min(BODY_STEPS.length - 1, parseInt(stepText || "0", 10)));
-  const step = BODY_STEPS[i];
-  const halfway = S.body.inseam_wanted ? `<p class="hint">Halfway down your inseam is ${len(S.body.inseam_wanted / 2)} below the crotch.</p>` : "";
+/**
+ * Draws one guide screen. `values` is the object the screen writes into;
+ * `opts` gives the progress text, whether the value can be skipped, and
+ * where Back and Next go.
+ */
+async function renderGuideScreen(kind, index, values, opts) {
+  const all = (await loadGuide()).filter((s) => s.for === kind);
+  if (!all.length) {
+    $app.innerHTML = `<div class="narrow"><h1>The measuring guide isn't available</h1>
+      <p>Its screens are missing from this build. You can still type your measurements into the form.</p>
+      <div class="actions"><span></span><a class="button primary" href="${opts.formHref}">Open the form</a></div></div>`;
+    return;
+  }
+  const i = Math.max(0, Math.min(all.length - 1, index));
+  const step = all[i];
+  const field = guideField(step);
+  const drawing = await guideDrawing(step.image);
+  const hint = opts.hint ? opts.hint(step) : "";
   $app.innerHTML = `
-  <div class="narrow" style="max-width:820px">
-    <div class="progress"><div style="width:${((i + 1) / BODY_STEPS.length) * 100}%"></div></div>
-    <p class="muted small">Step ${i + 1} of ${BODY_STEPS.length}</p>
+  <div class="narrow" style="max-width:860px">
+    <div class="progress"><div style="width:${((i + 1) / all.length) * 100}%"></div></div>
+    <p class="muted small">${esc(opts.label)} · ${i + 1} of ${all.length}</p>
     <div class="guide">
-      ${Drawings.body(step.drawing)}
+      <div class="guide-drawing">${drawing}</div>
       <div>
-        <h1>${step.title}</h1>
-        ${step.lines.map((l) => `<p>${l}</p>`).join("")}
-        <p class="tip"><b>Common mistake:</b> ${step.mistake}</p>
-        ${step.title === "Leg" ? halfway : ""}
-        ${step.fields.map(([f, label]) => `<label for="f-${f}">${label}</label>${measureInput(`f-${f}`, S.body[f])}`).join("")}
-        <p class="error" id="err" hidden>Please enter every number on this screen.</p>
+        <h1>${esc(step.title)}</h1>
+        <ol class="steps">${step.steps.map((l) => `<li>${esc(l)}</li>`).join("")}</ol>
+        ${step.mistake ? `<p class="tip"><b>Common mistake:</b> ${esc(step.mistake)}</p>` : ""}
+        ${opts.extra ? opts.extra(step, i) : ""}
+        ${field ? `<label for="g-value">${esc(opts.fieldLabel(field))}</label>${measureInput("g-value", values[field])}${hint}` : ""}
+        <p class="error" id="err" hidden>Please enter a number, or skip this one.</p>
       </div>
     </div>
     <div class="actions">
-      <button id="back">${i === 0 ? "Back" : "Previous"}</button>
-      <button class="primary" id="next">${i === BODY_STEPS.length - 1 ? "Done" : "Next"}</button>
+      <button id="back" ${i === 0 && !opts.firstBack ? "hidden" : ""}>${i === 0 ? opts.firstBack : "Previous"}</button>
+      <span>${field && opts.skippable ? `<button id="skip">Skip</button> ` : ""}<button class="primary" id="next">${i === all.length - 1 ? "Done" : "Next"}</button></span>
     </div>
   </div>`;
-  const first = $app.querySelector("input");
-  if (first) first.focus();
-  document.getElementById("back").onclick = () => (location.hash = i === 0 ? "#/welcome" : `#/guide/${i - 1}`);
+  const input = document.getElementById("g-value");
+  if (input) input.focus();
+  if (opts.afterRender) opts.afterRender(step);
+  document.getElementById("back").onclick = () => opts.go(i - 1);
+  const skip = document.getElementById("skip");
+  if (skip)
+    skip.onclick = () => {
+      delete values[field];
+      opts.save();
+      opts.go(i + 1, all.length);
+    };
   const next = () => {
-    const values = step.fields.map(([f]) => [f, readMeasure(`f-${f}`)]);
-    if (values.some(([, v]) => v === null)) {
-      document.getElementById("err").hidden = false;
-      return;
+    if (opts.beforeNext) opts.beforeNext(step);
+    if (field) {
+      const v = readMeasure("g-value");
+      if (v === null) {
+        if (!opts.skippable) {
+          document.getElementById("err").hidden = false;
+          return;
+        }
+        delete values[field];
+      } else values[field] = v;
     }
-    for (const [f, v] of values) S.body[f] = v;
-    save();
-    if (i < BODY_STEPS.length - 1) location.hash = `#/guide/${i + 1}`;
-    else location.hash = S.onboarded ? "#/body" : "#/fit";
+    opts.save();
+    opts.go(i + 1, all.length);
   };
   document.getElementById("next").onclick = next;
-  $app.querySelectorAll("input").forEach((el) => el.addEventListener("keydown", (e) => e.key === "Enter" && next()));
+  if (input) input.addEventListener("keydown", (e) => e.key === "Enter" && next());
+}
+
+const BODY_FIELD_LABELS = {
+  waist: "Waist, where you wear your jeans",
+  seat: "Seat",
+  thigh_top: "Thigh at the top",
+  thigh_1in: "Thigh 2.5 cm (1″) lower",
+  leg_12in: "Leg 30.5 cm (12″) below the crotch",
+  leg_13in: "Leg 33 cm (13″) below the crotch",
+  leg_14in: "Leg 35.5 cm (14″) below the crotch",
+  leg_half_inseam: "Leg halfway down the inseam",
+  inseam_wanted: "Inseam you want",
+};
+
+function renderWelcome() {
+  location.hash = "#/guide/0";
+}
+
+function renderBodyGuide(stepText) {
+  const index = parseInt(stepText || "0", 10);
+  renderGuideScreen("body", index, S.body, {
+    label: "Body measurements",
+    firstBack: S.onboarded ? "Back" : "",
+    skippable: false,
+    formHref: "#/body",
+    fieldLabel: (f) => `${BODY_FIELD_LABELS[f]}, all the way around`.replace("Inseam you want, all the way around", "Inseam you want"),
+    hint: (step) =>
+      step.point === "half-inseam" && S.body.inseam_wanted ? `<p class="hint">Half of the inseam you entered is ${len(S.body.inseam_wanted / 2)}.</p>` : "",
+    extra: (step, i) =>
+      i === 0
+        ? `${S.onboarded ? "" : `<div class="card"><p><b>Real Denim Fit</b> finds raw denim jeans worth looking into, in the right size, from your own measurements. Everything you enter stays on this computer.</p></div>`}
+           <label>Units</label>${choiceGroup("units", [["cm", "Centimetres"], ["in", "Inches"]], S.settings.units)}`
+        : "",
+    afterRender: () =>
+      $app.querySelectorAll('input[name="units"]').forEach((r) =>
+        r.addEventListener("change", () => {
+          S.settings.units = r.value;
+          save();
+        }),
+      ),
+    save,
+    go: (to, total) => {
+      if (to < 0) location.hash = S.onboarded ? "#/body" : "#/guide/0";
+      else if (total !== undefined && to >= total) location.hash = S.onboarded ? "#/body" : bodyComplete() ? "#/fit" : "#/body";
+      else location.hash = `#/guide/${to}`;
+    },
+  });
 }
 
 function renderBodyForm() {
-  if (!S.onboarded && !bodyComplete()) {
-    location.hash = "#/guide/0";
-    return;
-  }
-  const rows = BODY_STEPS.flatMap((s) => s.fields.map(([f, label]) => [f, s.title === label ? label : `${s.title}: ${label.charAt(0).toLowerCase()}${label.slice(1)}`]));
   $app.innerHTML = `
   <div class="narrow">
     <h1>Body measurements</h1>
     <p class="muted">All the way around your body, except the inseam. Change any number; matches update straight away.</p>
     <div class="card">
-      ${rows.map(([f, label]) => `<label for="b-${f}">${esc(label)}</label>${measureInput(`b-${f}`, S.body[f])}`).join("")}
+      ${BODY_FIELDS.map((f) => `<label for="b-${f}">${esc(BODY_FIELD_LABELS[f])}</label>${measureInput(`b-${f}`, S.body[f])}`).join("")}
       <p class="error" id="err" hidden></p>
     </div>
     <div class="actions">
-      <button id="guide">Go through the measuring guide again</button>
+      <button id="guide">Go through the measuring guide</button>
       <button class="primary" id="save">Save</button>
     </div>
   </div>`;
   document.getElementById("guide").onclick = () => (location.hash = "#/guide/0");
   document.getElementById("save").onclick = () => {
     const values = BODY_FIELDS.map((f) => [f, readMeasure(`b-${f}`)]);
-    const missing = values.filter(([, v]) => v === null);
-    if (missing.length) {
+    if (values.some(([, v]) => v === null)) {
       const err = document.getElementById("err");
       err.hidden = false;
       err.textContent = "Every body measurement is needed. Please fill in the empty or unreadable ones.";
@@ -323,7 +352,7 @@ function renderBodyForm() {
     }
     for (const [f, v] of values) S.body[f] = v;
     save();
-    location.hash = "#/results";
+    location.hash = S.onboarded ? "#/results" : "#/fit";
   };
 }
 
@@ -426,7 +455,7 @@ function subRow(m, what) {
   const p = PRODUCTS.get(m.product_id);
   return `<div class="sub" data-open="${esc(m.product_id)}" data-size="${esc(m.size)}" style="cursor:pointer">
     <span class="pct ${closenessClass(m.closeness)}" style="font-size:1rem">${Math.round(m.closeness)}%</span>
-    <span>${what === "size" ? `Size ${esc(m.size)}` : `${esc(p.fabric)} · size ${esc(m.size)}`}<div class="offs">${offsText(m)}</div></span>
+    <span>${what === "size" ? `Size ${esc(m.size)}` : `${esc(p.name)} · size ${esc(m.size)}`}<div class="offs">${offsText(m)}</div></span>
     <span class="price">${priceText(m)}</span>
   </div>`;
 }
@@ -534,8 +563,8 @@ async function refreshResults() {
         <div class="match-head" data-row="${i}">
           <span class="pct ${closenessClass(m.closeness)}">${Math.round(m.closeness)}%</span>
           <div>
-            <div class="title">${esc(row.brand_name)} ${esc(row.cut)} <span class="muted" style="font-weight:normal">· size ${esc(m.size)}</span></div>
-            <div class="small muted">${esc(p.fabric)}${p.fabric_weight_oz ? ` · ${p.fabric_weight_oz} oz` : ""}</div>
+            <div class="title">${esc(row.brand_name)} ${esc(row.cut)} <span class="muted" style="font-weight:normal">· size ${esc(m.size)}${row.brand_label ? ` · the brand calls it “${esc(row.brand_label)}”` : ""}</span></div>
+            <div class="small muted">${esc(p.name)}${p.fabric_weight_oz ? ` · ${p.fabric_weight_oz} oz` : ""}</div>
             <div class="offs">${offsText(m)}</div>
             ${matchTags(m)}
           </div>
@@ -577,8 +606,8 @@ function notPublished(m) {
 // ------------------------------------------------------------- product ----
 
 function describeTolerance(t) {
-  if (typeof t === "string") return "not stated by the brand";
-  return `±${t.value} ${t.unit === "in" ? "″" : "cm"}`.replace(" ″", "″");
+  if (!t) return "not stated by the brand";
+  return t.unit === "in" ? `±${t.value}″` : `±${t.value} cm`;
 }
 
 const BASIS_TEXT = {
@@ -589,14 +618,30 @@ const BASIS_TEXT = {
 };
 
 const POINT_TEXT = {
-  crotch: "at the crotch",
-  "1in-below-crotch": "1″ below the crotch",
-  "12in-below-crotch": "12″ below the crotch",
-  "13in-below-crotch": "13″ below the crotch",
-  "14in-below-crotch": "14″ below the crotch",
+  "at-crotch": "at the crotch",
+  "1in-below-crotch": "2.5 cm (1″) below the crotch",
+  "12in-below-crotch": "30.5 cm (12″) below the crotch",
+  "13in-below-crotch": "33 cm (13″) below the crotch",
+  "14in-below-crotch": "35.5 cm (14″) below the crotch",
   "half-inseam": "halfway down the inseam",
-  "not-stated": "not stated by the brand",
+  fullest: "at the fullest part",
+  "16cm-below-waistband": "16 cm below the waistband",
+  unknown: "the brand doesn't say where",
 };
+
+function compositionText(fabric) {
+  if (!fabric.composition) return "not stated";
+  return fabric.composition.map((f) => `${f.percent}% ${f.fibre}`).join(", ");
+}
+
+function shrinkageText(s) {
+  if (s.kind === "percent") return `${s.width}% in width, ${s.length}% in length`;
+  const u = s.unit === "in" ? "″" : " cm";
+  const parts = [];
+  if (s.waist !== null && s.waist !== undefined) parts.push(`${s.waist}${u} off the waist`);
+  if (s.inseam !== null && s.inseam !== undefined) parts.push(`${s.inseam}${u} off the inseam`);
+  return parts.join(", ");
+}
 
 async function renderProduct(id, size) {
   $app.innerHTML = `<p class="muted">Loading…</p>`;
@@ -607,36 +652,45 @@ async function renderProduct(id, size) {
     showError(e);
     return;
   }
-  const { brand, product: p, washed } = d;
+  const { brand, product: p, washed, effective } = d;
   const sizes = washed ? washed.sizes : [];
   const current = sizes.find((s) => s.size === size) || sizes[0];
-  const chart = p.charts.find((c) => c.state === "after-wash") || p.charts[0];
-  const asSoldChart = p.charts.find((c) => c.state === "as-sold");
+  const mainIndex = Math.max(0, p.charts.findIndex((c) => c.state === "after-wash"));
+  const chartIndex = p.charts.some((c) => c.state === "after-wash") ? mainIndex : 0;
+  const eff = effective[chartIndex];
   const estimated = washed && washed.basis === "from-shrinkage";
   const shown = (m, v) => (v === undefined || v === null ? null : shownValue(m, v));
-  const rigid = p.elastane_percent === 0;
+  const elastane = (p.fabric.composition || [])
+    .filter((f) => ["elastane", "polyurethane", "spandex", "lycra", "pu"].includes(f.fibre.toLowerCase()))
+    .reduce((a, f) => a + f.percent, 0);
   const lp = p.list_price;
-  const converted = lp ? priceText({ product_id: p.id, price: convertPrice(lp) }) : "";
+  const converted = lp ? priceText({ product_id: id, price: convertPrice(lp) }) : "";
+  const pointFor = (m) => {
+    if (m === "thigh" || m === "knee" || m === "seat") return POINT_TEXT[eff.measuring_points[m]] || eff.measuring_points[m] || "";
+    if (LENGTHS.includes(m)) return "length";
+    return eff.conventions[m] === "around" ? "all the way around" : "flat";
+  };
 
   $app.innerHTML = `
-  <p><button class="link" onclick="history.back()">← Back</button></p>
-  <h1>${esc(brand.name)} ${esc(p.cut)}</h1>
-  <p class="muted">${esc(p.fabric)}</p>
-  ${!p.on_brands_site ? `<div class="note">No longer on the brand's site.</div>` : ""}
+  <p><button class="link" id="back">← Back</button></p>
+  <h1>${esc(brand.name)} ${esc(d.cut)}</h1>
+  <p class="muted">${esc(p.name)}${d.brand_label ? ` · the brand calls the cut “${esc(d.brand_label)}”` : ""}</p>
+  ${p.status === "discontinued" ? `<div class="note">No longer on the brand's site (last checked ${esc(p.status_seen)}).</div>` : ""}
   ${washed && washed.basis === "shrinkage-unknown" ? `<div class="note">Shrinkage unknown: the brand doesn't say how much this shrinks in its first wash, so it's compared as sold and ranked after the rest.</div>` : ""}
-  ${!brand.says_where_it_measures ? `<div class="note">Approximate: ${esc(brand.name)} doesn't say exactly where it measures, so the nearest of your readings is used.</div>` : ""}
+  ${washed && washed.approximate ? `<div class="note">Approximate: ${esc(brand.name)} doesn't say exactly where it takes some measurements, so the nearest of your readings is used.</div>` : ""}
   <div class="card">
     <div class="grid2">
-      <p><b>Fabric weight</b><br>${p.fabric_weight_oz ? `${p.fabric_weight_oz} oz` : "not published"}</p>
-      <p><b>Composition</b><br>${esc(p.composition)}${p.elastane_percent > 0 ? ` (${p.elastane_percent}% elastane: stretch)` : ""}</p>
-      <p><b>Sanforized</b><br>${p.sanforized === true ? "Yes" : p.sanforized === false ? "No (unsanforized)" : "The brand doesn't say"}</p>
+      <p><b>Fabric weight</b><br>${p.fabric.weight_oz ? `${p.fabric.weight_oz} oz` : "not stated"}</p>
+      <p><b>Composition</b><br>${esc(compositionText(p.fabric))}${elastane > 0 ? ` (${elastane}% elastane: stretch)` : ""}</p>
+      <p><b>Sanforized</b><br>${p.fabric.sanforized === true ? "Yes" : p.fabric.sanforized === false ? "No (unsanforized)" : "The brand doesn't say"}</p>
+      <p><b>As sold</b><br>${p.sold === "one-washed" ? "Already washed by the brand" : p.sold === "raw" ? "Raw (unwashed)" : "The brand doesn't say"}</p>
       <p><b>After first wash</b><br>${washed ? esc(BASIS_TEXT[washed.basis]) : "no measurements"}</p>
-      ${p.shrinkage ? `<p><b>Shrinkage</b><br>${esc(p.shrinkage.stated)} (<a href="${esc(p.shrinkage.source)}" target="_blank" rel="noopener">source</a>, seen ${esc(p.shrinkage.seen)})</p>` : ""}
-      <p><b>Tolerance</b><br>${chart ? describeTolerance(chart.tolerance) : "—"}</p>
-      <p><b>List price</b><br>${lp ? `${Units.money(lp.amount, lp.currency)}${lp.currency !== S.settings.currency ? ` (${converted})` : ""}<br><span class="small muted">seen ${esc(lp.seen)} on <a href="${esc(lp.source)}" target="_blank" rel="noopener">the brand's site</a></span>` : "not published"}</p>
+      ${p.shrinkage ? `<p><b>Shrinkage</b><br>${esc(shrinkageText(p.shrinkage))}${p.shrinkage.note ? `<br><span class="small muted">“${esc(p.shrinkage.note)}”</span>` : ""}<br><span class="small muted"><a href="${esc(p.shrinkage.source.url)}" target="_blank" rel="noopener">source</a>, seen ${esc(p.shrinkage.source.seen)}</span></p>` : ""}
+      <p><b>Tolerance</b><br>${describeTolerance(eff ? eff.tolerance : null)}</p>
+      <p><b>List price</b><br>${lp ? `${Units.money(lp.amount, lp.currency)}${lp.currency !== S.settings.currency && converted ? ` (${converted})` : ""}<br><span class="small muted">seen ${esc(lp.seen)} on <a href="${esc(lp.url)}" target="_blank" rel="noopener">the brand's site</a></span>` : "not published"}</p>
       <p><b>Brand page</b><br><a href="${esc(p.url)}" target="_blank" rel="noopener">See it on ${esc(brand.name)}'s site</a></p>
     </div>
-    ${rigid ? `<p class="hint">Rigid denim: the waist usually stretches about ½–1″ with wear. That isn't added to the numbers.</p>` : ""}
+    ${elastane === 0 ? `<p class="hint">Rigid denim: the waist usually stretches about ½–1″ with wear. That isn't added to the numbers.</p>` : ""}
   </div>
   ${current ? `
   <div class="card">
@@ -644,31 +698,30 @@ async function renderProduct(id, size) {
       <select id="size" style="max-width:180px">${sizes.map((s) => `<option ${s === current ? "selected" : ""}>${esc(s.size)}</option>`).join("")}</select>
     </div>
     <div class="table-wrap"><table>
-      <thead><tr><th>Measurement</th><th>As sold</th><th>After first wash</th><th>Measuring point</th></tr></thead>
+      <thead><tr><th>Measurement</th><th>As sold</th><th>After first wash</th><th>How it's measured</th></tr></thead>
       <tbody>${MEASUREMENTS.map((m) => {
-        const point = chart.points[m];
         const after = current.after[m];
         const sold = current.as_sold ? current.as_sold[m] : undefined;
-        return `<tr><td>${cap(LABELS[m])}${m === "waist" ? " (around)" : LENGTHS.includes(m) ? "" : " (flat)"}</td>
+        return `<tr><td>${cap(LABELS[m])}</td>
           <td>${sold !== undefined ? len(shown(m, sold)) : after === undefined ? "not published" : "—"}</td>
           <td>${after !== undefined ? len(shown(m, after)) + (estimated ? "*" : "") : "not published"}</td>
-          <td class="small muted">${point ? esc(POINT_TEXT[point.at] || point.at) : ""}</td></tr>`;
+          <td class="small muted">${after !== undefined || sold !== undefined ? esc(pointFor(m)) : ""}</td></tr>`;
       }).join("")}</tbody>
     </table></div>
     ${estimated ? `<p class="hint">* Estimated from the brand's shrinkage.</p>` : ""}
-    <p class="hint">Widths are straight across the jeans laid flat; the waist is shown all the way around.</p>
+    <p class="hint">Widths are shown straight across the jeans laid flat, except the waist, shown all the way around, whatever way the brand published them.</p>
   </div>` : `<div class="card"><p>This product has no published measurements, so it isn't matched.</p></div>`}
   <div class="card">
     <h3 style="margin-top:0">Where the numbers come from</h3>
-    <ul class="small">${p.charts.map((c) => `<li>${c.state === "after-wash" ? "After-wash" : "As-sold"} chart: <a href="${esc(c.source)}" target="_blank" rel="noopener">${esc(c.source)}</a>, seen ${esc(c.seen)}, in ${c.unit === "in" ? "inches" : "cm"}${c.from_image ? ", <b>read from an image</b>" : ""}.</li>`).join("")}
-    ${asSoldChart && chart !== asSoldChart ? "" : ""}
-    ${brand.measuring_guide ? `<li>How ${esc(brand.name)} measures: <a href="${esc(brand.measuring_guide)}" target="_blank" rel="noopener">measuring guide</a>.</li>` : ""}</ul>
+    <ul class="small">${p.charts.map((c) => `<li>${c.state === "after-wash" ? `After-wash chart${c.estimated_by_brand ? " (the brand calls it an estimate)" : ""}` : "As-sold chart"}: <a href="${esc(c.source.url)}" target="_blank" rel="noopener">${esc(c.source.url)}</a>, seen ${esc(c.source.seen)}, in ${c.unit === "in" ? "inches" : "cm"}${c.from_image ? ", <b>read from an image</b>" : ""}.</li>`).join("")}
+    <li>How ${esc(brand.name)} measures: <a href="${esc(brand.method_source.url)}" target="_blank" rel="noopener">${esc(brand.method_source.url)}</a>, seen ${esc(brand.method_source.seen)}.</li></ul>
     <p class="hint">Real Denim Fit never shows shops, stock or sale prices. Check the brand's page for the jeans themselves.</p>
   </div>
   ${sizes.length ? `<div class="card"><h3 style="margin-top:0">All sizes after the first wash</h3><div class="table-wrap"><table>
     <thead><tr><th>Size</th>${MEASUREMENTS.map((m) => `<th>${cap(LABELS[m])}</th>`).join("")}</tr></thead>
     <tbody>${sizes.map((s) => `<tr class="${s === current ? "current" : ""}"><td>${esc(s.size)}</td>${MEASUREMENTS.map((m) => `<td>${s.after[m] !== undefined ? len(shown(m, s.after[m])) : "—"}</td>`).join("")}</tr>`).join("")}</tbody>
   </table></div></div>` : ""}`;
+  document.getElementById("back").onclick = () => history.back();
   const sel = document.getElementById("size");
   if (sel) sel.onchange = () => (location.hash = `#/product/${encodeURIComponent(id)}/${encodeURIComponent(sel.value)}`);
 }
@@ -690,7 +743,7 @@ function newId() {
 function pairSourceText(pair) {
   if (pair.source.kind === "from-catalogue") {
     const p = PRODUCTS.get(pair.source.product_id);
-    return p ? `${p.brand.name} ${p.cut}, ${p.fabric}, size ${pair.source.size} · from the brand's chart` : "from the brand's chart (product no longer in the catalogue)";
+    return p ? `${p.brand.name} ${p.cut}, ${p.name}, size ${pair.source.size} · from the brand's chart` : "from the brand's chart (product no longer in the catalogue)";
   }
   const n = Object.values(pair.source.readings).filter((v) => typeof v === "number").length;
   return `measured by you · ${n} reading${n === 1 ? "" : "s"}`;
@@ -717,101 +770,54 @@ function renderPairs() {
   document.getElementById("measure").onclick = () => {
     const pair = { id: newId(), name: "My jeans", source: { kind: "measured", readings: {} }, feel: {}, notes: "" };
     S.pairs.push(pair);
+    if (!S.activePairId) S.activePairId = pair.id;
     save();
     location.hash = `#/pair/${pair.id}/measure/0`;
   };
   document.getElementById("pick").onclick = () => (location.hash = "#/pair/new/catalogue");
 }
 
-const PAIR_STEPS = [
-  {
-    title: "Lay it flat",
-    drawing: "flat",
-    fields: [],
-    lines: [
-      "Button the pair and lay it on a table, front up.",
-      "Smooth it out with your hands without stretching it.",
-      "Measure flat, straight across. You can skip anything you can't measure.",
-    ],
-  },
-  { title: "Waist", drawing: "waist", fields: ["waist"], lines: ["Straight across the top of the waistband, from edge to edge. The app doubles it for the waist all the way around."] },
-  { title: "Rise", drawing: "front_rise", fields: ["front_rise", "back_rise"], lines: ["Front rise: from the crotch seam straight up to the top of the waistband at the front.", "Back rise: turn the pair over and do the same at the back."] },
-  { title: "Seat", drawing: "seat", fields: ["seat"], lines: ["Straight across the widest part of the seat, below the waistband."] },
-  { title: "Thigh", drawing: "thigh", fields: ["thigh_crotch", "thigh_1in"], lines: ["Straight across the leg from the end of the crotch seam.", "Then again 2.5 cm (1″) further down the inseam."] },
-  { title: "Inseam", drawing: "inseam", fields: ["inseam"], lines: ["Along the inside leg seam, from the crotch seam to the hem."] },
-  {
-    title: "Knee",
-    drawing: "knee",
-    fields: ["knee_12in", "knee_13in", "knee_14in", "knee_half_inseam"],
-    lines: [
-      "Lay the tape down the inseam from the crotch and leave it there.",
-      "At each mark, measure straight across the leg: 30.5, 33 and 35.5 cm (12″, 13″ and 14″), and halfway down the inseam.",
-    ],
-  },
-  { title: "Leg opening", drawing: "leg_opening", fields: ["leg_opening"], lines: ["Straight across the bottom of the leg."] },
-];
-
 function renderPairMeasure(pair, stepText) {
-  const i = Math.max(0, Math.min(PAIR_STEPS.length - 1, parseInt(stepText || "0", 10)));
-  const step = PAIR_STEPS[i];
   const r = pair.source.readings;
-  const half = r.inseam ? `<p class="hint">Halfway down this pair's inseam is ${len(r.inseam / 2)}.</p>` : "";
-  $app.innerHTML = `
-  <div class="narrow" style="max-width:820px">
-    <div class="progress"><div style="width:${((i + 1) / PAIR_STEPS.length) * 100}%"></div></div>
-    <p class="muted small">${esc(pair.name)} · step ${i + 1} of ${PAIR_STEPS.length}</p>
-    <div class="guide">
-      ${Drawings.jeans(step.drawing)}
-      <div>
-        <h1>${step.title}</h1>
-        ${step.lines.map((l) => `<p>${l}</p>`).join("")}
-        ${i === 0 ? `<label for="pname">Name this pair</label><input type="text" id="pname" value="${esc(pair.name)}"/>` : ""}
-        ${step.title === "Knee" ? half : ""}
-        ${step.fields.map((f) => `<label for="p-${f}">${PAIR_FIELD_LABELS[f]}</label>${measureInput(`p-${f}`, r[f])}`).join("")}
-        ${step.title === "Waist" ? `<p class="hint" id="doubled"></p>` : ""}
-      </div>
-    </div>
-    <div class="actions">
-      <button id="back">${i === 0 ? "Cancel" : "Previous"}</button>
-      <span><button id="skip">${step.fields.length ? "Skip" : ""}</button> <button class="primary" id="next">${i === PAIR_STEPS.length - 1 ? "Done" : "Next"}</button></span>
-    </div>
-  </div>`;
-  const skip = document.getElementById("skip");
-  if (!step.fields.length) skip.hidden = true;
-  const doubled = document.getElementById("doubled");
-  if (doubled) {
-    const show = () => {
-      const v = readMeasure("p-waist");
-      doubled.textContent = v ? `That's a waist of ${len(v * 2)} all the way around.` : "";
-    };
-    document.getElementById("p-waist").addEventListener("input", show);
-    show();
-  }
-  const store = () => {
-    const name = document.getElementById("pname");
-    if (name) pair.name = name.value.trim() || "My jeans";
-    for (const f of step.fields) {
-      const v = readMeasure(`p-${f}`);
-      if (v === null) delete r[f];
-      else r[f] = v;
-    }
-    save();
-  };
-  const go = (to) => (location.hash = to < PAIR_STEPS.length ? `#/pair/${encodeURIComponent(pair.id)}/measure/${to}` : `#/pair/${encodeURIComponent(pair.id)}`);
-  document.getElementById("back").onclick = () => {
-    if (i === 0) {
-      if (!Object.keys(r).length) {
-        S.pairs = S.pairs.filter((p) => p.id !== pair.id);
-        save();
-      }
-      location.hash = "#/pairs";
-    } else go(i - 1);
-  };
-  skip.onclick = () => go(i + 1);
-  document.getElementById("next").onclick = () => {
-    store();
-    go(i + 1);
-  };
+  const base = `#/pair/${encodeURIComponent(pair.id)}`;
+  renderGuideScreen("pair", parseInt(stepText || "0", 10), r, {
+    label: pair.name,
+    firstBack: "Cancel",
+    skippable: true,
+    formHref: base,
+    fieldLabel: (f) => `${PAIR_FIELD_LABELS[f]}, flat`.replace("Front rise, flat", "Front rise").replace("Back rise, flat", "Back rise").replace("Inseam, flat", "Inseam"),
+    hint: (step) => {
+      if (step.measurement === "waist") return `<p class="hint" id="doubled"></p>`;
+      if (step.point === "half-inseam" && r.inseam) return `<p class="hint">Half of this pair's inseam is ${len(r.inseam / 2)}.</p>`;
+      return "";
+    },
+    extra: (step, i) => (i === 0 ? `<label for="pname">Name this pair</label><input type="text" id="pname" value="${esc(pair.name)}"/>` : ""),
+    afterRender: (step) => {
+      const doubled = document.getElementById("doubled");
+      if (!doubled) return;
+      const show = () => {
+        const v = readMeasure("g-value");
+        doubled.textContent = v ? `That's a waist of ${len(v * 2)} all the way around.` : "";
+      };
+      document.getElementById("g-value").addEventListener("input", show);
+      show();
+    },
+    beforeNext: () => {
+      const name = document.getElementById("pname");
+      if (name) pair.name = name.value.trim() || "My jeans";
+    },
+    save,
+    go: (to, total) => {
+      if (to < 0) {
+        if (!Object.keys(r).length) {
+          S.pairs = S.pairs.filter((p) => p.id !== pair.id);
+          save();
+        }
+        location.hash = "#/pairs";
+      } else if (total !== undefined && to >= total) location.hash = base;
+      else location.hash = `${base}/measure/${to}`;
+    },
+  });
 }
 
 function renderPairPick() {
@@ -836,15 +842,15 @@ function renderPairPick() {
   };
   pb.onchange = () => {
     const b = BRANDS.get(pb.value);
-    const cuts = b ? [...new Set(b.products.filter((p) => p.sizes.length).map((p) => p.cut))].sort() : [];
-    fill(pc, cuts.map((c) => [c, c]));
+    const cuts = b ? [...new Map(b.products.filter((p) => p.sizes.length).map((p) => [p.cut_id, p.cut])).entries()] : [];
+    fill(pc, cuts.sort((x, y) => x[1].localeCompare(y[1])));
     fill(pp, []);
     fill(ps, []);
     add.disabled = true;
   };
   pc.onchange = () => {
     const b = BRANDS.get(pb.value);
-    fill(pp, b.products.filter((p) => p.cut === pc.value && p.sizes.length).map((p) => [p.id, `${p.fabric}${p.on_brands_site ? "" : " (no longer on the site)"}`]));
+    fill(pp, b.products.filter((p) => p.cut_id === pc.value && p.sizes.length).map((p) => [p.id, `${p.name}${p.current ? "" : " (no longer on the brand's site)"}`]));
     fill(ps, []);
     add.disabled = true;
   };
@@ -969,11 +975,17 @@ async function showPairEase(pair) {
     card.innerHTML = `<h2 style="margin-top:0">This pair's own ease</h2><p class="muted">Add a waist, seat, thigh or knee reading to see how much bigger than your body this pair is.</p>`;
     return;
   }
-  const place = (p) =>
-    p.kind === "room" ? `which is ${p.room}` : p.kind === "tighter-than-snug" ? "which is tighter than snug" : "which is roomier than roomy";
+  // Every room has the same waist ease, so the waist is only ever usual,
+  // tighter or looser.
+  const place = (pt) => {
+    const p = pt.place;
+    if (pt.measurement === "waist")
+      return p.kind === "room" ? "which is the usual waist ease" : p.kind === "tighter-than-snug" ? "which is tighter than usual" : "which is looser than usual";
+    return p.kind === "room" ? `which is ${p.room}` : p.kind === "tighter-than-snug" ? "which is tighter than snug" : "which is roomier than roomy";
+  };
   card.innerHTML = `<h2 style="margin-top:0">This pair's own ease</h2>
     <p class="hint">How much bigger than your body it is, all the way around.</p>
-    <ul class="ease-list">${e.points.map((p) => `<li><b>${len(p.ease_around, true)}</b> ${esc(p.at)}${["waist", "seat"].includes(p.measurement) ? "" : ` (${LABELS[p.measurement]})`}, ${place(p.place)}</li>`).join("")}</ul>
+    <ul class="ease-list">${e.points.map((p) => `<li><b>${len(p.ease_around, true)}</b> ${esc(p.at)}${["waist", "seat"].includes(p.measurement) ? "" : ` (${LABELS[p.measurement]})`}, ${place(p)}</li>`).join("")}</ul>
     ${e.suggested_room ? `<p>Its seat and thigh suggest <b>${e.suggested_room}</b> room${S.desiredFit.room === e.suggested_room ? ", which is what you've chosen." : `. You've chosen ${S.desiredFit.room}. <button class="link" id="use-room">Use ${e.suggested_room}</button>`}</p>` : ""}`;
   const use = document.getElementById("use-room");
   if (use)

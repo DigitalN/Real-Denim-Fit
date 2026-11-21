@@ -12,3 +12,7 @@ serde_json.workspace = true
 [[bin]]
 name = "validate-catalogue"
 path = "src/bin/validate_catalogue.rs"
+
+[[bin]]
+name = "calibrate"
+path = "src/bin/calibrate.rs"

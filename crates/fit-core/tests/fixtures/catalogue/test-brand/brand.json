@@ -1,0 +1,11 @@
+{
+  "id": "test-brand",
+  "name": "Test Brand",
+  "site": "https://example.com",
+  "currency": "GBP",
+  "sizing": "waist",
+  "tolerance": { "value": 0.5, "unit": "in" },
+  "conventions": { "waist": "around", "seat": "flat", "thigh": "flat", "knee": "flat", "leg_opening": "flat" },
+  "measuring_points": { "thigh": "at-crotch", "knee": "13in-below-crotch", "seat": "unknown" },
+  "method_source": { "url": "https://example.com/how-we-measure", "seen": "2026-11-20" }
+}

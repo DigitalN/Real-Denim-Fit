@@ -58,11 +58,11 @@ pub struct Points {
 
 impl Points {
     /// Fills in the nearest reading for points a chart doesn't state.
-    pub fn resolve(thigh: Option<ThighPoint>, knee: Option<KneePoint>, brand_says: bool) -> Points {
+    pub fn resolve(thigh: Option<ThighPoint>, knee: Option<KneePoint>, approximate: bool) -> Points {
         Points {
             thigh: thigh.unwrap_or(ThighPoint::Crotch),
             knee: knee.unwrap_or(KneePoint::Below13),
-            approximate: !brand_says || thigh.is_none() || knee.is_none(),
+            approximate,
         }
     }
 }

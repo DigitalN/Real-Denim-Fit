@@ -6,12 +6,15 @@ use std::collections::BTreeMap;
 use serde::{Deserialize, Serialize};
 
 use crate::after_wash::{after_wash, Basis, Washed, WashedSize};
-use crate::catalogue::{Brand, Catalogue, KneePoint, Measurement, Product, ThighPoint};
+use crate::catalogue::{product_key, Brand, Catalogue, Cut, KneePoint, Measurement, Product, ThighPoint};
 use crate::classify::{leg_shape, rises, RiseEntry};
 use crate::closeness::closeness;
 use crate::ease::EaseTable;
 use crate::profile::{LegShape, PairReadings, PairSource, Profile, ReferencePair, Rise};
 use crate::targets::{targets, Points, TargetFor};
+
+/// A cut and, for each of its products, that product's matching sizes.
+type CutMatches<'a> = (&'a Cut, Vec<Vec<Match>>);
 
 /// The filters on the results screen.
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
@@ -70,6 +73,8 @@ pub struct MeasurementResult {
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct Match {
     pub brand_id: String,
+    pub cut_id: String,
+    /// `<brand>/<product>`.
     pub product_id: String,
     pub size: String,
     /// The worst measurement's closeness.
@@ -93,7 +98,10 @@ pub struct Match {
 pub struct CutRow {
     pub brand_id: String,
     pub brand_name: String,
+    pub cut_id: String,
     pub cut: String,
+    /// The brand's own name for the fit, shown but never matched on.
+    pub brand_label: Option<String>,
     pub best: Match,
     /// The cut's other products, each at its closest size, closest first.
     pub other_products: Vec<Match>,
@@ -118,6 +126,7 @@ pub struct Prepared<'a> {
 
 pub struct PreparedProduct<'a> {
     pub brand: &'a Brand,
+    pub cut: &'a Cut,
     pub product: &'a Product,
     pub washed: Washed,
     /// The rise of each of `washed.sizes`.
@@ -129,11 +138,12 @@ pub fn prepare(catalogue: &Catalogue) -> Prepared<'_> {
     let mut items: Vec<PreparedProduct> = catalogue
         .brands
         .iter()
-        .flat_map(|b| b.products.iter().map(move |p| (b, p)))
-        .filter_map(|(brand, product)| {
-            let washed = after_wash(product)?;
+        .flat_map(|b| b.products().map(move |(c, p)| (b, c, p)))
+        .filter_map(|(brand, cut, product)| {
+            let washed = after_wash(brand, product)?;
             Some(PreparedProduct {
                 brand,
+                cut,
                 product,
                 rises: vec![None; washed.sizes.len()],
                 washed,
@@ -166,14 +176,10 @@ pub fn pair_readings(pair: &ReferencePair, catalogue: &Catalogue) -> Option<Pair
     match &pair.source {
         PairSource::Measured { readings } => Some(readings.clone()),
         PairSource::FromCatalogue { product_id, size } => {
-            let (brand, product) = catalogue.product(product_id)?;
-            let washed = after_wash(product)?;
+            let (brand, _, product) = catalogue.product(product_id)?;
+            let washed = after_wash(brand, product)?;
             let s = washed.sizes.iter().find(|s| &s.size == size)?;
-            let points = Points::resolve(
-                washed.thigh_point,
-                washed.knee_point,
-                brand.says_where_it_measures,
-            );
+            let points = Points::resolve(washed.thigh_point, washed.knee_point, washed.approximate);
             Some(readings_from_size(s, points))
         }
     }
@@ -214,12 +220,7 @@ fn rank(a: &Match, b: &Match) -> Ordering {
         .then(b.compared.cmp(&a.compared))
 }
 
-fn passes_product_filters(
-    brand: &Brand,
-    product: &Product,
-    price: Option<f64>,
-    f: &Filters,
-) -> bool {
+fn passes_product_filters(brand: &Brand, product: &Product, price: Option<f64>, f: &Filters) -> bool {
     if let Some(brands) = &f.brands {
         if !brands.contains(&brand.id) {
             return false;
@@ -228,10 +229,10 @@ fn passes_product_filters(
     if f.try_on_only && !f.try_on_brands.contains(&brand.id) {
         return false;
     }
-    if f.current_only && !product.on_brands_site {
+    if f.current_only && !product.is_current() {
         return false;
     }
-    if f.sanforized_only && product.sanforized != Some(true) {
+    if f.sanforized_only && product.fabric.sanforized != Some(true) {
         return false;
     }
     if f.no_stretch && product.is_stretch() {
@@ -244,8 +245,7 @@ fn passes_product_filters(
         let Some(v) = v else { return false };
         min.is_none_or(|m| v >= m - 1e-9) && max.is_none_or(|m| v <= m + 1e-9)
     };
-    in_range(price, f.price_min, f.price_max)
-        && in_range(product.fabric_weight_oz, f.weight_min, f.weight_max)
+    in_range(price, f.price_min, f.price_max) && in_range(product.fabric.weight_oz, f.weight_min, f.weight_max)
 }
 
 /// For brands sold in lengths, keeps one size per waist: the shortest
@@ -256,13 +256,13 @@ fn pick_lengths(sizes: Vec<usize>, washed: &Washed, inseam: f64) -> Vec<usize> {
         s.after
             .get(&Measurement::Inseam)
             .copied()
-            .or(s.tag_length.map(|l| l * crate::units::CM_PER_INCH))
+            .or(s.length_tag.map(|l| l * crate::units::CM_PER_INCH))
             .unwrap_or(0.0)
     };
     let mut by_waist: BTreeMap<String, Vec<usize>> = BTreeMap::new();
     for i in sizes {
         by_waist
-            .entry(washed.sizes[i].tag_waist.to_string())
+            .entry(washed.sizes[i].waist_tag.to_string())
             .or_default()
             .push(i);
     }
@@ -282,12 +282,7 @@ fn pick_lengths(sizes: Vec<usize>, washed: &Washed, inseam: f64) -> Vec<usize> {
 }
 
 /// Finds every match, grouped into one row per cut, closest first.
-pub fn find_matches(
-    catalogue: &Catalogue,
-    ease: &EaseTable,
-    profile: &Profile,
-    filters: &Filters,
-) -> Results {
+pub fn find_matches(catalogue: &Catalogue, ease: &EaseTable, profile: &Profile, filters: &Filters) -> Results {
     find_matches_prepared(&prepare(catalogue), catalogue, ease, profile, filters)
 }
 
@@ -305,9 +300,9 @@ pub fn find_matches_prepared(
     let fit = &profile.desired_fit;
 
     // Per cut: every product's matching sizes, ranked.
-    let mut cuts: BTreeMap<(String, String), Vec<Vec<Match>>> = BTreeMap::new();
+    let mut cuts: BTreeMap<(String, String), CutMatches> = BTreeMap::new();
     for item in &prepared.items {
-        let (brand, product, washed) = (item.brand, item.product, &item.washed);
+        let (brand, cut, product, washed) = (item.brand, item.cut, item.product, &item.washed);
         let price = product.list_price.as_ref().and_then(|lp| {
             catalogue
                 .exchange_rates
@@ -316,11 +311,7 @@ pub fn find_matches_prepared(
         if !passes_product_filters(brand, product, price, filters) {
             continue;
         }
-        let points = Points::resolve(
-            washed.thigh_point,
-            washed.knee_point,
-            brand.says_where_it_measures,
-        );
+        let points = Points::resolve(washed.thigh_point, washed.knee_point, washed.approximate);
         let stretch = product.is_stretch();
         let set = targets(profile, pair.as_ref(), ease, points, stretch);
 
@@ -332,7 +323,7 @@ pub fn find_matches_prepared(
                     .all(|(m, limit)| s.after.get(m).is_none_or(|v| *v >= limit - 1e-9))
             })
             .collect();
-        if brand.sold_in_lengths {
+        if brand.sold_in_lengths() {
             let inseam = set
                 .targets
                 .get(&Measurement::Inseam)
@@ -354,9 +345,7 @@ pub fn find_matches_prepared(
                             return None;
                         }
                         let (closeness, off_by) = match (value, target) {
-                            (Some(v), Some(t)) => {
-                                (Some(closeness(v, &t.target)), Some(v - t.target.ideal()))
-                            }
+                            (Some(v), Some(t)) => (Some(closeness(v, &t.target)), Some(v - t.target.ideal())),
                             _ => (None, None),
                         };
                         Some(MeasurementResult {
@@ -381,7 +370,8 @@ pub fn find_matches_prepared(
                     && fit.rise.is_none_or(|want| rise == Some(want));
                 Match {
                     brand_id: brand.id.clone(),
-                    product_id: product.id.clone(),
+                    cut_id: cut.id.clone(),
+                    product_id: product_key(&brand.id, &product.id),
                     size: s.size.clone(),
                     closeness: worst,
                     average,
@@ -393,7 +383,7 @@ pub fn find_matches_prepared(
                     basis: washed.basis,
                     approximate: points.approximate,
                     stretch,
-                    on_brands_site: product.on_brands_site,
+                    on_brands_site: product.is_current(),
                     price,
                 }
             })
@@ -402,24 +392,19 @@ pub fn find_matches_prepared(
             continue;
         }
         matches.sort_by(rank);
-        cuts.entry((brand.id.clone(), product.cut.clone()))
-            .or_default()
+        cuts.entry((brand.id.clone(), cut.id.clone()))
+            .or_insert((cut, vec![]))
+            .1
             .push(matches);
     }
 
     let build_rows = |shown: &dyn Fn(&Match) -> bool| -> Vec<CutRow> {
         let mut rows: Vec<CutRow> = cuts
             .iter()
-            .filter_map(|((brand_id, cut), products)| {
+            .filter_map(|((brand_id, cut_id), (cut, products))| {
                 let mut products: Vec<Vec<Match>> = products
                     .iter()
-                    .map(|sizes| {
-                        sizes
-                            .iter()
-                            .filter(|m| shown(m))
-                            .cloned()
-                            .collect::<Vec<_>>()
-                    })
+                    .map(|sizes| sizes.iter().filter(|m| shown(m)).cloned().collect::<Vec<_>>())
                     .filter(|sizes| !sizes.is_empty())
                     .collect();
                 if products.is_empty() {
@@ -438,11 +423,11 @@ pub fn find_matches_prepared(
                 Some(CutRow {
                     brand_id: brand_id.clone(),
                     brand_name,
-                    cut: cut.clone(),
+                    cut_id: cut_id.clone(),
+                    cut: cut.name.clone(),
+                    brand_label: cut.brand_label.clone(),
                     best,
-                    other_products: products
-                        .map(|sizes| sizes.into_iter().next().unwrap())
-                        .collect(),
+                    other_products: products.map(|sizes| sizes.into_iter().next().unwrap()).collect(),
                     other_sizes: best_sizes.collect(),
                 })
             })

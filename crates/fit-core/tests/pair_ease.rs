@@ -15,11 +15,7 @@ fn a_pairs_ease_is_shown_around_and_placed_in_a_room() {
         ..Default::default()
     };
     let e = pair_ease(&body(), &readings, &ease());
-    let thigh = e
-        .points
-        .iter()
-        .find(|p| p.measurement == Measurement::Thigh)
-        .unwrap();
+    let thigh = e.points.iter().find(|p| p.measurement == Measurement::Thigh).unwrap();
     assert!(close(thigh.ease_around, 6.5));
     assert_eq!(thigh.place, Place::Room(Room::Regular));
     assert_eq!(thigh.at, "at the crotch");
@@ -58,18 +54,12 @@ fn the_suggested_room_is_the_one_the_seat_and_thigh_sit_closest_to() {
         thigh_crotch: Some(57.2 / 2.0 + 1.9 * IN),
         ..Default::default()
     };
-    assert_eq!(
-        pair_ease(&body(), &readings, &ease()).suggested_room,
-        Some(Room::Roomy)
-    );
+    assert_eq!(pair_ease(&body(), &readings, &ease()).suggested_room, Some(Room::Roomy));
     let readings = PairReadings {
         thigh_1in: Some(55.0 / 2.0 + 0.7 * IN),
         ..Default::default()
     };
-    assert_eq!(
-        pair_ease(&body(), &readings, &ease()).suggested_room,
-        Some(Room::Snug)
-    );
+    assert_eq!(pair_ease(&body(), &readings, &ease()).suggested_room, Some(Room::Snug));
 }
 
 #[test]

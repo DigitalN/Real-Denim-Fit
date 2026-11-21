@@ -1,46 +1,53 @@
-//! Validates the catalogue and ease table. CI runs this on every pull request.
-//! Usage: cargo run -p fit-core --bin validate-catalogue
+//! Validates the catalogue and ease table, and prints a summary per brand.
+//! Usage: cargo run -p fit-core --bin validate-catalogue [catalogue-dir]
+//!
+//! With no folder it checks the data built into the app. CI also runs the
+//! same checks as tests (`cargo test --workspace`).
 
-use fit_core::{after_wash::Basis, embedded, validate::validate};
+use fit_core::after_wash::{after_wash, Basis};
+use fit_core::catalogue::Catalogue;
+use fit_core::{embedded, validate::validate};
 
 fn main() {
-    let (catalogue, ease) = match embedded::load() {
+    let loaded = match std::env::args().nth(1) {
+        Some(dir) => {
+            Catalogue::from_dir(std::path::Path::new(&dir)).and_then(|c| embedded::load().map(|(_, ease)| (c, ease)))
+        }
+        None => embedded::load(),
+    };
+    let (catalogue, ease) = match loaded {
         Ok(data) => data,
         Err(e) => {
             eprintln!("The catalogue doesn't load: {e}");
             std::process::exit(1);
         }
     };
-    let problems = validate(&catalogue, &ease);
     for brand in &catalogue.brands {
-        let sizes: usize = brand
-            .products
+        let products: Vec<_> = brand.products().collect();
+        let sizes: usize = products
             .iter()
-            .flat_map(|p| p.charts.first())
+            .flat_map(|(_, p)| p.charts.first())
             .map(|c| c.sizes.len())
             .sum();
-        let from_image = brand
-            .products
+        let from_image = products
             .iter()
-            .filter(|p| p.charts.iter().any(|c| c.from_image))
+            .filter(|(_, p)| p.charts.iter().any(|c| c.from_image))
             .count();
-        let unknown = brand
-            .products
+        let unknown = products
             .iter()
-            .filter(|p| {
-                fit_core::after_wash::after_wash(p)
-                    .is_some_and(|w| w.basis == Basis::ShrinkageUnknown)
-            })
+            .filter(|(_, p)| after_wash(brand, p).is_some_and(|w| w.basis == Basis::ShrinkageUnknown))
             .count();
         println!(
-            "{:<18} {:>4} products, {:>5} sizes, {:>3} read from images, {:>3} shrinkage unknown",
+            "{:<18} {:>3} cuts {:>4} products {:>5} sizes {:>3} from images {:>3} shrinkage unknown",
             brand.name,
-            brand.products.len(),
+            brand.cuts.len(),
+            products.len(),
             sizes,
             from_image,
             unknown
         );
     }
+    let problems = validate(&catalogue, &ease);
     if problems.is_empty() {
         println!("The catalogue and ease table are valid.");
     } else {

@@ -71,10 +71,7 @@ pub fn rises(entries: &[RiseEntry]) -> Vec<Option<Rise>> {
                 return None;
             }
             let below = nearest.values().filter(|(_, r)| *r < rise - 1e-9).count() as f64;
-            let equal = nearest
-                .values()
-                .filter(|(_, r)| (*r - rise).abs() <= 1e-9)
-                .count() as f64;
+            let equal = nearest.values().filter(|(_, r)| (*r - rise).abs() <= 1e-9).count() as f64;
             // Average rank among ties, 0-based, as a share of the products.
             let rank = below + (equal - 1.0) / 2.0;
             let third = (3.0 * (rank + 0.5) / n as f64).floor() as usize;

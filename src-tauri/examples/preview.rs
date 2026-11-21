@@ -4,7 +4,9 @@
 //!     cargo run -p real-denim-fit --example preview -- 1420
 //!
 //! Then open http://localhost:1420. What you enter is kept in
-//! target/preview-state.json, not in the app's own data.
+//! target/preview-state.json, not in the app's own data. Set
+//! RDF_CATALOGUE_DIR at build time to try another catalogue folder, and
+//! RDF_GUIDE_DIR to serve the measuring guide from another folder.
 
 use std::io::{BufRead, BufReader, Read, Write};
 use std::net::{TcpListener, TcpStream};
@@ -18,8 +20,7 @@ fn root() -> PathBuf {
 }
 
 fn parse<T: serde::de::DeserializeOwned>(args: &Value, k: &str) -> Result<T, String> {
-    serde_json::from_value(args.get(k).cloned().unwrap_or(Value::Null))
-        .map_err(|e| format!("{k}: {e}"))
+    serde_json::from_value(args.get(k).cloned().unwrap_or(Value::Null)).map_err(|e| format!("{k}: {e}"))
 }
 
 fn handle(cmd: &str, args: Value, data: &app::Data) -> Result<Value, String> {
@@ -33,8 +34,7 @@ fn handle(cmd: &str, args: Value, data: &app::Data) -> Result<Value, String> {
             .and_then(|t| serde_json::from_str(&t).ok())
             .unwrap_or(Value::Null)),
         "save_state" => {
-            std::fs::write(&state, serde_json::to_vec_pretty(&arg("state")).unwrap())
-                .map_err(|e| e.to_string())?;
+            std::fs::write(&state, serde_json::to_vec_pretty(&arg("state")).unwrap()).map_err(|e| e.to_string())?;
             Ok(Value::Null)
         }
         "catalogue_index" => to(serde_json::to_value(app::index(data))),
@@ -72,10 +72,7 @@ fn serve(stream: TcpStream, data: &app::Data) {
         return;
     }
     let mut parts = line.split_whitespace();
-    let (method, path) = (
-        parts.next().unwrap_or(""),
-        parts.next().unwrap_or("/").to_string(),
-    );
+    let (method, path) = (parts.next().unwrap_or(""), parts.next().unwrap_or("/").to_string());
     let mut length = 0;
     loop {
         let mut h = String::new();
@@ -93,18 +90,8 @@ fn serve(stream: TcpStream, data: &app::Data) {
         if let Some(cmd) = path.strip_prefix("/api/") {
             let args: Value = serde_json::from_slice(&body).unwrap_or(json!({}));
             return match handle(cmd, args, data) {
-                Ok(v) => respond(
-                    stream,
-                    "200 OK",
-                    "application/json",
-                    v.to_string().as_bytes(),
-                ),
-                Err(e) => respond(
-                    stream,
-                    "500 Internal Server Error",
-                    "text/plain",
-                    e.as_bytes(),
-                ),
+                Ok(v) => respond(stream, "200 OK", "application/json", v.to_string().as_bytes()),
+                Err(e) => respond(stream, "500 Internal Server Error", "text/plain", e.as_bytes()),
             };
         }
     }
@@ -123,7 +110,13 @@ fn serve(stream: TcpStream, data: &app::Data) {
         Some("svg") => "image/svg+xml",
         _ => "application/octet-stream",
     };
-    match std::fs::read(root().join("ui").join(&file)) {
+    // RDF_GUIDE_DIR serves ui/guide/ from elsewhere, to try a guide that
+    // isn't in this checkout yet.
+    let path = match (file.strip_prefix("guide/"), std::env::var("RDF_GUIDE_DIR")) {
+        (Some(rest), Ok(dir)) => PathBuf::from(dir).join(rest),
+        _ => root().join("ui").join(&file),
+    };
+    match std::fs::read(path) {
         Ok(bytes) => respond(stream, "200 OK", kind, &bytes),
         Err(_) => respond(stream, "404 Not Found", "text/plain", b"not found"),
     }

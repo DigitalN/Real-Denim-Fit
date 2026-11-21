@@ -1,0 +1,56 @@
+{
+  "id": "634",
+  "brand": "test-brand",
+  "name": "634",
+  "brand_label": "Straight Cut",
+  "products": [
+    {
+      "id": "634-21oz-indigo",
+      "name": "21oz Selvedge Denim, Indigo",
+      "url": "https://example.com/products/634",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": { "weight_oz": 21, "composition": [{ "fibre": "cotton", "percent": 100 }], "sanforized": true },
+      "sold": "one-washed",
+      "list_price": { "amount": 293, "currency": "GBP", "url": "https://example.com/products/634", "seen": "2026-11-20" },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": { "url": "https://example.com/products/634", "seen": "2026-11-20" },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            { "label": "32", "waist_tag": 32, "measurements": { "waist": 31.7, "front_rise": 11.0, "back_rise": 14.8, "thigh": 12.5, "knee": 9.3, "leg_opening": 8.7, "inseam": 35.5 } },
+            { "label": "33", "waist_tag": 33, "measurements": { "waist": 32.7, "front_rise": 11.2, "back_rise": 15.0, "thigh": 12.8, "knee": 9.5, "leg_opening": 8.8, "inseam": 35.5 } }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "634-uhr",
+      "name": "21/23oz Ultra Heavy Raw, Indigo",
+      "url": "https://example.com/products/634-uhr",
+      "status": "discontinued",
+      "status_seen": "2026-11-20",
+      "fabric": { "weight_oz": 21, "composition": null, "sanforized": false },
+      "sold": "raw",
+      "list_price": null,
+      "shrinkage": { "kind": "amount", "unit": "in", "waist": 1, "inseam": 2, "note": "about 1in in the waist, up to 2in on the inseam", "source": { "url": "https://example.com/products/634-uhr", "seen": "2026-11-20" } },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": { "url": "https://example.com/products/634-uhr", "seen": "2026-11-20" },
+          "unit": "cm",
+          "from_image": true,
+          "conventions": { "waist": "flat" },
+          "measuring_points": { "knee": "unknown" },
+          "tolerance": { "value": 1, "unit": "cm" },
+          "sizes": [
+            { "label": "32", "waist_tag": 32, "measurements": { "waist": 42.4, "thigh": 32.8, "knee": 23.7, "inseam": 93.7 } }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -144,28 +144,15 @@ fn each_too_nudges_the_target_a_quarter_inch_that_way() {
     pair.feel.insert(LegOpening, Feel::TooLoose);
     pair.feel.insert(FrontRise, Feel::TooShort);
     let t = targets(&p, Some(&readings), &ease(), ih_points(), false);
-    assert!(close(
-        range_of(&t.targets[&Thigh].target).1,
-        31.0 + QUARTER_INCH
-    ));
-    assert!(close(
-        range_of(&t.targets[&LegOpening].target).1,
-        20.0 - QUARTER_INCH
-    ));
-    assert!(close(
-        range_of(&t.targets[&FrontRise].target).1,
-        28.0 + QUARTER_INCH
-    ));
+    assert!(close(range_of(&t.targets[&Thigh].target).1, 31.0 + QUARTER_INCH));
+    assert!(close(range_of(&t.targets[&LegOpening].target).1, 20.0 - QUARTER_INCH));
+    assert!(close(range_of(&t.targets[&FrontRise].target).1, 28.0 + QUARTER_INCH));
 }
 
 #[test]
 fn a_pairs_inseam_shifted_by_its_feel_sets_the_least_inseam() {
     let (mut p, readings) = pair_profile();
-    p.reference_pair
-        .as_mut()
-        .unwrap()
-        .feel
-        .insert(Inseam, Feel::TooLong);
+    p.reference_pair.as_mut().unwrap().feel.insert(Inseam, Feel::TooLong);
     let t = targets(&p, Some(&readings), &ease(), ih_points(), false);
     assert_eq!(
         t.targets[&Inseam].target,

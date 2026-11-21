@@ -9,8 +9,8 @@ pub fn for_locale(locale: &str) -> Option<&'static str> {
         .find(|p| p.len() == 2 && p.chars().all(|c| c.is_ascii_alphabetic()))?
         .to_ascii_uppercase();
     const EURO: &[&str] = &[
-        "AT", "BE", "HR", "CY", "EE", "FI", "FR", "DE", "GR", "IE", "IT", "LV", "LT", "LU", "MT",
-        "NL", "PT", "SK", "SI", "ES",
+        "AT", "BE", "HR", "CY", "EE", "FI", "FR", "DE", "GR", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PT", "SK",
+        "SI", "ES",
     ];
     if EURO.contains(&region.as_str()) {
         return Some("EUR");

@@ -25,18 +25,9 @@ fn leg_shape_comes_from_knee_minus_leg_opening_flat() {
 #[test]
 fn the_weird_guy_is_tapered_and_the_634s_and_cs105x_are_straight() {
     // Size 32 knee and leg opening, inches flat, from docs/research.
-    assert_eq!(
-        leg_shape(&flat(8.75 * IN, 7.5 * IN)),
-        Some(LegShape::Tapered)
-    );
-    assert_eq!(
-        leg_shape(&flat(9.3 * IN, 8.7 * IN)),
-        Some(LegShape::Straight)
-    );
-    assert_eq!(
-        leg_shape(&flat(9.5 * IN, 8.5 * IN)),
-        Some(LegShape::Straight)
-    );
+    assert_eq!(leg_shape(&flat(8.75 * IN, 7.5 * IN)), Some(LegShape::Tapered));
+    assert_eq!(leg_shape(&flat(9.3 * IN, 8.7 * IN)), Some(LegShape::Straight));
+    assert_eq!(leg_shape(&flat(9.5 * IN, 8.5 * IN)), Some(LegShape::Straight));
 }
 
 #[test]
@@ -62,10 +53,7 @@ fn rise_is_the_third_a_front_rise_falls_in_among_products_at_the_same_waist() {
         entry(3, 52.0, Some(20.0)),
     ];
     let r = rises(&entries);
-    assert_eq!(
-        &r[..3],
-        &[Some(Rise::Low), Some(Rise::Mid), Some(Rise::High)]
-    );
+    assert_eq!(&r[..3], &[Some(Rise::Low), Some(Rise::Mid), Some(Rise::High)]);
 }
 
 #[test]

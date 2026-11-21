@@ -43,16 +43,8 @@ pub async fn check_for_update(
 /// Downloads and installs the update found by `check_for_update`, then
 /// reopens the app.
 #[tauri::command]
-pub async fn install_update(
-    app: tauri::AppHandle,
-    pending: tauri::State<'_, Pending>,
-) -> Result<(), String> {
-    let update = pending
-        .0
-        .lock()
-        .unwrap()
-        .take()
-        .ok_or("No update to install")?;
+pub async fn install_update(app: tauri::AppHandle, pending: tauri::State<'_, Pending>) -> Result<(), String> {
+    let update = pending.0.lock().unwrap().take().ok_or("No update to install")?;
     let mut update = update;
     update.timeout = Some(DOWNLOAD_TIMEOUT);
     update

@@ -4,6 +4,7 @@
 //! decisions behind it in `docs/adr/`.
 
 pub mod after_wash;
+pub mod calibration;
 pub mod catalogue;
 pub mod classify;
 pub mod closeness;

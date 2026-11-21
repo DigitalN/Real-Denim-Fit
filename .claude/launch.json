@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "preview",
+      "runtimeExecutable": "cargo",
+      "runtimeArgs": ["run", "-q", "-p", "real-denim-fit", "--example", "preview", "--", "1420"],
+      "port": 1420
+    }
+  ]
+}
