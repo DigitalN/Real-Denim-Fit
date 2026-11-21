@@ -5,17 +5,17 @@ Rogue Territory's charts are JPEGs, so the numbers are read by eye (Claude, twic
 not by this script. Python 3.9+ standard library only; on macOS it also uses the built-in `sips`
 to save an enlarged copy of each image for reading. Run from the repo root:
 
-  1. python3 tools/catalogue/rogue-territory/extract.py fetch
+  1. python3 catalogue/rogue-territory/tools/extract.py fetch
        Downloads products.json and every chart image into the work folder (default
        <tmp>/real-denim-fit/rogue-territory/<date>, or --work DIR). Writes manifest.json and
        images/, plus images/large/ (enlarged copies), and prints each chart to read.
   2. Read each chart twice, independently, into reads/<chart>-a.json and reads/<chart>-b.json:
        {"columns": ["TAG SIZE", "WAIST", ...headings as printed...],
         "rows": [["29", "15.5", ...], ...]}      # every cell as printed; "?" if unsure
-  3. python3 tools/catalogue/rogue-territory/extract.py compare
+  3. python3 catalogue/rogue-territory/tools/extract.py compare
        Compares A and B cell by cell (and C, from reads/<chart>-c.json, for cells that disagree).
        Writes agreed/<chart>.json, prints the tally and the disputed cells (headings only, no values).
-  4. python3 tools/catalogue/rogue-territory/extract.py build
+  4. python3 catalogue/rogue-territory/tools/extract.py build
        Writes brand.json and one file per cut to catalogue/rogue-territory/ (or --out DIR), from the
        agreed cells only, and lists every cell it left out and why. It never writes EXTRACTING.md.
 

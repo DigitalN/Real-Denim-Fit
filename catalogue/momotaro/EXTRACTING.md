@@ -4,13 +4,13 @@ Last full run: 2026-11-20. 34 product pages became 41 products (7 pages sell the
 
 ## How to rerun
 
-The tools are in `tools/catalogue/momotaro/`. The top of each file explains it.
+The tools are in `catalogue/momotaro/tools/`. The top of each file explains it.
 
 1. **Open the store.** Open `https://www.momotaro-jeans.com` in the built-in browser, set the flag menu (top left) to **Ship to: United States** and Save.
 2. **Scrape.** Run `scrape.js` in that tab, with the browser's javascript tool or the DevTools console. It starts in the background: poll `window.__momotaro.done`.
    - When it's done, save `window.__momotaro.raw` as `momotaro-raw.json`. It offers a download. If you copy the JSON out through a tool instead, check it with a SHA-256 of `JSON.stringify(raw)` in the page against `json.dumps(raw, separators=(",", ":"), ensure_ascii=False)` in Python; they match only when the copy is exact.
    - It refuses to finish if prices aren't USD.
-3. **Build.** Run `python3 tools/catalogue/momotaro/build.py momotaro-raw.json --seen YYYY-MM-DD`. It writes `catalogue/momotaro/` and warns about products that are new or gone.
+3. **Build.** Run `python3 catalogue/momotaro/tools/build.py momotaro-raw.json --seen YYYY-MM-DD`. It writes `catalogue/momotaro/` and warns about products that are new or gone.
    - Put new jeans into `PRODUCTS` (or `SKIP`, with a reason).
    - Review `DROP` against the new charts, then rerun.
 4. **Check.** Spot-check at least three sizes on the live pages. Then set the store back to your own country.

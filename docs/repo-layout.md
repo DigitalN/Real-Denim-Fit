@@ -12,7 +12,7 @@ Where everything lives. Parts of the first build are being written in parallel, 
 | `ui/` | The screens: static HTML, CSS and JavaScript, with no bundler and no npm. `tauri.conf.json` has `"frontendDist": "../ui"`. |
 | `ui/guide/` | The measuring guide: one SVG drawing per step, plus `steps.json` (format below). |
 | `catalogue/` | The catalogue, in the format in [catalogue-format.md](catalogue-format.md). The app builds in only `catalogue/exchange-rates.json` and `catalogue/<brand>/*.json`. |
-| `tools/catalogue/<brand-id>/` | Each brand's extraction scripts, used by `/update-catalogue`: Python 3 with the standard library only, plus browser JavaScript snippets. Never built into the app or read by validation. |
+| `catalogue/<brand-id>/tools/` | Each brand's extraction scripts, used by `/update-catalogue`: Python 3 with the standard library only, plus browser JavaScript snippets. The build (`crates/fit-core/build.rs`) and validation (`Catalogue::from_dir`) read only the JSON files directly inside a brand folder and skip sub-folders, so nothing here, not even a JSON file such as `naked-and-famous/tools/decisions.json`, reaches the app. |
 | `crates/fit-core/data/` | `ease-table.json`, the ease table, with a source on every number, and `levis-body-chart.json`, which only the calibration test reads. Both are built into the app. |
 | `.github/workflows/` | `ci.yml` (on pull requests) and `release.yml` (run by hand). |
 | `.claude/CLAUDE.md` | Instructions Claude Code reads in every session here. |

@@ -1,7 +1,7 @@
 """Find Nudie's dry jeans and extract their product data from nudiejeans.com (en-US).
 
 Usage (Python 3, standard library only; plain HTTP works, no browser needed):
-    python3 tools/catalogue/nudie/fetch_products.py WORKDIR [--only URI,URI,...]
+    python3 catalogue/nudie/tools/fetch_products.py WORKDIR [--only URI,URI,...]
 
     WORKDIR   a scratch folder for the cache and outputs (pages are cached in WORKDIR/pages;
               delete a page to fetch it again)

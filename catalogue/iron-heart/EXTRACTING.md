@@ -70,10 +70,10 @@ Recheck these on the next run. If a pair disagrees and neither table fits, leave
 ## How to rerun
 
 ```sh
-python3 tools/catalogue/iron-heart/extract.py
+python3 catalogue/iron-heart/tools/extract.py
 ```
 
-- It fetches everything again and rewrites `brand.json` and the cut files. Then it lists what it skipped, any blank cells and any inch/cm disagreements. See [`tools/catalogue/iron-heart/README.md`](../../tools/catalogue/iron-heart/README.md) for the options.
+- It fetches everything again and rewrites `brand.json` and the cut files. Then it lists what it skipped, any blank cells and any inch/cm disagreements. See [`catalogue/iron-heart/tools/README.md`](tools/README.md) for the options.
 - About 130 requests, taking roughly 5 minutes. It uses only Python's standard library and doesn't need a browser.
 - Afterwards, review `git diff catalogue/iron-heart`, and update this file and the "Last full run" date.
 - If it exits with a PROBLEM (for example, a new Fabric Focus heading), fix the script, not the output.

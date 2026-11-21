@@ -3,9 +3,9 @@
 
 Python 3 standard library only. Run from the repository root:
 
-    python3 tools/catalogue/naked-and-famous/nf_catalogue.py fetch --cache ~/nf-cache
-    python3 tools/catalogue/naked-and-famous/nf_catalogue.py build --cache ~/nf-cache
-    python3 tools/catalogue/naked-and-famous/nf_catalogue.py check
+    python3 catalogue/naked-and-famous/tools/nf_catalogue.py fetch --cache ~/nf-cache
+    python3 catalogue/naked-and-famous/tools/nf_catalogue.py build --cache ~/nf-cache
+    python3 catalogue/naked-and-famous/tools/nf_catalogue.py check
 
 fetch   Downloads products.json (all pages) into CACHE/products/<today>/. Then it
         downloads every in-scope jeans product page into CACHE/pages/<handle>.html,

@@ -3,7 +3,7 @@
 `extract.py` rebuilds `catalogue/iron-heart/` from ironheart.co.uk. It needs only Python 3.9 or later with its standard library (macOS's built-in `/usr/bin/python3` works), and no browser.
 
 ```sh
-python3 tools/catalogue/iron-heart/extract.py
+python3 catalogue/iron-heart/tools/extract.py
 ```
 
 **What it does:**
@@ -24,7 +24,7 @@ python3 tools/catalogue/iron-heart/extract.py
 - `--out DIR`: write somewhere other than `catalogue/iron-heart/`, for example to diff against the committed files
 - `--only HANDLE`: build one product (such as `ih-634s`), print its JSON and write nothing
 
-**When the site changes,** fix the script rather than the output. The rules it relies on (where the chart, cut, fabric and Fabric Focus are, and which products count as jeans) are explained in [`catalogue/iron-heart/EXTRACTING.md`](../../../catalogue/iron-heart/EXTRACTING.md).
+**When the site changes,** fix the script rather than the output. The rules it relies on (where the chart, cut, fabric and Fabric Focus are, and which products count as jeans) are explained in [`catalogue/iron-heart/EXTRACTING.md`](../EXTRACTING.md).
 
 **Two tables to update by hand:**
 - `USE_CM`: products whose inch table has a typo the cm table doesn't share

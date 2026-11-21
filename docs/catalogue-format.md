@@ -9,8 +9,11 @@ catalogue/
     ├── brand.json
     ├── EXTRACTING.md
     ├── 634s.json          one file per cut, holding all its products
-    └── 555s.json
+    ├── 555s.json
+    └── tools/             the brand's extraction scripts, used by /update-catalogue
 ```
+
+The app builds in, and validation reads, only `exchange-rates.json` and the JSON files directly inside each brand folder. Sub-folders such as `tools/` are skipped, so nothing in them (scripts, or a JSON file like Naked & Famous's `decisions.json`) ever reaches the app.
 
 ## What goes in
 

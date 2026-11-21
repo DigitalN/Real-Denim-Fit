@@ -7,7 +7,7 @@ Update the catalogue for one brand: **$ARGUMENTS**. If no brand was given, ask w
 
 Running `/update-catalogue` is the user's go-ahead for these: make a branch, commit, push it and open a pull request for this one brand. Nothing else gets pushed or merged.
 
-**Each brand has an extraction script** in `tools/catalogue/<brand-id>/`: Python 3 with the standard library only, plus browser JavaScript snippets where a page needs them. The script does the extraction, so it's what gets fixed when a site changes (step 2).
+**Each brand has an extraction script** in `catalogue/<brand-id>/tools/`: Python 3 with the standard library only, plus browser JavaScript snippets where a page needs them. The script does the extraction, so it's what gets fixed when a site changes (step 2).
 
 **Nobody checks the numbers by hand.** The user merges the PR after reading its verification summary, so this command has to do the checking itself:
 - every number read from an image is read twice, independently (step 3)
@@ -27,11 +27,11 @@ Every number here helps someone choose jeans they can't try on, so **accuracy ma
   - its `EXTRACTING.md`, which says where the charts are and what's tricky
   - `brand.json`
   - every cut file
-  - its script in `tools/catalogue/<brand-id>/`: the `README.md` there says how to run it, and the code shows what it reads
+  - its script in `catalogue/<brand-id>/tools/`: the `README.md` there says how to run it, and the code shows what it reads
 - **For a brand that isn't in the catalogue yet:**
   - Research it on **the brand's own site only**: its size charts, its "how we measure" page, its tolerance, its shrinkage notes and its currency. Never use retailers, forums or reviews. Their numbers aren't the brand's.
   - Create `catalogue/<brand-id>/` with `brand.json` (including `measuring_points` and `conventions`), one file per cut, and an `EXTRACTING.md` for the next run.
-  - Write its extraction script in `tools/catalogue/<brand-id>/` (see step 2), with a short `README.md` that says how to run it and what it writes.
+  - Write its extraction script in `catalogue/<brand-id>/tools/` (see step 2), with a short `README.md` that says how to run it and what it writes.
   - If the brand doesn't say where it measures, that point is `"unknown"`.
   - If it measures somewhere the format has no name for, such as a knee point 11″ below the crotch, stop and tell the user. The format, the measuring guide and the app all need that point first.
 
@@ -136,7 +136,7 @@ Before opening the PR, a sub-agent that didn't do the extraction re-reads part o
    - the cookie rules in step 5
    - a path to write its readings to
 
-   Tell it not to open `catalogue/`, `tools/catalogue/`, or any file in the working folder except `sample.json`. It reads the pages itself, so a bug in the script can't pass its own check.
+   Tell it not to open `catalogue/` (which holds the scripts too) or any file in the working folder except `sample.json`. It reads the pages itself, so a bug in the script can't pass its own check.
    - It reads every number for those products from the live pages: each listed size's measurements, plus fabric weight, composition percentages, shrinkage figures and list price.
    - For an image chart, it saves the image again and reads it itself.
    - It leaves out what isn't published, and writes `"?"` for anything it can't read for certain.
@@ -168,8 +168,7 @@ The tests include catalogue validation: every number has a link and a date, numb
 ## 8. Commit, push and open the PR
 
 **One brand per PR.** Only these change:
-- this brand's `catalogue/<brand-id>/` folder
-- its `tools/catalogue/<brand-id>/` script
+- this brand's `catalogue/<brand-id>/` folder, including its script in `tools/`
 - `catalogue/exchange-rates.json`
 
 1. Update `EXTRACTING.md`:

@@ -3,9 +3,9 @@
 
 Usage (from the repo root; Python 3.9+ standard library only):
 
-    python3 tools/catalogue/3sixteen/extract.py                 # fetch, then write catalogue/3sixteen/
-    python3 tools/catalogue/3sixteen/extract.py --offline       # rebuild from the cache, no network
-    python3 tools/catalogue/3sixteen/extract.py --only cs-100x-classic-straight-indigo-selvedge
+    python3 catalogue/3sixteen/tools/extract.py                 # fetch, then write catalogue/3sixteen/
+    python3 catalogue/3sixteen/tools/extract.py --offline       # rebuild from the cache, no network
+    python3 catalogue/3sixteen/tools/extract.py --only cs-100x-classic-straight-indigo-selvedge
 
 Options: --date YYYY-MM-DD (the "seen" date, default today), --cache DIR (downloads,
 default <tmp>/real-denim-fit/3sixteen/<date>), --out DIR (default catalogue/3sixteen),
