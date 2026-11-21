@@ -1,0 +1,50 @@
+{
+  "id": "410",
+  "brand": "momotaro",
+  "name": "#410",
+  "brand_label": "Wide",
+  "products": [
+    {
+      "id": "410-standard-14-7oz",
+      "name": "Standard 14.7oz, Indigo",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-410-standard-wide-womens-14.7oz-zipper-fly/M410ST.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 14.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 307.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-410-standard-wide-womens-14.7oz-zipper-fly/M410ST.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-410-standard-wide-womens-14.7oz-zipper-fly/M410ST.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "24", "waist_tag": 24, "measurements": {"waist": 69, "front_rise": 26.1, "seat": 92.7, "thigh": 30.2, "leg_opening": 25.1, "inseam": 80}},
+            {"label": "25", "waist_tag": 25, "measurements": {"waist": 71.5, "front_rise": 26.5, "seat": 95.2, "thigh": 31, "leg_opening": 25.4, "inseam": 80}},
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 74, "front_rise": 26.9, "seat": 97.7, "thigh": 31.8, "leg_opening": 25.7, "inseam": 83}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 76.5, "front_rise": 27.3, "seat": 100.2, "thigh": 32.6, "leg_opening": 26, "inseam": 83}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 79, "front_rise": 27.7, "seat": 102.7, "thigh": 33.4, "leg_opening": 26.3, "inseam": 83}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 81.5, "front_rise": 28.1, "seat": 105.2, "thigh": 34.2, "leg_opening": 26.6, "inseam": 86}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 84, "front_rise": 28.5, "seat": 107.7, "thigh": 35, "leg_opening": 26.9, "inseam": 86}}
+          ]
+        }
+      ]
+    }
+  ]
+}

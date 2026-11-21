@@ -1,0 +1,274 @@
+{
+  "id": "400",
+  "brand": "momotaro",
+  "name": "#400",
+  "brand_label": "Wide",
+  "products": [
+    {
+      "id": "400-standard-14-7oz-indigo",
+      "name": "Standard 14.7oz, Indigo",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-400-standard-wide-14.7oz/M400ST.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 14.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 307.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-400-standard-wide-14.7oz/M400ST.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-400-standard-wide-14.7oz/M400ST.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 29.7, "seat": 97.7, "thigh": 30.7, "leg_opening": 22.7, "inseam": 81.3}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 74.5, "front_rise": 30.1, "seat": 100.2, "thigh": 31.5, "leg_opening": 23, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 30.5, "seat": 102.2, "thigh": 32.3, "leg_opening": 23.3, "inseam": 86.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 79.5, "front_rise": 30.9, "seat": 105.2, "thigh": 33.1, "leg_opening": 23.6, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 31.3, "seat": 107.7, "thigh": 33.9, "leg_opening": 23.9, "inseam": 86.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 84.5, "front_rise": 31.7, "seat": 110.2, "thigh": 34.7, "leg_opening": 24.2, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 32.1, "seat": 112.7, "thigh": 35.5, "leg_opening": 24.5, "inseam": 86.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 89.5, "front_rise": 32.5, "seat": 115.2, "thigh": 36.3, "leg_opening": 24.8, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 32.9, "seat": 117.7, "thigh": 37.1, "leg_opening": 25.1, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 33.7, "seat": 122.7, "thigh": 38.7, "leg_opening": 25.7, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 34.5, "seat": 127.7, "thigh": 40.3, "leg_opening": 26.3, "inseam": 86.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 107, "front_rise": 35.3, "seat": 132.7, "thigh": 41.9, "leg_opening": 26.9, "inseam": 86.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 112, "front_rise": 36.1, "seat": 137.7, "thigh": 43.5, "inseam": 86.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "400-standard-14-7oz-black",
+      "name": "Standard 14.7oz, Black",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-400-standard-wide-14.7oz/M400ST.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 14.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 307.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-400-standard-wide-14.7oz/M400ST.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-400-standard-wide-14.7oz/M400ST.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 29.7, "seat": 97.7, "thigh": 30.7, "leg_opening": 22.7, "inseam": 81.3}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 74.5, "front_rise": 30.1, "seat": 100.2, "thigh": 31.5, "leg_opening": 23, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 30.5, "seat": 102.2, "thigh": 32.3, "leg_opening": 23.3, "inseam": 86.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 79.5, "front_rise": 30.9, "seat": 105.2, "thigh": 33.1, "leg_opening": 23.6, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 31.3, "seat": 107.7, "thigh": 33.9, "leg_opening": 23.9, "inseam": 86.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 84.5, "front_rise": 31.7, "seat": 110.2, "thigh": 34.7, "leg_opening": 24.2, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 32.1, "seat": 112.7, "thigh": 35.5, "leg_opening": 24.5, "inseam": 86.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 89.5, "front_rise": 32.5, "seat": 115.2, "thigh": 36.3, "leg_opening": 24.8, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 32.9, "seat": 117.7, "thigh": 37.1, "leg_opening": 25.1, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 33.7, "seat": 122.7, "thigh": 38.7, "leg_opening": 25.7, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 34.5, "seat": 127.7, "thigh": 40.3, "leg_opening": 26.3, "inseam": 86.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 107, "front_rise": 35.3, "seat": 132.7, "thigh": 41.9, "leg_opening": 26.9, "inseam": 86.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 112, "front_rise": 36.1, "seat": 137.7, "thigh": 43.5, "inseam": 86.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "400-11oz",
+      "name": "11oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---11oz/MXJE1506.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 11,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 276.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---11oz/MXJE1506.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---11oz/MXJE1506.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 30.6, "seat": 102.7, "thigh": 32.3, "leg_opening": 23.3, "inseam": 89.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 31.4, "seat": 107.7, "thigh": 33.9, "leg_opening": 23.9, "inseam": 89.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 32.1, "seat": 112.7, "thigh": 35.5, "leg_opening": 24.5, "inseam": 89.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 32.9, "seat": 117.7, "thigh": 37.1, "leg_opening": 25.1, "inseam": 89.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 33.7, "seat": 122.7, "thigh": 38.7, "inseam": 89.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 34.5, "seat": 127.7, "thigh": 40.3, "leg_opening": 26.3, "inseam": 89.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "400-high-fade-blue",
+      "name": "High Fade Blue",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---high-fade-blue/MMJB6500.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": null,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 369.1,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---high-fade-blue/MMJB6500.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---high-fade-blue/MMJB6500.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 29.8, "seat": 97.7, "thigh": 30.7, "leg_opening": 22.7, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 30.6, "seat": 102.7, "thigh": 32.3, "leg_opening": 23.3, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 31.4, "seat": 107.7, "thigh": 33.9, "leg_opening": 23.9, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 32.2, "seat": 112.7, "thigh": 35.5, "leg_opening": 24.5, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 33, "seat": 117.7, "thigh": 37.1, "leg_opening": 25.1, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 33.8, "seat": 122.7, "thigh": 38.7, "leg_opening": 25.7, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 34.6, "seat": 127.7, "thigh": 40.3, "leg_opening": 26.3, "inseam": 87.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "400-shikon",
+      "name": "Shikon",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---shikon/MMJB6501.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": null,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 389.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---shikon/MMJB6501.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---shikon/MMJB6501.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 72, "front_rise": 29.8, "seat": 97.7, "thigh": 30.7, "leg_opening": 22.7, "inseam": 81.3}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 30.6, "seat": 102.7, "thigh": 32.3, "leg_opening": 23.3, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 31.4, "seat": 107.7, "thigh": 33.9, "leg_opening": 23.9, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 32.2, "seat": 112.7, "thigh": 35.5, "leg_opening": 24.5, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 33, "seat": 117.7, "thigh": 37.1, "leg_opening": 25.1, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 33.8, "seat": 122.7, "thigh": 38.7, "leg_opening": 25.7, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 34.6, "seat": 127.7, "thigh": 40.3, "leg_opening": 26.3, "inseam": 87.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "400-kyotomontsuki-dyed",
+      "name": "Kyotomontsuki Dyed",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---kyotomontsuki-dyed/MMJE6500.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": null,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": null,
+      "list_price": {
+        "amount": 369.1,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---kyotomontsuki-dyed/MMJE6500.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-400-wide---kyotomontsuki-dyed/MMJE6500.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 77, "front_rise": 30.5, "seat": 102.7, "thigh": 32.3, "leg_opening": 23.3, "inseam": 86.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 79.5, "front_rise": 30.9, "seat": 105.2, "thigh": 33.1, "leg_opening": 23.6, "inseam": 86.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 82, "front_rise": 31.3, "seat": 107.7, "thigh": 33.9, "leg_opening": 23.9, "inseam": 86.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 84.5, "front_rise": 31.7, "seat": 110.2, "thigh": 34.7, "leg_opening": 24.2, "inseam": 86.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 87, "front_rise": 32.1, "seat": 112.7, "thigh": 35.5, "leg_opening": 24.5, "inseam": 86.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 89.5, "front_rise": 32.5, "seat": 115.2, "thigh": 36.6, "leg_opening": 24.8, "inseam": 86.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 92, "front_rise": 32.9, "seat": 117.7, "thigh": 37.1, "leg_opening": 25.1, "inseam": 86.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 97, "front_rise": 33.7, "seat": 122.7, "thigh": 38.7, "leg_opening": 25.7, "inseam": 86.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 102, "front_rise": 34.5, "seat": 127.7, "thigh": 40.3, "leg_opening": 26.3, "inseam": 87.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 107, "front_rise": 35.3, "seat": 132.7, "thigh": 41.9, "leg_opening": 26.9, "inseam": 87.3}}
+          ]
+        }
+      ]
+    }
+  ]
+}
