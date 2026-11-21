@@ -479,7 +479,7 @@ fn mens_and_womens_cuts_are_both_shown_by_default_and_matching_ignores_line() {
 }
 
 #[test]
-fn the_line_filter_keeps_unisex_and_unsaid_cuts_with_either_line() {
+fn the_line_filter_keeps_unisex_cuts_with_either_line_and_unsaid_cuts_always() {
     assert_eq!(
         line_cuts(&Filters {
             womens: false,
@@ -493,5 +493,14 @@ fn the_line_filter_keeps_unisex_and_unsaid_cuts_with_either_line() {
             ..filters()
         }),
         ["Unisex", "Unsaid", "Womens"]
+    );
+    // Most brands don't file cuts by line at all; those always show.
+    assert_eq!(
+        line_cuts(&Filters {
+            mens: false,
+            womens: false,
+            ..filters()
+        }),
+        ["Unsaid"]
     );
 }

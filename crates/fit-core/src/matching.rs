@@ -28,8 +28,8 @@ pub struct Filters {
     pub price_max: Option<f64>,
     pub try_on_only: bool,
     pub try_on_brands: Vec<String>,
-    /// Show men's cuts. Unisex cuts, and cuts whose line isn't stated,
-    /// show while either line is ticked.
+    /// Show men's cuts. Unisex cuts show while either line is ticked;
+    /// cuts whose line isn't stated always show.
     pub mens: bool,
     pub womens: bool,
     /// Ounces per square yard.
@@ -231,7 +231,9 @@ fn passes_line_filter(line: Option<Line>, f: &Filters) -> bool {
     match line {
         Some(Line::Men) => f.mens,
         Some(Line::Women) => f.womens,
-        Some(Line::Unisex) | None => f.mens || f.womens,
+        Some(Line::Unisex) => f.mens || f.womens,
+        // Most brands don't file their cuts by line, so these always show.
+        None => true,
     }
 }
 

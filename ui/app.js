@@ -488,7 +488,7 @@ async function renderResults() {
       <h3>Line</h3>
       <label class="checkline"><input type="checkbox" id="f-mens" ${f.mens ?? true ? "checked" : ""}/> Men's</label>
       <label class="checkline"><input type="checkbox" id="f-womens" ${f.womens ?? true ? "checked" : ""}/> Women's</label>
-      <p class="hint">Unisex cuts show with either.</p>
+      <p class="hint">Unisex cuts show with either. Cuts the brand doesn't file as men's or women's always show.</p>
       <h3>Brands</h3>
       ${CAT.brands.map((b) => `<label class="checkline"><input type="checkbox" data-brand="${b.id}" ${!f.brands || f.brands.includes(b.id) ? "checked" : ""}/> ${esc(b.name)}</label>`).join("")}
       <label class="checkline"><input type="checkbox" id="f-tryon" ${f.try_on_only ? "checked" : ""} ${S.settings.tryOnBrands.length ? "" : "disabled"}/> Try-on brands only</label>
