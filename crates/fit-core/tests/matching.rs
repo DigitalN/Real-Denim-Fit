@@ -620,3 +620,45 @@ fn the_hard_limit_applies_at_every_importance() {
     assert_eq!(r.rows[0].best.size, "ok");
     assert!(r.rows[0].other_sizes.is_empty());
 }
+
+// --- Finish -----------------------------------------------------------------
+
+fn finishes() -> Vec<TestProduct> {
+    use fit_core::catalogue::Finish;
+    [
+        ("raw", Some(Finish::Raw)),
+        ("rinsed", Some(Finish::Rinsed)),
+        ("washed", Some(Finish::Washed)),
+        ("unsaid", None),
+    ]
+    .into_iter()
+    .map(|(id, finish)| {
+        let mut p = simple(id, id, &[("32", 12.56)]);
+        p.finish = finish;
+        p
+    })
+    .collect()
+}
+
+fn finish_cuts(f: &Filters) -> Vec<String> {
+    let mut c: Vec<String> = run(finishes(), &profile(Room::Regular), f)
+        .rows
+        .iter()
+        .map(|r| r.cut.clone())
+        .collect();
+    c.sort();
+    c
+}
+
+#[test]
+fn washed_denim_is_hidden_unless_switched_on() {
+    assert!(!Filters::default().include_washed);
+    assert_eq!(finish_cuts(&filters()), ["raw", "rinsed", "unsaid"]);
+    assert_eq!(
+        finish_cuts(&Filters {
+            include_washed: true,
+            ..filters()
+        }),
+        ["raw", "rinsed", "unsaid", "washed"]
+    );
+}

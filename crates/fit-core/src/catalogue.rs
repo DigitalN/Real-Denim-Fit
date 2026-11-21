@@ -223,6 +223,18 @@ pub enum Sold {
     OneWashed,
 }
 
+/// How a product's denim looks when it's sold.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "lowercase")]
+pub enum Finish {
+    /// Never washed; goes with `sold: "raw"`.
+    Raw,
+    /// Washed once without fading; goes with `sold: "one-washed"`.
+    Rinsed,
+    /// Faded on purpose at the factory; goes with `sold: "one-washed"`.
+    Washed,
+}
+
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct Fibre {
     pub fibre: String,
@@ -303,6 +315,10 @@ pub struct Product {
     pub status_seen: String,
     pub fabric: Fabric,
     pub sold: Option<Sold>,
+    /// `None` when the page doesn't make it clear (or, for now, when a file
+    /// doesn't have the key yet).
+    #[serde(default)]
+    pub finish: Option<Finish>,
     pub list_price: Option<ListPrice>,
     pub shrinkage: Option<Shrinkage>,
     pub charts: Vec<Chart>,

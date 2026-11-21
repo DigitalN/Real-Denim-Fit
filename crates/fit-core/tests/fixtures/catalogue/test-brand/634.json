@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": { "weight_oz": 21, "composition": [{ "fibre": "cotton", "percent": 100 }], "sanforized": true },
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": { "amount": 293, "currency": "GBP", "url": "https://example.com/products/634", "seen": "2026-11-20" },
       "shrinkage": null,
       "charts": [

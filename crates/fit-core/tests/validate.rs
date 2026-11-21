@@ -22,6 +22,9 @@ fn a_catalogue_folder_loads_with_charts_inheriting_from_the_brand() {
     assert_eq!(b.cuts[0].brand_label.as_deref(), Some("Straight Cut"));
     assert_eq!(b.cuts[0].line, Some(fit_core::catalogue::Line::Men));
     let (brand, cut, p) = c.product("test-brand/634-21oz-indigo").unwrap();
+    assert_eq!(p.finish, Some(fit_core::catalogue::Finish::Rinsed));
+    // The UHR product has no finish key yet: read as not stated.
+    assert_eq!(c.product("test-brand/634-uhr").unwrap().2.finish, None);
     assert_eq!(cut.name, "634");
     let w = after_wash(brand, p).unwrap();
     assert_eq!(w.basis, Basis::SoldWashed);
@@ -272,4 +275,56 @@ fn a_line_must_be_men_women_unisex_or_null() {
     assert!(Catalogue::from_files(&files)
         .unwrap_err()
         .contains("unknown variant `mens`"));
+}
+
+#[test]
+fn a_finish_must_be_raw_rinsed_washed_or_null() {
+    let text = std::fs::read_to_string(
+        Path::new(env!("CARGO_MANIFEST_DIR")).join("tests/fixtures/catalogue/test-brand/634.json"),
+    )
+    .unwrap()
+    .replace("\"finish\": \"rinsed\"", "\"finish\": \"faded\"");
+    let files = vec![
+        (
+            "exchange-rates.json".to_string(),
+            r#"{"source":"https://x.example","date":"2026-11-20","base":"EUR","rates":{}}"#.to_string(),
+        ),
+        (
+            "test-brand/brand.json".to_string(),
+            std::fs::read_to_string(
+                Path::new(env!("CARGO_MANIFEST_DIR")).join("tests/fixtures/catalogue/test-brand/brand.json"),
+            )
+            .unwrap(),
+        ),
+        ("test-brand/634.json".to_string(), text),
+    ];
+    assert!(Catalogue::from_files(&files)
+        .unwrap_err()
+        .contains("unknown variant `faded`"));
+}
+
+#[test]
+fn a_raw_finish_goes_with_sold_raw_and_rinsed_or_washed_with_one_washed() {
+    use fit_core::catalogue::Finish;
+    let with = |finish: Option<Finish>, sold: Option<Sold>| {
+        let mut p = good();
+        p.finish = finish;
+        p.sold = sold;
+        problems(p)
+    };
+    assert!(with(Some(Finish::Raw), Some(Sold::Raw)).is_empty());
+    assert!(with(Some(Finish::Rinsed), Some(Sold::OneWashed)).is_empty());
+    assert!(with(Some(Finish::Washed), Some(Sold::OneWashed)).is_empty());
+    assert!(with(None, Some(Sold::Raw)).is_empty());
+    for (finish, sold) in [
+        (Finish::Raw, Sold::OneWashed),
+        (Finish::Rinsed, Sold::Raw),
+        (Finish::Washed, Sold::Raw),
+    ] {
+        let found = with(Some(finish), Some(sold));
+        assert!(
+            found.iter().any(|s| s.contains("finish")),
+            "{finish:?} with {sold:?}: {found:?}"
+        );
+    }
 }

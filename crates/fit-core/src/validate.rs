@@ -6,8 +6,8 @@ use std::collections::BTreeSet;
 
 use crate::after_wash::after_wash;
 use crate::catalogue::{
-    Brand, Catalogue, Chart, ChartState, Cut, Measurement, Product, Shrinkage, Source, KNEE_POINTS, SEAT_POINTS,
-    THIGH_POINTS,
+    Brand, Catalogue, Chart, ChartState, Cut, Finish, Measurement, Product, Shrinkage, Sold, Source, KNEE_POINTS,
+    SEAT_POINTS, THIGH_POINTS,
 };
 use crate::ease::EaseTable;
 use crate::profile::Room;
@@ -142,6 +142,16 @@ fn check_product(
     }
     if !is_date(&p.status_seen) {
         out.push(format!("{what}: status_seen must be a date (YYYY-MM-DD)"));
+    }
+    match (p.finish, p.sold) {
+        (Some(Finish::Raw), Some(Sold::OneWashed)) | (Some(Finish::Rinsed | Finish::Washed), Some(Sold::Raw)) => {
+            out.push(format!(
+                "{what}: finish {:?} doesn't go with sold {:?} (raw goes with \"raw\"; rinsed and washed with \"one-washed\")",
+                p.finish.unwrap(),
+                p.sold.unwrap()
+            ))
+        }
+        _ => {}
     }
     if p.charts.is_empty() {
         out.push(format!(

@@ -79,6 +79,7 @@ pub fn product(id: &str, cut: &str, charts: Vec<Chart>) -> TestProduct {
                 sanforized: Some(true),
             },
             sold: Some(Sold::OneWashed),
+            finish: None,
             list_price: Some(ListPrice {
                 amount: 200.0,
                 currency: "USD".into(),

@@ -55,6 +55,7 @@ function freshState(currency) {
       weight_max: null,
       sanforized_only: false,
       no_stretch: false,
+      include_washed: false,
       current_only: true,
       show_other_shapes_and_rises: false,
     },
@@ -450,6 +451,7 @@ function filtersForRust() {
   const f = S.filters;
   return {
     ...f,
+    include_washed: f.include_washed ?? false,
     mens: f.mens ?? true,
     womens: f.womens ?? true,
     currency: S.settings.currency,
@@ -537,6 +539,7 @@ async function renderResults() {
       <h3>Fabric</h3>
       <label class="checkline"><input type="checkbox" id="f-sanf" ${f.sanforized_only ? "checked" : ""}/> Sanforized only</label>
       <label class="checkline"><input type="checkbox" id="f-nostretch" ${f.no_stretch ? "checked" : ""}/> No stretch</label>
+      <label class="checkline"><input type="checkbox" id="f-washed" ${f.include_washed ? "checked" : ""}/> Include washed denim</label>
       <label class="checkline"><input type="checkbox" id="f-current" ${f.current_only ? "checked" : ""}/> Current products only</label>
     </aside>
     <section>
@@ -563,6 +566,7 @@ async function renderResults() {
     f.weight_max = num("f-wmax");
     f.sanforized_only = document.getElementById("f-sanf").checked;
     f.no_stretch = document.getElementById("f-nostretch").checked;
+    f.include_washed = document.getElementById("f-washed").checked;
     f.current_only = document.getElementById("f-current").checked;
     f.show_other_shapes_and_rises = document.getElementById("f-rest").checked;
     save();
@@ -732,6 +736,7 @@ async function renderProduct(id, size) {
       <p><b>Composition</b><br>${esc(compositionText(p.fabric))}${elastane > 0 ? ` (${elastane}% elastane: stretch)` : ""}</p>
       <p><b>Sanforized</b><br>${p.fabric.sanforized === true ? "Yes" : p.fabric.sanforized === false ? "No (unsanforized)" : "The brand doesn't say"}</p>
       <p><b>As sold</b><br>${p.sold === "one-washed" ? "Already washed by the brand" : p.sold === "raw" ? "Raw (unwashed)" : "The brand doesn't say"}</p>
+      <p><b>Finish</b><br>${{ raw: "Raw: never washed", rinsed: "Rinsed: washed once, not faded", washed: "Washed: faded on purpose at the factory" }[p.finish] || "Not clear from the brand's page"}</p>
       <p><b>After first wash</b><br>${washed ? esc(BASIS_TEXT[washed.basis]) : "no measurements"}</p>
       ${p.shrinkage ? `<p><b>Shrinkage</b><br>${esc(shrinkageText(p.shrinkage))}${p.shrinkage.note ? `<br><span class="small muted">“${esc(p.shrinkage.note)}”</span>` : ""}<br><span class="small muted"><a href="${esc(p.shrinkage.source.url)}" target="_blank" rel="noopener">source</a>, seen ${esc(p.shrinkage.source.seen)}</span></p>` : ""}
       <p><b>Tolerance</b><br>${describeTolerance(eff ? eff.tolerance : null)}</p>

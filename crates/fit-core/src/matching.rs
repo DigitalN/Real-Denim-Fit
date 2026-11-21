@@ -6,7 +6,7 @@ use std::collections::BTreeMap;
 use serde::{Deserialize, Serialize};
 
 use crate::after_wash::{after_wash, Basis, Washed, WashedSize};
-use crate::catalogue::{product_key, Brand, Catalogue, Cut, KneePoint, Line, Measurement, Product, ThighPoint};
+use crate::catalogue::{product_key, Brand, Catalogue, Cut, Finish, KneePoint, Line, Measurement, Product, ThighPoint};
 use crate::classify::{leg_shape, rises, RiseEntry};
 use crate::closeness::closeness;
 use crate::ease::EaseTable;
@@ -37,6 +37,8 @@ pub struct Filters {
     pub weight_max: Option<f64>,
     pub sanforized_only: bool,
     pub no_stretch: bool,
+    /// Show products whose finish is washed (faded at the factory).
+    pub include_washed: bool,
     pub current_only: bool,
     /// Show the leg shapes and rises you didn't choose too.
     pub show_other_shapes_and_rises: bool,
@@ -57,6 +59,7 @@ impl Default for Filters {
             weight_max: None,
             sanforized_only: false,
             no_stretch: false,
+            include_washed: false,
             current_only: true,
             show_other_shapes_and_rises: false,
         }
@@ -256,6 +259,9 @@ fn passes_product_filters(brand: &Brand, product: &Product, price: Option<f64>, 
         return false;
     }
     if f.no_stretch && product.is_stretch() {
+        return false;
+    }
+    if !f.include_washed && product.finish == Some(Finish::Washed) {
         return false;
     }
     let in_range = |v: Option<f64>, min: Option<f64>, max: Option<f64>| {
