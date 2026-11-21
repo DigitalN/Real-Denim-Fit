@@ -95,6 +95,13 @@ const unitLabel = () => (units() === "in" ? "in" : "cm");
 const bodyComplete = () => BODY_FIELDS.every((f) => typeof S.body[f] === "number");
 const activePair = () => S.pairs.find((p) => p.id === S.activePairId) || null;
 
+/** Removes a reference pair, and stops comparing with it if it was chosen. */
+function removePair(id) {
+  S.pairs = S.pairs.filter((p) => p.id !== id);
+  if (S.activePairId === id) S.activePairId = null;
+  save();
+}
+
 // ---------------------------------------------------------------- boot ----
 
 async function boot() {
@@ -127,6 +134,8 @@ async function boot() {
       return;
     }
     S = saved || freshState(CAT.default_currency);
+    // A pair removed while chosen (by older builds) leaves nothing to compare with.
+    if (S.activePairId && !S.pairs.some((p) => p.id === S.activePairId)) S.activePairId = null;
     // Earlier builds had "doesn't matter" checkboxes; those become importance 1.
     if (S.desiredFit.doesnt_matter) {
       S.desiredFit.importance = S.desiredFit.importance || {};
@@ -592,7 +601,7 @@ async function renderResults() {
     return Number.isFinite(v) ? v : null;
   };
   const onChange = () => {
-    S.activePairId = $app.querySelector('input[name="compare"]:checked').value || null;
+    S.activePairId = $app.querySelector('input[name="compare"]:checked')?.value || null;
     document.getElementById("compare-hint").textContent = compareHint();
     const chosen = [...$app.querySelectorAll("[data-brand]:checked")].map((c) => c.dataset.brand);
     f.brands = chosen.length === brandIds.length ? null : chosen;
@@ -902,8 +911,7 @@ function renderPairMeasure(pair, stepText) {
     go: (to, total) => {
       if (to < 0) {
         if (!Object.keys(r).length) {
-          S.pairs = S.pairs.filter((p) => p.id !== pair.id);
-          save();
+          removePair(pair.id);
         }
         location.hash = "#/pairs";
       } else if (total !== undefined && to >= total) location.hash = base;
@@ -1045,9 +1053,7 @@ async function renderPair(id, sub, step) {
     location.hash = "#/pairs";
   };
   askInPage(document.getElementById("delete"), `Delete "${pair.name}"? This can't be undone.`, "Delete", () => {
-    S.pairs = S.pairs.filter((p) => p.id !== pair.id);
-    if (S.activePairId === pair.id) S.activePairId = null;
-    save();
+    removePair(pair.id);
     location.hash = "#/pairs";
   });
   showPairEase(pair);
