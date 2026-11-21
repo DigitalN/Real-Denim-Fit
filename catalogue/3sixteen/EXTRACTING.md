@@ -65,3 +65,16 @@ Last full run: 2026-11-20. 48 products in 7 cuts, 529 sizes. 6 of the products w
 ## Skipped
 
 Nothing with a chart was skipped.
+
+## How to rerun
+
+```sh
+python3 tools/catalogue/3sixteen/extract.py
+```
+
+- It fetches `products.json` and every jean's Measurements modal again, then rewrites `brand.json` and the cut files. See [`tools/catalogue/3sixteen/README.md`](../../tools/catalogue/3sixteen/README.md) for the options.
+- About 50 requests, taking roughly 2 minutes. It uses only Python's standard library and doesn't need a browser.
+- The "Fabric decisions" above are rules in the script. It prints what it inferred for each product, so check any new product's line against its page. Add an entry to `OVERRIDES` (with the reason) where a rule gets it wrong.
+- The quirks above (flat waists, the misaligned knee row, the blank cell, the `<br>` cells) are handled by the script and reported each run, so the next run shows whether the brand has fixed them.
+- If it exits with a PROBLEM, such as a new jean whose cut it doesn't know, fix the script, not the output.
+- On 2026-11-21, run offline on the 2026-11-20 downloads, it reproduced every committed file exactly.

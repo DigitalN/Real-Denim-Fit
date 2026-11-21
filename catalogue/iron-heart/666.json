@@ -654,22 +654,22 @@
         {
           "state": "as-sold",
           "source": {"url": "https://www.ironheart.co.uk/products/ih-666s-uhr", "seen": "2026-11-20"},
-          "unit": "in",
+          "unit": "cm",
           "from_image": false,
           "sizes": [
-            {"label": "28", "waist_tag": 28, "measurements": {"waist": 29.5, "front_rise": 10.1, "back_rise": 13.9, "thigh": 10.8, "knee": 8.0, "leg_opening": 7.4, "inseam": 36.5}},
-            {"label": "29", "waist_tag": 29, "measurements": {"waist": 30.9, "front_rise": 10.3, "back_rise": 14.1, "thigh": 11.2, "knee": 8.1, "leg_opening": 7.8, "inseam": 36.5}},
-            {"label": "30", "waist_tag": 30, "measurements": {"waist": 31.8, "front_rise": 10.4, "back_rise": 14.2, "thigh": 11.4, "knee": 8.5, "leg_opening": 8.1, "inseam": 36.5}},
-            {"label": "31", "waist_tag": 31, "measurements": {"waist": 33.0, "front_rise": 10.6, "back_rise": 14.3, "thigh": 11.6, "knee": 8.6, "leg_opening": 8.3, "inseam": 36.5}},
-            {"label": "32", "waist_tag": 32, "measurements": {"waist": 33.6, "front_rise": 10.8, "back_rise": 14.6, "thigh": 12.0, "knee": 8.8, "leg_opening": 8.5, "inseam": 36.5}},
-            {"label": "33", "waist_tag": 33, "measurements": {"waist": 34.2, "front_rise": 11.0, "back_rise": 14.8, "thigh": 12.3, "knee": 9.0, "leg_opening": 8.6, "inseam": 36.5}},
-            {"label": "34", "waist_tag": 34, "measurements": {"waist": 35.7, "front_rise": 11.2, "back_rise": 15.2, "thigh": 12.8, "knee": 9.2, "leg_opening": 8.9, "inseam": 36.5}},
-            {"label": "35", "waist_tag": 35, "measurements": {"waist": 37.8, "front_rise": 11.4, "back_rise": 15.4, "thigh": 13.0, "knee": 9.4, "leg_opening": 9.0, "inseam": 36.5}},
-            {"label": "36", "waist_tag": 36, "measurements": {"waist": 37.1, "front_rise": 11.6, "back_rise": 15.8, "thigh": 13.3, "knee": 9.6, "leg_opening": 9.2, "inseam": 36.5}},
-            {"label": "38", "waist_tag": 38, "measurements": {"waist": 39.8, "front_rise": 12.0, "back_rise": 16.0, "thigh": 13.8, "knee": 10.0, "leg_opening": 9.5, "inseam": 36.5}},
-            {"label": "40", "waist_tag": 40, "measurements": {"waist": 41.4, "front_rise": 12.3, "back_rise": 16.5, "thigh": 14.4, "knee": 10.3, "leg_opening": 9.9, "inseam": 36.5}},
-            {"label": "42", "waist_tag": 42, "measurements": {"waist": 43.5, "front_rise": 12.5, "back_rise": 16.7, "thigh": 14.6, "knee": 10.5, "leg_opening": 10.0, "inseam": 36.5}},
-            {"label": "44", "waist_tag": 44, "measurements": {"waist": 45.7, "front_rise": 12.5, "back_rise": 16.7, "thigh": 14.9, "knee": 10.6, "leg_opening": 10.2, "inseam": 37.0}}
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74.9, "front_rise": 25.5, "back_rise": 35.3, "thigh": 27.4, "knee": 20.2, "leg_opening": 18.8, "inseam": 92.7}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 78.4, "front_rise": 26.0, "back_rise": 35.7, "thigh": 28.4, "knee": 20.4, "leg_opening": 19.7, "inseam": 92.7}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 80.6, "front_rise": 26.4, "back_rise": 36.1, "thigh": 29.0, "knee": 21.6, "leg_opening": 20.4, "inseam": 92.7}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 83.7, "front_rise": 26.8, "back_rise": 36.2, "thigh": 29.3, "knee": 21.8, "leg_opening": 21.0, "inseam": 92.7}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 85.3, "front_rise": 27.4, "back_rise": 37.1, "thigh": 30.5, "knee": 22.2, "leg_opening": 21.5, "inseam": 92.7}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.7, "front_rise": 27.8, "back_rise": 37.6, "thigh": 31.1, "knee": 22.7, "leg_opening": 21.8, "inseam": 92.7}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 90.6, "front_rise": 28.3, "back_rise": 38.6, "thigh": 32.4, "knee": 23.4, "leg_opening": 22.6, "inseam": 92.7}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 92.5, "front_rise": 28.8, "back_rise": 39.1, "thigh": 33.0, "knee": 23.7, "leg_opening": 22.9, "inseam": 92.7}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94.1, "front_rise": 29.3, "back_rise": 40.0, "thigh": 33.8, "knee": 24.3, "leg_opening": 23.2, "inseam": 92.7}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 101.1, "front_rise": 30.5, "back_rise": 40.6, "thigh": 35.1, "knee": 25.4, "leg_opening": 24.1, "inseam": 92.7}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 105.2, "front_rise": 31.1, "back_rise": 41.8, "thigh": 36.6, "knee": 26.2, "leg_opening": 25.1, "inseam": 92.7}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 110.5, "front_rise": 31.6, "back_rise": 42.3, "thigh": 37.0, "knee": 26.5, "leg_opening": 25.4, "inseam": 92.7}},
+            {"label": "44", "waist_tag": 44, "measurements": {"waist": 116.1, "front_rise": 31.8, "back_rise": 42.4, "thigh": 37.8, "knee": 26.9, "leg_opening": 25.9, "inseam": 94.0}}
           ]
         }
       ]
