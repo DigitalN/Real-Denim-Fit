@@ -5,7 +5,7 @@ Last full run: 2026-11-20. 110 products in 6 cuts (555, 634, 666, 777, 888, 1955
 ## Where things are
 
 - **Product list:** `https://www.ironheart.co.uk/products.json?limit=250&page=N` (6 pages, about 1,400 items). Prices there are GBP.
-- **Charts:** in each product's `body_html`, as a static `<table>` after the `[SIZE-GUIDE-INCH]` marker, followed by a cm table after `[SIZE-GUIDE-CM]`. Record the inch table. Rows are Waist, Front Rise, Rear Rise, Thigh, Knee, Hem, Inseam, which map to `waist`, `front_rise`, `back_rise`, `thigh`, `knee`, `leg_opening`, `inseam`.
+- **Charts:** in each product's `body_html`, as a static `<table>` after the `[SIZE-GUIDE-INCH]` marker, followed by a cm table after `[SIZE-GUIDE-CM]`. Record the inch table, except for the products listed under "Inch and cm tables" below. Rows are Waist, Front Rise, Rear Rise, Thigh, Knee, Hem, Inseam, which map to `waist`, `front_rise`, `back_rise`, `thigh`, `knee`, `leg_opening`, `inseam`.
 - **Rendered page** (`/products/<handle>`): needed for three things that aren't in `products.json`:
   - the **cut**: a heading such as `634 Straight Cut` in the description, followed by bullet points
   - the **fabric**: a heading such as `21oz Japanese Selvedge Denim`, then a bullet such as `- 100% cotton`
@@ -58,6 +58,25 @@ None of the charts says which state it shows, so all are `"as-sold"`. The UHR fa
 - **Stretch:** the 21oz Shinayaka (`ih-555-sst`, `ih-555-sst-blk`) is "98% cotton / 2% polyurethane". The fibre is recorded as `polyurethane`, as published; it's an elastane-type stretch fibre.
 - **Typo kept as published:** one product title says "Overyded".
 - One chart's corner cell is blank instead of "Tag Size". It's harmless.
+
+## Inch and cm tables
+
+The script compares every inch cell with its cm cell (1 in = 2.54 cm) and prints any pair more than 0.2″ apart. On 2026-11-21 two products disagreed:
+- **`ih-666s-uhr`, size 35 waist:** the inch table says 37.8, which is larger than size 36's 37.1. The cm table says 92.5 (36.4″), which fits between its neighbours, and every other cell in the two tables agrees. **This product's chart is recorded from the cm table** (`"unit": "cm"`), via `USE_CM` in the script.
+- **`ih-777s-142ib`, size 34 thigh:** this time it's the cm table that's off. 30.9 cm (12.2″) dips below size 33, while the inch table's 12.7 fits. The inch table is kept.
+
+Recheck these on the next run. If a pair disagrees and neither table fits, leave that one value out and note it here.
+
+## How to rerun
+
+```sh
+python3 tools/catalogue/iron-heart/extract.py
+```
+
+- It fetches everything again and rewrites `brand.json` and the cut files. Then it lists what it skipped, any blank cells and any inch/cm disagreements. See [`tools/catalogue/iron-heart/README.md`](../../tools/catalogue/iron-heart/README.md) for the options.
+- About 130 requests, taking roughly 5 minutes. It uses only Python's standard library and doesn't need a browser.
+- Afterwards, review `git diff catalogue/iron-heart`, and update this file and the "Last full run" date.
+- If it exits with a PROBLEM (for example, a new Fabric Focus heading), fix the script, not the output.
 
 ## Skipped (no chart)
 
