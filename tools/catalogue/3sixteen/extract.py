@@ -26,6 +26,7 @@ import statistics
 import sys
 import tempfile
 import time
+import urllib.error
 import urllib.request
 
 SITE = "https://www.3sixteen.com"
@@ -79,8 +80,15 @@ class Fetcher:
         if wait > 0:
             time.sleep(wait)
         req = urllib.request.Request(url, headers={"User-Agent": UA})
-        with urllib.request.urlopen(req, timeout=60) as r:
-            data = r.read()
+        for attempt in range(4):  # retry transient server and network errors, backing off
+            try:
+                with urllib.request.urlopen(req, timeout=60) as r:
+                    data = r.read()
+                break
+            except (urllib.error.URLError, TimeoutError) as e:
+                if attempt == 3 or (isinstance(e, urllib.error.HTTPError) and e.code < 500 and e.code != 429):
+                    raise SystemExit(f"couldn't download {url}: {e}")
+                time.sleep(5 * (attempt + 1))
         self.last = time.time()
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "wb") as f:
