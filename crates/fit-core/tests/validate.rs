@@ -23,7 +23,7 @@ fn a_catalogue_folder_loads_with_charts_inheriting_from_the_brand() {
     assert_eq!(b.cuts[0].line, Some(fit_core::catalogue::Line::Men));
     let (brand, cut, p) = c.product("test-brand/634-21oz-indigo").unwrap();
     assert_eq!(p.finish, Some(fit_core::catalogue::Finish::Rinsed));
-    // The UHR product has no finish key yet: read as not stated.
+    // An explicit null is "not stated".
     assert_eq!(c.product("test-brand/634-uhr").unwrap().2.finish, None);
     assert_eq!(cut.name, "634");
     let w = after_wash(brand, p).unwrap();
@@ -65,7 +65,7 @@ fn a_cut_file_whose_brand_doesnt_match_its_folder_is_refused() {
         ),
         (
             "a/634.json".to_string(),
-            r#"{"id":"634","brand":"b","name":"634","brand_label":null,"products":[]}"#.to_string(),
+            r#"{"id":"634","brand":"b","name":"634","brand_label":null,"line":null,"products":[]}"#.to_string(),
         ),
     ];
     assert!(Catalogue::from_files(&files)
@@ -327,4 +327,34 @@ fn a_raw_finish_goes_with_sold_raw_and_rinsed_or_washed_with_one_washed() {
             "{finish:?} with {sold:?}: {found:?}"
         );
     }
+}
+
+#[test]
+fn every_product_states_its_finish_and_every_cut_its_line_even_if_null() {
+    let read = |f: &str| {
+        std::fs::read_to_string(
+            Path::new(env!("CARGO_MANIFEST_DIR"))
+                .join("tests/fixtures/catalogue/test-brand")
+                .join(f),
+        )
+        .unwrap()
+    };
+    let files = |cut: String| {
+        vec![
+            (
+                "exchange-rates.json".to_string(),
+                r#"{"source":"https://x.example","date":"2026-11-20","base":"EUR","rates":{}}"#.to_string(),
+            ),
+            ("test-brand/brand.json".to_string(), read("brand.json")),
+            ("test-brand/634.json".to_string(), cut),
+        ]
+    };
+    let no_finish = read("634.json").replace("\"finish\": \"rinsed\",", "");
+    assert!(Catalogue::from_files(&files(no_finish))
+        .unwrap_err()
+        .contains("missing field `finish`"));
+    let no_line = read("634.json").replace("\"line\": \"men\",", "");
+    assert!(Catalogue::from_files(&files(no_line))
+        .unwrap_err()
+        .contains("missing field `line`"));
 }

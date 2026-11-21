@@ -37,6 +37,7 @@
       "status_seen": "2026-11-20",
       "fabric": { "weight_oz": 21, "composition": null, "sanforized": false },
       "sold": "raw",
+      "finish": null,
       "list_price": null,
       "shrinkage": { "kind": "amount", "unit": "in", "waist": 1, "inseam": 2, "note": "about 1in in the waist, up to 2in on the inseam", "source": { "url": "https://example.com/products/634-uhr", "seen": "2026-11-20" } },
       "charts": [

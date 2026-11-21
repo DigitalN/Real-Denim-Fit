@@ -12,6 +12,16 @@ use serde::{Deserialize, Serialize};
 
 use crate::units::{Quantity, Unit, Way};
 
+/// Reads an `Option` whose key must be present, even as `null`. Plain
+/// `Option` fields quietly accept a missing key.
+fn present<'de, D, T>(d: D) -> Result<Option<T>, D::Error>
+where
+    D: serde::Deserializer<'de>,
+    T: Deserialize<'de>,
+{
+    Option::<T>::deserialize(d)
+}
+
 /// The eight garment measurements, in the glossary's words.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, Serialize, Deserialize)]
 #[serde(rename_all = "snake_case")]
@@ -200,8 +210,8 @@ pub struct Cut {
     /// The brand's own name for the fit. Shown, never used in matching
     /// (ADR 0008); the ease-table calibration reads it.
     pub brand_label: Option<String>,
-    /// `None` when the brand doesn't say.
-    #[serde(default)]
+    /// `None` when the brand doesn't say. The key is required, even as null.
+    #[serde(deserialize_with = "present")]
     pub line: Option<Line>,
     pub products: Vec<Product>,
 }
@@ -315,9 +325,9 @@ pub struct Product {
     pub status_seen: String,
     pub fabric: Fabric,
     pub sold: Option<Sold>,
-    /// `None` when the page doesn't make it clear (or, for now, when a file
-    /// doesn't have the key yet).
-    #[serde(default)]
+    /// `None` when the page doesn't make it clear. The key is required, even
+    /// as null.
+    #[serde(deserialize_with = "present")]
     pub finish: Option<Finish>,
     pub list_price: Option<ListPrice>,
     pub shrinkage: Option<Shrinkage>,
