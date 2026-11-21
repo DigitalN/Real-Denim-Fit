@@ -85,6 +85,7 @@ const LABELS = {
   inseam: "inseam",
 };
 const MEASUREMENTS = Object.keys(LABELS);
+const LINE_TEXT = { men: "Men's", women: "Women's", unisex: "Unisex" };
 const LENGTHS = ["front_rise", "back_rise", "inseam"];
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const esc = (s) =>

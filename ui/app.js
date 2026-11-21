@@ -49,6 +49,8 @@ function freshState(currency) {
       price_min: null,
       price_max: null,
       try_on_only: false,
+      mens: true,
+      womens: true,
       weight_min: null,
       weight_max: null,
       sanforized_only: false,
@@ -412,6 +414,8 @@ function filtersForRust() {
   const f = S.filters;
   return {
     ...f,
+    mens: f.mens ?? true,
+    womens: f.womens ?? true,
     currency: S.settings.currency,
     try_on_brands: S.settings.tryOnBrands,
   };
@@ -481,6 +485,10 @@ async function renderResults() {
       <h3>Leg shape and rise</h3>
       <p class="small">${cap(usualName(S.desiredFit))} · <a href="#/fit">change</a></p>
       <label class="checkline"><input type="checkbox" id="f-rest" ${f.show_other_shapes_and_rises ? "checked" : ""}/> Show other leg shapes and rises</label>
+      <h3>Line</h3>
+      <label class="checkline"><input type="checkbox" id="f-mens" ${f.mens ?? true ? "checked" : ""}/> Men's</label>
+      <label class="checkline"><input type="checkbox" id="f-womens" ${f.womens ?? true ? "checked" : ""}/> Women's</label>
+      <p class="hint">Unisex cuts show with either.</p>
       <h3>Brands</h3>
       ${CAT.brands.map((b) => `<label class="checkline"><input type="checkbox" data-brand="${b.id}" ${!f.brands || f.brands.includes(b.id) ? "checked" : ""}/> ${esc(b.name)}</label>`).join("")}
       <label class="checkline"><input type="checkbox" id="f-tryon" ${f.try_on_only ? "checked" : ""} ${S.settings.tryOnBrands.length ? "" : "disabled"}/> Try-on brands only</label>
@@ -509,6 +517,8 @@ async function renderResults() {
     const chosen = [...$app.querySelectorAll("[data-brand]:checked")].map((c) => c.dataset.brand);
     f.brands = chosen.length === brandIds.length ? null : chosen;
     f.try_on_only = document.getElementById("f-tryon").checked;
+    f.mens = document.getElementById("f-mens").checked;
+    f.womens = document.getElementById("f-womens").checked;
     f.price_min = num("f-pmin");
     f.price_max = num("f-pmax");
     f.weight_min = num("f-wmin");
@@ -563,7 +573,7 @@ async function refreshResults() {
         <div class="match-head" data-row="${i}">
           <span class="pct ${closenessClass(m.closeness)}">${Math.round(m.closeness)}%</span>
           <div>
-            <div class="title">${esc(row.brand_name)} ${esc(row.cut)} <span class="muted" style="font-weight:normal">· size ${esc(m.size)}${row.brand_label ? ` · the brand calls it “${esc(row.brand_label)}”` : ""}</span></div>
+            <div class="title">${esc(row.brand_name)} ${esc(row.cut)}${row.line ? ` <span class="tag">${LINE_TEXT[row.line]}</span>` : ""} <span class="muted" style="font-weight:normal">· size ${esc(m.size)}${row.brand_label ? ` · the brand calls it “${esc(row.brand_label)}”` : ""}</span></div>
             <div class="small muted">${esc(p.name)}${p.fabric_weight_oz ? ` · ${p.fabric_weight_oz} oz` : ""}</div>
             <div class="offs">${offsText(m)}</div>
             ${matchTags(m)}
@@ -673,7 +683,7 @@ async function renderProduct(id, size) {
 
   $app.innerHTML = `
   <p><button class="link" id="back">← Back</button></p>
-  <h1>${esc(brand.name)} ${esc(d.cut)}</h1>
+  <h1>${esc(brand.name)} ${esc(d.cut)}${d.line ? ` <span class="tag">${LINE_TEXT[d.line]}</span>` : ""}</h1>
   <p class="muted">${esc(p.name)}${d.brand_label ? ` · the brand calls the cut “${esc(d.brand_label)}”` : ""}</p>
   ${p.status === "discontinued" ? `<div class="note">No longer on the brand's site (last checked ${esc(p.status_seen)}).</div>` : ""}
   ${washed && washed.basis === "shrinkage-unknown" ? `<div class="note">Shrinkage unknown: the brand doesn't say how much this shrinks in its first wash, so it's compared as sold and ranked after the rest.</div>` : ""}
@@ -842,7 +852,7 @@ function renderPairPick() {
   };
   pb.onchange = () => {
     const b = BRANDS.get(pb.value);
-    const cuts = b ? [...new Map(b.products.filter((p) => p.sizes.length).map((p) => [p.cut_id, p.cut])).entries()] : [];
+    const cuts = b ? [...new Map(b.products.filter((p) => p.sizes.length).map((p) => [p.cut_id, p.line ? `${p.cut} (${LINE_TEXT[p.line]})` : p.cut])).entries()] : [];
     fill(pc, cuts.sort((x, y) => x[1].localeCompare(y[1])));
     fill(pp, []);
     fill(ps, []);

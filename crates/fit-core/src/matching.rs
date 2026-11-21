@@ -6,7 +6,7 @@ use std::collections::BTreeMap;
 use serde::{Deserialize, Serialize};
 
 use crate::after_wash::{after_wash, Basis, Washed, WashedSize};
-use crate::catalogue::{product_key, Brand, Catalogue, Cut, KneePoint, Measurement, Product, ThighPoint};
+use crate::catalogue::{product_key, Brand, Catalogue, Cut, KneePoint, Line, Measurement, Product, ThighPoint};
 use crate::classify::{leg_shape, rises, RiseEntry};
 use crate::closeness::closeness;
 use crate::ease::EaseTable;
@@ -28,6 +28,10 @@ pub struct Filters {
     pub price_max: Option<f64>,
     pub try_on_only: bool,
     pub try_on_brands: Vec<String>,
+    /// Show men's cuts. Unisex cuts, and cuts whose line isn't stated,
+    /// show while either line is ticked.
+    pub mens: bool,
+    pub womens: bool,
     /// Ounces per square yard.
     pub weight_min: Option<f64>,
     pub weight_max: Option<f64>,
@@ -47,6 +51,8 @@ impl Default for Filters {
             price_max: None,
             try_on_only: false,
             try_on_brands: vec![],
+            mens: true,
+            womens: true,
             weight_min: None,
             weight_max: None,
             sanforized_only: false,
@@ -102,6 +108,7 @@ pub struct CutRow {
     pub cut: String,
     /// The brand's own name for the fit, shown but never matched on.
     pub brand_label: Option<String>,
+    pub line: Option<Line>,
     pub best: Match,
     /// The cut's other products, each at its closest size, closest first.
     pub other_products: Vec<Match>,
@@ -220,6 +227,14 @@ fn rank(a: &Match, b: &Match) -> Ordering {
         .then(b.compared.cmp(&a.compared))
 }
 
+fn passes_line_filter(line: Option<Line>, f: &Filters) -> bool {
+    match line {
+        Some(Line::Men) => f.mens,
+        Some(Line::Women) => f.womens,
+        Some(Line::Unisex) | None => f.mens || f.womens,
+    }
+}
+
 fn passes_product_filters(brand: &Brand, product: &Product, price: Option<f64>, f: &Filters) -> bool {
     if let Some(brands) = &f.brands {
         if !brands.contains(&brand.id) {
@@ -308,7 +323,7 @@ pub fn find_matches_prepared(
                 .exchange_rates
                 .convert(lp.amount, &lp.currency, &filters.currency)
         });
-        if !passes_product_filters(brand, product, price, filters) {
+        if !passes_line_filter(cut.line, filters) || !passes_product_filters(brand, product, price, filters) {
             continue;
         }
         let points = Points::resolve(washed.thigh_point, washed.knee_point, washed.approximate);
@@ -426,6 +441,7 @@ pub fn find_matches_prepared(
                     cut_id: cut_id.clone(),
                     cut: cut.name.clone(),
                     brand_label: cut.brand_label.clone(),
+                    line: cut.line,
                     best,
                     other_products: products.map(|sizes| sizes.into_iter().next().unwrap()).collect(),
                     other_sizes: best_sizes.collect(),

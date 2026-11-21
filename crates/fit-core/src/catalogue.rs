@@ -182,6 +182,16 @@ impl Brand {
     }
 }
 
+/// Whether a brand files a cut as men's, women's or unisex. Shown and
+/// filtered on; matching ignores it.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "lowercase")]
+pub enum Line {
+    Men,
+    Women,
+    Unisex,
+}
+
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct Cut {
     pub id: String,
@@ -190,6 +200,9 @@ pub struct Cut {
     /// The brand's own name for the fit. Shown, never used in matching
     /// (ADR 0008); the ease-table calibration reads it.
     pub brand_label: Option<String>,
+    /// `None` when the brand doesn't say.
+    #[serde(default)]
+    pub line: Option<Line>,
     pub products: Vec<Product>,
 }
 

@@ -67,6 +67,7 @@ pub struct ProductSummary<'a> {
     cut_id: &'a str,
     cut: &'a str,
     brand_label: Option<&'a str>,
+    line: Option<fit_core::catalogue::Line>,
     name: &'a str,
     fabric_weight_oz: Option<f64>,
     elastane_percent: f64,
@@ -103,6 +104,7 @@ fn summary<'a>(brand: &'a Brand, cut: &'a Cut, p: &'a Product) -> ProductSummary
         cut_id: &cut.id,
         cut: &cut.name,
         brand_label: cut.brand_label.as_deref(),
+        line: cut.line,
         name: &p.name,
         fabric_weight_oz: p.fabric.weight_oz,
         elastane_percent: p.fabric.elastane_percent(),
@@ -165,6 +167,7 @@ pub struct ProductDetails {
     cut_id: String,
     cut: String,
     brand_label: Option<String>,
+    line: Option<fit_core::catalogue::Line>,
     product: Product,
     /// Each chart's conventions, measuring points and tolerance, with what
     /// it inherits from the brand filled in.
@@ -188,6 +191,7 @@ pub fn details(data: &Data, product_id: &str) -> Result<ProductDetails, String> 
         cut_id: cut.id.clone(),
         cut: cut.name.clone(),
         brand_label: cut.brand_label.clone(),
+        line: cut.line,
         product: product.clone(),
         effective: product.charts.iter().map(|c| c.effective(brand)).collect(),
         washed: after_wash(brand, product),

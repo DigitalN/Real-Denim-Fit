@@ -20,6 +20,7 @@ fn a_catalogue_folder_loads_with_charts_inheriting_from_the_brand() {
     assert_eq!(c.brands.len(), 1);
     let b = &c.brands[0];
     assert_eq!(b.cuts[0].brand_label.as_deref(), Some("Straight Cut"));
+    assert_eq!(b.cuts[0].line, Some(fit_core::catalogue::Line::Men));
     let (brand, cut, p) = c.product("test-brand/634-21oz-indigo").unwrap();
     assert_eq!(cut.name, "634");
     let w = after_wash(brand, p).unwrap();
@@ -245,4 +246,30 @@ fn the_shipped_catalogue_and_ease_table_are_valid() {
     let (catalogue, ease) = fit_core::embedded::load().expect("the built-in data loads");
     let found = validate(&catalogue, &ease);
     assert!(found.is_empty(), "{}", found.join("\n"));
+}
+
+#[test]
+fn a_line_must_be_men_women_unisex_or_null() {
+    let text = std::fs::read_to_string(
+        Path::new(env!("CARGO_MANIFEST_DIR")).join("tests/fixtures/catalogue/test-brand/634.json"),
+    )
+    .unwrap()
+    .replace("\"line\": \"men\"", "\"line\": \"mens\"");
+    let files = vec![
+        (
+            "exchange-rates.json".to_string(),
+            r#"{"source":"https://x.example","date":"2026-11-20","base":"EUR","rates":{}}"#.to_string(),
+        ),
+        (
+            "test-brand/brand.json".to_string(),
+            std::fs::read_to_string(
+                Path::new(env!("CARGO_MANIFEST_DIR")).join("tests/fixtures/catalogue/test-brand/brand.json"),
+            )
+            .unwrap(),
+        ),
+        ("test-brand/634.json".to_string(), text),
+    ];
+    assert!(Catalogue::from_files(&files)
+        .unwrap_err()
+        .contains("unknown variant `mens`"));
 }

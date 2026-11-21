@@ -126,6 +126,7 @@ pub fn brand(id: &str, products: Vec<TestProduct>) -> Brand {
                 brand: id.into(),
                 name: tp.cut.clone(),
                 brand_label: None,
+                line: None,
                 products: vec![tp.product],
             }),
         }

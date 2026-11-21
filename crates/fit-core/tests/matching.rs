@@ -433,3 +433,65 @@ fn a_cm_chart_with_a_waist_around_compares_flat() {
         .unwrap();
     assert!(close(waist.value.unwrap(), 41.5));
 }
+
+// --- Line ----------------------------------------------------------------
+
+fn lines_catalogue() -> fit_core::catalogue::Catalogue {
+    use fit_core::catalogue::Line;
+    let mut b = brand(
+        "b",
+        vec![
+            simple("m", "Mens", &[("32", 12.56)]),
+            simple("w", "Womens", &[("32", 12.56)]),
+            simple("u", "Unisex", &[("32", 12.56)]),
+            simple("n", "Unsaid", &[("32", 12.56)]),
+        ],
+    );
+    for (cut, line) in b
+        .cuts
+        .iter_mut()
+        .zip([Some(Line::Men), Some(Line::Women), Some(Line::Unisex), None])
+    {
+        cut.line = line;
+    }
+    catalogue(vec![b])
+}
+
+fn line_cuts(f: &Filters) -> Vec<String> {
+    let r = find_matches(&lines_catalogue(), &ease(), &profile(Room::Regular), f);
+    let mut c: Vec<String> = r.rows.iter().map(|r| r.cut.clone()).collect();
+    c.sort();
+    c
+}
+
+#[test]
+fn mens_and_womens_cuts_are_both_shown_by_default_and_matching_ignores_line() {
+    assert!(Filters::default().mens && Filters::default().womens);
+    assert_eq!(line_cuts(&filters()), ["Mens", "Unisex", "Unsaid", "Womens"]);
+    let r = find_matches(&lines_catalogue(), &ease(), &profile(Room::Regular), &filters());
+    let pct: Vec<f64> = r.rows.iter().map(|r| r.best.closeness).collect();
+    assert!(
+        pct.windows(2).all(|w| close(w[0], w[1])),
+        "same numbers, same closeness: {pct:?}"
+    );
+    let womens = r.rows.iter().find(|r| r.cut == "Womens").unwrap();
+    assert_eq!(womens.line, Some(fit_core::catalogue::Line::Women));
+}
+
+#[test]
+fn the_line_filter_keeps_unisex_and_unsaid_cuts_with_either_line() {
+    assert_eq!(
+        line_cuts(&Filters {
+            womens: false,
+            ..filters()
+        }),
+        ["Mens", "Unisex", "Unsaid"]
+    );
+    assert_eq!(
+        line_cuts(&Filters {
+            mens: false,
+            ..filters()
+        }),
+        ["Unisex", "Unsaid", "Womens"]
+    );
+}
