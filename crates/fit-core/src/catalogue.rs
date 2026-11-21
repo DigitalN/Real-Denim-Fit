@@ -512,6 +512,9 @@ impl Catalogue {
                     if c.brand != *folder {
                         return Err(format!("{path}: brand {:?} doesn't match its folder", c.brand));
                     }
+                    if file.strip_suffix(".json") != Some(c.id.as_str()) {
+                        return Err(format!("{path}: cut id {:?} doesn't match its file name", c.id));
+                    }
                     cuts.entry(folder.to_string()).or_default().push(c);
                 }
                 _ => {}

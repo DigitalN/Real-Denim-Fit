@@ -382,3 +382,38 @@ fn only_brand_files_and_exchange_rates_are_read() {
     assert_eq!(c.brands.len(), 1);
     assert_eq!(c.brands[0].cuts.len(), 1);
 }
+
+#[test]
+fn a_cut_id_must_match_its_file_name() {
+    let read = |f: &str| {
+        std::fs::read_to_string(
+            Path::new(env!("CARGO_MANIFEST_DIR"))
+                .join("tests/fixtures/catalogue")
+                .join(f),
+        )
+        .unwrap()
+    };
+    let files = vec![
+        ("exchange-rates.json".to_string(), read("exchange-rates.json")),
+        ("test-brand/brand.json".to_string(), read("test-brand/brand.json")),
+        ("test-brand/634-copy.json".to_string(), read("test-brand/634.json")),
+    ];
+    let err = Catalogue::from_files(&files).unwrap_err();
+    assert!(err.contains("doesn't match its file name"), "{err}");
+}
+
+#[test]
+fn cut_ids_are_unique_within_a_brand() {
+    let mut a = good();
+    a.id = "a".into();
+    let mut b = good();
+    b.id = "b".into();
+    let mut brand = brand("b", vec![a, b]);
+    // Two cut files that both say they're cut "c".
+    let mut second = brand.cuts[0].clone();
+    second.products.truncate(0);
+    second.products.push(brand.cuts[0].products.pop().unwrap());
+    brand.cuts.push(second);
+    let found = validate(&catalogue(vec![brand]), &ease());
+    assert!(found.iter().any(|s| s.contains("cut id c appears twice")), "{found:?}");
+}

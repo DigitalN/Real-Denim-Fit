@@ -372,6 +372,12 @@ pub fn validate(catalogue: &Catalogue, ease: &EaseTable) -> Vec<String> {
         if b.cuts.is_empty() {
             out.push(format!("{}: brand has no cut files", b.id));
         }
+        let mut cut_ids = BTreeSet::new();
+        for c in &b.cuts {
+            if !cut_ids.insert(&c.id) {
+                out.push(format!("{}: cut id {} appears twice", b.id, c.id));
+            }
+        }
         let mut ids = BTreeSet::new();
         for c in &b.cuts {
             check_cut(b, c, &mut ids, rates, &mut out);
