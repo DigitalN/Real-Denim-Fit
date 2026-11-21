@@ -84,6 +84,7 @@ pub fn product(id: &str, cut: &str, charts: Vec<Chart>) -> Product {
         fabric_weight_oz: Some(14.0),
         composition: "100% cotton".into(),
         elastane_percent: 0.0,
+        fabric_state: None,
         sanforized: Some(true),
         sold_washed: true,
         shrinkage: None,

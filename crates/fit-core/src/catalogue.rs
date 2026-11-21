@@ -178,6 +178,10 @@ pub struct Product {
     pub fabric_weight_oz: Option<f64>,
     pub composition: String,
     pub elastane_percent: f64,
+    /// The brand's own words for the fabric's state, such as "Sanforized &
+    /// One-Washed".
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub fabric_state: Option<String>,
     /// `null` when the brand doesn't say.
     pub sanforized: Option<bool>,
     /// Sold already washed, so the chart is how it will be after a wash.

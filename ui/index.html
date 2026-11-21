@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Real Denim Fit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar" id="topbar" hidden>
+      <span class="brandmark">Real Denim Fit</span>
+      <nav>
+        <a href="#/results" data-nav="results">Results</a>
+        <a href="#/body" data-nav="body">Body</a>
+        <a href="#/fit" data-nav="fit">Desired fit</a>
+        <a href="#/pairs" data-nav="pairs">Reference pairs</a>
+        <a href="#/settings" data-nav="settings">Settings</a>
+      </nav>
+    </header>
+    <main id="app" aria-live="polite"></main>
+    <div class="overlay" id="updating" hidden>
+      <div class="overlay-card">
+        <div class="spinner" aria-hidden="true"></div>
+        <p id="updating-text">Checking for updates…</p>
+      </div>
+    </div>
+    <script src="drawings.js"></script>
+    <script src="format.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

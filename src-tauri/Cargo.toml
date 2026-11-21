@@ -1,0 +1,22 @@
+[package]
+name = "real-denim-fit"
+description = "Finds raw denim jeans worth looking into, from your body measurements"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "real_denim_fit_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.7", features = [] }
+
+[dependencies]
+fit-core = { path = "../crates/fit-core" }
+serde.workspace = true
+serde_json.workspace = true
+tauri = { version = "2.12", features = [] }
+tauri-plugin-updater = "2.14"
+tauri-plugin-process = "2.4"
+sys-locale = "0.3"
