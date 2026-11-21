@@ -3,13 +3,14 @@
   "brand": "naked-and-famous",
   "name": "Stacked Guy",
   "brand_label": "Tight tapered",
+  "line": "men",
   "products": [
     {
       "id": "stacked-guy-black-cobra-stretch-selvedge",
       "name": "Black Cobra Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-stacked-guy-black-cobra-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -175,7 +176,7 @@
       "name": "Deep Indigo Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/stacked-guy-deep-indigo-stretch-selevdge-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -369,7 +370,7 @@
       "name": "Indigo Power Stretch",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-stacked-guy-indigo-power-stretch",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -563,7 +564,7 @@
       "name": "Wax Coated Black Stretch",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-stacked-guy-wax-coated-black-stretch",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [

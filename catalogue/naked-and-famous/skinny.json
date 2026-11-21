@@ -3,13 +3,14 @@
   "brand": "naked-and-famous",
   "name": "Skinny",
   "brand_label": "Skinny",
+  "line": "women",
   "products": [
     {
       "id": "skinny-11oz-stretch-selvedge",
       "name": "11oz Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-the-skinny-11oz-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 11,
         "composition": [
@@ -180,7 +181,7 @@
       "name": "Black Power Stretch",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-the-skinny-black-power-stretch",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": null,
         "composition": [
@@ -359,7 +360,7 @@
       "name": "Indigo Power Stretch",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-the-skinny-indigo-power-stretch",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -553,7 +554,7 @@
       "name": "Stretch Selvedge Raw Denim",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-the-skinny-raw-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [

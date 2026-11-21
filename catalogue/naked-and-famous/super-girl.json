@@ -3,13 +3,14 @@
   "brand": "naked-and-famous",
   "name": "Super Girl",
   "brand_label": "Slim tapered",
+  "line": "women",
   "products": [
     {
       "id": "super-girl-chocolate-milk-selvedge",
       "name": "Chocolate Milk Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-girl-chocolat-milk-indigo-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -228,7 +229,7 @@
       "name": "Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-girl-stretch-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -447,7 +448,7 @@
       "name": "Workforce Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-girl-workforce-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 10.9,
         "composition": [

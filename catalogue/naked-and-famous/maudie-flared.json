@@ -3,13 +3,14 @@
   "brand": "naked-and-famous",
   "name": "Maudie Flared",
   "brand_label": "Clean flared",
+  "line": "women",
   "products": [
     {
       "id": "maudie-flared-archive-blue",
       "name": "Archive Blue",
       "url": "https://nakedandfamousdenim.com/products/maudie-flared-archive-blue-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": [

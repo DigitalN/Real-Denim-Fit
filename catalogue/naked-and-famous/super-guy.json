@@ -3,13 +3,14 @@
   "brand": "naked-and-famous",
   "name": "Super Guy",
   "brand_label": "Slim tapered",
+  "line": "men",
   "products": [
     {
       "id": "super-guy-11oz-stretch-selvedge",
       "name": "11oz Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-11oz-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 11,
         "composition": [
@@ -186,27 +187,35 @@
       ]
     },
     {
-      "id": "super-guy-army-green-duck-selvedge",
-      "name": "Army Green Duck Selvedge",
-      "url": "https://nakedandfamousdenim.com/products/naked-famous-super-guy-army-green-duck-selvedge",
+      "id": "super-guy-black-cashmere",
+      "name": "Black Cashmere",
+      "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-black-cashmere",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
-        "weight_oz": 10,
+        "weight_oz": 12,
         "composition": [
           {
             "fibre": "cotton",
-            "percent": 100
+            "percent": 88
+          },
+          {
+            "fibre": "cashmere",
+            "percent": 10
+          },
+          {
+            "fibre": "elastane",
+            "percent": 2
           }
         ],
         "sanforized": true
       },
       "sold": "raw",
       "list_price": {
-        "amount": 193,
+        "amount": 232,
         "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/naked-famous-super-guy-army-green-duck-selvedge",
-        "seen": "2026-11-20"
+        "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-black-cashmere",
+        "seen": "2026-11-21"
       },
       "shrinkage": {
         "kind": "percent",
@@ -222,8 +231,8 @@
         {
           "state": "as-sold",
           "source": {
-            "url": "https://nakedandfamousdenim.com/products/naked-famous-super-guy-army-green-duck-selvedge",
-            "seen": "2026-11-20"
+            "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-black-cashmere",
+            "seen": "2026-11-21"
           },
           "unit": "in",
           "from_image": false,
@@ -232,12 +241,12 @@
               "label": "28",
               "waist_tag": 28,
               "measurements": {
-                "waist": 29,
-                "front_rise": 9.25,
-                "back_rise": 13.75,
-                "thigh": 9.75,
-                "knee": 7.5,
-                "leg_opening": 6,
+                "waist": 30,
+                "front_rise": 9.5,
+                "back_rise": 14,
+                "thigh": 10.5,
+                "knee": 7.25,
+                "leg_opening": 5.75,
                 "inseam": 34
               }
             },
@@ -245,11 +254,11 @@
               "label": "29",
               "waist_tag": 29,
               "measurements": {
-                "waist": 30,
-                "front_rise": 9.25,
+                "waist": 31,
+                "front_rise": 9.75,
                 "back_rise": 14,
-                "thigh": 10,
-                "knee": 7.75,
+                "thigh": 10.5,
+                "knee": 7.25,
                 "leg_opening": 6,
                 "inseam": 34
               }
@@ -258,11 +267,11 @@
               "label": "30",
               "waist_tag": 30,
               "measurements": {
-                "waist": 31,
-                "front_rise": 9.5,
-                "back_rise": 14,
-                "thigh": 10.25,
-                "knee": 8,
+                "waist": 32,
+                "front_rise": 9.75,
+                "back_rise": 14.25,
+                "thigh": 10.75,
+                "knee": 7.5,
                 "leg_opening": 6.25,
                 "inseam": 34
               }
@@ -271,12 +280,12 @@
               "label": "31",
               "waist_tag": 31,
               "measurements": {
-                "waist": 32,
-                "front_rise": 9.5,
+                "waist": 33,
+                "front_rise": 10,
                 "back_rise": 14.25,
-                "thigh": 10.5,
-                "knee": 8.25,
-                "leg_opening": 6.5,
+                "thigh": 11.25,
+                "knee": 7.75,
+                "leg_opening": 6.25,
                 "inseam": 34
               }
             },
@@ -284,12 +293,12 @@
               "label": "32",
               "waist_tag": 32,
               "measurements": {
-                "waist": 33,
-                "front_rise": 9.75,
+                "waist": 33.5,
+                "front_rise": 10,
                 "back_rise": 14.5,
-                "thigh": 10.75,
-                "knee": 8.5,
-                "leg_opening": 6.75,
+                "thigh": 11.25,
+                "knee": 8,
+                "leg_opening": 6.5,
                 "inseam": 34
               }
             },
@@ -297,12 +306,12 @@
               "label": "33",
               "waist_tag": 33,
               "measurements": {
-                "waist": 34,
+                "waist": 34.5,
                 "front_rise": 10,
                 "back_rise": 14.5,
-                "thigh": 11,
-                "knee": 8.75,
-                "leg_opening": 7,
+                "thigh": 11.5,
+                "knee": 8,
+                "leg_opening": 6.75,
                 "inseam": 34
               }
             },
@@ -313,9 +322,9 @@
                 "waist": 36,
                 "front_rise": 10.25,
                 "back_rise": 14.75,
-                "thigh": 11.5,
-                "knee": 9,
-                "leg_opening": 7.25,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 7,
                 "inseam": 34
               }
             },
@@ -324,11 +333,11 @@
               "waist_tag": 36,
               "measurements": {
                 "waist": 38,
-                "front_rise": 10.5,
-                "back_rise": 14.75,
-                "thigh": 12,
-                "knee": 9.25,
-                "leg_opening": 7.5,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 12.25,
+                "knee": 8.75,
+                "leg_opening": 7.25,
                 "inseam": 34
               }
             },
@@ -339,9 +348,9 @@
                 "waist": 40,
                 "front_rise": 10.5,
                 "back_rise": 15,
-                "thigh": 12.5,
-                "knee": 9.5,
-                "leg_opening": 7.75,
+                "thigh": 12.75,
+                "knee": 9,
+                "leg_opening": 7.5,
                 "inseam": 34
               }
             },
@@ -350,11 +359,11 @@
               "waist_tag": 40,
               "measurements": {
                 "waist": 42,
-                "front_rise": 10.75,
-                "back_rise": 15,
-                "thigh": 13,
-                "knee": 9.75,
-                "leg_opening": 8,
+                "front_rise": 11,
+                "back_rise": 15.5,
+                "thigh": 13.5,
+                "knee": 9.5,
+                "leg_opening": 7.75,
                 "inseam": 34
               }
             },
@@ -364,22 +373,9 @@
               "measurements": {
                 "waist": 44,
                 "front_rise": 11,
-                "back_rise": 15.25,
-                "thigh": 13.5,
+                "back_rise": 15.75,
+                "thigh": 13.75,
                 "knee": 10,
-                "leg_opening": 8.5,
-                "inseam": 34
-              }
-            },
-            {
-              "label": "44",
-              "waist_tag": 44,
-              "measurements": {
-                "waist": 46,
-                "front_rise": 11.25,
-                "back_rise": 15.5,
-                "thigh": 14,
-                "knee": 10.5,
                 "leg_opening": 8.75,
                 "inseam": 34
               }
@@ -393,7 +389,7 @@
       "name": "Black Cobra Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-super-guy-black-cobra-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -600,7 +596,7 @@
       "name": "Black Power Stretch",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-super-guy-black-power-stretch",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -777,11 +773,339 @@
       ]
     },
     {
+      "id": "super-guy-blue-grass-selvedge",
+      "name": "Blue Grass Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-blue-grass-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 12.7,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 176,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-blue-grass-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-blue-grass-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 10.75,
+                "knee": 7.5,
+                "leg_opening": 5.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 10.5,
+                "back_rise": 15,
+                "thigh": 11,
+                "knee": 8,
+                "leg_opening": 6,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 11.25,
+                "knee": 8.25,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10.75,
+                "back_rise": 15.5,
+                "thigh": 11.5,
+                "knee": 8.5,
+                "leg_opening": 6.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10.75,
+                "back_rise": 15.5,
+                "thigh": 11.75,
+                "knee": 8.75,
+                "leg_opening": 6.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 11,
+                "back_rise": 15.75,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 7,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 11,
+                "back_rise": 16,
+                "thigh": 12.5,
+                "knee": 9.25,
+                "leg_opening": 7,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 11.25,
+                "back_rise": 16.25,
+                "thigh": 13,
+                "knee": 9.75,
+                "leg_opening": 7.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 11.25,
+                "back_rise": 16.25,
+                "thigh": 13.25,
+                "knee": 10,
+                "leg_opening": 7.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 11.5,
+                "back_rise": 16.5,
+                "thigh": 13.75,
+                "knee": 10.25,
+                "leg_opening": 8,
+                "inseam": 34.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-guy-brown-fox-selvedge-brown",
+      "name": "Brown Fox Selvedge, Brown",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-brown-fox-selvedge-brown",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 13,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 328,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-brown-fox-selvedge-brown",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-brown-fox-selvedge-brown",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 11,
+                "knee": 7.75,
+                "leg_opening": 5.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 10,
+                "back_rise": 15,
+                "thigh": 11.25,
+                "knee": 8,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10.25,
+                "back_rise": 15.25,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 6.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.75,
+                "back_rise": 15.5,
+                "thigh": 12.25,
+                "knee": 8.75,
+                "leg_opening": 6.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 11,
+                "back_rise": 15.75,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 7,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 11,
+                "back_rise": 15.75,
+                "thigh": 13.25,
+                "knee": 9.5,
+                "leg_opening": 7.5,
+                "inseam": 33.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "super-guy-cashmere-stretch-blend-denim",
       "name": "Cashmere Stretch Blend Denim",
       "url": "https://nakedandfamousdenim.com/products/naked-and-famous-denim-super-guy-cashmere-blend",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -962,11 +1286,192 @@
       ]
     },
     {
+      "id": "super-guy-chocolate-milk-selvedge",
+      "name": "Chocolate Milk Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-chocolat-milk-selvedge-1",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 12.5,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 77
+          },
+          {
+            "fibre": "milk protein fibre",
+            "percent": 23
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 218,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-chocolat-milk-selvedge-1",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-chocolat-milk-selvedge-1",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 9.75,
+                "back_rise": 14.5,
+                "thigh": 11,
+                "knee": 7.5,
+                "leg_opening": 5.75,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 9.75,
+                "back_rise": 14,
+                "thigh": 11.25,
+                "knee": 7.75,
+                "leg_opening": 6,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32.5,
+                "front_rise": 10,
+                "back_rise": 15,
+                "thigh": 11.5,
+                "knee": 8,
+                "leg_opening": 6.25,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10.75,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 6.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 12.25,
+                "knee": 8.5,
+                "leg_opening": 6.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.5,
+                "back_rise": 15.75,
+                "thigh": 12.5,
+                "knee": 8.75,
+                "leg_opening": 6.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 10.75,
+                "back_rise": 15.75,
+                "thigh": 12.75,
+                "knee": 9,
+                "leg_opening": 7,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 11,
+                "back_rise": 15.75,
+                "thigh": 13.25,
+                "knee": 9.5,
+                "leg_opening": 7.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 11.25,
+                "back_rise": 16,
+                "thigh": 13.75,
+                "knee": 10.25,
+                "leg_opening": 8,
+                "inseam": 34.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "super-guy-citrus-kasuri-selvedge",
       "name": "Citrus Kasuri Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-citrus-kasuri-selvedge-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": [
@@ -1117,7 +1622,7 @@
       "name": "Coffee Dye Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/super-guy-coffee-dye-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -1277,11 +1782,188 @@
       ]
     },
     {
+      "id": "super-guy-craftsman-selvedge",
+      "name": "Craftsman Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-craftsman-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 9,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 228,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-craftsman-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-craftsman-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 9.75,
+                "back_rise": 14.75,
+                "thigh": 11,
+                "knee": 7.75,
+                "leg_opening": 6,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 9.75,
+                "back_rise": 14.75,
+                "thigh": 11.25,
+                "knee": 8,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 10,
+                "back_rise": 15,
+                "thigh": 11.5,
+                "knee": 8.25,
+                "leg_opening": 6.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10,
+                "back_rise": 15.25,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 6.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10,
+                "back_rise": 15.5,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 6.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.25,
+                "back_rise": 15.5,
+                "thigh": 12.25,
+                "knee": 8.75,
+                "leg_opening": 7,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.25,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9,
+                "leg_opening": 7,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 10.5,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.25,
+                "leg_opening": 7.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 10.75,
+                "back_rise": 16,
+                "thigh": 13.5,
+                "knee": 9.75,
+                "leg_opening": 7.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 11.25,
+                "back_rise": 16.25,
+                "thigh": 14,
+                "knee": 10.25,
+                "leg_opening": 8,
+                "inseam": 34.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "super-guy-deep-indigo-selvedge",
       "name": "Deep Indigo Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-deep-indigo-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 15,
         "composition": [
@@ -1458,7 +2140,7 @@
       "name": "Deep Indigo Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-deep-indigo-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -1678,7 +2360,7 @@
       "name": "Dia De Los Muertos Selvedge, Bat",
       "url": "https://nakedandfamousdenim.com/products/super-guy-dia-de-los-muertos-selvedge-bat",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -1842,7 +2524,7 @@
       "name": "Dirty Fade Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-dirty-fade-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14.5,
         "composition": [
@@ -2019,7 +2701,7 @@
       "name": "Double Dip Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/super-guy-double-dip-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": [
@@ -2179,13 +2861,13 @@
       ]
     },
     {
-      "id": "super-guy-duck-canvas-selvedge",
-      "name": "Duck Canvas Selvedge",
-      "url": "https://nakedandfamousdenim.com/products/super-guy-selvedge-duck",
+      "id": "super-guy-elephant-14-dirty-elephant-selvedge",
+      "name": "Elephant 14, Dirty Elephant Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-elephant4-dirty-elephant",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
-        "weight_oz": 10,
+        "weight_oz": 20,
         "composition": [
           {
             "fibre": "cotton",
@@ -2196,10 +2878,10 @@
       },
       "sold": "raw",
       "list_price": {
-        "amount": 176,
+        "amount": 235,
         "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/super-guy-selvedge-duck",
-        "seen": "2026-11-20"
+        "url": "https://nakedandfamousdenim.com/products/super-guy-elephant4-dirty-elephant",
+        "seen": "2026-11-21"
       },
       "shrinkage": {
         "kind": "percent",
@@ -2215,8 +2897,8 @@
         {
           "state": "as-sold",
           "source": {
-            "url": "https://nakedandfamousdenim.com/products/super-guy-selvedge-duck",
-            "seen": "2026-11-20"
+            "url": "https://nakedandfamousdenim.com/products/super-guy-elephant4-dirty-elephant",
+            "seen": "2026-11-21"
           },
           "unit": "in",
           "from_image": false,
@@ -2225,15 +2907,166 @@
               "label": "28",
               "waist_tag": 28,
               "measurements": {
-                "waist": 29,
-                "front_rise": 9.25,
+                "waist": 30,
+                "front_rise": 9.5,
                 "back_rise": 14,
-                "thigh": 10,
-                "knee": 7.5,
-                "leg_opening": 6.5,
-                "inseam": 34
+                "thigh": 10.75,
+                "knee": 7.25,
+                "leg_opening": 5.5,
+                "inseam": 34.25
               }
             },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 9.75,
+                "back_rise": 14,
+                "thigh": 10.75,
+                "knee": 7.5,
+                "leg_opening": 5.75,
+                "inseam": 34.25
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 10,
+                "back_rise": 14.25,
+                "thigh": 11,
+                "knee": 8,
+                "leg_opening": 6,
+                "inseam": 34.25
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10,
+                "back_rise": 14.25,
+                "thigh": 11.25,
+                "knee": 8.25,
+                "leg_opening": 6.25,
+                "inseam": 34.25
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10.25,
+                "back_rise": 14.5,
+                "thigh": 11.75,
+                "knee": 8.75,
+                "leg_opening": 6.5,
+                "inseam": 34.25
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.25,
+                "back_rise": 14.75,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 6.75,
+                "inseam": 34.25
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36.5,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 12.25,
+                "knee": 9,
+                "leg_opening": 7,
+                "inseam": 34.25
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38.5,
+                "front_rise": 10.5,
+                "back_rise": 15,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 7.25,
+                "inseam": 34.25
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40.5,
+                "front_rise": 10.75,
+                "back_rise": 15.25,
+                "thigh": 13.25,
+                "knee": 9.5,
+                "leg_opening": 7.75,
+                "inseam": 34.25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-guy-elephant-2-selvedge-reborn",
+      "name": "Elephant 2 Selvedge Reborn",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-elephant-2-reborn-indigo",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 22,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 238,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-elephant-2-reborn-indigo",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-elephant-2-reborn-indigo",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
             {
               "label": "29",
               "waist_tag": 29,
@@ -2241,10 +3074,10 @@
                 "waist": 30,
                 "front_rise": 9.5,
                 "back_rise": 14,
-                "thigh": 10.25,
-                "knee": 7.5,
-                "leg_opening": 6.5,
-                "inseam": 34
+                "thigh": 11.25,
+                "knee": 7.75,
+                "leg_opening": 6,
+                "inseam": 34.5
               }
             },
             {
@@ -2254,62 +3087,62 @@
                 "waist": 31,
                 "front_rise": 9.5,
                 "back_rise": 14.25,
-                "thigh": 10.5,
-                "knee": 7.75,
-                "leg_opening": 6.75,
-                "inseam": 34
+                "thigh": 11.25,
+                "knee": 8,
+                "leg_opening": 6.25,
+                "inseam": 34.5
               }
             },
             {
               "label": "31",
               "waist_tag": 31,
               "measurements": {
-                "waist": 32,
+                "waist": 32.5,
                 "front_rise": 9.75,
-                "back_rise": 14.5,
-                "thigh": 10.75,
-                "knee": 8,
-                "leg_opening": 7,
-                "inseam": 34
+                "back_rise": 14.25,
+                "thigh": 11.5,
+                "knee": 8.25,
+                "leg_opening": 6.5,
+                "inseam": 34.5
               }
             },
             {
               "label": "32",
               "waist_tag": 32,
               "measurements": {
-                "waist": 33,
+                "waist": 33.5,
                 "front_rise": 9.75,
-                "back_rise": 14.5,
-                "thigh": 11,
+                "back_rise": 14.25,
+                "thigh": 11.75,
                 "knee": 8.25,
-                "leg_opening": 7.25,
-                "inseam": 34
+                "leg_opening": 6.75,
+                "inseam": 34.5
               }
             },
             {
               "label": "33",
               "waist_tag": 33,
               "measurements": {
-                "waist": 34,
-                "front_rise": 9.75,
-                "back_rise": 14.5,
-                "thigh": 11.25,
+                "waist": 34.5,
+                "front_rise": 10,
+                "back_rise": 14.25,
+                "thigh": 12,
                 "knee": 8.5,
-                "leg_opening": 7.5,
-                "inseam": 34
+                "leg_opening": 7,
+                "inseam": 34.5
               }
             },
             {
               "label": "34",
               "waist_tag": 34,
               "measurements": {
-                "waist": 35,
-                "front_rise": 10,
-                "back_rise": 14.75,
-                "thigh": 11.5,
+                "waist": 35.5,
+                "front_rise": 10.25,
+                "back_rise": 14.5,
+                "thigh": 12.25,
                 "knee": 8.75,
-                "leg_opening": 7.75,
-                "inseam": 34
+                "leg_opening": 7.25,
+                "inseam": 34.5
               }
             },
             {
@@ -2317,63 +3150,166 @@
               "waist_tag": 36,
               "measurements": {
                 "waist": 37,
-                "front_rise": 10.25,
-                "back_rise": 15,
-                "thigh": 12,
-                "knee": 9,
-                "leg_opening": 8,
-                "inseam": 34
+                "front_rise": 10.5,
+                "back_rise": 14.75,
+                "thigh": 13,
+                "knee": 9.25,
+                "leg_opening": 7.5,
+                "inseam": 34.5
               }
             },
             {
               "label": "38",
               "waist_tag": 38,
               "measurements": {
-                "waist": 39,
+                "waist": 39.5,
                 "front_rise": 10.5,
-                "back_rise": 15.5,
-                "thigh": 12.5,
-                "knee": 9.25,
-                "leg_opening": 8.25,
-                "inseam": 34
+                "back_rise": 15,
+                "thigh": 13,
+                "knee": 9.5,
+                "leg_opening": 7.5,
+                "inseam": 34.5
               }
             },
             {
               "label": "40",
               "waist_tag": 40,
               "measurements": {
-                "waist": 41,
-                "front_rise": 10.75,
-                "back_rise": 16,
-                "thigh": 13,
-                "knee": 9.5,
-                "leg_opening": 8.5,
-                "inseam": 34
+                "waist": 41.5,
+                "front_rise": 11,
+                "back_rise": 15.5,
+                "thigh": 13.5,
+                "knee": 10,
+                "leg_opening": 8,
+                "inseam": 34.5
               }
             },
             {
               "label": "42",
               "waist_tag": 42,
               "measurements": {
-                "waist": 43,
-                "front_rise": 11,
-                "back_rise": 16.5,
-                "thigh": 13.5,
-                "knee": 9.75,
+                "waist": 43.5,
+                "front_rise": 11.25,
+                "back_rise": 15.75,
+                "thigh": 14.25,
+                "knee": 10.5,
                 "leg_opening": 8.75,
+                "inseam": 34.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-guy-fingerprint-denim-indigo",
+      "name": "Fingerprint Denim, Indigo",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-fingerprint-denim-indigo",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 11,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 98
+          },
+          {
+            "fibre": "elastane",
+            "percent": 2
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 145,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-fingerprint-denim-indigo",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-fingerprint-denim-indigo",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11.25,
+                "knee": 7.5,
+                "leg_opening": 6,
                 "inseam": 34
               }
             },
             {
-              "label": "44",
-              "waist_tag": 44,
+              "label": "32",
+              "waist_tag": 32,
               "measurements": {
-                "waist": 45,
-                "front_rise": 11.25,
-                "back_rise": 17,
-                "thigh": 14,
-                "knee": 10,
-                "leg_opening": 9,
+                "waist": 34,
+                "front_rise": 10.25,
+                "back_rise": 15.25,
+                "thigh": 11.5,
+                "knee": 7.75,
+                "leg_opening": 6.25,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 11.5,
+                "knee": 8,
+                "leg_opening": 6.5,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.5,
+                "back_rise": 15.5,
+                "thigh": 12,
+                "knee": 8.25,
+                "leg_opening": 6.5,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 10.75,
+                "back_rise": 15.75,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 7,
                 "inseam": 34
               }
             }
@@ -2386,7 +3322,7 @@
       "name": "Flying Squirrel Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/super-guy-super-guy-flying-squirrel-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 10.75,
         "composition": [
@@ -2546,11 +3482,188 @@
       ]
     },
     {
+      "id": "super-guy-forbidden-fruit-selvedge",
+      "name": "Forbidden Fruit Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-forbidden-fruit-selvedge-indigo",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 12.5,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 189,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-forbidden-fruit-selvedge-indigo",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-forbidden-fruit-selvedge-indigo",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 9.75,
+                "back_rise": 14.5,
+                "thigh": 10.25,
+                "knee": 7.5,
+                "leg_opening": 5.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 9.75,
+                "back_rise": 14.5,
+                "thigh": 10.75,
+                "knee": 7.5,
+                "leg_opening": 6,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 10.75,
+                "knee": 8,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10,
+                "back_rise": 15,
+                "thigh": 11.25,
+                "knee": 8,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11.5,
+                "knee": 8.25,
+                "leg_opening": 6.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 11.75,
+                "knee": 8.5,
+                "leg_opening": 6.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35.5,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 11.75,
+                "knee": 8.75,
+                "leg_opening": 7,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37.5,
+                "front_rise": 11,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9,
+                "leg_opening": 7,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 11,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.5,
+                "leg_opening": 7.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 11.25,
+                "back_rise": 16,
+                "thigh": 13.5,
+                "knee": 10,
+                "leg_opening": 8,
+                "inseam": 34.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "super-guy-foxfibre-green-weft-selvedge",
       "name": "FoxFibre® Green Weft Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-fox-fibre-green-weft-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13,
         "composition": [
@@ -2723,11 +3836,192 @@
       ]
     },
     {
+      "id": "super-guy-galaxy-selvedge",
+      "name": "Galaxy Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-galaxy-selvedge-indigo",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 13,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 65
+          },
+          {
+            "fibre": "rayon",
+            "percent": 35
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 232,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-galaxy-selvedge-indigo",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-galaxy-selvedge-indigo",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 9.75,
+                "back_rise": 14.25,
+                "thigh": 10.5,
+                "knee": 7.25,
+                "leg_opening": 5.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 9.75,
+                "back_rise": 14.5,
+                "thigh": 10.75,
+                "knee": 7.5,
+                "leg_opening": 6,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 11.25,
+                "knee": 8,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 11.25,
+                "knee": 8,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11.5,
+                "knee": 8.25,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 6.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 7,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 10.5,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9,
+                "leg_opening": 7.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 39,
+                "front_rise": 11,
+                "back_rise": 15.5,
+                "thigh": 13,
+                "knee": 9.5,
+                "leg_opening": 7.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 41,
+                "front_rise": 11.5,
+                "back_rise": 15.75,
+                "thigh": 13.5,
+                "knee": 10,
+                "leg_opening": 8,
+                "inseam": 34.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "super-guy-garden-gnome-selvedge",
       "name": "Garden Gnome Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-garden-gnome-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13,
         "composition": [
@@ -2887,11 +4181,218 @@
       ]
     },
     {
+      "id": "super-guy-ghostbusters-supernatural-selvedge",
+      "name": "Ghostbusters Supernatural Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-ghostbusters-supernatural-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 11,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 98
+          },
+          {
+            "fibre": "elastane",
+            "percent": 2
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 188,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-ghostbusters-supernatural-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-ghostbusters-supernatural-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 9.5,
+                "back_rise": 14,
+                "thigh": 10,
+                "knee": 7.5,
+                "leg_opening": 6,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 9.75,
+                "back_rise": 14.25,
+                "thigh": 10.25,
+                "knee": 7.75,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 9.75,
+                "back_rise": 14.5,
+                "thigh": 10.5,
+                "knee": 8,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10,
+                "back_rise": 14.5,
+                "thigh": 10.75,
+                "knee": 8.25,
+                "leg_opening": 6.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 11,
+                "knee": 8.5,
+                "leg_opening": 6.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11.25,
+                "knee": 8.75,
+                "leg_opening": 7,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.25,
+                "back_rise": 15.25,
+                "thigh": 11.5,
+                "knee": 9,
+                "leg_opening": 7.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 10.5,
+                "back_rise": 15.5,
+                "thigh": 12,
+                "knee": 9.5,
+                "leg_opening": 7.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 10.75,
+                "back_rise": 15.75,
+                "thigh": 12.5,
+                "knee": 9.75,
+                "leg_opening": 7.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 11,
+                "back_rise": 16,
+                "thigh": 13,
+                "knee": 10,
+                "leg_opening": 8.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 11.25,
+                "back_rise": 16.25,
+                "thigh": 13.5,
+                "knee": 10.5,
+                "leg_opening": 8.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 11.5,
+                "back_rise": 16.5,
+                "thigh": 13.75,
+                "knee": 11,
+                "leg_opening": 8.75,
+                "inseam": 34.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "super-guy-giant-hornet-selvedge",
       "name": "Giant Hornet Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-giant-hornet-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 16,
         "composition": [
@@ -3055,7 +4556,7 @@
       "name": "Greencast Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-greencast-slub-stretch-selvedge-indigo-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -3249,7 +4750,7 @@
       "name": "Guardian 2 Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-guardian-2-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14.25,
         "composition": [
@@ -3430,7 +4931,7 @@
       "name": "Haunted Forest Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-haunted-forest-selvedge-forest",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": [
@@ -3577,11 +5078,175 @@
       ]
     },
     {
+      "id": "super-guy-heather-grey-selvedge",
+      "name": "Heather Grey Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-heather-grey-selvedge-grey",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 13.5,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 205,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-heather-grey-selvedge-grey",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-heather-grey-selvedge-grey",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 29.5,
+                "front_rise": 10,
+                "back_rise": 14.5,
+                "thigh": 10.75,
+                "knee": 7.5,
+                "leg_opening": 5.75,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30.5,
+                "front_rise": 10,
+                "back_rise": 14.5,
+                "thigh": 11,
+                "knee": 7.75,
+                "leg_opening": 6,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 11.5,
+                "knee": 8,
+                "leg_opening": 6.25,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 10.25,
+                "back_rise": 14.75,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 6.5,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 10.5,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 6.75,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 34.5,
+                "front_rise": 10.5,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 6.75,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35.5,
+                "front_rise": 10.75,
+                "back_rise": 15.25,
+                "thigh": 12.25,
+                "knee": 9,
+                "leg_opening": 6.75,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 11,
+                "back_rise": 15.5,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 7,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 39.5,
+                "front_rise": 11.25,
+                "back_rise": 15.75,
+                "thigh": 13.25,
+                "knee": 9.5,
+                "leg_opening": 7.5,
+                "inseam": 34.75
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "super-guy-hellraiser-pinhead-selvedge",
       "name": "Hellraiser \"Pinhead\" Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-hellraiser-pinhead-black",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": null,
@@ -3740,7 +5405,7 @@
       "name": "Hemp Blend Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/super-guy-hemp-blend-selvedge-indigo-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 11,
         "composition": [
@@ -3917,13 +5582,13 @@
       ]
     },
     {
-      "id": "super-guy-indigo-duck-canvas-selvedge",
-      "name": "Indigo Duck Canvas Selvedge",
-      "url": "https://nakedandfamousdenim.com/products/super-guy-indigo-duck-canvas-selvedge",
+      "id": "super-guy-iceberg-selvedge",
+      "name": "Iceberg Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-iceberg-selvedge-white",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
-        "weight_oz": 10,
+        "weight_oz": 15,
         "composition": [
           {
             "fibre": "cotton",
@@ -3934,10 +5599,10 @@
       },
       "sold": "raw",
       "list_price": {
-        "amount": 160,
+        "amount": 169,
         "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/super-guy-indigo-duck-canvas-selvedge",
-        "seen": "2026-11-20"
+        "url": "https://nakedandfamousdenim.com/products/super-guy-iceberg-selvedge-white",
+        "seen": "2026-11-21"
       },
       "shrinkage": {
         "kind": "percent",
@@ -3953,8 +5618,8 @@
         {
           "state": "as-sold",
           "source": {
-            "url": "https://nakedandfamousdenim.com/products/super-guy-indigo-duck-canvas-selvedge",
-            "seen": "2026-11-20"
+            "url": "https://nakedandfamousdenim.com/products/super-guy-iceberg-selvedge-white",
+            "seen": "2026-11-21"
           },
           "unit": "in",
           "from_image": false,
@@ -3963,11 +5628,12 @@
               "label": "28",
               "waist_tag": 28,
               "measurements": {
-                "waist": 29,
-                "front_rise": 8.75,
-                "thigh": 10.25,
-                "knee": 7,
-                "leg_opening": 5.5,
+                "waist": 30,
+                "front_rise": 9.75,
+                "back_rise": 14.5,
+                "thigh": 10.5,
+                "knee": 7.5,
+                "leg_opening": 5.75,
                 "inseam": 34
               }
             },
@@ -3975,9 +5641,10 @@
               "label": "29",
               "waist_tag": 29,
               "measurements": {
-                "waist": 30,
-                "front_rise": 9,
-                "thigh": 10.5,
+                "waist": 31,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 11,
                 "knee": 7.5,
                 "leg_opening": 6,
                 "inseam": 34
@@ -3987,11 +5654,12 @@
               "label": "30",
               "waist_tag": 30,
               "measurements": {
-                "waist": 31,
-                "front_rise": 9.25,
-                "thigh": 10.75,
-                "knee": 7.5,
-                "leg_opening": 6,
+                "waist": 32,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 11,
+                "knee": 8,
+                "leg_opening": 6.25,
                 "inseam": 34
               }
             },
@@ -3999,11 +5667,12 @@
               "label": "31",
               "waist_tag": 31,
               "measurements": {
-                "waist": 32,
-                "front_rise": 9.25,
-                "thigh": 11,
-                "knee": 7.5,
-                "leg_opening": 6,
+                "waist": 33,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11.25,
+                "knee": 8,
+                "leg_opening": 6.25,
                 "inseam": 34
               }
             },
@@ -4011,11 +5680,12 @@
               "label": "32",
               "waist_tag": 32,
               "measurements": {
-                "waist": 33,
-                "front_rise": 9.5,
-                "thigh": 11.25,
-                "knee": 7.75,
-                "leg_opening": 6.25,
+                "waist": 34,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11.5,
+                "knee": 8.5,
+                "leg_opening": 6.5,
                 "inseam": 34
               }
             },
@@ -4023,20 +5693,9 @@
               "label": "33",
               "waist_tag": 33,
               "measurements": {
-                "waist": 34,
-                "front_rise": 9.5,
-                "thigh": 11.5,
-                "knee": 8.25,
-                "leg_opening": 6.5,
-                "inseam": 34
-              }
-            },
-            {
-              "label": "34",
-              "waist_tag": 34,
-              "measurements": {
                 "waist": 35,
-                "front_rise": 9.75,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
                 "thigh": 12,
                 "knee": 8.5,
                 "leg_opening": 6.75,
@@ -4044,14 +5703,28 @@
               }
             },
             {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.5,
+                "back_rise": 15.5,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 7,
+                "inseam": 34
+              }
+            },
+            {
               "label": "36",
               "waist_tag": 36,
               "measurements": {
-                "waist": 37,
-                "front_rise": 10,
-                "thigh": 12.25,
-                "knee": 8.5,
-                "leg_opening": 7,
+                "waist": 38,
+                "front_rise": 10.75,
+                "back_rise": 15.5,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 7.25,
                 "inseam": 34
               }
             },
@@ -4059,23 +5732,12 @@
               "label": "38",
               "waist_tag": 38,
               "measurements": {
-                "waist": 39,
-                "front_rise": 10.25,
-                "thigh": 12.25,
-                "knee": 9,
-                "leg_opening": 7.25,
-                "inseam": 34
-              }
-            },
-            {
-              "label": "40",
-              "waist_tag": 40,
-              "measurements": {
-                "waist": 41,
-                "front_rise": 10.5,
-                "thigh": 13.25,
-                "knee": 9.25,
-                "leg_opening": 7.5,
+                "waist": 40,
+                "front_rise": 11,
+                "back_rise": 16,
+                "thigh": 13,
+                "knee": 9.75,
+                "leg_opening": 7.75,
                 "inseam": 34
               }
             }
@@ -4088,7 +5750,7 @@
       "name": "Indigo / Indigo Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-indigo-indigo-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -4282,7 +5944,7 @@
       "name": "Indigo Power Stretch",
       "url": "https://nakedandfamousdenim.com/products/super-guy-indigo-power-stretch",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -4476,7 +6138,7 @@
       "name": "Indigo Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-indigo-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13,
         "composition": [
@@ -4675,175 +6337,11 @@
       ]
     },
     {
-      "id": "super-guy-indigo-sugiaya",
-      "name": "Indigo Sugiaya",
-      "url": "https://nakedandfamousdenim.com/products/super-guy-indigo-sugiaya-indigo",
-      "status": "current",
-      "status_seen": "2026-11-20",
-      "fabric": {
-        "weight_oz": 12,
-        "composition": [
-          {
-            "fibre": "cotton",
-            "percent": 100
-          }
-        ],
-        "sanforized": true
-      },
-      "sold": "raw",
-      "list_price": {
-        "amount": 169,
-        "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/super-guy-indigo-sugiaya-indigo",
-        "seen": "2026-11-20"
-      },
-      "shrinkage": {
-        "kind": "percent",
-        "length": 2,
-        "width": 2,
-        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
-        "source": {
-          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
-          "seen": "2026-11-20"
-        }
-      },
-      "charts": [
-        {
-          "state": "as-sold",
-          "source": {
-            "url": "https://nakedandfamousdenim.com/products/super-guy-indigo-sugiaya-indigo",
-            "seen": "2026-11-20"
-          },
-          "unit": "in",
-          "from_image": false,
-          "sizes": [
-            {
-              "label": "28",
-              "waist_tag": 28,
-              "measurements": {
-                "waist": 31,
-                "front_rise": 9.75,
-                "back_rise": 14.5,
-                "thigh": 10.5,
-                "knee": 7,
-                "leg_opening": 5.75,
-                "inseam": 33.25
-              }
-            },
-            {
-              "label": "29",
-              "waist_tag": 29,
-              "measurements": {
-                "waist": 32,
-                "front_rise": 9.75,
-                "back_rise": 14.75,
-                "thigh": 10.75,
-                "knee": 7.25,
-                "leg_opening": 5.75,
-                "inseam": 33.25
-              }
-            },
-            {
-              "label": "30",
-              "waist_tag": 30,
-              "measurements": {
-                "waist": 33,
-                "front_rise": 10,
-                "back_rise": 15,
-                "thigh": 11,
-                "knee": 7.5,
-                "leg_opening": 6,
-                "inseam": 33.25
-              }
-            },
-            {
-              "label": "31",
-              "waist_tag": 31,
-              "measurements": {
-                "waist": 34,
-                "front_rise": 10,
-                "back_rise": 15,
-                "thigh": 11.25,
-                "knee": 7.5,
-                "leg_opening": 6.25,
-                "inseam": 33.25
-              }
-            },
-            {
-              "label": "32",
-              "waist_tag": 32,
-              "measurements": {
-                "waist": 35,
-                "front_rise": 10.25,
-                "back_rise": 15,
-                "thigh": 11.75,
-                "knee": 7.75,
-                "leg_opening": 6.5,
-                "inseam": 33.25
-              }
-            },
-            {
-              "label": "33",
-              "waist_tag": 33,
-              "measurements": {
-                "waist": 35,
-                "front_rise": 10.25,
-                "back_rise": 15.25,
-                "thigh": 11.75,
-                "knee": 8,
-                "leg_opening": 6.75,
-                "inseam": 33.25
-              }
-            },
-            {
-              "label": "34",
-              "waist_tag": 34,
-              "measurements": {
-                "waist": 36,
-                "front_rise": 10.5,
-                "back_rise": 15.25,
-                "thigh": 12,
-                "knee": 8.25,
-                "leg_opening": 7,
-                "inseam": 33.25
-              }
-            },
-            {
-              "label": "36",
-              "waist_tag": 36,
-              "measurements": {
-                "waist": 38,
-                "front_rise": 10.75,
-                "back_rise": 15.5,
-                "thigh": 12.5,
-                "knee": 8.5,
-                "leg_opening": 7.25,
-                "inseam": 33.25
-              }
-            },
-            {
-              "label": "38",
-              "waist_tag": 38,
-              "measurements": {
-                "waist": 40,
-                "front_rise": 11,
-                "back_rise": 16,
-                "thigh": 13,
-                "knee": 9,
-                "leg_opening": 7.5,
-                "inseam": 33.25
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "super-guy-kawataro-selvedge-indigo",
       "name": "Kawataro Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/super-guy-kawataro-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14.5,
         "composition": [
@@ -4977,11 +6475,201 @@
       ]
     },
     {
+      "id": "super-guy-le-selvedge-de-la-belle-province-in-store-exclusive",
+      "name": "Le Selvedge De La Belle Province [In Store Exclusive]",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-le-selvedge-de-la-belle-province",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 12.5,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 229,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-le-selvedge-de-la-belle-province",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-le-selvedge-de-la-belle-province",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 9.25,
+                "back_rise": 14,
+                "thigh": 11,
+                "knee": 7.5,
+                "leg_opening": 6,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 9.5,
+                "back_rise": 14.25,
+                "thigh": 11.25,
+                "knee": 7.75,
+                "leg_opening": 6,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 9.75,
+                "back_rise": 14.25,
+                "thigh": 11.5,
+                "knee": 8,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10,
+                "back_rise": 14.5,
+                "thigh": 11.75,
+                "knee": 8.5,
+                "leg_opening": 6.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 6.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 12.25,
+                "knee": 8.75,
+                "leg_opening": 7,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 12.5,
+                "knee": 9,
+                "leg_opening": 7.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 7.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 10.75,
+                "back_rise": 15.5,
+                "thigh": 13.25,
+                "knee": 9.5,
+                "leg_opening": 7.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 10.75,
+                "back_rise": 15.5,
+                "thigh": 13.75,
+                "knee": 10,
+                "leg_opening": 8,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 11,
+                "back_rise": 15.75,
+                "thigh": 14.25,
+                "knee": 10.5,
+                "leg_opening": 8.25,
+                "inseam": 34.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "super-guy-left-hand-twill-selvedge",
       "name": "Left Hand Twill Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-super-guy-left-hand-twill-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13.75,
         "composition": [
@@ -5184,7 +6872,7 @@
       "name": "Max Brush Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/true-guy-max-brush-selvedge-indigo-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13.75,
         "composition": [
@@ -5344,11 +7032,295 @@
       ]
     },
     {
+      "id": "super-guy-mij10-okayama-spirit",
+      "name": "MIJ10, Okayama Spirit",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-mij10-okayama-spirit",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 16,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": false
+      },
+      "sold": "one-washed",
+      "list_price": {
+        "amount": 315,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-mij10-okayama-spirit",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-mij10-okayama-spirit",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 9.5,
+                "back_rise": 13.75,
+                "thigh": 10.25,
+                "knee": 7.25,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 9.75,
+                "back_rise": 14,
+                "thigh": 11,
+                "knee": 7.75,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 31.25,
+                "front_rise": 9.75,
+                "back_rise": 14.25,
+                "thigh": 11.25,
+                "knee": 7.5,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 10,
+                "back_rise": 14.5,
+                "thigh": 11.25,
+                "knee": 8,
+                "leg_opening": 6.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10,
+                "back_rise": 14.5,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 7,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 10.25,
+                "back_rise": 14.75,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 7.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 39,
+                "front_rise": 10.5,
+                "back_rise": 14.75,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 7.5,
+                "inseam": 33.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-guy-mij11-tokushima-hand-dyed-kakishibu-selvedge",
+      "name": "MIJ11, Tokushima Hand Dyed Kakishibu Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-mij11-tokushima-hand-dyed-kakishibu-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 14,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "one-washed",
+      "list_price": {
+        "amount": 788,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-mij11-tokushima-hand-dyed-kakishibu-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-mij11-tokushima-hand-dyed-kakishibu-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 28,
+                "front_rise": 9.25,
+                "back_rise": 13.25,
+                "thigh": 10.5,
+                "knee": 7,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 9.25,
+                "back_rise": 13.5,
+                "thigh": 10.75,
+                "knee": 7.25,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 9.5,
+                "back_rise": 13.5,
+                "thigh": 10.75,
+                "knee": 7.5,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 9.75,
+                "back_rise": 13.75,
+                "thigh": 11,
+                "knee": 7.75,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 10,
+                "back_rise": 13.75,
+                "thigh": 11.25,
+                "knee": 8,
+                "leg_opening": 6.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10,
+                "back_rise": 14,
+                "thigh": 11.5,
+                "knee": 8.25,
+                "leg_opening": 6.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10.25,
+                "back_rise": 14.25,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 7,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.25,
+                "back_rise": 14.5,
+                "thigh": 12.5,
+                "knee": 8.75,
+                "leg_opening": 7.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 10.5,
+                "back_rise": 15,
+                "thigh": 13,
+                "knee": 9,
+                "leg_opening": 7.5,
+                "inseam": 33.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "super-guy-mij14-haru-kaze-selvedge",
       "name": "MIJ14, Haru Kaze Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-mij14-haru-kaze-selvedge-naked-famous-denim",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 8.6,
         "composition": [
@@ -5499,11 +7471,360 @@
       ]
     },
     {
+      "id": "super-guy-mij16-genseki-selvedge",
+      "name": "MIJ16, Genseki Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-mij16-genseki-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 19,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": false
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 325,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-mij16-genseki-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-mij16-genseki-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 10,
+                "knee": 7.25,
+                "leg_opening": 5.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 10,
+                "back_rise": 15,
+                "thigh": 10.5,
+                "knee": 7.25,
+                "leg_opening": 5.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11,
+                "knee": 7.5,
+                "leg_opening": 6,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10.25,
+                "back_rise": 15.25,
+                "thigh": 11.25,
+                "knee": 7.75,
+                "leg_opening": 6.25,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 11.75,
+                "knee": 8,
+                "leg_opening": 6.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 7,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 7.25,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 10.75,
+                "back_rise": 15.25,
+                "thigh": 12.5,
+                "knee": 9,
+                "leg_opening": 7.5,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 11,
+                "back_rise": 15.25,
+                "thigh": 13,
+                "knee": 9.25,
+                "leg_opening": 7.75,
+                "inseam": 34
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-guy-mij7-yahan-midnight-selvedge",
+      "name": "MIJ7, Yahan Midnight Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-made-in-japan-super-guy-mij7-yahan-midnight-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 17,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": false
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 288,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-made-in-japan-super-guy-mij7-yahan-midnight-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-made-in-japan-super-guy-mij7-yahan-midnight-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 9.5,
+                "back_rise": 13.75,
+                "thigh": 10.5,
+                "knee": 7,
+                "leg_opening": 5.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 9.5,
+                "back_rise": 13.75,
+                "thigh": 10.75,
+                "knee": 7.25,
+                "leg_opening": 5.75,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 9.75,
+                "back_rise": 14,
+                "thigh": 11,
+                "knee": 7.5,
+                "leg_opening": 6,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 9.75,
+                "back_rise": 14,
+                "thigh": 11.25,
+                "knee": 7.75,
+                "leg_opening": 6.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10,
+                "back_rise": 14.25,
+                "thigh": 11.5,
+                "knee": 8,
+                "leg_opening": 6.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10,
+                "back_rise": 14.25,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 6.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.25,
+                "back_rise": 14.5,
+                "thigh": 12.25,
+                "knee": 8.5,
+                "leg_opening": 7,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.25,
+                "back_rise": 14.5,
+                "thigh": 12.25,
+                "knee": 8.75,
+                "leg_opening": 7.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 10.75,
+                "back_rise": 15,
+                "thigh": 12.75,
+                "knee": 9,
+                "leg_opening": 7.5,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 10.75,
+                "back_rise": 15.25,
+                "thigh": 13.5,
+                "knee": 9.5,
+                "leg_opening": 8,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 11.25,
+                "back_rise": 15.5,
+                "thigh": 14,
+                "knee": 10,
+                "leg_opening": 8.25,
+                "inseam": 34.5
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 11.5,
+                "back_rise": 15.75,
+                "thigh": 14.25,
+                "knee": 10.25,
+                "leg_opening": 8.25,
+                "inseam": 34.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "super-guy-mij9-tennen-ai-natural-indigo-slub-selvedge",
       "name": "MIJ9, \"Tennen Ai\" Natural Indigo Slub Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-mij9-tennen-ai-natural-indigo-slub-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 15,
         "composition": [
@@ -5671,7 +7992,7 @@
       "name": "Natural Indigo Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-natural-indigo-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -5861,7 +8182,7 @@
       "name": "Nightshade Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-nightshade-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -6055,7 +8376,7 @@
       "name": "Revival Frankenstein Denim",
       "url": "https://nakedandfamousdenim.com/products/super-guy-revival-frankenstein-denim",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": [
@@ -6232,7 +8553,7 @@
       "name": "Sea Island Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/super-guy-sea-island-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -6392,13 +8713,13 @@
       ]
     },
     {
-      "id": "super-guy-selvedge-slacks-beige",
-      "name": "Selvedge Slacks Beige",
-      "url": "https://nakedandfamousdenim.com/products/super-guy-selvedge-slacks-beige-1",
+      "id": "super-guy-secret-agent-denim-bleach-blue",
+      "name": "Secret Agent Denim, Bleach Blue",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-secret-agent-bleach-blue",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
-        "weight_oz": 10,
+        "weight_oz": 14,
         "composition": [
           {
             "fibre": "cotton",
@@ -6409,10 +8730,10 @@
       },
       "sold": "raw",
       "list_price": {
-        "amount": 192,
+        "amount": 195,
         "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/super-guy-selvedge-slacks-beige-1",
-        "seen": "2026-11-20"
+        "url": "https://nakedandfamousdenim.com/products/super-guy-secret-agent-bleach-blue",
+        "seen": "2026-11-21"
       },
       "shrinkage": {
         "kind": "percent",
@@ -6428,8 +8749,8 @@
         {
           "state": "as-sold",
           "source": {
-            "url": "https://nakedandfamousdenim.com/products/super-guy-selvedge-slacks-beige-1",
-            "seen": "2026-11-20"
+            "url": "https://nakedandfamousdenim.com/products/super-guy-secret-agent-bleach-blue",
+            "seen": "2026-11-21"
           },
           "unit": "in",
           "from_image": false,
@@ -6438,307 +8759,117 @@
               "label": "28",
               "waist_tag": 28,
               "measurements": {
-                "waist": 29,
-                "front_rise": 9.75,
-                "back_rise": 14.25,
+                "waist": 30,
+                "front_rise": 9.5,
+                "back_rise": 14.5,
                 "thigh": 10.75,
-                "knee": 7.5,
+                "knee": 7,
                 "leg_opening": 5.5,
-                "inseam": 34.5
+                "inseam": 34
               }
             },
             {
               "label": "29",
               "waist_tag": 29,
               "measurements": {
-                "waist": 30,
+                "waist": 31,
                 "front_rise": 9.75,
                 "back_rise": 14.5,
-                "thigh": 10.75,
-                "knee": 7.75,
+                "thigh": 11,
+                "knee": 7.25,
                 "leg_opening": 5.75,
-                "inseam": 34.5
+                "inseam": 34
               }
             },
             {
               "label": "30",
               "waist_tag": 30,
               "measurements": {
-                "waist": 31,
-                "front_rise": 10,
-                "back_rise": 14.5,
-                "thigh": 11,
-                "knee": 8,
-                "leg_opening": 6,
-                "inseam": 34.5
-              }
-            },
-            {
-              "label": "31",
-              "waist_tag": 31,
-              "measurements": {
                 "waist": 32,
-                "front_rise": 10.25,
+                "front_rise": 10,
                 "back_rise": 14.75,
                 "thigh": 11.25,
-                "knee": 8,
-                "leg_opening": 6.25,
-                "inseam": 34.5
-              }
-            },
-            {
-              "label": "32",
-              "waist_tag": 32,
-              "measurements": {
-                "waist": 33,
-                "front_rise": 10.5,
-                "back_rise": 15,
-                "thigh": 11.5,
-                "knee": 8.25,
-                "leg_opening": 6.25,
-                "inseam": 34.5
-              }
-            },
-            {
-              "label": "33",
-              "waist_tag": 33,
-              "measurements": {
-                "waist": 34,
-                "front_rise": 10.75,
-                "back_rise": 15,
-                "thigh": 11.75,
-                "knee": 8.5,
-                "leg_opening": 6.5,
-                "inseam": 34.5
-              }
-            },
-            {
-              "label": "34",
-              "waist_tag": 34,
-              "measurements": {
-                "waist": 35,
-                "front_rise": 10.75,
-                "back_rise": 15.25,
-                "thigh": 12.25,
-                "knee": 8.75,
-                "leg_opening": 6.75,
-                "inseam": 34.5
-              }
-            },
-            {
-              "label": "36",
-              "waist_tag": 36,
-              "measurements": {
-                "waist": 37,
-                "front_rise": 10.75,
-                "back_rise": 15.5,
-                "thigh": 12.75,
-                "knee": 9,
-                "leg_opening": 7,
-                "inseam": 34.5
-              }
-            },
-            {
-              "label": "38",
-              "waist_tag": 38,
-              "measurements": {
-                "waist": 39,
-                "front_rise": 10.75,
-                "back_rise": 15.75,
-                "thigh": 13,
-                "knee": 9.5,
-                "leg_opening": 7.25,
-                "inseam": 34.5
-              }
-            },
-            {
-              "label": "40",
-              "waist_tag": 40,
-              "measurements": {
-                "waist": 41,
-                "front_rise": 11,
-                "back_rise": 16,
-                "thigh": 13.5,
-                "knee": 10,
-                "leg_opening": 7.75,
-                "inseam": 34.5
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "super-guy-selvedge-slacks-black",
-      "name": "Selvedge Slacks Black",
-      "url": "https://nakedandfamousdenim.com/products/super-guy-selvedge-slacks-black",
-      "status": "current",
-      "status_seen": "2026-11-20",
-      "fabric": {
-        "weight_oz": 10,
-        "composition": [
-          {
-            "fibre": "cotton",
-            "percent": 100
-          }
-        ],
-        "sanforized": true
-      },
-      "sold": "raw",
-      "list_price": {
-        "amount": 192,
-        "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/super-guy-selvedge-slacks-black",
-        "seen": "2026-11-20"
-      },
-      "shrinkage": {
-        "kind": "percent",
-        "length": 2,
-        "width": 2,
-        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
-        "source": {
-          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
-          "seen": "2026-11-20"
-        }
-      },
-      "charts": [
-        {
-          "state": "as-sold",
-          "source": {
-            "url": "https://nakedandfamousdenim.com/products/super-guy-selvedge-slacks-black",
-            "seen": "2026-11-20"
-          },
-          "unit": "in",
-          "from_image": false,
-          "sizes": [
-            {
-              "label": "28",
-              "waist_tag": 28,
-              "measurements": {
-                "waist": 29,
-                "front_rise": 9.75,
-                "back_rise": 14.25,
-                "thigh": 10.75,
                 "knee": 7.5,
-                "leg_opening": 5.5,
-                "inseam": 34.5
-              }
-            },
-            {
-              "label": "29",
-              "waist_tag": 29,
-              "measurements": {
-                "waist": 30,
-                "front_rise": 9.75,
-                "back_rise": 14.5,
-                "thigh": 10.75,
-                "knee": 7.75,
-                "leg_opening": 5.75,
-                "inseam": 34.5
-              }
-            },
-            {
-              "label": "30",
-              "waist_tag": 30,
-              "measurements": {
-                "waist": 31,
-                "front_rise": 10,
-                "back_rise": 14.5,
-                "thigh": 11,
-                "knee": 8,
                 "leg_opening": 6,
-                "inseam": 34.5
+                "inseam": 34
               }
             },
             {
               "label": "31",
               "waist_tag": 31,
               "measurements": {
-                "waist": 32,
-                "front_rise": 10.25,
+                "waist": 33,
+                "front_rise": 10,
                 "back_rise": 14.75,
-                "thigh": 11.25,
-                "knee": 8,
-                "leg_opening": 6.25,
-                "inseam": 34.5
+                "thigh": 11.5,
+                "knee": 7.75,
+                "leg_opening": 6,
+                "inseam": 34
               }
             },
             {
               "label": "32",
               "waist_tag": 32,
               "measurements": {
-                "waist": 33,
-                "front_rise": 10.5,
+                "waist": 34,
+                "front_rise": 10,
                 "back_rise": 15,
-                "thigh": 11.5,
-                "knee": 8.25,
+                "thigh": 11.75,
+                "knee": 8,
                 "leg_opening": 6.25,
-                "inseam": 34.5
+                "inseam": 34
               }
             },
             {
               "label": "33",
               "waist_tag": 33,
               "measurements": {
-                "waist": 34,
-                "front_rise": 10.75,
+                "waist": 35,
+                "front_rise": 10.25,
                 "back_rise": 15,
-                "thigh": 11.75,
-                "knee": 8.5,
+                "thigh": 12,
+                "knee": 8,
                 "leg_opening": 6.5,
-                "inseam": 34.5
+                "inseam": 34
               }
             },
             {
               "label": "34",
               "waist_tag": 34,
               "measurements": {
-                "waist": 35,
-                "front_rise": 10.75,
-                "back_rise": 15.25,
+                "waist": 36,
+                "front_rise": 10.25,
+                "back_rise": 15,
                 "thigh": 12.25,
-                "knee": 8.75,
+                "knee": 8.25,
                 "leg_opening": 6.75,
-                "inseam": 34.5
+                "inseam": 34
               }
             },
             {
               "label": "36",
               "waist_tag": 36,
               "measurements": {
-                "waist": 37,
-                "front_rise": 10.75,
-                "back_rise": 15.5,
-                "thigh": 12.75,
-                "knee": 9,
+                "waist": 38,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 12.5,
+                "knee": 8.75,
                 "leg_opening": 7,
-                "inseam": 34.5
+                "inseam": 34
               }
             },
             {
               "label": "38",
               "waist_tag": 38,
               "measurements": {
-                "waist": 39,
-                "front_rise": 10.75,
-                "back_rise": 15.75,
-                "thigh": 13,
-                "knee": 9.5,
-                "leg_opening": 7.25,
-                "inseam": 34.5
-              }
-            },
-            {
-              "label": "40",
-              "waist_tag": 40,
-              "measurements": {
-                "waist": 41,
+                "waist": 40,
                 "front_rise": 11,
-                "back_rise": 16,
-                "thigh": 13.5,
-                "knee": 10,
-                "leg_opening": 7.75,
-                "inseam": 34.5
+                "back_rise": 15.5,
+                "thigh": 13.25,
+                "knee": 9.25,
+                "leg_opening": 7.5,
+                "inseam": 34
               }
             }
           ]
@@ -6750,7 +8881,7 @@
       "name": "Solid Black Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-solid-black-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13,
         "composition": [
@@ -6966,7 +9097,7 @@
       "name": "Streamline Selvedge",
       "url": "https://nakedandfamousdenim.com/products/super-guy-streamline-selvedge-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 9.25,
         "composition": [
@@ -7117,7 +9248,7 @@
       "name": "Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-super-guy-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -7311,7 +9442,7 @@
       "name": "Tabi Selvedge, Off White",
       "url": "https://nakedandfamousdenim.com/products/super-guy-tabi-selvedge-off-white-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 11.5,
         "composition": [
@@ -7492,7 +9623,7 @@
       "name": "The Cat’s Pyjamas Selvedge, Unsanforized",
       "url": "https://nakedandfamousdenim.com/products/super-guy-the-cat-s-pajamas-selvedge-blue-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 8.5,
         "composition": [
@@ -7802,7 +9933,7 @@
       "name": "Vintage Nudes Redux",
       "url": "https://nakedandfamousdenim.com/products/super-guy-vintage-nudes-redux-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13.5,
         "composition": [
@@ -7968,6 +10099,330 @@
                 "knee": 9.5,
                 "leg_opening": 8.25,
                 "inseam": 35
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-guy-wax-coated-black-stretch",
+      "name": "Wax Coated Black Stretch",
+      "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-wax-coated-black-stretch",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 12,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 98
+          },
+          {
+            "fibre": "elastane",
+            "percent": 2
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 188,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-wax-coated-black-stretch",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-super-guy-wax-coated-black-stretch",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 9.25,
+                "thigh": 10,
+                "knee": 7.5,
+                "leg_opening": 6.5,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 9.25,
+                "thigh": 10.25,
+                "knee": 7.5,
+                "leg_opening": 6.5,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 9.5,
+                "thigh": 10.5,
+                "knee": 7.75,
+                "leg_opening": 6.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 9.75,
+                "thigh": 10.75,
+                "knee": 8,
+                "leg_opening": 7,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 9.75,
+                "thigh": 11,
+                "knee": 8.25,
+                "leg_opening": 7.25,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 9.75,
+                "thigh": 11.25,
+                "knee": 8.5,
+                "leg_opening": 7.5,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10,
+                "thigh": 11.5,
+                "knee": 8.75,
+                "leg_opening": 7.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 10.25,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 8,
+                "inseam": 34
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-guy-yatagarasu-selvedge-black",
+      "name": "Yatagarasu Selvedge, Black",
+      "url": "https://nakedandfamousdenim.com/products/super-guy-yatagarasu-selvedge-black",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 15,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 182,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/super-guy-yatagarasu-selvedge-black",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/super-guy-yatagarasu-selvedge-black",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30.5,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 11,
+                "knee": 7.5,
+                "leg_opening": 6,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 10,
+                "back_rise": 14.75,
+                "thigh": 11,
+                "knee": 7.75,
+                "leg_opening": 6,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11.25,
+                "knee": 8,
+                "leg_opening": 6.25,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10.25,
+                "back_rise": 15,
+                "thigh": 11.5,
+                "knee": 8.25,
+                "leg_opening": 6.5,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10.5,
+                "back_rise": 15.25,
+                "thigh": 11.5,
+                "knee": 8.5,
+                "leg_opening": 6.5,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.75,
+                "back_rise": 15.5,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 6.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.75,
+                "back_rise": 15.5,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 7,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 11,
+                "back_rise": 15.75,
+                "thigh": 12.5,
+                "knee": 9.25,
+                "leg_opening": 7.25,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 11.25,
+                "back_rise": 16,
+                "thigh": 13,
+                "knee": 9.75,
+                "leg_opening": 7.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 11.5,
+                "back_rise": 16.5,
+                "thigh": 13.5,
+                "knee": 10,
+                "leg_opening": 8,
+                "inseam": 34
               }
             }
           ]

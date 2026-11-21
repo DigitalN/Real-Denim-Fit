@@ -3,13 +3,216 @@
   "brand": "naked-and-famous",
   "name": "Easy Guy",
   "brand_label": "Relaxed tapered",
+  "line": "men",
   "products": [
+    {
+      "id": "easy-guy-10-fold-selvedge",
+      "name": "10 Fold Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-10-fold-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 14,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 188,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-10-fold-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-10-fold-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 11.75,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30.5,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 12.25,
+                "knee": 9.25,
+                "leg_opening": 6.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9.5,
+                "leg_opening": 6.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12.25,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "thigh": 13.25,
+                "knee": 10,
+                "leg_opening": 7,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37.5,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 13.75,
+                "knee": 10.5,
+                "leg_opening": 7.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 13,
+                "back_rise": 16.25,
+                "thigh": 14,
+                "knee": 10.75,
+                "leg_opening": 7.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 41.5,
+                "front_rise": 13,
+                "back_rise": 16.5,
+                "thigh": 14.5,
+                "knee": 11.25,
+                "leg_opening": 8,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "front_rise": 13.5,
+                "back_rise": 16.75,
+                "thigh": 15.25,
+                "knee": 11.5,
+                "leg_opening": 8.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 45.5,
+                "front_rise": 13.75,
+                "back_rise": 17,
+                "thigh": 15.75,
+                "knee": 12,
+                "leg_opening": 9,
+                "inseam": 33
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "easy-guy-11oz-stretch-selvedge",
       "name": "11oz Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-11oz-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 11,
         "composition": [
@@ -212,201 +415,11 @@
       ]
     },
     {
-      "id": "easy-guy-army-green-duck-selvedge",
-      "name": "Army Green Duck Selvedge",
-      "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-army-green-duck-selvedge",
-      "status": "current",
-      "status_seen": "2026-11-20",
-      "fabric": {
-        "weight_oz": 10,
-        "composition": [
-          {
-            "fibre": "cotton",
-            "percent": 100
-          }
-        ],
-        "sanforized": true
-      },
-      "sold": "raw",
-      "list_price": {
-        "amount": 193,
-        "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-army-green-duck-selvedge",
-        "seen": "2026-11-20"
-      },
-      "shrinkage": {
-        "kind": "percent",
-        "length": 2,
-        "width": 2,
-        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
-        "source": {
-          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
-          "seen": "2026-11-20"
-        }
-      },
-      "charts": [
-        {
-          "state": "as-sold",
-          "source": {
-            "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-army-green-duck-selvedge",
-            "seen": "2026-11-20"
-          },
-          "unit": "in",
-          "from_image": false,
-          "sizes": [
-            {
-              "label": "28",
-              "waist_tag": 28,
-              "measurements": {
-                "waist": 29,
-                "front_rise": 10.5,
-                "back_rise": 14,
-                "thigh": 11.25,
-                "knee": 8.5,
-                "leg_opening": 6,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "29",
-              "waist_tag": 29,
-              "measurements": {
-                "waist": 30,
-                "front_rise": 10.75,
-                "back_rise": 14.25,
-                "thigh": 11.5,
-                "knee": 8.75,
-                "leg_opening": 6.25,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "30",
-              "waist_tag": 30,
-              "measurements": {
-                "waist": 31,
-                "front_rise": 11,
-                "back_rise": 14.5,
-                "thigh": 12,
-                "knee": 9,
-                "leg_opening": 6.5,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "31",
-              "waist_tag": 31,
-              "measurements": {
-                "waist": 32,
-                "front_rise": 11.25,
-                "back_rise": 15,
-                "thigh": 12.5,
-                "knee": 9.25,
-                "leg_opening": 7,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "32",
-              "waist_tag": 32,
-              "measurements": {
-                "waist": 33,
-                "front_rise": 11.5,
-                "back_rise": 15,
-                "thigh": 12.75,
-                "knee": 9.5,
-                "leg_opening": 7,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "33",
-              "waist_tag": 33,
-              "measurements": {
-                "waist": 34,
-                "front_rise": 11.5,
-                "back_rise": 15.25,
-                "thigh": 13.25,
-                "knee": 9.75,
-                "leg_opening": 7.5,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "34",
-              "waist_tag": 34,
-              "measurements": {
-                "waist": 36,
-                "front_rise": 11.75,
-                "back_rise": 15.5,
-                "thigh": 13.5,
-                "knee": 10,
-                "leg_opening": 7.75,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "36",
-              "waist_tag": 36,
-              "measurements": {
-                "waist": 38,
-                "front_rise": 12,
-                "back_rise": 15.75,
-                "thigh": 14,
-                "knee": 10.25,
-                "leg_opening": 8,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "38",
-              "waist_tag": 38,
-              "measurements": {
-                "waist": 40,
-                "front_rise": 12.25,
-                "back_rise": 16,
-                "thigh": 14.25,
-                "knee": 10.75,
-                "leg_opening": 8.25,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "40",
-              "waist_tag": 40,
-              "measurements": {
-                "waist": 42,
-                "front_rise": 12.75,
-                "back_rise": 16.25,
-                "thigh": 14.75,
-                "knee": 11.25,
-                "leg_opening": 8.5,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "42",
-              "waist_tag": 42,
-              "measurements": {
-                "waist": 44,
-                "front_rise": 13,
-                "back_rise": 16.5,
-                "thigh": 15,
-                "knee": 11.5,
-                "leg_opening": 8.5,
-                "inseam": 32
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "easy-guy-black-cobra-stretch-selvedge",
       "name": "Black Cobra Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-black-cobra-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -613,7 +626,7 @@
       "name": "Black Power Stretch",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-black-power-stretch",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -816,11 +829,187 @@
       ]
     },
     {
+      "id": "easy-guy-blood-brothers-selvedge-indigo-x-black",
+      "name": "Blood Brothers Selvedge, Indigo x Black",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-blood-brothers-selvedge-indigo-x-black",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 20,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 259,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-blood-brothers-selvedge-indigo-x-black",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-blood-brothers-selvedge-indigo-x-black",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 11.25,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.25,
+                "back_rise": 15.25,
+                "thigh": 12.25,
+                "knee": 9,
+                "leg_opening": 6.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.5,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9.25,
+                "leg_opening": 6.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 11.75,
+                "back_rise": 15.5,
+                "thigh": 12.75,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 11.75,
+                "back_rise": 15.5,
+                "thigh": 13,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 13.25,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35.75,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "thigh": 13.5,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37.5,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 14,
+                "leg_opening": 7.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 39.25,
+                "front_rise": 12.75,
+                "back_rise": 16.25,
+                "thigh": 14.5,
+                "knee": 10.75,
+                "leg_opening": 7.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 41,
+                "front_rise": 13,
+                "back_rise": 16.5,
+                "thigh": 15,
+                "knee": 11.25,
+                "leg_opening": 8.25,
+                "inseam": 33.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "easy-guy-blue-haze-stretch-selvedge-indigo",
       "name": "Blue Haze Stretch Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-blue-haze-stretch-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 11,
         "composition": [
@@ -1001,7 +1190,7 @@
       "name": "Brawler Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-brawler-selvedge-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 17,
         "composition": [
@@ -1204,7 +1393,7 @@
       "name": "Brown Fox Selvedge, Brown",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-brown-fox-selvedge-brown",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13,
         "composition": [
@@ -1407,7 +1596,7 @@
       "name": "Cashmere Stretch Blend Denim",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-cashmere-stretch-blend-denim",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -1592,7 +1781,7 @@
       "name": "Chocolate Milk Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-chocolat-milk-selvedge-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -1760,7 +1949,7 @@
       "name": "Citrus Kasuri Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-citrus-kasuri-selvedge-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": [
@@ -1963,7 +2152,7 @@
       "name": "Coffee Dye Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-coffee-dye-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -2166,7 +2355,7 @@
       "name": "Deep Indigo Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-deep-indigo-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 15,
         "composition": [
@@ -2356,7 +2545,7 @@
       "name": "Deep Indigo Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-deep-indigo-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -2550,7 +2739,7 @@
       "name": "Dia De Los Muertos Selvedge, Bat",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-dia-de-los-muertos-selvedge-bat",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -2753,7 +2942,7 @@
       "name": "Dirty Fade Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-dirty-fade-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14.5,
         "composition": [
@@ -2943,7 +3132,7 @@
       "name": "Double Dip Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-double-dip-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": [
@@ -3142,214 +3331,11 @@
       ]
     },
     {
-      "id": "easy-guy-duck-canvas-selvedge",
-      "name": "Duck Canvas Selvedge",
-      "url": "https://nakedandfamousdenim.com/products/easy-guy-selvedge-duck",
-      "status": "current",
-      "status_seen": "2026-11-20",
-      "fabric": {
-        "weight_oz": 10,
-        "composition": [
-          {
-            "fibre": "cotton",
-            "percent": 100
-          }
-        ],
-        "sanforized": true
-      },
-      "sold": "raw",
-      "list_price": {
-        "amount": 176,
-        "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/easy-guy-selvedge-duck",
-        "seen": "2026-11-20"
-      },
-      "shrinkage": {
-        "kind": "percent",
-        "length": 2,
-        "width": 2,
-        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
-        "source": {
-          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
-          "seen": "2026-11-20"
-        }
-      },
-      "charts": [
-        {
-          "state": "as-sold",
-          "source": {
-            "url": "https://nakedandfamousdenim.com/products/easy-guy-selvedge-duck",
-            "seen": "2026-11-20"
-          },
-          "unit": "in",
-          "from_image": false,
-          "sizes": [
-            {
-              "label": "28",
-              "waist_tag": 28,
-              "measurements": {
-                "waist": 30,
-                "front_rise": 11.25,
-                "back_rise": 14.75,
-                "thigh": 12,
-                "knee": 8.5,
-                "leg_opening": 6.25,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "29",
-              "waist_tag": 29,
-              "measurements": {
-                "waist": 31,
-                "front_rise": 11.5,
-                "back_rise": 14.75,
-                "thigh": 12.25,
-                "knee": 9,
-                "leg_opening": 6.25,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "30",
-              "waist_tag": 30,
-              "measurements": {
-                "waist": 32,
-                "front_rise": 11.5,
-                "back_rise": 14.75,
-                "thigh": 12.5,
-                "knee": 9.25,
-                "leg_opening": 6.5,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "31",
-              "waist_tag": 31,
-              "measurements": {
-                "waist": 33,
-                "front_rise": 11.5,
-                "back_rise": 15,
-                "thigh": 12.5,
-                "knee": 9.25,
-                "leg_opening": 6.5,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "32",
-              "waist_tag": 32,
-              "measurements": {
-                "waist": 34,
-                "front_rise": 11.5,
-                "back_rise": 15,
-                "thigh": 12.75,
-                "knee": 9.5,
-                "leg_opening": 6.75,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "33",
-              "waist_tag": 33,
-              "measurements": {
-                "waist": 35,
-                "front_rise": 12,
-                "back_rise": 15.25,
-                "thigh": 13,
-                "knee": 9.5,
-                "leg_opening": 7,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "34",
-              "waist_tag": 34,
-              "measurements": {
-                "waist": 36,
-                "front_rise": 12,
-                "back_rise": 15.75,
-                "thigh": 13.25,
-                "knee": 10,
-                "leg_opening": 7.25,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "36",
-              "waist_tag": 36,
-              "measurements": {
-                "waist": 38,
-                "front_rise": 12.5,
-                "back_rise": 15.75,
-                "thigh": 14,
-                "knee": 10.5,
-                "leg_opening": 7.5,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "38",
-              "waist_tag": 38,
-              "measurements": {
-                "waist": 40,
-                "front_rise": 12.5,
-                "back_rise": 15.75,
-                "thigh": 14.5,
-                "knee": 11,
-                "leg_opening": 8,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "40",
-              "waist_tag": 40,
-              "measurements": {
-                "waist": 42,
-                "front_rise": 13,
-                "back_rise": 16,
-                "thigh": 15,
-                "knee": 11.25,
-                "leg_opening": 8,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "42",
-              "waist_tag": 42,
-              "measurements": {
-                "waist": 44,
-                "front_rise": 13,
-                "back_rise": 16.5,
-                "thigh": 15.5,
-                "knee": 11.5,
-                "leg_opening": 8.5,
-                "inseam": 32
-              }
-            },
-            {
-              "label": "44",
-              "waist_tag": 44,
-              "measurements": {
-                "waist": 46,
-                "front_rise": 13.25,
-                "back_rise": 16.5,
-                "thigh": 16,
-                "knee": 11.75,
-                "leg_opening": 9,
-                "inseam": 32
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "easy-guy-elephant-14-dirty-elephant-selvedge",
       "name": "Elephant 14, Dirty Elephant Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-elephant4-dirty-elephant",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 20,
         "composition": [
@@ -3548,11 +3534,214 @@
       ]
     },
     {
+      "id": "easy-guy-elephant-2-selvedge-reborn",
+      "name": "Elephant 2 Selvedge Reborn",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-elephant-2-reborn-indigo",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 22,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 238,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-elephant-2-reborn-indigo",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-elephant-2-reborn-indigo",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30.5,
+                "front_rise": 11.5,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31.5,
+                "front_rise": 11.5,
+                "back_rise": 15.25,
+                "thigh": 12.5,
+                "knee": 9,
+                "leg_opening": 6.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32.5,
+                "front_rise": 11.75,
+                "back_rise": 15.5,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 6.5,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 11.75,
+                "back_rise": 15.5,
+                "thigh": 12.75,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34.5,
+                "front_rise": 11.75,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12,
+                "back_rise": 16,
+                "thigh": 13.25,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.25,
+                "back_rise": 16.25,
+                "thigh": 13.75,
+                "knee": 10.25,
+                "leg_opening": 7.5,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.5,
+                "back_rise": 16.25,
+                "thigh": 14.25,
+                "knee": 10.5,
+                "leg_opening": 8,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 12.5,
+                "back_rise": 16.5,
+                "thigh": 14.75,
+                "knee": 11.75,
+                "leg_opening": 8.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 12.75,
+                "back_rise": 16.75,
+                "thigh": 15.25,
+                "knee": 11.75,
+                "leg_opening": 8.5,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13,
+                "back_rise": 17,
+                "thigh": 15.25,
+                "knee": 12,
+                "leg_opening": 8.75,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 13.5,
+                "back_rise": 17.25,
+                "thigh": 16,
+                "knee": 12.25,
+                "leg_opening": 9.25,
+                "inseam": 33.25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "easy-guy-fat-fox-selvedge-brown",
       "name": "Fat Fox Selvedge, Brown",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-fat-fox-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 22.7,
         "composition": [
@@ -3751,11 +3940,395 @@
       ]
     },
     {
+      "id": "easy-guy-fingerprint-denim-indigo",
+      "name": "Fingerprint Denim, Indigo",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-fingerprint-denim-indigo",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 11,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 98
+          },
+          {
+            "fibre": "elastane",
+            "percent": 2
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 145,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-fingerprint-denim-indigo",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-fingerprint-denim-indigo",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 5.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 6.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.25,
+                "back_rise": 15.5,
+                "thigh": 12.25,
+                "knee": 9,
+                "leg_opening": 6.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.25,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9.25,
+                "leg_opening": 6.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 7,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 39,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "thigh": 13.25,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 13,
+                "back_rise": 16.25,
+                "thigh": 13.75,
+                "knee": 10.5,
+                "leg_opening": 7.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 43,
+                "front_rise": 13.25,
+                "back_rise": 16.5,
+                "thigh": 14.25,
+                "knee": 10.5,
+                "leg_opening": 8,
+                "inseam": 33.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-flying-squirrel-selvedge-indigo",
+      "name": "Flying Squirrel Selvedge, Indigo",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-flying-squirrel-selvedge-indigo",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 10.75,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 176,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-flying-squirrel-selvedge-indigo",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-flying-squirrel-selvedge-indigo",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.5,
+                "back_rise": 14.5,
+                "thigh": 11.75,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.5,
+                "back_rise": 14.75,
+                "thigh": 11.75,
+                "knee": 9,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 6.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 11.75,
+                "back_rise": 15.25,
+                "thigh": 12.5,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 12.75,
+                "knee": 9.5,
+                "leg_opening": 7,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 13,
+                "knee": 10,
+                "leg_opening": 7,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 12.25,
+                "back_rise": 16,
+                "thigh": 13.25,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 13.5,
+                "knee": 10.5,
+                "leg_opening": 7.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 41,
+                "front_rise": 12.75,
+                "back_rise": 16.5,
+                "thigh": 14.25,
+                "knee": 11,
+                "leg_opening": 8,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 13,
+                "back_rise": 16.5,
+                "thigh": 14.5,
+                "knee": 11.5,
+                "leg_opening": 8.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 45,
+                "front_rise": 13,
+                "back_rise": 17,
+                "thigh": 15,
+                "knee": 12,
+                "leg_opening": 8.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 47,
+                "front_rise": 13.5,
+                "back_rise": 17.25,
+                "thigh": 15.75,
+                "knee": 12.75,
+                "leg_opening": 9,
+                "inseam": 34
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "easy-guy-forbidden-fruit-selvedge",
       "name": "Forbidden Fruit Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-forbidden-fruit-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -3958,7 +4531,7 @@
       "name": "FoxFibre® Green Weft Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-fox-fibre-green-weft-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13,
         "composition": [
@@ -4161,7 +4734,7 @@
       "name": "Galaxy Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-galaxy-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13,
         "composition": [
@@ -4368,7 +4941,7 @@
       "name": "Garden Gnome Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-garden-gnome-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13,
         "composition": [
@@ -4571,7 +5144,7 @@
       "name": "Gateway Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-gateway-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14.3,
         "composition": [
@@ -4774,11 +5347,420 @@
       ]
     },
     {
+      "id": "easy-guy-ghostbusters-slimer-glow-in-the-dark-selvedge",
+      "name": "Ghostbusters Slimer Glow In The Dark Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-ghostbusters-slimer-glow-in-the-dark-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 11,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 98
+          },
+          {
+            "fibre": "elastane",
+            "percent": 2
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 228,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-ghostbusters-slimer-glow-in-the-dark-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-ghostbusters-slimer-glow-in-the-dark-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.25,
+                "back_rise": 14.5,
+                "thigh": 11.75,
+                "leg_opening": 6.25,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32.5,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 6.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 11.5,
+                "back_rise": 14.5,
+                "thigh": 12.25,
+                "knee": 8.75,
+                "leg_opening": 6.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "thigh": 12.5,
+                "knee": 9.25,
+                "leg_opening": 7,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12,
+                "back_rise": 15,
+                "thigh": 12.75,
+                "knee": 9.5,
+                "leg_opening": 7,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 12,
+                "back_rise": 15,
+                "thigh": 12.75,
+                "knee": 9.5,
+                "leg_opening": 7.25,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 13.5,
+                "knee": 9.5,
+                "leg_opening": 7.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 12.5,
+                "back_rise": 15.5,
+                "thigh": 13.75,
+                "knee": 10,
+                "leg_opening": 8,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "thigh": 14.25,
+                "knee": 10.5,
+                "leg_opening": 8,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13,
+                "back_rise": 16,
+                "thigh": 14.75,
+                "knee": 11,
+                "leg_opening": 8.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 13,
+                "back_rise": 16.5,
+                "thigh": 15.5,
+                "knee": 11.5,
+                "leg_opening": 9,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 48,
+                "front_rise": 13.25,
+                "back_rise": 17,
+                "thigh": 15.75,
+                "knee": 11.75,
+                "leg_opening": 9.5,
+                "inseam": 32
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-ghostbusters-supernatural-selvedge",
+      "name": "Ghostbusters Supernatural Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-ghostbusters-supernatural-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 11,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 188,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-ghostbusters-supernatural-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-ghostbusters-supernatural-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.75,
+                "back_rise": 14.5,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 6.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12,
+                "back_rise": 14.75,
+                "thigh": 12.5,
+                "knee": 9,
+                "leg_opening": 6.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12.25,
+                "back_rise": 15,
+                "thigh": 12.5,
+                "knee": 9.25,
+                "leg_opening": 6.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34.5,
+                "front_rise": 12.25,
+                "back_rise": 15.25,
+                "thigh": 12.75,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.5,
+                "back_rise": 15.5,
+                "thigh": 13,
+                "knee": 9.5,
+                "leg_opening": 7,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "thigh": 13.25,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.75,
+                "back_rise": 16,
+                "thigh": 13.5,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 13,
+                "back_rise": 16.25,
+                "thigh": 13.75,
+                "knee": 10.25,
+                "leg_opening": 7.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 13.25,
+                "back_rise": 16.5,
+                "thigh": 14,
+                "knee": 10.5,
+                "leg_opening": 7.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13.5,
+                "back_rise": 17,
+                "thigh": 14.5,
+                "knee": 11.5,
+                "leg_opening": 8.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 13.75,
+                "back_rise": 17.5,
+                "thigh": 15.25,
+                "knee": 12,
+                "leg_opening": 9,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 48,
+                "front_rise": 14,
+                "back_rise": 17.75,
+                "thigh": 15.75,
+                "knee": 12.25,
+                "leg_opening": 9.25,
+                "inseam": 32.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "easy-guy-giant-hornet-selvedge",
       "name": "Giant Hornet Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-giant-hornet-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 16,
         "composition": [
@@ -4981,7 +5963,7 @@
       "name": "Greencast Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-greencast-slub-stretch-selvedge-indigo-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -5188,7 +6170,7 @@
       "name": "Guardian 2 Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-guardian-2-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14.25,
         "composition": [
@@ -5395,7 +6377,7 @@
       "name": "Haunted Forest Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-haunted-forest-selvedge-forest",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": [
@@ -5594,11 +6576,214 @@
       ]
     },
     {
+      "id": "easy-guy-heather-grey-selvedge",
+      "name": "Heather Grey Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-heather-grey-selvedge-grey",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 13.5,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 205,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-heather-grey-selvedge-grey",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-heather-grey-selvedge-grey",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 11.25,
+                "back_rise": 14.75,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 12.25,
+                "knee": 9,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31.5,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 12.5,
+                "knee": 9,
+                "leg_opening": 6.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 12.75,
+                "knee": 9.5,
+                "leg_opening": 6.5,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34.5,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 13,
+                "knee": 9.75,
+                "leg_opening": 6.75,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35.5,
+                "front_rise": 12.25,
+                "back_rise": 15.5,
+                "thigh": 13.25,
+                "knee": 10,
+                "leg_opening": 7,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36.5,
+                "front_rise": 12.25,
+                "back_rise": 15.5,
+                "thigh": 13.5,
+                "knee": 10.25,
+                "leg_opening": 7,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38.5,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "thigh": 14,
+                "knee": 10.5,
+                "leg_opening": 7.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40.5,
+                "front_rise": 12.75,
+                "back_rise": 16,
+                "thigh": 14.5,
+                "knee": 10.75,
+                "leg_opening": 7.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42.5,
+                "front_rise": 13,
+                "back_rise": 16.25,
+                "thigh": 15,
+                "knee": 11.25,
+                "leg_opening": 8,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44.5,
+                "front_rise": 13,
+                "back_rise": 16.5,
+                "thigh": 15.5,
+                "knee": 11.75,
+                "leg_opening": 8.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 46.5,
+                "front_rise": 13.25,
+                "back_rise": 16.75,
+                "thigh": 16,
+                "knee": 12.25,
+                "leg_opening": 9.75,
+                "inseam": 33.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "easy-guy-hellraiser-pinhead-selvedge",
       "name": "Hellraiser \"Pinhead\" Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-hellraiser-pinhead-black",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": null,
@@ -5783,7 +6968,7 @@
       "name": "Hemp Blend Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-hemp-blend-selvedge-indigo-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 11,
         "composition": [
@@ -5921,13 +7106,13 @@
       ]
     },
     {
-      "id": "easy-guy-indigo-duck-canvas-selvedge",
-      "name": "Indigo Duck Canvas Selvedge",
-      "url": "https://nakedandfamousdenim.com/products/easy-guy-indigo-duck-canvas-selvedge",
+      "id": "easy-guy-iceberg-selvedge",
+      "name": "Iceberg Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-iceberg-selvedge-white",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
-        "weight_oz": 10,
+        "weight_oz": 15,
         "composition": [
           {
             "fibre": "cotton",
@@ -5938,10 +7123,10 @@
       },
       "sold": "raw",
       "list_price": {
-        "amount": 160,
+        "amount": 169,
         "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/easy-guy-indigo-duck-canvas-selvedge",
-        "seen": "2026-11-20"
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-iceberg-selvedge-white",
+        "seen": "2026-11-21"
       },
       "shrinkage": {
         "kind": "percent",
@@ -5957,8 +7142,8 @@
         {
           "state": "as-sold",
           "source": {
-            "url": "https://nakedandfamousdenim.com/products/easy-guy-indigo-duck-canvas-selvedge",
-            "seen": "2026-11-20"
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-iceberg-selvedge-white",
+            "seen": "2026-11-21"
           },
           "unit": "in",
           "from_image": false,
@@ -5967,13 +7152,13 @@
               "label": "28",
               "waist_tag": 28,
               "measurements": {
-                "waist": 30,
+                "waist": 30.5,
                 "front_rise": 11.25,
-                "back_rise": 14.5,
-                "thigh": 11.5,
+                "back_rise": 14.75,
+                "thigh": 11.75,
                 "knee": 8.5,
                 "leg_opening": 6,
-                "inseam": 32
+                "inseam": 33.5
               }
             },
             {
@@ -5981,12 +7166,12 @@
               "waist_tag": 29,
               "measurements": {
                 "waist": 31,
-                "front_rise": 11.25,
-                "back_rise": 15,
+                "front_rise": 11.5,
+                "back_rise": 14.75,
                 "thigh": 12,
                 "knee": 8.75,
                 "leg_opening": 6,
-                "inseam": 32
+                "inseam": 33.5
               }
             },
             {
@@ -5997,9 +7182,9 @@
                 "front_rise": 11.5,
                 "back_rise": 15,
                 "thigh": 12.25,
-                "knee": 9,
+                "knee": 9.25,
                 "leg_opening": 6.25,
-                "inseam": 32
+                "inseam": 33.5
               }
             },
             {
@@ -6008,11 +7193,11 @@
               "measurements": {
                 "waist": 33,
                 "front_rise": 11.75,
-                "back_rise": 15.25,
+                "back_rise": 15,
                 "thigh": 12.5,
                 "knee": 9.25,
-                "leg_opening": 6.5,
-                "inseam": 32
+                "leg_opening": 6.25,
+                "inseam": 33.5
               }
             },
             {
@@ -6021,11 +7206,11 @@
               "measurements": {
                 "waist": 34,
                 "front_rise": 12,
-                "back_rise": 15.25,
+                "back_rise": 15,
                 "thigh": 12.75,
                 "knee": 9.5,
                 "leg_opening": 6.5,
-                "inseam": 32
+                "inseam": 33.5
               }
             },
             {
@@ -6034,11 +7219,11 @@
               "measurements": {
                 "waist": 35,
                 "front_rise": 12.25,
-                "back_rise": 15.5,
-                "thigh": 13,
+                "back_rise": 15.25,
+                "thigh": 13.25,
                 "knee": 9.75,
                 "leg_opening": 7,
-                "inseam": 32
+                "inseam": 33.5
               }
             },
             {
@@ -6048,10 +7233,62 @@
                 "waist": 36,
                 "front_rise": 12.25,
                 "back_rise": 15.5,
-                "thigh": 13,
-                "knee": 9.75,
-                "leg_opening": 7,
-                "inseam": 32
+                "thigh": 13.5,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 16,
+                "knee": 10.25,
+                "leg_opening": 7.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 12.75,
+                "back_rise": 16.25,
+                "thigh": 16.25,
+                "knee": 10.5,
+                "leg_opening": 7.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 13,
+                "back_rise": 16.25,
+                "thigh": 16.25,
+                "knee": 11,
+                "leg_opening": 8,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13.25,
+                "back_rise": 16.5,
+                "thigh": 16.5,
+                "knee": 11.5,
+                "leg_opening": 8.25,
+                "inseam": 33.5
               }
             }
           ]
@@ -6063,7 +7300,7 @@
       "name": "Indigo / Indigo Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-indigo-indigo-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -6270,7 +7507,7 @@
       "name": "Indigo Power Stretch",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-indigo-power-stretch",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -6451,7 +7688,7 @@
       "name": "Indigo Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-indigo-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13,
         "composition": [
@@ -6637,11 +7874,404 @@
       ]
     },
     {
+      "id": "easy-guy-kawataro-selvedge-indigo",
+      "name": "Kawataro Selvedge, Indigo",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-kawataro-selvedge-indigo",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 14.5,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 230,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-kawataro-selvedge-indigo",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-kawataro-selvedge-indigo",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 6.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 9.25,
+                "leg_opening": 6.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 12.25,
+                "knee": 9.5,
+                "leg_opening": 6.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12.25,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.25,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9.75,
+                "leg_opening": 6.75,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 10,
+                "leg_opening": 7,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.75,
+                "back_rise": 16.25,
+                "thigh": 13.75,
+                "knee": 10.5,
+                "leg_opening": 7.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 13,
+                "back_rise": 16.5,
+                "thigh": 14,
+                "knee": 10.75,
+                "leg_opening": 8,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 13,
+                "back_rise": 16.75,
+                "thigh": 14.5,
+                "knee": 11.25,
+                "leg_opening": 8,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13.5,
+                "back_rise": 16.75,
+                "thigh": 15,
+                "knee": 11.5,
+                "leg_opening": 8.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 13.5,
+                "back_rise": 17,
+                "thigh": 15.5,
+                "knee": 12,
+                "leg_opening": 9,
+                "inseam": 33
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-le-selvedge-de-la-belle-province-in-store-exclusive",
+      "name": "Le Selvedge De La Belle Province [In Store Exclusive]",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-la-belle-province-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 12.5,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 229,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-la-belle-province-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-la-belle-province-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 11.75,
+                "knee": 8.75,
+                "leg_opening": 5.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.75,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 6,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 12.25,
+                "knee": 9.25,
+                "leg_opening": 6.25,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9.5,
+                "leg_opening": 6.5,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.75,
+                "leg_opening": 6.5,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "thigh": 13.25,
+                "knee": 9.75,
+                "leg_opening": 6.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 13.75,
+                "knee": 10,
+                "leg_opening": 7,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.75,
+                "back_rise": 16.25,
+                "thigh": 14,
+                "knee": 10.5,
+                "leg_opening": 7.25,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 13,
+                "back_rise": 16.5,
+                "thigh": 14.5,
+                "knee": 11,
+                "leg_opening": 7.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 13.25,
+                "back_rise": 16.75,
+                "thigh": 14.75,
+                "knee": 11.25,
+                "leg_opening": 8,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13.25,
+                "back_rise": 17,
+                "thigh": 15,
+                "knee": 11.75,
+                "leg_opening": 8.25,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 13.5,
+                "back_rise": 17.5,
+                "thigh": 15.5,
+                "knee": 12,
+                "leg_opening": 8.75,
+                "inseam": 34
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "easy-guy-left-hand-twill-selvedge",
       "name": "Left Hand Twill Selvedge",
       "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-easy-guy-left-hand-twill-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13.75,
         "composition": [
@@ -6831,7 +8461,7 @@
       "name": "Loosey-Goosey Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-loosey-goosey-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 11.5,
         "composition": [
@@ -7030,214 +8660,11 @@
       ]
     },
     {
-      "id": "easy-guy-maekake-dobby-indigo",
-      "name": "Maekake Dobby, Indigo",
-      "url": "https://nakedandfamousdenim.com/products/easy-guy-maekake-dobby-indigo-1",
-      "status": "current",
-      "status_seen": "2026-11-20",
-      "fabric": {
-        "weight_oz": 12.2,
-        "composition": [
-          {
-            "fibre": "cotton",
-            "percent": 100
-          }
-        ],
-        "sanforized": true
-      },
-      "sold": "raw",
-      "list_price": {
-        "amount": 174,
-        "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/easy-guy-maekake-dobby-indigo-1",
-        "seen": "2026-11-20"
-      },
-      "shrinkage": {
-        "kind": "percent",
-        "length": 2,
-        "width": 2,
-        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
-        "source": {
-          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
-          "seen": "2026-11-20"
-        }
-      },
-      "charts": [
-        {
-          "state": "as-sold",
-          "source": {
-            "url": "https://nakedandfamousdenim.com/products/easy-guy-maekake-dobby-indigo-1",
-            "seen": "2026-11-20"
-          },
-          "unit": "in",
-          "from_image": false,
-          "sizes": [
-            {
-              "label": "28",
-              "waist_tag": 28,
-              "measurements": {
-                "waist": 31,
-                "front_rise": 11.75,
-                "back_rise": 14.5,
-                "thigh": 11.75,
-                "knee": 8.25,
-                "leg_opening": 5.75,
-                "inseam": 33
-              }
-            },
-            {
-              "label": "29",
-              "waist_tag": 29,
-              "measurements": {
-                "waist": 31,
-                "front_rise": 11.75,
-                "back_rise": 14.75,
-                "thigh": 12,
-                "knee": 8.25,
-                "leg_opening": 5.75,
-                "inseam": 32.75
-              }
-            },
-            {
-              "label": "30",
-              "waist_tag": 30,
-              "measurements": {
-                "waist": 32.25,
-                "front_rise": 11.5,
-                "back_rise": 14.75,
-                "thigh": 12.25,
-                "knee": 8.5,
-                "leg_opening": 6,
-                "inseam": 32.75
-              }
-            },
-            {
-              "label": "31",
-              "waist_tag": 31,
-              "measurements": {
-                "waist": 33.5,
-                "front_rise": 11.5,
-                "back_rise": 14.75,
-                "thigh": 12.5,
-                "knee": 8.75,
-                "leg_opening": 6.25,
-                "inseam": 32.75
-              }
-            },
-            {
-              "label": "32",
-              "waist_tag": 32,
-              "measurements": {
-                "waist": 34.25,
-                "front_rise": 11.75,
-                "back_rise": 15,
-                "thigh": 12.5,
-                "knee": 9,
-                "leg_opening": 6.5,
-                "inseam": 32.75
-              }
-            },
-            {
-              "label": "33",
-              "waist_tag": 33,
-              "measurements": {
-                "waist": 35,
-                "front_rise": 12.25,
-                "back_rise": 15.25,
-                "thigh": 12.75,
-                "knee": 9.25,
-                "leg_opening": 6.75,
-                "inseam": 32.75
-              }
-            },
-            {
-              "label": "34",
-              "waist_tag": 34,
-              "measurements": {
-                "waist": 36.75,
-                "front_rise": 12.25,
-                "back_rise": 15.25,
-                "thigh": 13,
-                "knee": 9.5,
-                "leg_opening": 6.75,
-                "inseam": 32.75
-              }
-            },
-            {
-              "label": "36",
-              "waist_tag": 36,
-              "measurements": {
-                "waist": 38.5,
-                "front_rise": 12.5,
-                "back_rise": 15.5,
-                "thigh": 13.5,
-                "knee": 9.75,
-                "leg_opening": 7,
-                "inseam": 32.75
-              }
-            },
-            {
-              "label": "38",
-              "waist_tag": 38,
-              "measurements": {
-                "waist": 40.5,
-                "front_rise": 12.5,
-                "back_rise": 15.75,
-                "thigh": 14,
-                "knee": 10,
-                "leg_opening": 7.5,
-                "inseam": 33.5
-              }
-            },
-            {
-              "label": "40",
-              "waist_tag": 40,
-              "measurements": {
-                "waist": 42.5,
-                "front_rise": 12.75,
-                "back_rise": 16.25,
-                "thigh": 14.75,
-                "knee": 10.5,
-                "leg_opening": 8,
-                "inseam": 33.75
-              }
-            },
-            {
-              "label": "42",
-              "waist_tag": 42,
-              "measurements": {
-                "waist": 44.75,
-                "front_rise": 13,
-                "back_rise": 16.25,
-                "thigh": 15,
-                "knee": 11,
-                "leg_opening": 8.25,
-                "inseam": 33.75
-              }
-            },
-            {
-              "label": "44",
-              "waist_tag": 44,
-              "measurements": {
-                "waist": 47,
-                "front_rise": 13.25,
-                "back_rise": 16.5,
-                "thigh": 15.25,
-                "knee": 11.5,
-                "leg_opening": 8.75,
-                "inseam": 33.25
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "easy-guy-max-brush-selvedge-indigo",
       "name": "Max Brush Selvedge, Indigo",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-max-brush-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13.75,
         "composition": [
@@ -7436,11 +8863,1418 @@
       ]
     },
     {
+      "id": "easy-guy-mij10-okayama-spirit",
+      "name": "MIJ10, Okayama Spirit",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-mij10-okayama-spirit",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 16,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": false
+      },
+      "sold": "one-washed",
+      "list_price": {
+        "amount": 315,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-mij10-okayama-spirit",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-mij10-okayama-spirit",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 12.25,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 11.75,
+                "back_rise": 15.25,
+                "thigh": 12.5,
+                "knee": 9,
+                "leg_opening": 6.5,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 6.75,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.5,
+                "leg_opening": 7,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.25,
+                "back_rise": 16,
+                "thigh": 13.25,
+                "knee": 9.75,
+                "leg_opening": 7.25,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.25,
+                "back_rise": 16.25,
+                "thigh": 13.75,
+                "knee": 10,
+                "leg_opening": 7.5,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 12.5,
+                "back_rise": 16.25,
+                "thigh": 14.25,
+                "knee": 10.25,
+                "leg_opening": 7.75,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 12.75,
+                "back_rise": 16.5,
+                "thigh": 14.75,
+                "knee": 10.5,
+                "leg_opening": 8,
+                "inseam": 32.25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-mij11-tokushima-hand-dyed-kakishibu-selvedge",
+      "name": "MIJ11, Tokushima Hand Dyed Kakishibu Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-mij11-tokushima-hand-dyed-kakishibu-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 14,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "one-washed",
+      "list_price": {
+        "amount": 788,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-mij11-tokushima-hand-dyed-kakishibu-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-mij11-tokushima-hand-dyed-kakishibu-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 11.25,
+                "back_rise": 15,
+                "thigh": 11.5,
+                "leg_opening": 6,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.5,
+                "back_rise": 15.25,
+                "thigh": 11.75,
+                "knee": 8.5,
+                "leg_opening": 6,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.5,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 6.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 11.75,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9,
+                "leg_opening": 6.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 11.75,
+                "back_rise": 15.5,
+                "thigh": 12.75,
+                "knee": 9,
+                "leg_opening": 6.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.25,
+                "leg_opening": 6.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12,
+                "back_rise": 15.75,
+                "thigh": 13.25,
+                "knee": 9.5,
+                "leg_opening": 7,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 12.25,
+                "back_rise": 16,
+                "thigh": 13.75,
+                "knee": 9.75,
+                "leg_opening": 7.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 39,
+                "front_rise": 12.25,
+                "back_rise": 16,
+                "thigh": 14.25,
+                "knee": 10.25,
+                "leg_opening": 7.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 41,
+                "front_rise": 12.5,
+                "back_rise": 16.25,
+                "thigh": 14.75,
+                "knee": 10.75,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-mij14-haru-kaze-selvedge",
+      "name": "MIJ14, Haru Kaze Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-mij14-haru-kaze-selvedge-naked-famous-denim",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 8.6,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": false
+      },
+      "sold": "one-washed",
+      "list_price": {
+        "amount": 284,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-mij14-haru-kaze-selvedge-naked-famous-denim",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-mij14-haru-kaze-selvedge-naked-famous-denim",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 11.75,
+                "knee": 8.5,
+                "leg_opening": 6,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 6,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 12,
+                "back_rise": 15,
+                "thigh": 12.25,
+                "knee": 8.75,
+                "leg_opening": 6.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 12.25,
+                "knee": 9,
+                "leg_opening": 6.5,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12.25,
+                "back_rise": 15.5,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 6.5,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "thigh": 13.5,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.75,
+                "back_rise": 15.75,
+                "thigh": 13.75,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 12.75,
+                "back_rise": 15.75,
+                "thigh": 14.25,
+                "knee": 10,
+                "leg_opening": 7.5,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 13.25,
+                "back_rise": 16,
+                "thigh": 15,
+                "knee": 10.75,
+                "leg_opening": 8,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13.5,
+                "back_rise": 16,
+                "thigh": 15.25,
+                "knee": 11,
+                "leg_opening": 8.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 14,
+                "back_rise": 16,
+                "thigh": 15.75,
+                "knee": 11.5,
+                "leg_opening": 8.75,
+                "inseam": 33.25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-mij16-genseki-selvedge",
+      "name": "MIJ16, Genseki Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-mij16-genseki-selvedge-copy",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 19,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": false
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 325,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-mij16-genseki-selvedge-copy",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-mij16-genseki-selvedge-copy",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 12.25,
+                "back_rise": 15,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 12.25,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12.25,
+                "back_rise": 15.25,
+                "thigh": 12.25,
+                "knee": 9,
+                "leg_opening": 6.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 12.75,
+                "knee": 9,
+                "leg_opening": 6.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.75,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.25,
+                "leg_opening": 6.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.75,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.25,
+                "leg_opening": 6.75,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 12.75,
+                "back_rise": 16,
+                "thigh": 13.25,
+                "knee": 9.5,
+                "leg_opening": 7,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 39,
+                "front_rise": 13,
+                "back_rise": 16,
+                "thigh": 13.75,
+                "knee": 10,
+                "leg_opening": 7.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 41,
+                "front_rise": 13.25,
+                "back_rise": 16.25,
+                "thigh": 14.25,
+                "knee": 10.5,
+                "leg_opening": 8,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 43,
+                "front_rise": 13.25,
+                "back_rise": 16.25,
+                "thigh": 14.5,
+                "knee": 10.75,
+                "leg_opening": 8.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 45,
+                "front_rise": 13.5,
+                "back_rise": 16.5,
+                "thigh": 15,
+                "knee": 11.25,
+                "leg_opening": 8.5,
+                "inseam": 33
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-mij18-mezuki-selvedge",
+      "name": "MIJ18, Mezuki Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-mij18-mezuki-selvedge-black",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 16,
+        "composition": null,
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 297,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-mij18-mezuki-selvedge-black",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-mij18-mezuki-selvedge-black",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30.5,
+                "front_rise": 11.25,
+                "back_rise": 14.75,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 6,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31.5,
+                "front_rise": 11.25,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 6,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 32.5,
+                "front_rise": 11.25,
+                "back_rise": 14.75,
+                "thigh": 12.25,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 11.5,
+                "back_rise": 14.75,
+                "thigh": 12.5,
+                "knee": 9,
+                "leg_opening": 6.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 34.5,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 12.75,
+                "knee": 9,
+                "leg_opening": 6.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35.5,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 13,
+                "knee": 9.25,
+                "leg_opening": 6.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37.5,
+                "front_rise": 12,
+                "back_rise": 15.75,
+                "thigh": 13.5,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 32.75
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 39.5,
+                "front_rise": 12.25,
+                "back_rise": 16,
+                "thigh": 14,
+                "knee": 10.25,
+                "leg_opening": 7.5,
+                "inseam": 33
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-mij19-amaterasu-selvedge",
+      "name": "MIJ19, Amaterasu Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-mij19-amaterasu-selvedge-blue",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 11.5,
+        "composition": null,
+        "sanforized": false
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 288,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-mij19-amaterasu-selvedge-blue",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-mij19-amaterasu-selvedge-blue",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 12,
+                "back_rise": 14.75,
+                "thigh": 11.75,
+                "knee": 8.25,
+                "leg_opening": 5.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 12,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 8.5,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12.25,
+                "back_rise": 15.25,
+                "thigh": 12.5,
+                "knee": 8.75,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12.25,
+                "back_rise": 15.25,
+                "thigh": 12.5,
+                "knee": 8.75,
+                "leg_opening": 6.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.5,
+                "back_rise": 15.25,
+                "thigh": 12.75,
+                "knee": 9,
+                "leg_opening": 6.75,
+                "inseam": 33.75
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.5,
+                "back_rise": 15.25,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 6.75,
+                "inseam": 33.75
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 12.5,
+                "back_rise": 15.5,
+                "thigh": 13,
+                "knee": 9.5,
+                "leg_opening": 7,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 39,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "thigh": 13.5,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 41,
+                "front_rise": 12.75,
+                "back_rise": 16,
+                "thigh": 14,
+                "knee": 10.25,
+                "leg_opening": 7.75,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 43,
+                "front_rise": 13,
+                "back_rise": 16.25,
+                "thigh": 14.75,
+                "knee": 10.75,
+                "leg_opening": 8.25,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 45,
+                "front_rise": 13,
+                "back_rise": 16.25,
+                "thigh": 15.25,
+                "knee": 11,
+                "leg_opening": 8.5,
+                "inseam": 34
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 47,
+                "front_rise": 13,
+                "back_rise": 16.25,
+                "thigh": 15.75,
+                "knee": 11.5,
+                "leg_opening": 8.75,
+                "inseam": 34
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-mij7-yahan-midnight-selvedge",
+      "name": "MIJ7, Yahan Midnight Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-made-in-japan-easy-guy-mij7-yahan-midnight-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 17,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": false
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 288,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-made-in-japan-easy-guy-mij7-yahan-midnight-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-made-in-japan-easy-guy-mij7-yahan-midnight-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 11.75,
+                "back_rise": 14.5,
+                "thigh": 11.75,
+                "knee": 8.5,
+                "leg_opening": 5.75,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 12,
+                "back_rise": 14.75,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 12,
+                "back_rise": 14.75,
+                "thigh": 12.25,
+                "knee": 9,
+                "leg_opening": 6.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12.25,
+                "back_rise": 15,
+                "thigh": 12.5,
+                "knee": 9.25,
+                "leg_opening": 6.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12.25,
+                "back_rise": 15.25,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 6.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.5,
+                "back_rise": 15.25,
+                "thigh": 13,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.5,
+                "back_rise": 15.5,
+                "thigh": 13.25,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37.5,
+                "front_rise": 12.75,
+                "back_rise": 15.75,
+                "thigh": 13.75,
+                "knee": 10.25,
+                "leg_opening": 7.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 39.5,
+                "front_rise": 13,
+                "back_rise": 16,
+                "thigh": 14,
+                "knee": 10.75,
+                "leg_opening": 7.75,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 13.25,
+                "back_rise": 16.5,
+                "thigh": 14.25,
+                "knee": 11,
+                "leg_opening": 8,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13.5,
+                "back_rise": 17,
+                "thigh": 14.5,
+                "knee": 11.25,
+                "leg_opening": 8.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 45.5,
+                "front_rise": 14,
+                "back_rise": 17.75,
+                "thigh": 14.75,
+                "knee": 11.75,
+                "leg_opening": 9,
+                "inseam": 33
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-mij9-tennen-ai-natural-indigo-slub-selvedge",
+      "name": "MIJ9, \"Tennen Ai\" Natural Indigo Slub Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-mij9-tennen-ai-natural-indigo-slub-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 15,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": false
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 376,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-mij9-tennen-ai-natural-indigo-slub-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-mij9-tennen-ai-natural-indigo-slub-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 11.5,
+                "back_rise": 14.75,
+                "thigh": 11,
+                "knee": 8.25,
+                "leg_opening": 5.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 11.25,
+                "knee": 8.5,
+                "leg_opening": 5.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.75,
+                "back_rise": 15.25,
+                "thigh": 11.75,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 6,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12,
+                "back_rise": 15.75,
+                "thigh": 12.25,
+                "knee": 9.25,
+                "leg_opening": 6.25,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12.25,
+                "back_rise": 16,
+                "thigh": 12.25,
+                "knee": 9.25,
+                "leg_opening": 6.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 12.75,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.5,
+                "back_rise": 16.25,
+                "thigh": 13,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.75,
+                "back_rise": 16.5,
+                "thigh": 13.5,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 12.75,
+                "back_rise": 16.5,
+                "thigh": 14,
+                "knee": 10.5,
+                "leg_opening": 7.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 13,
+                "back_rise": 17,
+                "thigh": 14.5,
+                "knee": 11,
+                "leg_opening": 8,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13.25,
+                "back_rise": 17.25,
+                "thigh": 15,
+                "knee": 11.5,
+                "leg_opening": 8.25,
+                "inseam": 32
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "easy-guy-natural-indigo-selvedge",
       "name": "Natural Indigo Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-natural-indigo-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -7643,7 +10477,7 @@
       "name": "Nightshade Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-nightshade-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -7859,11 +10693,361 @@
       ]
     },
     {
+      "id": "easy-guy-prince-of-slub",
+      "name": "Prince Of Slub",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-prince-of-slub-indigo",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 23,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": false
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 380,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-prince-of-slub-indigo",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-prince-of-slub-indigo",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31.5,
+                "front_rise": 11.5,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 6,
+                "inseam": 34.74
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.75,
+                "back_rise": 15.5,
+                "thigh": 12.25,
+                "knee": 9.25,
+                "leg_opening": 6.25,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12,
+                "back_rise": 15.75,
+                "thigh": 12.75,
+                "knee": 9.5,
+                "leg_opening": 6.5,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34.5,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.75,
+                "leg_opening": 6.5,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35.5,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "thigh": 13.25,
+                "knee": 10,
+                "leg_opening": 6.75,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.25,
+                "back_rise": 16,
+                "thigh": 13.25,
+                "knee": 10,
+                "leg_opening": 7,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37.5,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 13.5,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38.5,
+                "front_rise": 12.5,
+                "back_rise": 16.25,
+                "thigh": 14,
+                "knee": 10.5,
+                "leg_opening": 7.5,
+                "inseam": 34.75
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 41,
+                "front_rise": 13,
+                "back_rise": 16.75,
+                "thigh": 15,
+                "knee": 11.5,
+                "leg_opening": 8,
+                "inseam": 35
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 13,
+                "back_rise": 16.75,
+                "thigh": 15,
+                "knee": 11.5,
+                "leg_opening": 8.25,
+                "inseam": 35
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 45,
+                "front_rise": 13.5,
+                "back_rise": 17,
+                "thigh": 15.75,
+                "knee": 11.75,
+                "leg_opening": 8.5,
+                "inseam": 35
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 47,
+                "front_rise": 13.5,
+                "back_rise": 17.5,
+                "thigh": 16,
+                "knee": 12,
+                "leg_opening": 8.75,
+                "inseam": 35.25
+              }
+            }
+          ]
+        },
+        {
+          "state": "after-wash",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-prince-of-slub-indigo",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "estimated_by_brand": true,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30.75,
+                "front_rise": 11.25,
+                "back_rise": 14,
+                "thigh": 11.5,
+                "leg_opening": 5.75,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31.25,
+                "front_rise": 11.5,
+                "back_rise": 14.25,
+                "thigh": 11.75,
+                "leg_opening": 6,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32.25,
+                "front_rise": 11.75,
+                "back_rise": 14.5,
+                "thigh": 12.25,
+                "leg_opening": 6.25,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33.75,
+                "front_rise": 11.75,
+                "back_rise": 14.5,
+                "thigh": 12.5,
+                "leg_opening": 6.25,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34.75,
+                "front_rise": 11.75,
+                "back_rise": 14.5,
+                "thigh": 12.75,
+                "leg_opening": 6.5,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35.25,
+                "front_rise": 11.75,
+                "back_rise": 14.75,
+                "thigh": 12.75,
+                "leg_opening": 6.75,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36.75,
+                "front_rise": 12,
+                "back_rise": 14.75,
+                "thigh": 13,
+                "leg_opening": 7,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37.75,
+                "front_rise": 12,
+                "back_rise": 15,
+                "thigh": 13.5,
+                "leg_opening": 7.25,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 12.5,
+                "back_rise": 15.25,
+                "thigh": 14.5,
+                "leg_opening": 7.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 41,
+                "front_rise": 12.5,
+                "back_rise": 15.25,
+                "thigh": 14.5,
+                "leg_opening": 7.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13,
+                "back_rise": 15.5,
+                "thigh": 15,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 13,
+                "back_rise": 16,
+                "thigh": 15.25,
+                "leg_opening": 8.25,
+                "inseam": 32.75
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "easy-guy-revival-frankenstein-denim",
       "name": "Revival Frankenstein Denim",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-revival-frankenstein-denim",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": [
@@ -8062,11 +11246,417 @@
       ]
     },
     {
+      "id": "easy-guy-sakura-slub-selvedge",
+      "name": "Sakura Slub Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-sakura-slub-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 16.5,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 204,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-sakura-slub-selvedge",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-sakura-slub-selvedge",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "thigh": 11.5,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.75,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 6.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 12.5,
+                "knee": 9.25,
+                "leg_opening": 6.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9.5,
+                "leg_opening": 7,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.25,
+                "back_rise": 15.5,
+                "thigh": 13,
+                "knee": 9.5,
+                "leg_opening": 7,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 13.5,
+                "knee": 10.5,
+                "leg_opening": 7.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 14,
+                "knee": 11,
+                "leg_opening": 7.75,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 13,
+                "back_rise": 16.5,
+                "thigh": 14.5,
+                "knee": 11,
+                "leg_opening": 8,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13,
+                "back_rise": 16.5,
+                "thigh": 15,
+                "knee": 11.5,
+                "leg_opening": 8.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 13.5,
+                "back_rise": 17,
+                "thigh": 15.5,
+                "knee": 12,
+                "leg_opening": 9,
+                "inseam": 33
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-sea-island-selvedge-indigo",
+      "name": "Sea Island Selvedge, Indigo",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-sea-island-selvedge-indigo",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 12,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 254,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-sea-island-selvedge-indigo",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-sea-island-selvedge-indigo",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "thigh": 11.5,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "thigh": 11.75,
+                "knee": 9,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32.5,
+                "front_rise": 11.75,
+                "back_rise": 15.25,
+                "thigh": 12.25,
+                "knee": 9.5,
+                "leg_opening": 6.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 11.75,
+                "back_rise": 15.25,
+                "thigh": 12.5,
+                "knee": 9.5,
+                "leg_opening": 6.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 13,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "thigh": 13.5,
+                "knee": 10.25,
+                "leg_opening": 7.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 12.5,
+                "back_rise": 16.5,
+                "thigh": 14,
+                "knee": 10.75,
+                "leg_opening": 8,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 13,
+                "back_rise": 16.5,
+                "thigh": 14.25,
+                "knee": 11,
+                "leg_opening": 8,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13,
+                "back_rise": 17,
+                "thigh": 15,
+                "knee": 11.75,
+                "leg_opening": 8.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 13.5,
+                "back_rise": 17.25,
+                "thigh": 15.5,
+                "knee": 12,
+                "leg_opening": 8.75,
+                "inseam": 33.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "easy-guy-secret-agent-denim-bleach-blue",
       "name": "Secret Agent Denim, Bleach Blue",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-secret-agent-bleach-blue",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 14,
         "composition": [
@@ -8269,7 +11859,7 @@
       "name": "Selvedge Hickory",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-hickory-selvedge-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 10,
         "composition": [
@@ -8468,13 +12058,13 @@
       ]
     },
     {
-      "id": "easy-guy-selvedge-slacks-beige",
-      "name": "Selvedge Slacks Beige",
-      "url": "https://nakedandfamousdenim.com/products/easy-guy-selvedge-slacks-beige-1",
+      "id": "easy-guy-solid-black-selvedge",
+      "name": "Solid Black Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-solid-black-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
-        "weight_oz": 10,
+        "weight_oz": 13,
         "composition": [
           {
             "fibre": "cotton",
@@ -8485,10 +12075,10 @@
       },
       "sold": "raw",
       "list_price": {
-        "amount": 192,
+        "amount": 193,
         "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/easy-guy-selvedge-slacks-beige-1",
-        "seen": "2026-11-20"
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-solid-black-selvedge",
+        "seen": "2026-11-21"
       },
       "shrinkage": {
         "kind": "percent",
@@ -8504,23 +12094,36 @@
         {
           "state": "as-sold",
           "source": {
-            "url": "https://nakedandfamousdenim.com/products/easy-guy-selvedge-slacks-beige-1",
-            "seen": "2026-11-20"
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-solid-black-selvedge",
+            "seen": "2026-11-21"
           },
           "unit": "in",
           "from_image": false,
           "sizes": [
             {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 11,
+                "back_rise": 14.25,
+                "thigh": 10.5,
+                "knee": 8.5,
+                "leg_opening": 6,
+                "inseam": 32
+              }
+            },
+            {
               "label": "28",
               "waist_tag": 28,
               "measurements": {
                 "waist": 30,
-                "front_rise": 11.75,
-                "back_rise": 15,
-                "thigh": 12,
-                "knee": 8.75,
+                "front_rise": 11,
+                "back_rise": 14.5,
+                "thigh": 11,
+                "knee": 8.5,
                 "leg_opening": 6,
-                "inseam": 32.75
+                "inseam": 32
               }
             },
             {
@@ -8528,12 +12131,12 @@
               "waist_tag": 29,
               "measurements": {
                 "waist": 31,
-                "front_rise": 12,
-                "back_rise": 15,
-                "thigh": 12.25,
+                "front_rise": 11.25,
+                "back_rise": 14.5,
+                "thigh": 11.25,
                 "knee": 9,
-                "leg_opening": 6,
-                "inseam": 32.75
+                "leg_opening": 6.25,
+                "inseam": 32
               }
             },
             {
@@ -8541,12 +12144,12 @@
               "waist_tag": 30,
               "measurements": {
                 "waist": 32,
-                "front_rise": 12,
-                "back_rise": 15.25,
-                "thigh": 12.5,
-                "knee": 9.25,
-                "leg_opening": 6.25,
-                "inseam": 32.75
+                "front_rise": 11.5,
+                "back_rise": 14.75,
+                "thigh": 11.25,
+                "knee": 9,
+                "leg_opening": 6.5,
+                "inseam": 32
               }
             },
             {
@@ -8554,12 +12157,12 @@
               "waist_tag": 31,
               "measurements": {
                 "waist": 33,
-                "front_rise": 12.25,
-                "back_rise": 15.25,
-                "thigh": 12.75,
-                "knee": 9.5,
-                "leg_opening": 6.25,
-                "inseam": 32.75
+                "front_rise": 11.5,
+                "back_rise": 14.75,
+                "thigh": 11.5,
+                "knee": 9.25,
+                "leg_opening": 6.75,
+                "inseam": 32
               }
             },
             {
@@ -8567,12 +12170,12 @@
               "waist_tag": 32,
               "measurements": {
                 "waist": 34,
-                "front_rise": 12.25,
+                "front_rise": 11.75,
                 "back_rise": 15.5,
-                "thigh": 13,
-                "knee": 9.75,
-                "leg_opening": 6.5,
-                "inseam": 32.75
+                "thigh": 12,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 32
               }
             },
             {
@@ -8580,38 +12183,38 @@
               "waist_tag": 33,
               "measurements": {
                 "waist": 35,
-                "front_rise": 12.5,
+                "front_rise": 11.75,
                 "back_rise": 15.5,
-                "thigh": 13.25,
-                "knee": 10,
-                "leg_opening": 6.75,
-                "inseam": 32.75
+                "thigh": 12.25,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 32
               }
             },
             {
               "label": "34",
               "waist_tag": 34,
               "measurements": {
-                "waist": 36,
-                "front_rise": 12.5,
-                "back_rise": 15.5,
-                "thigh": 13.5,
-                "knee": 10.25,
-                "leg_opening": 7,
-                "inseam": 32.75
+                "waist": 36.5,
+                "front_rise": 12,
+                "back_rise": 15.75,
+                "thigh": 12.25,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 32
               }
             },
             {
               "label": "36",
               "waist_tag": 36,
               "measurements": {
-                "waist": 38,
-                "front_rise": 12.75,
-                "back_rise": 15.75,
-                "thigh": 14,
-                "knee": 10.5,
-                "leg_opening": 7.25,
-                "inseam": 32.75
+                "waist": 39,
+                "front_rise": 12.25,
+                "back_rise": 16,
+                "thigh": 12.75,
+                "knee": 10.25,
+                "leg_opening": 7.5,
+                "inseam": 32
               }
             },
             {
@@ -8619,12 +12222,51 @@
               "waist_tag": 38,
               "measurements": {
                 "waist": 40,
+                "front_rise": 12.5,
+                "back_rise": 16.25,
+                "thigh": 13,
+                "knee": 10.5,
+                "leg_opening": 8,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
                 "front_rise": 13,
-                "back_rise": 16,
-                "thigh": 14.5,
+                "back_rise": 16.5,
+                "thigh": 14.75,
                 "knee": 11,
-                "leg_opening": 7.75,
-                "inseam": 32.75
+                "leg_opening": 8.25,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13.5,
+                "back_rise": 16.5,
+                "thigh": 15,
+                "knee": 11.25,
+                "leg_opening": 8.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 13.5,
+                "back_rise": 16.75,
+                "thigh": 15.5,
+                "knee": 11.5,
+                "leg_opening": 9,
+                "inseam": 32
               }
             }
           ]
@@ -8632,13 +12274,13 @@
       ]
     },
     {
-      "id": "easy-guy-selvedge-slacks-black",
-      "name": "Selvedge Slacks Black",
-      "url": "https://nakedandfamousdenim.com/products/easy-guy-selvedge-slacks-black",
+      "id": "easy-guy-solid-black-selvedge-36-long-inseam",
+      "name": "Solid Black Selvedge, 36\" Long Inseam",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-solid-black-selvedge-36-long-inseam",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
-        "weight_oz": 10,
+        "weight_oz": 13,
         "composition": [
           {
             "fibre": "cotton",
@@ -8649,10 +12291,10 @@
       },
       "sold": "raw",
       "list_price": {
-        "amount": 192,
+        "amount": 200,
         "currency": "USD",
-        "url": "https://nakedandfamousdenim.com/products/easy-guy-selvedge-slacks-black",
-        "seen": "2026-11-20"
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-solid-black-selvedge-36-long-inseam",
+        "seen": "2026-11-21"
       },
       "shrinkage": {
         "kind": "percent",
@@ -8668,23 +12310,36 @@
         {
           "state": "as-sold",
           "source": {
-            "url": "https://nakedandfamousdenim.com/products/easy-guy-selvedge-slacks-black",
-            "seen": "2026-11-20"
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-solid-black-selvedge-36-long-inseam",
+            "seen": "2026-11-21"
           },
           "unit": "in",
           "from_image": false,
           "sizes": [
             {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 11,
+                "back_rise": 14.25,
+                "thigh": 10.5,
+                "knee": 8.5,
+                "leg_opening": 6,
+                "inseam": 36
+              }
+            },
+            {
               "label": "28",
               "waist_tag": 28,
               "measurements": {
                 "waist": 30,
-                "front_rise": 11.75,
-                "back_rise": 15,
-                "thigh": 12,
-                "knee": 8.75,
+                "front_rise": 11,
+                "back_rise": 14.5,
+                "thigh": 11,
+                "knee": 8.5,
                 "leg_opening": 6,
-                "inseam": 32.75
+                "inseam": 36
               }
             },
             {
@@ -8692,12 +12347,12 @@
               "waist_tag": 29,
               "measurements": {
                 "waist": 31,
-                "front_rise": 12,
-                "back_rise": 15,
-                "thigh": 12.25,
+                "front_rise": 11.25,
+                "back_rise": 14.5,
+                "thigh": 11.25,
                 "knee": 9,
-                "leg_opening": 6,
-                "inseam": 32.75
+                "leg_opening": 6.25,
+                "inseam": 36
               }
             },
             {
@@ -8705,12 +12360,12 @@
               "waist_tag": 30,
               "measurements": {
                 "waist": 32,
-                "front_rise": 12,
-                "back_rise": 15.25,
-                "thigh": 12.5,
-                "knee": 9.25,
-                "leg_opening": 6.25,
-                "inseam": 32.75
+                "front_rise": 11.5,
+                "back_rise": 14.75,
+                "thigh": 11.25,
+                "knee": 9,
+                "leg_opening": 6.5,
+                "inseam": 36
               }
             },
             {
@@ -8718,12 +12373,12 @@
               "waist_tag": 31,
               "measurements": {
                 "waist": 33,
-                "front_rise": 12.25,
-                "back_rise": 15.25,
-                "thigh": 12.75,
-                "knee": 9.5,
-                "leg_opening": 6.25,
-                "inseam": 32.75
+                "front_rise": 11.5,
+                "back_rise": 14.75,
+                "thigh": 11.5,
+                "knee": 9.25,
+                "leg_opening": 6.75,
+                "inseam": 36
               }
             },
             {
@@ -8731,12 +12386,12 @@
               "waist_tag": 32,
               "measurements": {
                 "waist": 34,
-                "front_rise": 12.25,
+                "front_rise": 11.75,
                 "back_rise": 15.5,
-                "thigh": 13,
-                "knee": 9.75,
-                "leg_opening": 6.5,
-                "inseam": 32.75
+                "thigh": 12,
+                "knee": 9.5,
+                "leg_opening": 6.75,
+                "inseam": 36
               }
             },
             {
@@ -8744,38 +12399,38 @@
               "waist_tag": 33,
               "measurements": {
                 "waist": 35,
-                "front_rise": 12.5,
+                "front_rise": 11.75,
                 "back_rise": 15.5,
-                "thigh": 13.25,
-                "knee": 10,
-                "leg_opening": 6.75,
-                "inseam": 32.75
+                "thigh": 12.25,
+                "knee": 9.75,
+                "leg_opening": 7,
+                "inseam": 36
               }
             },
             {
               "label": "34",
               "waist_tag": 34,
               "measurements": {
-                "waist": 36,
-                "front_rise": 12.5,
-                "back_rise": 15.5,
-                "thigh": 13.5,
-                "knee": 10.25,
-                "leg_opening": 7,
-                "inseam": 32.75
+                "waist": 36.5,
+                "front_rise": 12,
+                "back_rise": 15.75,
+                "thigh": 12.25,
+                "knee": 10,
+                "leg_opening": 7.25,
+                "inseam": 36
               }
             },
             {
               "label": "36",
               "waist_tag": 36,
               "measurements": {
-                "waist": 38,
-                "front_rise": 12.75,
-                "back_rise": 15.75,
-                "thigh": 14,
-                "knee": 10.5,
-                "leg_opening": 7.25,
-                "inseam": 32.75
+                "waist": 39,
+                "front_rise": 12.25,
+                "back_rise": 16,
+                "thigh": 12.75,
+                "knee": 10.25,
+                "leg_opening": 7.5,
+                "inseam": 36
               }
             },
             {
@@ -8783,12 +12438,51 @@
               "waist_tag": 38,
               "measurements": {
                 "waist": 40,
+                "front_rise": 12.5,
+                "back_rise": 16.25,
+                "thigh": 13,
+                "knee": 10.5,
+                "leg_opening": 8,
+                "inseam": 36
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42,
                 "front_rise": 13,
-                "back_rise": 16,
-                "thigh": 14.5,
+                "back_rise": 16.5,
+                "thigh": 14.75,
                 "knee": 11,
-                "leg_opening": 7.75,
-                "inseam": 32.75
+                "leg_opening": 8.25,
+                "inseam": 36
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13.5,
+                "back_rise": 16.5,
+                "thigh": 15,
+                "knee": 11.25,
+                "leg_opening": 8.5,
+                "inseam": 36
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 13.5,
+                "back_rise": 16.75,
+                "thigh": 15.5,
+                "knee": 11.5,
+                "leg_opening": 9,
+                "inseam": 36
               }
             }
           ]
@@ -8800,7 +12494,7 @@
       "name": "Streamline Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-streamline-selvedge-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 9.25,
         "composition": [
@@ -9003,7 +12697,7 @@
       "name": "Stretch Selvedge",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-stretch-selvedge",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -9197,7 +12891,7 @@
       "name": "Tabi Selvedge, Off White",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-tabi-selvedge-off-white-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 11.5,
         "composition": [
@@ -9391,7 +13085,7 @@
       "name": "The Cat’s Pyjamas Selvedge, Unsanforized",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-the-cat-s-pajamas-selvedge-blue-1",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 8.5,
         "composition": [
@@ -9727,7 +13421,7 @@
       "name": "Vintage Nudes Redux",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-vintage-nudes-redux-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 13.5,
         "composition": [
@@ -9930,7 +13624,7 @@
       "name": "Wax Coated Black Stretch",
       "url": "https://nakedandfamousdenim.com/products/easy-guy-wax-coated-black-stretch",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12,
         "composition": [
@@ -10090,6 +13784,209 @@
                 "knee": 10.75,
                 "leg_opening": 8.25,
                 "inseam": 32.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-guy-yatagarasu-selvedge-black",
+      "name": "Yatagarasu Selvedge, Black",
+      "url": "https://nakedandfamousdenim.com/products/easy-guy-yatagarasu-selvedge-black",
+      "status": "current",
+      "status_seen": "2026-11-21",
+      "fabric": {
+        "weight_oz": 15,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 182,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/easy-guy-yatagarasu-selvedge-black",
+        "seen": "2026-11-21"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/easy-guy-yatagarasu-selvedge-black",
+            "seen": "2026-11-21"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.75,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 8.75,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 12.25,
+                "knee": 9,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12.25,
+                "back_rise": 15.5,
+                "thigh": 12.5,
+                "knee": 9.25,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 9.5,
+                "leg_opening": 6.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "thigh": 13.25,
+                "knee": 9.75,
+                "leg_opening": 6.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 13.5,
+                "knee": 10,
+                "leg_opening": 7,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 13.75,
+                "knee": 10.25,
+                "leg_opening": 7.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 39.5,
+                "front_rise": 12.75,
+                "back_rise": 16.25,
+                "thigh": 14,
+                "knee": 10.5,
+                "leg_opening": 7.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40.5,
+                "front_rise": 12.75,
+                "back_rise": 16.5,
+                "thigh": 14.5,
+                "knee": 10.75,
+                "leg_opening": 7.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 43,
+                "front_rise": 13,
+                "back_rise": 16.75,
+                "thigh": 15,
+                "knee": 11.25,
+                "leg_opening": 8,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13.25,
+                "back_rise": 16.75,
+                "thigh": 15.5,
+                "knee": 11.75,
+                "leg_opening": 8.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "44",
+              "waist_tag": 44,
+              "measurements": {
+                "waist": 47,
+                "front_rise": 13.75,
+                "back_rise": 17,
+                "thigh": 16.25,
+                "knee": 12.25,
+                "leg_opening": 9,
+                "inseam": 33.5
               }
             }
           ]

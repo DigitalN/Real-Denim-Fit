@@ -3,13 +3,14 @@
   "brand": "naked-and-famous",
   "name": "Strong Girl",
   "brand_label": "Relaxed straight",
+  "line": "women",
   "products": [
     {
       "id": "strong-girl-dia-de-los-muertos-selvedge-bat",
       "name": "Dia De Los Muertos Selvedge, Bat",
       "url": "https://nakedandfamousdenim.com/products/strong-girl-dia-de-los-muertos-bat-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 12.5,
         "composition": [
@@ -222,7 +223,7 @@
       "name": "Nightfall Selvedge",
       "url": "https://nakedandfamousdenim.com/products/strong-girl-nightfall-selv-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 11.6,
         "composition": [
@@ -451,7 +452,7 @@
       "name": "Vintage Blues Selvedge",
       "url": "https://nakedandfamousdenim.com/products/strong-girl-vintage-blues-selvedge-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 11.6,
         "composition": [

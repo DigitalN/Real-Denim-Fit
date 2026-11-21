@@ -3,13 +3,14 @@
   "brand": "naked-and-famous",
   "name": "Wide Leg Trouser",
   "brand_label": null,
+  "line": "women",
   "products": [
     {
       "id": "wide-leg-trouser-10oz-rinsed-denim-indigo",
       "name": "10oz Rinsed Denim, Indigo",
       "url": "https://nakedandfamousdenim.com/products/wide-leg-trouser-10oz-rinsed-denim-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": 10,
         "composition": [
@@ -224,7 +225,7 @@
       "name": "Natural Indigo, Indigo",
       "url": "https://nakedandfamousdenim.com/products/wide-leg-trouser-natural-indigo-indigo",
       "status": "current",
-      "status_seen": "2026-11-20",
+      "status_seen": "2026-11-21",
       "fabric": {
         "weight_oz": null,
         "composition": [
