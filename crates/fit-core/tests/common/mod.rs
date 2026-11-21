@@ -187,6 +187,7 @@ pub fn body() -> Body {
         leg_14in: 39.0,
         leg_half_inseam: 39.5,
         inseam_wanted: 81.0,
+        inseam_extra: 0.0,
     }
 }
 

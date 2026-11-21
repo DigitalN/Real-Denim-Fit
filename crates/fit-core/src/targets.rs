@@ -135,7 +135,7 @@ pub fn targets(
                 },
                 None => TargetFor {
                     target: Target::AtLeast {
-                        min: body.inseam_wanted,
+                        min: body.inseam_target(),
                     },
                     from: TargetFrom::InseamWanted,
                 },

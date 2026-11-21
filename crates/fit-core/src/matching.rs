@@ -355,7 +355,7 @@ pub fn find_matches_prepared(
                 .targets
                 .get(&Measurement::Inseam)
                 .map(|t| t.target.ideal())
-                .unwrap_or(profile.body.inseam_wanted);
+                .unwrap_or(profile.body.inseam_target());
             candidates = pick_lengths(candidates, washed, inseam);
         }
 

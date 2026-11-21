@@ -46,5 +46,6 @@ One entry per guide screen, in the order they're shown.
 
 - `for` is `"body"` or `"pair"`.
 - `measurement` and `point` use the keys and measuring points from [catalogue-format.md](catalogue-format.md). `point` is `null` where there's only one place to measure.
+- `fields` is optional. Without it, a screen with a `measurement` asks for one value. With it, the screen asks for each field in order, as `{ "id", "label", "optional" }`. The `body-inseam` screen uses it for `inseam` ("To where the hem should sit") and an optional `inseam_extra` ("Extra for cuffs or stacking"). The app aims at an inseam of at least their sum, an empty extra counting as 0. The halfway point on the leg screens is half of `inseam` alone.
 - Distances give cm first, then inches: "30.5 cm (12″)".
 - Drawings are simple line art that uses `currentColor`, so they work in light and dark mode. They have a `viewBox` and no embedded text; the words live in `steps.json`.

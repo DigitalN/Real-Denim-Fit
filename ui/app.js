@@ -259,6 +259,12 @@ async function guideDrawing(image) {
   return SVG_CACHE.get(image);
 }
 
+/** Where a screen's named field is stored, such as the body's inseam_extra. */
+function fieldKey(kind, id) {
+  if (kind === "body" && id === "inseam") return "inseam_wanted";
+  return id; // inseam_extra, and the pair's inseam
+}
+
 /** The stored value a guide screen fills in, or null for intro screens. */
 function guideField(step) {
   const m = step.measurement;
@@ -290,7 +296,14 @@ async function renderGuideScreen(kind, index, values, opts) {
   }
   const i = Math.max(0, Math.min(all.length - 1, index));
   const step = all[i];
+  // A screen asks for one value, or for each of its `fields` (such as the
+  // inseam to the hem and an optional extra for cuffs or stacking).
   const field = guideField(step);
+  const inputs = step.fields
+    ? step.fields.map((f) => ({ key: fieldKey(step.for, f.id), label: f.label, optional: !!f.optional || opts.skippable, id: `g-${f.id}` }))
+    : field
+      ? [{ key: field, label: opts.fieldLabel(field), optional: opts.skippable, id: "g-value" }]
+      : [];
   const drawing = await guideDrawing(step.image);
   const hint = opts.hint ? opts.hint(step) : "";
   $app.innerHTML = `
@@ -304,7 +317,7 @@ async function renderGuideScreen(kind, index, values, opts) {
         <ol class="steps">${step.steps.map((l) => `<li>${esc(l)}</li>`).join("")}</ol>
         ${step.mistake ? `<p class="tip"><b>Common mistake:</b> ${esc(step.mistake)}</p>` : ""}
         ${opts.extra ? opts.extra(step, i) : ""}
-        ${field ? `<label for="g-value">${esc(opts.fieldLabel(field))}</label>${measureInput("g-value", values[field])}${hint}` : ""}
+        ${inputs.map((f) => `<label for="${f.id}">${esc(f.label)}${f.optional && step.fields ? ` <span class="hint">(optional)</span>` : ""}</label>${measureInput(f.id, values[f.key])}`).join("")}${inputs.length ? hint : ""}
         <p class="error" id="err" hidden>Please enter a number, or skip this one.</p>
       </div>
     </div>
@@ -313,34 +326,32 @@ async function renderGuideScreen(kind, index, values, opts) {
       <span>${field && opts.skippable ? `<button id="skip">Skip</button> ` : ""}<button class="primary" id="next">${i === all.length - 1 ? "Done" : "Next"}</button></span>
     </div>
   </div>`;
-  const input = document.getElementById("g-value");
-  if (input) input.focus();
+  if (inputs.length) document.getElementById(inputs[0].id).focus();
   if (opts.afterRender) opts.afterRender(step);
   document.getElementById("back").onclick = () => opts.go(i - 1);
   const skip = document.getElementById("skip");
   if (skip)
     skip.onclick = () => {
-      delete values[field];
+      for (const f of inputs) delete values[f.key];
       opts.save();
       opts.go(i + 1, all.length);
     };
   const next = () => {
     if (opts.beforeNext) opts.beforeNext(step);
-    if (field) {
-      const v = readMeasure("g-value");
-      if (v === null) {
-        if (!opts.skippable) {
-          document.getElementById("err").hidden = false;
-          return;
-        }
-        delete values[field];
-      } else values[field] = v;
+    const read = inputs.map((f) => [f, readMeasure(f.id)]);
+    if (read.some(([f, v]) => v === null && !f.optional)) {
+      document.getElementById("err").hidden = false;
+      return;
+    }
+    for (const [f, v] of read) {
+      if (v === null) delete values[f.key];
+      else values[f.key] = v;
     }
     opts.save();
     opts.go(i + 1, all.length);
   };
   document.getElementById("next").onclick = next;
-  if (input) input.addEventListener("keydown", (e) => e.key === "Enter" && next());
+  for (const f of inputs) document.getElementById(f.id).addEventListener("keydown", (e) => e.key === "Enter" && next());
 }
 
 const BODY_FIELD_LABELS = {
@@ -352,7 +363,8 @@ const BODY_FIELD_LABELS = {
   leg_13in: "Leg 33 cm (13″) below the crotch",
   leg_14in: "Leg 35.5 cm (14″) below the crotch",
   leg_half_inseam: "Leg halfway down the inseam",
-  inseam_wanted: "Inseam you want",
+  inseam_wanted: "Inseam, to where the hem should sit",
+  inseam_extra: "Extra inseam for cuffs or stacking",
 };
 
 function renderWelcome() {
@@ -366,9 +378,9 @@ function renderBodyGuide(stepText) {
     firstBack: S.onboarded ? "Back" : "",
     skippable: false,
     formHref: "#/body",
-    fieldLabel: (f) => `${BODY_FIELD_LABELS[f]}, all the way around`.replace("Inseam you want, all the way around", "Inseam you want"),
+    fieldLabel: (f) => (f.startsWith("inseam") ? BODY_FIELD_LABELS[f] : `${BODY_FIELD_LABELS[f]}, all the way around`),
     hint: (step) =>
-      step.point === "half-inseam" && S.body.inseam_wanted ? `<p class="hint">Half of the inseam you entered is ${len(S.body.inseam_wanted / 2)}.</p>` : "",
+      step.point === "half-inseam" && S.body.inseam_wanted ? `<p class="hint">Half of your inseam to the hem is ${len(S.body.inseam_wanted / 2)} below the crotch.</p>` : "",
     extra: (step, i) =>
       i === 0
         ? `${S.onboarded ? "" : `<div class="card"><p><b>Real Denim Fit</b> finds raw denim jeans worth looking into, in the right size, from your own measurements. Everything you enter stays on this computer.</p></div>`}
@@ -397,6 +409,7 @@ function renderBodyForm() {
     <p class="muted">All the way around your body, except the inseam. Change any number; matches update straight away.</p>
     <div class="card">
       ${BODY_FIELDS.map((f) => `<label for="b-${f}">${esc(BODY_FIELD_LABELS[f])}</label>${measureInput(`b-${f}`, S.body[f])}`).join("")}
+      <label for="b-inseam_extra">${esc(BODY_FIELD_LABELS.inseam_extra)} <span class="hint">(optional)</span></label>${measureInput("b-inseam_extra", S.body.inseam_extra || null)}
       <p class="error" id="err" hidden></p>
     </div>
     <div class="actions">
@@ -414,6 +427,9 @@ function renderBodyForm() {
       return;
     }
     for (const [f, v] of values) S.body[f] = v;
+    const extra = readMeasure("b-inseam_extra");
+    if (extra === null) delete S.body.inseam_extra;
+    else S.body.inseam_extra = extra;
     save();
     location.hash = S.onboarded ? "#/results" : "#/fit";
   };

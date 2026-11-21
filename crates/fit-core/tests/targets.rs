@@ -198,3 +198,23 @@ fn a_stretch_range_never_drops_below_the_minimum() {
     assert!(close(low, 81.3 / 2.0));
     assert!(close(high, 81.3 / 2.0 + 0.6 * IN - 1.0));
 }
+
+#[test]
+fn the_inseam_target_adds_the_extra_for_cuffs_or_stacking() {
+    let mut p = profile(Room::Regular);
+    p.body.inseam_extra = 5.0;
+    let t = targets(&p, None, &ease(), ih_points(), false);
+    assert_eq!(t.targets[&Inseam].target, Target::AtLeast { min: 81.0 + 5.0 });
+}
+
+#[test]
+fn a_body_saved_without_an_extra_counts_it_as_nothing() {
+    // Saved by an earlier build: one inseam, no extra.
+    let body: Body = serde_json::from_str(
+        r#"{"waist":81.3,"seat":97.8,"thigh_top":57.2,"thigh_1in":55.0,"leg_12in":41.0,
+            "leg_13in":40.0,"leg_14in":39.0,"leg_half_inseam":39.5,"inseam_wanted":81.0}"#,
+    )
+    .unwrap();
+    assert_eq!(body.inseam_extra, 0.0);
+    assert_eq!(body.inseam_target(), 81.0);
+}

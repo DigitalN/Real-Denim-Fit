@@ -22,12 +22,24 @@ pub struct Body {
     pub leg_12in: f64,
     pub leg_13in: f64,
     pub leg_14in: f64,
-    /// Halfway down the inseam.
+    /// Halfway down the inseam to the hem (not counting any extra for
+    /// cuffs or stacking).
     pub leg_half_inseam: f64,
+    /// From the crotch to where the hem should sit.
     pub inseam_wanted: f64,
+    /// Extra length for cuffs or stacking; 0 when there's none (and for a
+    /// body saved before this was asked).
+    #[serde(default)]
+    pub inseam_extra: f64,
 }
 
 impl Body {
+    /// The least inseam to look for: to the hem plus any extra for cuffs or
+    /// stacking.
+    pub fn inseam_target(&self) -> f64 {
+        self.inseam_wanted + self.inseam_extra
+    }
+
     /// The body's thigh reading at a brand's thigh point, around.
     pub fn thigh_at(&self, point: ThighPoint) -> f64 {
         match point {
