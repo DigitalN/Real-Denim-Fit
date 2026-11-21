@@ -13,6 +13,7 @@
   --far: #b23b3b;
   --warn-bg: #fbf3e2;
   --radius: 10px;
+  --topbar-h: 3.3rem;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.04);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   font-size: 15px;
@@ -53,7 +54,7 @@ p { margin: 0.4rem 0; }
 .topbar {
   position: sticky; top: 0; z-index: 5;
   display: flex; align-items: center; gap: 1.5rem;
-  padding: 0.6rem 1.2rem; background: var(--panel);
+  padding: 0.6rem 1.2rem; background: var(--panel); min-height: var(--topbar-h);
   border-bottom: 1px solid var(--line);
 }
 .brandmark { font-weight: 700; color: var(--accent); white-space: nowrap; }
@@ -119,8 +120,16 @@ textarea { min-height: 5rem; }
 
 /* Results */
 .results { display: grid; grid-template-columns: 250px 1fr; gap: 1.2rem; align-items: start; }
-@media (max-width: 860px) { .results { grid-template-columns: 1fr; } }
-.filters { position: sticky; top: 4rem; }
+/* The filter column scrolls on its own, so every filter stays reachable
+   however short the window is. */
+.filters {
+  position: sticky; top: calc(var(--topbar-h) + 0.8rem); margin-top: 0;
+  max-height: calc(100vh - var(--topbar-h) - 1.6rem); overflow-y: auto; overscroll-behavior: contain;
+}
+@media (max-width: 860px) {
+  .results { grid-template-columns: 1fr; }
+  .filters { position: static; max-height: none; overflow: visible; }
+}
 .filters h3:first-child { margin-top: 0; }
 .filters .row2 { display: flex; gap: 0.4rem; }
 .match-row { padding: 0; overflow: hidden; }
