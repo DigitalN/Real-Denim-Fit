@@ -2,7 +2,7 @@
 //! `docs/catalogue-format.md`. `cargo test --workspace` runs them on the
 //! shipped data.
 
-use std::collections::BTreeSet;
+use std::collections::{BTreeMap, BTreeSet};
 
 use crate::after_wash::after_wash;
 use crate::catalogue::{
@@ -11,7 +11,7 @@ use crate::catalogue::{
 };
 use crate::ease::EaseTable;
 use crate::profile::Room;
-use crate::units::Unit;
+use crate::units::{Unit, CM_PER_INCH};
 
 /// Sensible ranges in cm, widths flat. Wide enough for sizes 24–44,
 /// women's skinny cuts, wide-leg trousers and pre-hemmed inseams.
@@ -127,6 +127,80 @@ fn check_chart(what: &str, brand: &Brand, chart: &Chart, out: &mut Vec<String>) 
     }
 }
 
+/// Consistency within a chart, to catch extraction slips. Values are
+/// compared as published, in the chart's unit, using its tolerance (±0.5"
+/// when the brand states none):
+/// - the waist must grow with the size, allowing for the tolerance
+/// - seat, thigh, knee, leg opening and rises mustn't shrink between
+///   neighbouring sizes by more than the tolerance plus a quarter inch
+/// - no value but the inseam may sit more than 3 × the tolerance off the
+///   line through its neighbouring sizes (inseams step up in bands)
+///
+/// Sizes sold in lengths are only compared with sizes of the same length.
+fn check_consistency(what: &str, brand: &Brand, chart: &Chart, out: &mut Vec<String>) {
+    let per_unit = chart.unit.to_cm(1.0);
+    let tolerance = chart
+        .effective(brand)
+        .tolerance
+        .map(|q| q.cm())
+        .unwrap_or(0.5 * CM_PER_INCH)
+        / per_unit;
+    let margin = 0.25 * CM_PER_INCH / per_unit;
+    let unit = if chart.unit == Unit::In { "in" } else { "cm" };
+
+    let mut groups: BTreeMap<String, Vec<&crate::catalogue::Size>> = BTreeMap::new();
+    for s in &chart.sizes {
+        groups
+            .entry(s.length_tag.map(|l| l.to_string()).unwrap_or_default())
+            .or_default()
+            .push(s);
+    }
+    for sizes in groups.values_mut() {
+        sizes.sort_by(|a, b| a.waist_tag.total_cmp(&b.waist_tag));
+        for m in Measurement::ALL {
+            let seq: Vec<(&str, f64, f64)> = sizes
+                .iter()
+                .filter_map(|s| Some((s.label.as_str(), s.waist_tag, *s.measurements.get(&m)?)))
+                .collect();
+            let allowed_drop = match m {
+                Measurement::Waist => Some(tolerance),
+                Measurement::Inseam => None,
+                _ => Some(tolerance + margin),
+            };
+            for pair in seq.windows(2) {
+                let ((prev_label, _, prev), (label, _, v)) = (pair[0], pair[1]);
+                if let Some(drop) = allowed_drop {
+                    if v < prev - drop - 1e-9 {
+                        out.push(format!(
+                            "{what} size {label}: {} {v} {unit} is smaller than size {prev_label}'s {prev} {unit}, \
+                             beyond the ±{tolerance:.2} {unit} tolerance",
+                            m.label()
+                        ));
+                    }
+                }
+            }
+            // Inseams step up in bands for bigger sizes, so they're left out.
+            if m == Measurement::Inseam {
+                continue;
+            }
+            for three in seq.windows(3) {
+                let ((a_label, a_tag, a), (label, tag, v), (b_label, b_tag, b)) = (three[0], three[1], three[2]);
+                if (b_tag - a_tag).abs() < 1e-9 {
+                    continue;
+                }
+                let expected = a + (b - a) * (tag - a_tag) / (b_tag - a_tag);
+                if (v - expected).abs() > 3.0 * tolerance + 1e-9 {
+                    out.push(format!(
+                        "{what} size {label}: {} {v} {unit} is off the line through sizes {a_label} and {b_label} \
+                         (about {expected:.2} {unit} expected, more than 3 × the ±{tolerance:.2} {unit} tolerance away)",
+                        m.label()
+                    ));
+                }
+            }
+        }
+    }
+}
+
 fn check_product(
     what: &str,
     brand: &Brand,
@@ -170,6 +244,7 @@ fn check_product(
             "after-wash"
         };
         check_chart(&format!("{what} ({state})"), brand, c, out);
+        check_consistency(&format!("{what} ({state})"), brand, c, out);
     }
     let publishes = |m: Measurement| {
         p.charts

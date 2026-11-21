@@ -140,7 +140,7 @@ Ease is garment minus body, shown flat in inches here, for rigid denim after its
 **Updating it:** run `/update-catalogue <brand>`, a Claude Code command in this repo ([ADR 0002](adr/0002-catalogue-curated-in-the-repo.md)). The same command adds a new brand.
 - **One brand per run, one PR per brand.**
 - **Nudie:** the run stops in the browser pane and asks you to accept Nudie's cookies, because its measurements only appear after that.
-- **Rogue Territory:** numbers read from chart images are listed in the PR so you can check each against the picture.
+- **Verified automatically, not checked by hand:** every number read from an image is read twice, independently, and kept only when both reads agree. A separate pass re-checks a sample of products against the brand's live pages. A number that can't be confirmed is left out, never guessed. The PR carries a verification summary, and you merge on that.
 - **Discontinued products:** a product that's gone from the brand's site stays, marked "no longer on the brand's site".
 - **Exchange rates:** fixed from the European Central Bank's daily reference rates at update time.
 - **Data in the app:** the catalogue and the ease table are built into the app, so new data arrives as a new release.
@@ -150,6 +150,9 @@ Ease is garment minus body, shown flat in inches here, for rigid denim after its
 - numbers fall in sensible ranges
 - no after-wash number is bigger than its as-sold number
 - every product has at least a waist and a thigh
+- within each chart, the waist grows with the size, allowing for the brand's tolerance
+- seat, thigh, knee, leg opening and rises don't shrink between neighbouring sizes by more than the tolerance plus ¼″
+- no number but the inseam sits more than 3 × the tolerance off the line through its neighbouring sizes (inseams step up in bands for bigger sizes)
 
 ## Updates
 
@@ -186,5 +189,5 @@ Ease is garment minus body, shown flat in inches here, for rigid denim after its
 
 - Approve storing the update signing key in GitHub secrets, and keep the backup of the private key.
 - Accept Nudie's cookies when the first catalogue run asks.
-- Review the catalogue PRs, especially the numbers read from Rogue Territory's images.
+- Merge each catalogue PR on its verification summary and green CI.
 - Confirm the first release before it's published.
