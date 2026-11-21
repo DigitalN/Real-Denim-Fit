@@ -499,7 +499,7 @@ function renderFit() {
 function compareHint(results) {
   if (!results) return "";
   return results.from_body_only
-    ? "Matched from your body and typical room for your fit"
+    ? "Matched from your body and typical ease"
     : "Matched to this pair. Your body still rules out anything too tight.";
 }
 
@@ -650,7 +650,7 @@ async function refreshResults() {
   if (!summary) return;
   const notes = [];
   if (results.from_body_only)
-    notes.push(`<div class="note">Matched from your body and typical room for your fit. Adding a pair you know makes this sharper. <a href="#/pairs">Add a reference pair</a></div>`);
+    notes.push(`<div class="note">Matched from your body and typical ease. Adding a pair you know makes this sharper. <a href="#/pairs">Add a reference pair</a></div>`);
   if (results.hidden_by_shape_or_rise && !S.filters.show_other_shapes_and_rises)
     notes.push(`<p class="muted small">${results.hidden_by_shape_or_rise} more cut${results.hidden_by_shape_or_rise === 1 ? "" : "s"} with another leg shape or rise. <button class="link" id="show-rest">Show them</button></p>`);
   summary.innerHTML = `<h1>${results.rows.length} cut${results.rows.length === 1 ? "" : "s"} worth looking into</h1>${notes.join("")}`;
@@ -881,7 +881,7 @@ function renderPairs() {
     <p class="hint">Picked from the catalogue works for a pair you've only tried on in a shop too.</p>
   </div>`;
   document.getElementById("measure").onclick = () => {
-    const pair = { id: newId(), name: "My jeans", source: { kind: "measured", readings: {} }, feel: {}, notes: "" };
+    const pair = { id: newId(), name: "Reference pair", source: { kind: "measured", readings: {} }, feel: {}, notes: "" };
     S.pairs.push(pair);
     if (!S.activePairId) S.activePairId = pair.id;
     save();
@@ -917,7 +917,7 @@ function renderPairMeasure(pair, stepText) {
     },
     beforeNext: () => {
       const name = document.getElementById("pname");
-      if (name) pair.name = name.value.trim() || "My jeans";
+      if (name) pair.name = name.value.trim() || "Reference pair";
     },
     save,
     go: (to, total) => {
