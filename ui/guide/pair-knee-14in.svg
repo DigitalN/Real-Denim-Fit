@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" fill="none" aria-hidden="true" focusable="false">
+<path d="M70.4 12.2C116.8 12.2 163.2 12.2 209.6 12.2C218.3 41.2 225.55 70.2 228.45 105C230.62 131.1 222.65 267.4 209.6 381.95C192.2 381.95 174.8 381.95 157.4 381.95C154.5 267.4 145.8 151.4 140 105C134.2 151.4 125.5 267.4 122.6 381.95C105.2 381.95 87.8 381.95 70.4 381.95C57.35 267.4 49.38 131.1 51.55 105C54.45 70.2 61.7 41.2 70.4 12.2Z" fill="currentColor" fill-opacity="0.06" stroke="none"/>
+<path d="M70.4 12.2C116.8 12.2 163.2 12.2 209.6 12.2C218.3 41.2 225.55 70.2 228.45 105C230.62 131.1 222.65 267.4 209.6 381.95C192.2 381.95 174.8 381.95 157.4 381.95C154.5 267.4 145.8 151.4 140 105C134.2 151.4 125.5 267.4 122.6 381.95C105.2 381.95 87.8 381.95 70.4 381.95C57.35 267.4 49.38 131.1 51.55 105C54.45 70.2 61.7 41.2 70.4 12.2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M67.01 23.8C115.67 23.8 164.33 23.8 212.99 23.8" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="87.8" y="10.03" width="5.8" height="18.12" rx="0.8" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="186.4" y="10.03" width="5.8" height="18.12" rx="0.8" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="140" cy="18" r="3.48" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M140 23.8 L140 105" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M126.95 23.8C126.95 41.2 126.95 58.6 126.95 76C126.95 87.6 132.75 91.95 140 93.4" fill="none" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.4" stroke-dasharray="2 2"/>
+<path d="M102.3 23.8C99.4 47 82 58.6 58.05 60.05" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M177.7 23.8C180.6 47 198 58.6 221.95 60.05" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M138.56 104.82 L138.32 106.78 L138.08 108.73 L137.86 110.69 L137.63 112.65 L137.41 114.6 L137.19 116.56 L136.98 118.52 L136.77 120.47 L136.57 122.43 L136.36 124.39 L136.16 126.35 L135.97 128.31 L135.77 130.26 L135.58 132.22 L135.39 134.18 L135.21 136.14 L135.02 138.1 L134.84 140.06 L134.66 142.02 L134.48 143.98 L134.3 145.94 L134.13 147.9 L133.95 149.86 L133.78 151.82 L133.61 153.78 L133.44 155.74 L133.27 157.7 L133.11 159.66 L132.94 161.62 L132.78 163.58 L132.62 165.54 L132.46 167.5 L132.3 169.46 L132.14 171.42 L131.99 173.38 L131.83 175.34 L131.68 177.3 L131.53 179.26 L131.38 181.22 L131.23 183.19 L131.08 185.15 L130.93 187.11 L130.79 189.07 L130.64 191.03 L130.5 192.99 L130.35 194.96 L130.21 196.92 L130.07 198.88 L129.93 200.84 L129.79 202.8 L129.66 204.76 L129.52 206.73 L129.38 208.69 L129.25 210.65 L129.12 212.61 L128.98 214.58 L128.85 216.54 L128.72 218.5 L128.59 220.46 L128.46 222.43 L128.34 224.39 L128.21 226.35 L128.08 228.31 L127.96 230.28 L127.83 232.24 L127.71 234.2 L127.59 236.17 L127.47 238.13 L127.35 240.09 L127.23 242.06 L127.11 244.02 L126.99 245.98 L126.88 247.95 L126.76 249.91 L126.65 251.87 L126.53 253.84 L126.42 255.8 L126.31 257.76 L126.2 259.73 L126.09 261.69" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.55"/>
+<path d="M131.61 103.96 L131.37 105.93 L131.13 107.91 L130.9 109.88 L130.68 111.86 L130.45 113.82 L130.24 115.8 L130.02 117.77 L129.81 119.74 L129.6 121.7 L129.4 123.67 L129.2 125.65 L129 127.61 L128.81 129.58 L128.61 131.55 L128.43 133.51 L128.24 135.48 L128.05 137.44 L127.87 139.41 L127.69 141.38 L127.51 143.35 L127.33 145.31 L127.15 147.27 L126.98 149.24 L126.81 151.21 L126.64 153.17 L126.47 155.14 L126.3 157.11 L126.13 159.07 L125.97 161.04 L125.81 163 L125.64 164.97 L125.48 166.93 L125.32 168.9 L125.17 170.86 L125.01 172.83 L124.86 174.79 L124.7 176.76 L124.55 178.72 L124.4 180.69 L124.25 182.66 L124.1 184.62 L123.95 186.59 L123.81 188.55 L123.66 190.52 L123.52 192.48 L123.37 194.45 L123.23 196.41 L123.09 198.38 L122.95 200.35 L122.81 202.31 L122.67 204.28 L122.54 206.24 L122.4 208.21 L122.26 210.18 L122.13 212.14 L122 214.11 L121.87 216.07 L121.74 218.04 L121.61 220 L121.48 221.97 L121.35 223.94 L121.22 225.9 L121.1 227.87 L120.97 229.84 L120.85 231.8 L120.73 233.77 L120.6 235.74 L120.48 237.7 L120.36 239.67 L120.24 241.64 L120.12 243.6 L120.01 245.57 L119.89 247.53 L119.77 249.5 L119.66 251.47 L119.55 253.43 L119.43 255.4 L119.32 257.37 L119.21 259.33 L119.1 261.3" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.55"/>
+<path d="M137.56 113.35 L135.06 113.35" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M136.65 121.71 L132.65 121.71" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M135.8 130.08 L133.3 130.08" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M134.99 138.45 L130.99 138.45" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M134.23 146.83 L131.73 146.83" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M133.49 155.2 L129.49 155.2" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M132.79 163.58 L130.29 163.58" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M132.11 171.97 L128.11 171.97" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M131.45 180.35 L128.95 180.35" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M130.81 188.74 L126.81 188.74" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M130.2 197.12 L127.7 197.12" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M129.61 205.51 L125.61 205.51" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M129.03 213.9 L126.53 213.9" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M128.47 222.29 L124.47 222.29" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M127.94 230.69 L125.44 230.69" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M127.41 239.08 L123.41 239.08" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M126.91 247.48 L124.41 247.48" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<path d="M126.42 255.87 L122.42 255.87" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.55"/>
+<rect x="123.56" y="203.26" width="15" height="4.5" rx="0.8" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.55"/>
+<rect x="122.98" y="211.65" width="15" height="4.5" rx="0.8" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.55"/>
+<rect x="122.42" y="220.04" width="15" height="4.5" rx="0.8" fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-width="1" stroke-opacity="0.85"/>
+<rect x="121.11" y="241.05" width="15" height="4.5" rx="0.8" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.55"/>
+<path d="M129.92 222.29 L56.06 222.29" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M129.92 217.29 L129.92 227.29" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<path d="M56.06 217.29 L56.06 227.29" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<circle cx="140" cy="105" r="2.6" fill="currentColor" stroke="none"/>
+</svg>

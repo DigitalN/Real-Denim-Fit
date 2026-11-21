@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" fill="none" aria-hidden="true" focusable="false">
+<circle cx="100" cy="92" r="36" fill="currentColor" fill-opacity="0.06" stroke="none"/>
+<circle cx="100" cy="92" r="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="100" cy="92" r="28" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="100" cy="92" r="20" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="100" cy="92" r="6" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M123.81 119 L198 119" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100 128 L198 128" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="198" y="117" width="7" height="13" rx="1" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M129.81 119 L129.81 123.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<path d="M135.31 119 L135.31 121.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<path d="M140.81 119 L140.81 123.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<path d="M146.31 119 L146.31 121.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<path d="M151.81 119 L151.81 123.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<path d="M157.31 119 L157.31 121.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<path d="M162.81 119 L162.81 123.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<path d="M168.31 119 L168.31 121.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<path d="M173.81 119 L173.81 123.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<path d="M179.31 119 L179.31 121.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<path d="M184.81 119 L184.81 123.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<path d="M190.31 119 L190.31 121.5" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8"/>
+<circle cx="68" cy="218" r="25" fill="currentColor" fill-opacity="0.06" stroke="none"/>
+<circle cx="68" cy="218" r="25" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="68" cy="218" r="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="68" cy="218" r="13" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="54" y="261.5" width="32" height="9" rx="0.8" fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-width="1" stroke-opacity="0.85" transform="rotate(-8 70 266)"/>
+<rect x="92" y="275.5" width="32" height="9" rx="0.8" fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-width="1" stroke-opacity="0.85" transform="rotate(6 108 280)"/>
+<path d="M 150 198 L 208 198 L 208 206 C 207 222 203 231 195 237 C 189 241 186 247 185 254 L 173 254 C 172 247 169 241 163 237 C 155 231 151 222 150 206 Z" fill="currentColor" fill-opacity="0.06" stroke="none"/>
+<path d="M 150 198 L 208 198 L 208 206 C 207 222 203 231 195 237 C 189 241 186 247 185 254 L 173 254 C 172 247 169 241 163 237 C 155 231 151 222 150 206 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150 206 L208 206" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
