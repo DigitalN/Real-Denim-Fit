@@ -19,6 +19,10 @@ Rules applied here (see EXTRACTING.md):
   shrinkage     a figure in the product's own description beats the care line "May shrink up to N%"
   finish/sold   from fetch_products.py (raw -> sold raw; rinsed -> sold one-washed)
   weight_oz     null when the page states two different weights
+  SKIP          products left out on purpose, with the reason
+  chart check   a chart identical in every size to a *different* cut's is reported under
+                "chart_same_as_other_cut" (with a WARNING until the wrong product is in SKIP);
+                identical charts within one cut are normal, Nudie shares them across fabrics
 """
 import argparse, datetime, json, os, re, sys
 from collections import OrderedDict
@@ -176,7 +180,19 @@ def sizes(p, pd):
     return out, missing
 
 
-report = {"missing_sizes": {}, "no_vs": [], "products": 0, "sizes": 0}
+# Products left out on purpose, with the reason (also listed in EXTRACTING.md).
+SKIP = {
+    "slim-jim-dry-two": "its Virtusize chart is identical, in all 65 sizes, to Regular Alf's (Dry One and "
+                        "Dry Selvage), which can't be right for a slim straight cut",
+}
+
+
+def chart_signature(szs):
+    return tuple((s["label"], tuple(sorted(s["measurements"].items()))) for s in szs)
+
+
+report = {"missing_sizes": {}, "no_vs": [], "skipped": {}, "chart_same_as_other_cut": [], "products": 0, "sizes": 0}
+signatures = {}  # chart -> [(fit, uri)], for every product that has a chart, skipped or not
 cuts = OrderedDict()
 for p in sorted(products, key=lambda p: (p["attrs"]["fit"][0], p["name"])):
     fit = p["attrs"]["fit"][0]
@@ -192,6 +208,10 @@ for p in sorted(products, key=lambda p: (p["attrs"]["fit"][0], p["name"])):
         report["missing_sizes"][p["uri"]] = missing
     if not szs:
         report["no_vs"].append(p["uri"])
+        continue
+    signatures.setdefault(chart_signature(szs), []).append((fit, p["uri"]))
+    if p["uri"] in SKIP:
+        report["skipped"][p["uri"]] = SKIP[p["uri"]]
         continue
     url = f"{SITE}/en-US/product/{p['uri']}"
     shrink = shrinkage(p, url)
@@ -220,6 +240,17 @@ for p in sorted(products, key=lambda p: (p["attrs"]["fit"][0], p["name"])):
     cuts.setdefault(fit, []).append(prod)
     report["products"] += 1
     report["sizes"] += len(szs)
+
+# Within a cut, Nudie shares one chart across fabrics, so identical charts are normal there.
+# A chart identical to a *different* cut's is a copy-paste error in Nudie's/Virtusize's data:
+# flag it, and leave the wrong product out by adding it to SKIP.
+for group in signatures.values():
+    if len({fit for fit, _ in group}) > 1:
+        names = ", ".join(f"{uri} ({fit}{', skipped' if uri in SKIP else ''})" for fit, uri in group)
+        report["chart_same_as_other_cut"].append(names)
+        if len({fit for fit, uri in group if uri not in SKIP}) > 1:  # not yet resolved by SKIP
+            print(f"WARNING: identical chart across cuts: {names}. Find the wrong one and add it to SKIP.",
+                  file=sys.stderr)
 
 INLINE_LISTS = {"composition", "sizes"}
 
