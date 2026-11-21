@@ -42,6 +42,10 @@ _Avoid_: comfort, flex
 Describes denim that was pre-shrunk at the mill, so it shrinks only a little in its first wash. Denim that wasn't is **unsanforized**.
 _Avoid_: pre-shrunk, loomstate, shrink-to-fit
 
+**Finish**:
+How a product's denim looks when it's sold: **raw** (never washed), **rinsed** (washed once, not faded) or **washed** (faded on purpose at the factory).
+_Avoid_: wash, treatment, colourway
+
 **Fabric Weight**:
 How heavy a product's denim is, in ounces per square yard, such as 14 oz or 21 oz.
 _Avoid_: weight class, heft
