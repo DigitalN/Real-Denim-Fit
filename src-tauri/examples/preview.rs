@@ -29,10 +29,7 @@ fn handle(cmd: &str, args: Value, data: &app::Data) -> Result<Value, String> {
     let to = |v: Result<Value, serde_json::Error>| v.map_err(|e| e.to_string());
     match cmd {
         "check_for_update" => Ok(Value::Null),
-        "load_state" => Ok(std::fs::read_to_string(&state)
-            .ok()
-            .and_then(|t| serde_json::from_str(&t).ok())
-            .unwrap_or(Value::Null)),
+        "load_state" => app::read_state(&state),
         "save_state" => {
             std::fs::write(&state, serde_json::to_vec_pretty(&arg("state")).unwrap()).map_err(|e| e.to_string())?;
             Ok(Value::Null)

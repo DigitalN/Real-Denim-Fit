@@ -45,10 +45,21 @@ fn state_file(app: &tauri::AppHandle) -> Result<PathBuf, String> {
 /// Everything the user has entered, or `null` on first run.
 #[tauri::command]
 fn load_state(app: tauri::AppHandle) -> Result<Value, String> {
-    let path = state_file(&app)?;
-    match fs::read_to_string(&path) {
-        Ok(text) => serde_json::from_str(&text).map_err(|e| e.to_string()),
-        Err(_) => Ok(Value::Null),
+    read_state(&state_file(&app)?)
+}
+
+/// The saved state, `null` when there's no file yet (a first run). Any
+/// other problem is an error, so the screens never mistake an unreadable
+/// or damaged file for a first run and save over it.
+pub fn read_state(path: &std::path::Path) -> Result<Value, String> {
+    match fs::read_to_string(path) {
+        Ok(text) => serde_json::from_str(&text)
+            .map_err(|e| format!("Your saved measurements in {} can't be read: {e}", path.display())),
+        Err(e) if e.kind() == std::io::ErrorKind::NotFound => Ok(Value::Null),
+        Err(e) => Err(format!(
+            "Your saved measurements in {} can't be read: {e}",
+            path.display()
+        )),
     }
 }
 
@@ -235,4 +246,51 @@ pub fn run() {
         ])
         .run(tauri::generate_context!())
         .expect("error while running Real Denim Fit");
+}
+
+#[cfg(test)]
+mod tests {
+    use super::read_state;
+    use serde_json::json;
+
+    fn scratch(name: &str) -> std::path::PathBuf {
+        let dir = std::env::temp_dir().join(format!("rdf-state-test-{}-{name}", std::process::id()));
+        let _ = std::fs::remove_dir_all(&dir);
+        std::fs::create_dir_all(&dir).unwrap();
+        dir
+    }
+
+    #[test]
+    fn a_missing_file_is_a_first_run() {
+        let dir = scratch("missing");
+        assert_eq!(
+            read_state(&dir.join("real-denim-fit.json")),
+            Ok(serde_json::Value::Null)
+        );
+    }
+
+    #[test]
+    fn a_saved_file_is_read_back() {
+        let dir = scratch("saved");
+        let path = dir.join("real-denim-fit.json");
+        std::fs::write(&path, r#"{"version":1,"onboarded":true}"#).unwrap();
+        assert_eq!(read_state(&path), Ok(json!({"version": 1, "onboarded": true})));
+    }
+
+    #[test]
+    fn any_other_read_error_is_reported_not_treated_as_a_first_run() {
+        let dir = scratch("unreadable");
+        // A folder where the file should be can't be read as a file.
+        let path = dir.join("real-denim-fit.json");
+        std::fs::create_dir_all(&path).unwrap();
+        assert!(read_state(&path).is_err());
+    }
+
+    #[test]
+    fn a_damaged_file_is_reported() {
+        let dir = scratch("damaged");
+        let path = dir.join("real-denim-fit.json");
+        std::fs::write(&path, "{ not json").unwrap();
+        assert!(read_state(&path).is_err());
+    }
 }

@@ -64,6 +64,7 @@ function freshState(currency) {
 
 let saveTimer = null;
 function save() {
+  if (!S) return;
   clearTimeout(saveTimer);
   saveTimer = setTimeout(() => invoke("save_state", { state: S }).catch(showError), 150);
 }
@@ -106,7 +107,14 @@ async function boot() {
       BRANDS.set(b.id, b);
       for (const p of b.products) PRODUCTS.set(p.id, { ...p, brand: b });
     }
-    S = saved && saved.version === 1 ? saved : freshState(CAT.default_currency);
+    if (saved && saved.version !== 1) {
+      // Made by another version of the app: leave the file alone.
+      overlay.hidden = true;
+      $app.innerHTML = `<div class="narrow"><h1>Your saved measurements are from another version</h1>
+        <p>They were saved by a different version of Real Denim Fit, so this one won't open or change them. Update the app to the latest version to carry on.</p></div>`;
+      return;
+    }
+    S = saved || freshState(CAT.default_currency);
     // Earlier builds had "doesn't matter" checkboxes; those become importance 1.
     if (S.desiredFit.doesnt_matter) {
       S.desiredFit.importance = S.desiredFit.importance || {};
@@ -114,6 +122,7 @@ async function boot() {
       delete S.desiredFit.doesnt_matter;
     }
   } catch (e) {
+    // S stays unset, so nothing is saved over a file that couldn't be read.
     overlay.hidden = true;
     showError(e);
     return;
