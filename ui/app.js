@@ -41,7 +41,7 @@ function freshState(currency) {
     onboarded: false,
     settings: { units: "cm", currency, tryOnBrands: [] },
     body: {},
-    desiredFit: { room: "regular", leg_shape: null, rise: null, doesnt_matter: [] },
+    desiredFit: { room: "regular", leg_shape: null, rise: null, importance: {} },
     pairs: [],
     activePairId: null,
     filters: {
@@ -106,6 +106,12 @@ async function boot() {
       for (const p of b.products) PRODUCTS.set(p.id, { ...p, brand: b });
     }
     S = saved && saved.version === 1 ? saved : freshState(CAT.default_currency);
+    // Earlier builds had "doesn't matter" checkboxes; those become importance 1.
+    if (S.desiredFit.doesnt_matter) {
+      S.desiredFit.importance = S.desiredFit.importance || {};
+      for (const m of S.desiredFit.doesnt_matter) S.desiredFit.importance[m] = 1;
+      delete S.desiredFit.doesnt_matter;
+    }
   } catch (e) {
     overlay.hidden = true;
     showError(e);
@@ -369,26 +375,45 @@ function usualName(fit) {
   return name;
 }
 
+function importanceOf(m) {
+  return S.desiredFit.importance?.[m] ?? 3;
+}
+
+function importanceControl(m) {
+  const v = importanceOf(m);
+  return `<div class="importance-row">
+    <span class="importance-name">${cap(LABELS[m])}</span>
+    <span class="importance" role="radiogroup" aria-label="Importance of the ${LABELS[m]}, from least to most">
+      <span class="importance-end">Least</span>
+      ${[1, 2, 3, 4, 5].map((n) => `<label class="dot ${n <= v ? "on" : ""}" title="${n}"><input type="radio" name="imp-${m}" value="${n}" ${n === v ? "checked" : ""} aria-label="${n}"/></label>`).join("")}
+      <span class="importance-end">Most</span>
+    </span>
+  </div>`;
+}
+
 function renderFit() {
   const f = S.desiredFit;
+  if (!f.importance) f.importance = {};
   $app.innerHTML = `
-  <div class="narrow">
+  <div class="fit-page">
     <h1>Desired fit</h1>
     <p class="muted">How you want your jeans to sit. The waist isn't a choice: it should fit your waist.</p>
-    <div class="card">
-      <h2 style="margin-top:0" id="usual">${cap(usualName(f))}</h2>
-      <label>Room through the seat and thigh</label>
-      ${choiceGroup("room", [["snug", "Snug"], ["regular", "Regular"], ["roomy", "Roomy"]], f.room)}
-      <label>Leg shape below the knee</label>
-      ${choiceGroup("leg_shape", [["tapered", "Tapered"], ["straight", "Straight"], ["wide", "Wide"], ["", "Any"]], f.leg_shape ?? "")}
-      <label>Rise</label>
-      ${choiceGroup("rise", [["low", "Low"], ["mid", "Mid"], ["high", "High"], ["", "Any"]], f.rise ?? "")}
-      <p class="hint">Leg shape and rise are worked out from each size's own numbers, not from what brands call their cuts.</p>
-    </div>
-    <div class="card">
-      <h3 style="margin-top:0">Measurements that don't matter to you</h3>
-      <p class="hint">These are left out when working out how close a pair comes. Pairs that are too tight for you are still left out.</p>
-      <div class="grid2">${MEASUREMENTS.map((m) => `<label class="checkline"><input type="checkbox" value="${m}" ${f.doesnt_matter.includes(m) ? "checked" : ""}/> ${cap(LABELS[m])} doesn't matter</label>`).join("")}</div>
+    <div class="fit-layout">
+      <div class="card">
+        <h2 style="margin-top:0" id="usual">${cap(usualName(f))}</h2>
+        <label>Room through the seat and thigh</label>
+        ${choiceGroup("room", [["snug", "Snug"], ["regular", "Regular"], ["roomy", "Roomy"]], f.room)}
+        <label>Leg shape below the knee</label>
+        ${choiceGroup("leg_shape", [["tapered", "Tapered"], ["straight", "Straight"], ["wide", "Wide"], ["", "Any"]], f.leg_shape ?? "")}
+        <label>Rise</label>
+        ${choiceGroup("rise", [["low", "Low"], ["mid", "Mid"], ["high", "High"], ["", "Any"]], f.rise ?? "")}
+        <p class="hint">Leg shape and rise are worked out from each size's own numbers, not from what brands call their cuts.</p>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0">Importance</h2>
+        <p class="hint">How much each measurement counts when ranking matches. Pairs too tight for you are left out at any importance.</p>
+        ${MEASUREMENTS.map(importanceControl).join("")}
+      </div>
     </div>
     <div class="actions"><span></span><button class="primary" id="done">${S.onboarded ? "Show matches" : "See my matches"}</button></div>
   </div>`;
@@ -396,7 +421,12 @@ function renderFit() {
     f.room = $app.querySelector('input[name="room"]:checked').value;
     f.leg_shape = $app.querySelector('input[name="leg_shape"]:checked').value || null;
     f.rise = $app.querySelector('input[name="rise"]:checked').value || null;
-    f.doesnt_matter = [...$app.querySelectorAll('input[type="checkbox"]:checked')].map((c) => c.value);
+    for (const m of MEASUREMENTS) {
+      const v = Number($app.querySelector(`input[name="imp-${m}"]:checked`).value);
+      if (v === 3) delete f.importance[m];
+      else f.importance[m] = v;
+      $app.querySelectorAll(`input[name="imp-${m}"]`).forEach((r) => r.parentElement.classList.toggle("on", Number(r.value) <= v));
+    }
     document.getElementById("usual").textContent = cap(usualName(f));
     save();
   };
