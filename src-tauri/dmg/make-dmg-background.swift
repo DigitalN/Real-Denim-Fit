@@ -6,7 +6,7 @@
 // The result is committed as src-tauri/dmg/background.tiff, which tauri.conf.json
 // (bundle.macOS.dmg.background) points at. After changing this script, regenerate it on a Mac:
 //
-//   swift scripts/make-dmg-background.swift src-tauri/dmg/background.tiff
+//   swift src-tauri/dmg/make-dmg-background.swift src-tauri/dmg/background.tiff
 //
 // The layout must match bundle.macOS.dmg in tauri.conf.json: a 660 × 420 pt window content
 // area (windowSize 660 × 448, because Tauri's size includes the 28 pt title bar), icon centers
@@ -16,7 +16,7 @@
 // Finder always draws icon names in black over a background picture, even in dark mode,
 // so the background stays light.
 //
-// Adapted from Mac Engine Room's scripts/make-dmg-background.swift, so both apps' installers
+// Adapted from Mac Engine Room's make-dmg-background.swift, so both apps' installers
 // look alike.
 
 import AppKit

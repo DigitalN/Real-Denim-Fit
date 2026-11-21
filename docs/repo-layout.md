@@ -6,8 +6,7 @@ Where everything lives. Parts of the first build are being written in parallel, 
 |---|---|
 | `Cargo.toml` | Cargo workspace at the root. `cargo test --workspace` runs every test, including catalogue validation. |
 | `src-tauri/` | The Tauri 2 app crate, `real-denim-fit`. Product name "Real Denim Fit", bundle identifier `io.github.digitaln.realdenimfit`. |
-| `src-tauri/dmg/background.tiff` | The macOS disk image's window background, made by `scripts/make-dmg-background.swift`. See [RELEASING.md](RELEASING.md#the-macos-disk-image). |
-| `scripts/` | Scripts run by hand on a Mac, such as `make-dmg-background.swift`. Never built into the app. |
+| `src-tauri/dmg/` | The macOS disk image's window background, `background.tiff`, and `make-dmg-background.swift`, the script that draws it. The script is run by hand on a Mac and never built into the app. See [RELEASING.md](RELEASING.md#the-macos-disk-image). |
 | `crates/` | Rust library crates, such as the matching core. |
 | `ui/` | The screens: static HTML, CSS and JavaScript, with no bundler and no npm. `tauri.conf.json` has `"frontendDist": "../ui"`. |
 | `ui/guide/` | The measuring guide: one SVG drawing per step, plus `steps.json` (format below). |
