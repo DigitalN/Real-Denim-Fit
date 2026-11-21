@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 11, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 265, "currency": "USD", "url": "https://www.rogueterritory.com/products/strider-11oz-indigo", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -43,6 +44,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 11, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 265, "currency": "USD", "url": "https://www.rogueterritory.com/products/strider-11oz-stealth", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -73,6 +75,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 13.5, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 265, "currency": "USD", "url": "https://www.rogueterritory.com/products/strider-14-5oz-indigo-x-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -105,6 +108,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15.25, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 285, "currency": "USD", "url": "https://www.rogueterritory.com/products/strider-15oz-rinsed-indigo", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -137,6 +141,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 17, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 355, "currency": "USD", "url": "https://www.rogueterritory.com/products/strider-17oz-cryptic-indigo", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -167,6 +172,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 22, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 350, "currency": "USD", "url": "https://www.rogueterritory.com/products/strider-22oz-indigo-slub", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -197,6 +203,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 375, "currency": "USD", "url": "https://www.rogueterritory.com/products/strider-indigo-river-wash", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -228,6 +235,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 375, "currency": "USD", "url": "https://www.rogueterritory.com/products/strider-indigo-vintage-wash", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -259,6 +267,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 375, "currency": "USD", "url": "https://www.rogueterritory.com/products/strider-stealth-wash", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [

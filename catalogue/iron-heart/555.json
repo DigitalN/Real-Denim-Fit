@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 98}, {"fibre": "polyurethane", "percent": 2}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 334, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555-sst", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -44,6 +45,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 98}, {"fibre": "polyurethane", "percent": 2}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 334, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555-sst-blk", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -75,6 +77,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 13.5, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 224, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555-wt", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -109,6 +112,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 25, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 334, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555-xhs", "seen": "2026-11-20"},
       "shrinkage": {"kind": "amount", "unit": "in", "waist": 1, "inseam": 1, "note": "Expect approximately 1\" shrinkage in the waist and inseam", "source": {"url": "https://www.ironheart.co.uk/products/ih-555-xhs", "seen": "2026-11-20"}},
       "charts": [
@@ -143,6 +147,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 25, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 380, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555-xhsib", "seen": "2026-11-20"},
       "shrinkage": {"kind": "amount", "unit": "in", "waist": 1, "inseam": 1, "note": "Expect approximately 1\" shrinkage in the waist and inseam", "source": {"url": "https://www.ironheart.co.uk/products/ih-555-xhsib", "seen": "2026-11-20"}},
       "charts": [
@@ -177,6 +182,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 17, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555n", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -211,6 +217,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 255, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-142", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -245,6 +252,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 270, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-142bb", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -279,6 +287,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 270, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-142ib", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -313,6 +322,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-142od", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -347,6 +357,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 270, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-14ii", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -381,6 +392,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 18, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-18", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -415,6 +427,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 19, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-19l", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -449,6 +462,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 19, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 315, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-19lod", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -481,6 +495,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-21", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -515,6 +530,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-21-t", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -549,6 +565,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 315, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-21od", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -583,6 +600,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 315, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-21od-t", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -617,6 +635,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 289, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-sb", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -651,6 +670,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 308, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-sbg", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -685,6 +705,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 16, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 266, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-slb", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -719,6 +740,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 16, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-slbod", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -753,6 +775,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": false},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 300, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555s-uhr", "seen": "2026-11-20"},
       "shrinkage": {
         "kind": "amount",
@@ -794,6 +817,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 296, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555sbr-14od", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [

@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-100x-classic-straight-indigo-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -45,6 +46,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-100xk-classic-straight-rinsed-indigo-kibata", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -78,6 +80,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 310, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-100xv-classic-straight-indigo-selvedge-vintage-wash", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -111,6 +114,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 250, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-101x-classic-straight-lightweight-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -143,6 +147,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-101xs-classic-straight-stonewashed-lightweight-indigo", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -175,6 +180,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15.75, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-105x-classic-straight-indigo-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -207,6 +213,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": null, "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-120xk-classic-straight-rinsed-shadow-kibata", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -240,6 +247,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-220x-classic-straight-double-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -274,6 +282,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 13.25, "composition": null, "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-220xk-classic-straight-rinsed-black-kibata", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -307,6 +316,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 250, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-222x-classic-straight-lightweight-double-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -339,6 +349,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-222xs-classic-straight-stonewashed-lightweight-double-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -371,6 +382,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 310, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-223xv-classic-straight-double-black-selvedge-vintage-wash", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -403,6 +415,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15.75, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/cs-225x-classic-straight-double-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [

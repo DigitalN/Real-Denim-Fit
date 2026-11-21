@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-1955s", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -47,6 +48,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 255, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-1955s-142", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -81,6 +83,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-1955s-142od", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -115,6 +118,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 315, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-1955s-od", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -148,6 +152,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 16, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 266, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-1955s-slb", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [

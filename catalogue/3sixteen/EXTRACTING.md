@@ -25,6 +25,20 @@ Last full run: 2026-11-20. 48 products in 7 cuts, 529 sizes. 6 of the products w
 ## Fabric decisions
 
 - **`sold`:** raw, unwashed denim is `"raw"`. Anything rinsed, garment-washed, stonewashed or vintage-washed by the brand is `"one-washed"`. That includes the Kibata (`…xk`), 101x, 222x, BF1x, 33x, `…xs`, `…xv`, Big Jean and the Self Edge collab.
+- **`finish`:** decided from each page's description. On this run that gave 18 raw, 19 rinsed and 11 washed.
+  - **Raw (18):** pages that describe raw denim with no garment wash. These are the 100x, 105x, 120x, 203x, 220x and 225x jeans, in whichever cuts they come in, plus CT-102xn.
+  - **Rinsed (19):** washed once without fading.
+    - The ten Kibata (`…xk`): "a rinse to eliminate shrinkage".
+    - 101x: "a light rinse and tumble dry".
+    - 222x (CS, CT, NT): "a rinse and light tumble dry" or "a light rinse to remove all shrinkage".
+    - CT-BF1x: "Garment Rinsed".
+    - The Self Edge collab: "lightly rinsed to remove shrinkage".
+    - RS-33x (see below).
+  - **Washed (11):** faded on purpose.
+    - The `…xs` jeans (101xs and 222xs in CS, CT and RS): "stonewashed for an evenly faded look".
+    - The `…xv` jeans (100xv and 223xv, CS and RS): hand sanded, stonewashed and bleached.
+    - Big Jean: "a custom stonewash treatment that is more heavy than our standard wash".
+  - **Doubtful: RS-33x** is "garment washed for a soft, broken-in feel" on undyed natural denim. Nothing on the page says it was faded, so it's `"rinsed"`.
 - **`sanforized`:**
   - The Kibata products and the Self Edge collab say "unsanforized", so `false`.
   - Products that say "Sanforized" on their page are `true`.

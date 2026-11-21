@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-100x-classic-tapered-indigo-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -46,6 +47,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-100xk-classic-tapered-rinsed-indigo-kibata", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -79,6 +81,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 250, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-101x-classic-tapered-lightweight-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -111,6 +114,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-101xs-classic-tapered-stonewashed-indigo-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -143,6 +147,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15.4, "composition": null, "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 485, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-102xn-classic-tapered-natural-indigo-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -175,6 +180,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-120x-classic-tapered-shadow-selvedge-1", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -207,6 +213,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": null, "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-120xk-classic-tapered-rinsed-shadow-kibata", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -239,6 +246,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-220x-classic-tapered-double-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -271,6 +279,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 13.25, "composition": null, "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-220xk-classic-tapered-rinsed-black-kibata", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -304,6 +313,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 250, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-222x-classic-tapered-lightweight-double-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -336,6 +346,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-222xs-classic-tapered-stonewashed-double-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -368,6 +379,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 13.4, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 250, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-bf1x-classic-tapered-burkina-faso-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [

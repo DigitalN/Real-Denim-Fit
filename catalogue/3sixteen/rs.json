@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-100x-relaxed-straight-indigo-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -46,6 +47,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-100xk-relaxed-straight-rinsed-indigo-kibata", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -79,6 +81,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 310, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-100xv-relaxed-straight-indigo-selvedge-vintage-wash", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -112,6 +115,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 250, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-101x-relaxed-straight-lightweight-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -144,6 +148,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-101xs-relaxed-straight-stonewashed-indigo-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -176,6 +181,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15.75, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-105x-relaxed-straight-indigo-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -208,6 +214,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 18, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 310, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-105xk-relaxed-straight-heavyweight-indigo-kibata", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -240,6 +247,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-120x-relaxed-straight-shadow-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -270,6 +278,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 13.25, "composition": null, "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-120xk-relaxed-straight-rinsed-shadow-kibata", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -302,6 +311,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-203x-relaxed-straight-black-white", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -335,6 +345,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-220x-relaxed-straight-double-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -369,6 +380,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 13.25, "composition": null, "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-220xk-relaxed-straight-rinsed-black-kibata", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -401,6 +413,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-222xs-relaxed-straight-stonewashed-double-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -434,6 +447,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "washed",
       "list_price": {"amount": 310, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-223xv-relaxed-straight-double-black-selvedge-vintage-wash", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -466,6 +480,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15.75, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-225x-relaxed-straight-double-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -498,6 +513,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.75, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/rs-33x-relaxed-straight-natural-selvedge-denim", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [

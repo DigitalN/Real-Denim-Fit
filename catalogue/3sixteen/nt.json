@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/nt-100x-narrow-tapered-indigo-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -44,6 +45,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/nt-120x-narrow-tapered-shadow-selvedge", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -75,6 +77,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/nt-220x-narrow-tapered-double-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -106,6 +109,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 250, "currency": "USD", "url": "https://www.3sixteen.com/products/nt-222x-narrow-tapered-lightweight-black", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [

@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 13.5, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 224, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634-wt", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -47,6 +48,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 25, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 334, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634-xhs", "seen": "2026-11-20"},
       "shrinkage": {"kind": "amount", "unit": "in", "waist": 1, "inseam": 1, "note": "Expect approximately 1\" shrinkage in the waist and inseam", "source": {"url": "https://www.ironheart.co.uk/products/ih-634-xhs", "seen": "2026-11-20"}},
       "charts": [
@@ -81,6 +83,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 25, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 380, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634-xhsib", "seen": "2026-11-20"},
       "shrinkage": {"kind": "amount", "unit": "in", "waist": 1, "inseam": 1, "note": "Expect approximately 1\" shrinkage in the waist and inseam", "source": {"url": "https://www.ironheart.co.uk/products/ih-634-xhsib", "seen": "2026-11-20"}},
       "charts": [
@@ -115,6 +118,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 17, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634n", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -147,6 +151,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -181,6 +186,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 255, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-142", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -215,6 +221,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 270, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-142bb", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -249,6 +256,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 270, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-142ib", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -280,6 +288,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 270, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-142ib-c", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -312,6 +321,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-142od", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -346,6 +356,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 270, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-14ii", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -380,6 +391,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 18, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-18", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -414,6 +426,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 19, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": false},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-19l", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -448,6 +461,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 315, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-b", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -481,6 +495,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 289, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-sb", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -515,6 +530,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 308, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-sbg", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -549,6 +565,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 16, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 266, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-slb", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -583,6 +600,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 16, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-slbod", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -617,6 +635,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": false},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 300, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634s-uhr", "seen": "2026-11-20"},
       "shrinkage": {
         "kind": "amount",
@@ -658,6 +677,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 274, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-634sbr-14", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -692,6 +712,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {"amount": 255, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ihxsjf-634", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
