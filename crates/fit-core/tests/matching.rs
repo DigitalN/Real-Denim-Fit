@@ -662,3 +662,14 @@ fn washed_denim_is_hidden_unless_switched_on() {
         ["raw", "rinsed", "unsaid", "washed"]
     );
 }
+
+#[test]
+fn preparing_the_built_in_catalogue_is_quick() {
+    // prepare() runs before the window opens.
+    let (catalogue, _) = fit_core::embedded::load().unwrap();
+    let start = std::time::Instant::now();
+    let prepared = fit_core::matching::prepare(&catalogue);
+    let took = start.elapsed();
+    eprintln!("prepared {} products in {took:?}", prepared.items.len());
+    assert!(took < std::time::Duration::from_millis(1500), "took {took:?}");
+}
