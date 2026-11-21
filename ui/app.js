@@ -183,6 +183,24 @@ function choiceGroup(name, options, current) {
     .join("")}</div>`;
 }
 
+/**
+ * A confirmation step on the page itself: the macOS webview has no
+ * confirm() dialog (it always answers no). Clicking `button` swaps it for
+ * the question with a Yes and a No.
+ */
+function askInPage(button, question, yesLabel, onYes) {
+  button.onclick = () => {
+    const box = document.createElement("span");
+    box.className = "ask";
+    box.innerHTML = `<span>${esc(question)}</span> <button class="danger">${esc(yesLabel)}</button> <button>Keep it</button>`;
+    const [yes, no] = box.querySelectorAll("button");
+    yes.onclick = onYes;
+    no.onclick = () => box.replaceWith(button);
+    button.replaceWith(box);
+    no.focus();
+  };
+}
+
 function closenessClass(pct) {
   if (pct >= 80) return "c-close";
   if (pct >= 50) return "c-mid";
@@ -1026,13 +1044,12 @@ async function renderPair(id, sub, step) {
     collect();
     location.hash = "#/pairs";
   };
-  document.getElementById("delete").onclick = () => {
-    if (!confirm(`Delete "${pair.name}"? This can't be undone.`)) return;
+  askInPage(document.getElementById("delete"), `Delete "${pair.name}"? This can't be undone.`, "Delete", () => {
     S.pairs = S.pairs.filter((p) => p.id !== pair.id);
     if (S.activePairId === pair.id) S.activePairId = null;
     save();
     location.hash = "#/pairs";
-  };
+  });
   showPairEase(pair);
 }
 
@@ -1108,12 +1125,16 @@ function renderSettings() {
     if (!S.settings.tryOnBrands.length) S.filters.try_on_only = false;
     save();
   }));
-  document.getElementById("reset").onclick = () => {
-    if (!confirm("Delete your body measurements, reference pairs and settings from this computer? This can't be undone.")) return;
-    S = freshState(CAT.default_currency);
-    save();
-    location.hash = "#/welcome";
-  };
+  askInPage(
+    document.getElementById("reset"),
+    "Delete your body measurements, reference pairs and settings from this computer? This can't be undone.",
+    "Delete everything",
+    () => {
+      S = freshState(CAT.default_currency);
+      save();
+      location.hash = "#/welcome";
+    },
+  );
 }
 
 boot();

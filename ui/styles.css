@@ -84,6 +84,8 @@ button, .button {
 button.primary, .button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 button.link { border: none; background: none; color: var(--accent); padding: 0; }
 button:disabled { opacity: 0.5; cursor: default; }
+button.danger { background: var(--far); color: #fff; border-color: var(--far); }
+.ask { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
 .actions { display: flex; gap: 0.6rem; justify-content: space-between; align-items: center; margin-top: 1.2rem; flex-wrap: wrap; }
 
 label { display: block; font-weight: 600; margin: 0.7rem 0 0.25rem; }
