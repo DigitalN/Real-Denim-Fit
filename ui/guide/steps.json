@@ -69,6 +69,32 @@
     "image": "body-thigh-1in.svg"
   },
   {
+    "id": "body-inseam",
+    "for": "body",
+    "measurement": "inseam",
+    "point": null,
+    "title": "The inseam you want",
+    "steps": [
+      "Stand in the shoes you usually wear with jeans. Hold the end of the tape up at your crotch and run it down the inside of your leg to where you want the bottom of the leg to sit. Enter that in the first box.",
+      "Wearing them cuffed or stacked? Put the extra length in the second box: twice the cuff's width for a double roll, so 8 cm (3″) for a 4 cm (1½″) cuff, or 5–10 cm (2–4″) for a stack at the ankle. Leave it empty for a plain hem.",
+      "Don't add anything for shrinkage: the app already allows for it."
+    ],
+    "mistake": "Adding the extra for cuffs or stacking to the first box. Measure only to where the hem should sit, and put any extra in its own box.",
+    "image": "body-inseam.svg",
+    "fields": [
+      {
+        "id": "inseam",
+        "label": "To where the hem should sit",
+        "optional": false
+      },
+      {
+        "id": "inseam_extra",
+        "label": "Extra for cuffs or stacking",
+        "optional": true
+      }
+    ]
+  },
+  {
     "id": "body-leg-12in",
     "for": "body",
     "measurement": "knee",
@@ -76,7 +102,7 @@
     "title": "Leg, 30.5 cm (12″) below the crotch",
     "steps": [
       "Mark all four leg points first. Hold the end of the tape up at your crotch and run it straight down the inside of your leg.",
-      "Stick a strip of masking tape on the front of the leg at 30.5, 33 and 35.5 cm (12″, 13″, 14″), and one halfway between your crotch and where you want the hem.",
+      "Stick a strip of masking tape on the front of the leg at 30.5, 33 and 35.5 cm (12″, 13″, 14″), and one at half the inseam you just measured to where the hem should sit.",
       "Now wrap the tape around your leg at the 30.5 cm (12″) strip, level with the floor, and read it."
     ],
     "mistake": "Measuring the distances from your waist or hip. They start at the crotch and run down the inside of the leg.",
@@ -115,25 +141,11 @@
     "point": "half-inseam",
     "title": "Leg, halfway down the inseam",
     "steps": [
-      "Wrap the tape around your leg at the last strip, halfway between your crotch and where you want the hem.",
+      "Wrap the tape around your leg at the last strip, halfway between your crotch and where the hem should sit.",
       "Keep it level and your leg relaxed, then read it."
     ],
-    "mistake": "Halving the distance to the floor. Halve the distance to where you want the hem.",
+    "mistake": "Halving the inseam with the extra for cuffs or stacking added. Halve only the distance to where the hem should sit.",
     "image": "body-leg-half.svg"
-  },
-  {
-    "id": "body-inseam",
-    "for": "body",
-    "measurement": "inseam",
-    "point": null,
-    "title": "The inseam you want",
-    "steps": [
-      "Stand in the shoes you usually wear with jeans. Hold the end of the tape up at your crotch and run it down the inside of your leg to where you want the hem.",
-      "Wearing them cuffed? Add what the cuff uses: twice its width for a double roll, so 8 cm (3″) for a 4 cm (1½″) cuff. For a stack at the ankle, add 5–10 cm (2–4″).",
-      "Don't add anything for shrinkage: the app already allows for it."
-    ],
-    "mistake": "Measuring from your waist down the outside of the leg. That's the outseam, which is much longer.",
-    "image": "body-inseam.svg"
   },
   {
     "id": "pair-intro",
@@ -228,6 +240,19 @@
     "image": "pair-thigh-1in.svg"
   },
   {
+    "id": "pair-inseam",
+    "for": "pair",
+    "measurement": "inseam",
+    "point": null,
+    "title": "Inseam",
+    "steps": [
+      "Measure from the crotch point down the inseam to the bottom of the hem.",
+      "Keep the leg flat and the tape on the seam all the way."
+    ],
+    "mistake": "Measuring down the outside seam from the waistband. That's the outseam, which is much longer.",
+    "image": "pair-inseam.svg"
+  },
+  {
     "id": "pair-knee-12in",
     "for": "pair",
     "measurement": "knee",
@@ -235,7 +260,7 @@
     "title": "Knee, 30.5 cm (12″) below the crotch",
     "steps": [
       "Lay the tape along the inseam from the crotch point. Reading it as you go, stick a strip of masking tape on the inseam at 30.5, 33 and 35.5 cm (12″, 13″, 14″).",
-      "Measure the inseam from the crotch point to the bottom of the hem, halve it, and put a last strip there.",
+      "Put a last strip at half the inseam you just measured.",
       "Leave the strips on. Measure straight across the leg at the 30.5 cm (12″) strip, square to the leg."
     ],
     "mistake": "Measuring the distances down the outside seam. They run down the inseam, from the crotch point.",
@@ -292,18 +317,5 @@
     ],
     "mistake": "Measuring with the hem rolled up. Unroll it and measure across the very bottom edge.",
     "image": "pair-leg-opening.svg"
-  },
-  {
-    "id": "pair-inseam",
-    "for": "pair",
-    "measurement": "inseam",
-    "point": null,
-    "title": "Inseam",
-    "steps": [
-      "Measure from the crotch point down the inseam to the bottom of the hem.",
-      "Keep the leg flat and the tape on the seam all the way."
-    ],
-    "mistake": "Measuring down the outside seam from the waistband. That's the outseam, which is much longer.",
-    "image": "pair-inseam.svg"
   }
 ]
