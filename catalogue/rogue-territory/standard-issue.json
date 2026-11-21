@@ -1,0 +1,102 @@
+{
+  "id": "standard-issue",
+  "brand": "rogue-territory",
+  "name": "Standard Issue",
+  "brand_label": "Relaxed Slight Tapered Leg, Mid-Rise",
+  "products": [
+    {
+      "id": "standard-issue-15oz-indigo",
+      "name": "15oz Indigo",
+      "url": "https://www.rogueterritory.com/products/standard-issue-15oz",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 15.25, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
+      "sold": "raw",
+      "list_price": {"amount": 265, "currency": "USD", "url": "https://www.rogueterritory.com/products/standard-issue-15oz", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.rogueterritory.com/products/standard-issue-15oz", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": true,
+          "sizes": [
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 14.75, "front_rise": 10.5, "back_rise": 15.25, "thigh": 11.25, "knee": 7.75, "leg_opening": 6.75, "inseam": 36}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 15.25, "front_rise": 10.5, "back_rise": 15.25, "thigh": 11.75, "knee": 8, "leg_opening": 7, "inseam": 36}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 15.75, "front_rise": 10.5, "back_rise": 15.5, "thigh": 12, "knee": 8.25, "leg_opening": 7.5, "inseam": 36}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 16.25, "front_rise": 10.75, "back_rise": 15.75, "thigh": 12.25, "knee": 8.5, "leg_opening": 7.75, "inseam": 36}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 16.75, "front_rise": 11, "back_rise": 16, "thigh": 12.75, "knee": 8.75, "leg_opening": 8, "inseam": 36}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 17.25, "front_rise": 11, "back_rise": 16.25, "thigh": 13, "knee": 9, "leg_opening": 8.25, "inseam": 36}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 17.75, "front_rise": 11, "back_rise": 16.25, "thigh": 13.25, "knee": 9.25, "leg_opening": 8.5, "inseam": 36}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 18.25, "front_rise": 11.25, "back_rise": 16.5, "thigh": 13.5, "knee": 9.5, "leg_opening": 8.75, "inseam": 36}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 18.75, "front_rise": 11.25, "back_rise": 16.5, "thigh": 13.75, "knee": 9.5, "leg_opening": 8.75, "inseam": 36}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 19.25, "front_rise": 11.25, "back_rise": 16.5, "thigh": 14, "knee": 9.75, "leg_opening": 9, "inseam": 36}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 19.75, "front_rise": 11.5, "back_rise": 16.75, "thigh": 14.5, "knee": 10.25, "leg_opening": 9.5, "inseam": 36}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "standard-issue-15oz-indigo-kurabo",
+      "name": "15oz Indigo Kurabo",
+      "url": "https://www.rogueterritory.com/products/standard-issue-15oz-indigo-kurabo",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 15, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
+      "sold": "raw",
+      "list_price": {"amount": 265, "currency": "USD", "url": "https://www.rogueterritory.com/products/standard-issue-15oz-indigo-kurabo", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.rogueterritory.com/products/standard-issue-15oz-indigo-kurabo", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": true,
+          "sizes": [
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 15.5, "front_rise": 10.25, "back_rise": 15.5, "thigh": 11.75, "knee": 8, "leg_opening": 7.25, "inseam": 35.25}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 16, "front_rise": 10.5, "back_rise": 15.75, "thigh": 12, "knee": 8.25, "leg_opening": 7.5, "inseam": 35.25}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 16.25, "front_rise": 10.5, "back_rise": 15.75, "thigh": 12.25, "knee": 8.5, "leg_opening": 7.75, "inseam": 35.25}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 16.75, "front_rise": 10.75, "back_rise": 16, "thigh": 12.75, "knee": 8.75, "leg_opening": 8, "inseam": 35.25}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 17.25, "front_rise": 10.75, "back_rise": 16, "thigh": 12.75, "knee": 9, "leg_opening": 8.25, "inseam": 35.25}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 17.75, "front_rise": 11, "back_rise": 16.25, "thigh": 13, "knee": 9.25, "leg_opening": 8.5, "inseam": 35.25}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 18.25, "front_rise": 11, "back_rise": 16.25, "thigh": 13.25, "knee": 9.5, "leg_opening": 8.75, "inseam": 35.25}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 18.75, "front_rise": 11.25, "back_rise": 16.25, "thigh": 13.5, "knee": 9.5, "leg_opening": 8.75, "inseam": 35.25}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 19.5, "front_rise": 11.25, "back_rise": 16.5, "thigh": 14.25, "knee": 10, "leg_opening": 9.25, "inseam": 35.25}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "standard-issue-15oz-stealth",
+      "name": "15oz Stealth",
+      "url": "https://www.rogueterritory.com/products/stealth-standard-issue",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 15, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
+      "sold": "raw",
+      "list_price": {"amount": 265, "currency": "USD", "url": "https://www.rogueterritory.com/products/stealth-standard-issue", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.rogueterritory.com/products/stealth-standard-issue", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": true,
+          "sizes": [
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 14.5, "front_rise": 10.5, "back_rise": 15.5, "thigh": 11.5, "knee": 7.5, "leg_opening": 6.75, "inseam": 36}},
+            {"label": "28", "waist_tag": 28, "measurements": {"front_rise": 10.5, "back_rise": 15.5, "thigh": 11.75, "knee": 7.75, "leg_opening": 7.25, "inseam": 36}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 15.5, "front_rise": 10.5, "back_rise": 15.5, "thigh": 12, "knee": 8.25, "leg_opening": 7.5, "inseam": 36}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 16, "front_rise": 10.75, "back_rise": 15.75, "thigh": 12.25, "knee": 8.5, "leg_opening": 7.75, "inseam": 36}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 16.25, "front_rise": 10.75, "back_rise": 15.75, "thigh": 12.5, "knee": 8.75, "leg_opening": 8, "inseam": 36}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 16.75, "front_rise": 11, "back_rise": 16, "thigh": 12.75, "knee": 9, "leg_opening": 8.25, "inseam": 36}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 17.25, "front_rise": 11, "back_rise": 16, "thigh": 13, "knee": 9.25, "leg_opening": 8.5, "inseam": 36}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 17.75, "front_rise": 11.25, "back_rise": 16.25, "thigh": 13.25, "knee": 9.5, "leg_opening": 8.75, "inseam": 36}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 18.25, "front_rise": 11.25, "back_rise": 16.25, "thigh": 13.5, "knee": 9.5, "leg_opening": 8.75, "inseam": 36}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 18.75, "front_rise": 11.5, "back_rise": 16.5, "thigh": 13.75, "knee": 9.75, "leg_opening": 9, "inseam": 36}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 19.75, "front_rise": 11.5, "back_rise": 16.5, "thigh": 14.25, "knee": 10.25, "leg_opening": 9.5, "inseam": 36}}
+          ]
+        }
+      ]
+    }
+  ]
+}
