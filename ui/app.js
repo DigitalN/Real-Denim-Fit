@@ -440,6 +440,12 @@ function renderFit() {
 
 // ------------------------------------------------------------- results ----
 
+function compareHint() {
+  return activePair()
+    ? "Matched to this pair. Your body still rules out anything too tight."
+    : "Matched from your body and typical room for your fit";
+}
+
 function filtersForRust() {
   const f = S.filters;
   return {
@@ -508,10 +514,11 @@ async function renderResults() {
   <div class="results">
     <aside class="card filters" id="filters">
       <h3>Compare with</h3>
-      <select id="compare">
-        <option value="">Your body and typical ease</option>
-        ${pairs.map((p) => `<option value="${esc(p.id)}" ${p.id === S.activePairId ? "selected" : ""}>${esc(p.name)}</option>`).join("")}
-      </select>
+      <div role="radiogroup" aria-label="Compare with">
+        <label class="checkline wrap"><input type="radio" name="compare" value="" ${S.activePairId ? "" : "checked"}/> <span>My body</span></label>
+        ${pairs.map((p) => `<label class="checkline wrap"><input type="radio" name="compare" value="${esc(p.id)}" ${p.id === S.activePairId ? "checked" : ""}/> <span>${esc(p.name)}</span></label>`).join("")}
+      </div>
+      <p class="hint" id="compare-hint">${compareHint()}</p>
       <h3>Leg shape and rise</h3>
       <p class="small">${cap(usualName(S.desiredFit))} · <a href="#/fit">change</a></p>
       <label class="checkline"><input type="checkbox" id="f-rest" ${f.show_other_shapes_and_rises ? "checked" : ""}/> Show other leg shapes and rises</label>
@@ -543,7 +550,8 @@ async function renderResults() {
     return Number.isFinite(v) ? v : null;
   };
   const onChange = () => {
-    S.activePairId = document.getElementById("compare").value || null;
+    S.activePairId = $app.querySelector('input[name="compare"]:checked').value || null;
+    document.getElementById("compare-hint").textContent = compareHint();
     const chosen = [...$app.querySelectorAll("[data-brand]:checked")].map((c) => c.dataset.brand);
     f.brands = chosen.length === brandIds.length ? null : chosen;
     f.try_on_only = document.getElementById("f-tryon").checked;
@@ -578,7 +586,7 @@ async function refreshResults() {
   if (!summary) return;
   const notes = [];
   if (results.from_body_only)
-    notes.push(`<div class="note">Matched from your body and typical ease. Adding a pair you know makes this sharper. <a href="#/pairs">Add a reference pair</a></div>`);
+    notes.push(`<div class="note">Matched from your body and typical room for your fit. Adding a pair you know makes this sharper. <a href="#/pairs">Add a reference pair</a></div>`);
   if (results.hidden_by_shape_or_rise && !S.filters.show_other_shapes_and_rises)
     notes.push(`<p class="muted small">${results.hidden_by_shape_or_rise} more cut${results.hidden_by_shape_or_rise === 1 ? "" : "s"} with another leg shape or rise. <button class="link" id="show-rest">Show them</button></p>`);
   summary.innerHTML = `<h1>${results.rows.length} cut${results.rows.length === 1 ? "" : "s"} worth looking into</h1>${notes.join("")}`;

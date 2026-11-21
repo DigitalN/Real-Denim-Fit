@@ -96,6 +96,10 @@ textarea { min-height: 5rem; }
 .measure-input input { text-align: right; }
 .measure-input .unit { color: var(--muted); min-width: 1.5rem; }
 .checkline { display: flex; align-items: center; gap: 0.5rem; font-weight: normal; margin: 0.35rem 0; }
+.checkline.wrap { align-items: flex-start; }
+.checkline.wrap input { margin-top: 0.2rem; flex: none; }
+.checkline span { min-width: 0; overflow-wrap: anywhere; }
+.filters .row2 input { min-width: 0; }
 .hint { font-weight: normal; color: var(--muted); font-size: 0.86rem; }
 .error { color: var(--far); font-size: 0.86rem; }
 
