@@ -246,7 +246,7 @@ async function renderGuideScreen(kind, index, values, opts) {
       </div>
     </div>
     <div class="actions">
-      <button id="back" ${i === 0 && !opts.firstBack ? "hidden" : ""}>${i === 0 ? opts.firstBack : "Previous"}</button>
+      <button id="back" ${i === 0 && !opts.firstBack ? 'style="visibility:hidden"' : ""}>${i === 0 ? opts.firstBack : "Previous"}</button>
       <span>${field && opts.skippable ? `<button id="skip">Skip</button> ` : ""}<button class="primary" id="next">${i === all.length - 1 ? "Done" : "Next"}</button></span>
     </div>
   </div>`;
