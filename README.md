@@ -33,24 +33,6 @@ You only do this once. Updates install themselves after that.
 
 Each time it opens, the app asks GitHub for the latest release, waiting a few seconds at most. If there's a newer one, it shows "Updating to …", installs it and reopens. If you're offline it just opens. Every update is checked against the project's own signing key before it's installed.
 
-## Building it yourself
-
-You need [Rust](https://rustup.rs) and the Tauri CLI:
-
-```bash
-cargo install tauri-cli --version "^2.0" --locked
-```
-
-```bash
-cargo tauri dev
-```
-
-```bash
-cargo test --workspace
-```
-
-`cargo tauri build` makes the app for the computer you're on. See [CLAUDE.md](CLAUDE.md) and [docs/](docs/) for how the project is put together.
-
 ## Licence
 
 GPL-3.0. See [LICENSE](LICENSE).
