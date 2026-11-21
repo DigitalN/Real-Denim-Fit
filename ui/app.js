@@ -729,7 +729,7 @@ async function renderProduct(id, size) {
   <p class="muted">${esc(p.name)}${d.brand_label ? ` · the brand calls the cut “${esc(d.brand_label)}”` : ""}</p>
   ${p.status === "discontinued" ? `<div class="note">No longer on the brand's site (last checked ${esc(p.status_seen)}).</div>` : ""}
   ${washed && washed.basis === "shrinkage-unknown" ? `<div class="note">Shrinkage unknown: the brand doesn't say how much this shrinks in its first wash, so it's compared as sold and ranked after the rest.</div>` : ""}
-  ${washed && washed.approximate ? `<div class="note">Approximate: ${esc(brand.name)} doesn't say exactly where it takes some measurements, so the nearest of your readings is used.</div>` : ""}
+  ${washed && washed.approximate ? `<div class="note">Approximate: ${esc(brand.name)} doesn't say exactly where it measures the thigh or knee, so the nearest of your readings is used.</div>` : ""}
   <div class="card">
     <div class="grid2">
       <p><b>Fabric weight</b><br>${p.fabric.weight_oz ? `${p.fabric.weight_oz} oz` : "not stated"}</p>

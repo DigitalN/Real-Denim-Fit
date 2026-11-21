@@ -38,7 +38,7 @@ pub struct Washed {
     pub thigh_point: Option<ThighPoint>,
     /// `None` when the brand doesn't say where it takes the knee.
     pub knee_point: Option<KneePoint>,
-    /// A measuring point this chart uses is "unknown": matches are marked
+    /// The chart's thigh or knee point is "unknown": matches are marked
     /// approximate.
     pub approximate: bool,
 }
@@ -177,7 +177,9 @@ pub fn after_wash(brand: &Brand, product: &Product) -> Option<Washed> {
     let effective = main.effective(brand);
     let points = &effective.measuring_points;
     let published = |m: Measurement| main.sizes.iter().any(|s| s.measurements.contains_key(&m));
-    let approximate = [Measurement::Thigh, Measurement::Knee, Measurement::Seat]
+    // Only the thigh and knee points change which body reading a size is
+    // compared with; the seat is always compared with the body's seat.
+    let approximate = [Measurement::Thigh, Measurement::Knee]
         .into_iter()
         .any(|m| published(m) && points.get(m).is_none_or(|p| p == "unknown"));
 

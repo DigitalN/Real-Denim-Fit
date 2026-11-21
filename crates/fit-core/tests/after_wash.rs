@@ -128,7 +128,18 @@ fn an_unknown_measuring_point_makes_matches_approximate() {
     assert!(!after_wash(&b, &p).unwrap().approximate);
     b.measuring_points.knee = Some("unknown".into());
     assert!(after_wash(&b, &p).unwrap().approximate);
-    // A seat point that's unknown doesn't matter when no seat is published.
+    b.measuring_points.knee = Some("13in-below-crotch".into());
+    b.measuring_points.thigh = Some("unknown".into());
+    assert!(after_wash(&b, &p).unwrap().approximate);
+}
+
+#[test]
+fn an_unknown_seat_point_never_makes_matches_approximate() {
+    // Matching compares the seat with the body's seat whatever the brand's
+    // point, so only the thigh and knee points matter.
+    let mut sizes = ih_32();
+    sizes[0].measurements.insert(Seat, 20.0);
+    let p = product("p", "C", vec![chart(ChartState::AsSold, Unit::In, sizes)]);
     let mut b = brand("b", vec![]);
     b.measuring_points.seat = Some("unknown".into());
     assert!(!after_wash(&b, &p).unwrap().approximate);
