@@ -1,19 +1,25 @@
 //! Builds the catalogue and ease table into the binary.
 //!
 //! The catalogue comes from `catalogue/` at the repo root, or from the
-//! folder in `RDF_CATALOGUE_DIR` when it's set (used to try fixtures).
+//! folder in `RDF_CATALOGUE_DIR` when it's set (used to try fixtures). A
+//! relative `RDF_CATALOGUE_DIR` is taken from the repo root. A folder that
+//! can't be read stops the build rather than building in an empty catalogue.
 use std::{env, fs, path::Path, path::PathBuf};
 
 fn main() {
     let repo = Path::new(env!("CARGO_MANIFEST_DIR")).join("../..");
     println!("cargo:rerun-if-env-changed=RDF_CATALOGUE_DIR");
-    let catalogue: PathBuf = env::var("RDF_CATALOGUE_DIR")
-        .map(PathBuf::from)
-        .unwrap_or_else(|_| repo.join("catalogue"));
+    let catalogue: PathBuf = match env::var("RDF_CATALOGUE_DIR") {
+        Ok(dir) if Path::new(&dir).is_absolute() => PathBuf::from(dir),
+        Ok(dir) => repo.join(dir),
+        Err(_) => repo.join("catalogue"),
+    };
     println!("cargo:rerun-if-changed={}", catalogue.display());
 
     let mut files: Vec<(String, PathBuf)> = vec![];
-    if let Ok(dir) = fs::read_dir(&catalogue) {
+    let dir = fs::read_dir(&catalogue)
+        .unwrap_or_else(|e| panic!("can't read the catalogue folder {}: {e}", catalogue.display()));
+    {
         for entry in dir.flatten() {
             let path = entry.path();
             let name = entry.file_name().to_string_lossy().to_string();
