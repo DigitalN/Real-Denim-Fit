@@ -1,6 +1,6 @@
 # Catalogue format
 
-The catalogue is plain JSON files under `catalogue/`, one folder per **brand**. People and Claude write it (via `/update-catalogue`), every change is reviewed in a PR, and the app builds it in. Terms follow [GLOSSARY.md](../GLOSSARY.md).
+The catalogue is plain JSON files under `catalogue/`, one folder per **brand**. People and Claude write it (via `/update-catalogue`), every change is reviewed in a PR, and the app builds it in. Terms follow [GLOSSARY.md](GLOSSARY.md).
 
 ```
 catalogue/

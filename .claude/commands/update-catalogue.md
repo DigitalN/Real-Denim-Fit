@@ -22,7 +22,7 @@ Every number here helps someone choose jeans they can't try on, so **accuracy ma
 ## 1. Read first
 
 - `docs/catalogue-format.md`: the format and its rules. Follow it exactly.
-- `GLOSSARY.md`: the words.
+- `docs/GLOSSARY.md`: the words.
 - If `catalogue/<brand>/` exists:
   - its `EXTRACTING.md`, which says where the charts are and what's tricky
   - `brand.json`

@@ -1,6 +1,6 @@
 # Real Denim Fit: the plan
 
-What we agreed in the design session of 20 November 2026. Words in bold are defined in [GLOSSARY.md](../GLOSSARY.md). The reasons behind the bigger choices are in [docs/adr](adr/), and the facts they rest on are in [docs/research](research/): [what brands publish](research/brand-size-charts.md) and [the ease research](research/ease.md).
+What we agreed in the design session of 20 November 2026. Words in bold are defined in [GLOSSARY.md](GLOSSARY.md). The reasons behind the bigger choices are in [docs/adr](adr/), and the facts they rest on are in [docs/research](research/): [what brands publish](research/brand-size-charts.md) and [the ease research](research/ease.md).
 
 ## What it is
 
