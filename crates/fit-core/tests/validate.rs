@@ -358,3 +358,27 @@ fn every_product_states_its_finish_and_every_cut_its_line_even_if_null() {
         .unwrap_err()
         .contains("missing field `line`"));
 }
+
+#[test]
+fn only_brand_files_and_exchange_rates_are_read() {
+    // Anything else, such as a nested folder of scripts or notes, is ignored.
+    let read = |f: &str| {
+        std::fs::read_to_string(
+            Path::new(env!("CARGO_MANIFEST_DIR"))
+                .join("tests/fixtures/catalogue")
+                .join(f),
+        )
+        .unwrap()
+    };
+    let files = vec![
+        ("exchange-rates.json".to_string(), read("exchange-rates.json")),
+        ("test-brand/brand.json".to_string(), read("test-brand/brand.json")),
+        ("test-brand/634.json".to_string(), read("test-brand/634.json")),
+        ("test-brand/scripts/extract.json".to_string(), "not a cut".to_string()),
+        ("test-brand/EXTRACTING.md".to_string(), "# notes".to_string()),
+        ("notes.json".to_string(), "{}".to_string()),
+    ];
+    let c = Catalogue::from_files(&files).unwrap();
+    assert_eq!(c.brands.len(), 1);
+    assert_eq!(c.brands[0].cuts.len(), 1);
+}

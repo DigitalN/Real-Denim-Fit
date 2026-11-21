@@ -21,7 +21,8 @@ fn main() {
                 println!("cargo:rerun-if-changed={}", path.display());
                 for f in fs::read_dir(&path).unwrap().flatten() {
                     let fname = f.file_name().to_string_lossy().to_string();
-                    if fname.ends_with(".json") {
+                    // Only the brand's own JSON files: never sub-folders.
+                    if fname.ends_with(".json") && f.path().is_file() {
                         files.push((format!("{name}/{fname}"), f.path()));
                     }
                 }

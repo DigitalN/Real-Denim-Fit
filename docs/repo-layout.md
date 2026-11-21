@@ -9,7 +9,8 @@ Where everything lives. Parts of the first build are being written in parallel, 
 | `crates/` | Rust library crates, such as the matching core. |
 | `ui/` | The screens: static HTML, CSS and JavaScript, with no bundler and no npm. `tauri.conf.json` has `"frontendDist": "../ui"`. |
 | `ui/guide/` | The measuring guide: one SVG drawing per step, plus `steps.json` (format below). |
-| `catalogue/` | The catalogue, in the format in [catalogue-format.md](catalogue-format.md). |
+| `catalogue/` | The catalogue, in the format in [catalogue-format.md](catalogue-format.md). The app builds in only `catalogue/exchange-rates.json` and `catalogue/<brand>/*.json`. |
+| `tools/catalogue/<brand-id>/` | Each brand's extraction scripts, used by `/update-catalogue`: Python 3 with the standard library only, plus browser JavaScript snippets. Never built into the app or read by validation. |
 | `data/ease-table.json` | The ease table, with a source on every number. |
 | `.github/workflows/` | `ci.yml` (on pull requests) and `release.yml` (run by hand). |
 | `.claude/commands/` | `update-catalogue.md` and `release.md`. |
