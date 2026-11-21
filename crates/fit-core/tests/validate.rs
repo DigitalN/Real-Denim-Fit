@@ -411,7 +411,7 @@ fn cut_ids_are_unique_within_a_brand() {
     let mut brand = brand("b", vec![a, b]);
     // Two cut files that both say they're cut "c".
     let mut second = brand.cuts[0].clone();
-    second.products.truncate(0);
+    second.products.clear();
     second.products.push(brand.cuts[0].products.pop().unwrap());
     brand.cuts.push(second);
     let found = validate(&catalogue(vec![brand]), &ease());
