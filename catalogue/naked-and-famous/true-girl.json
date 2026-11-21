@@ -1,0 +1,2631 @@
+{
+  "id": "true-girl",
+  "brand": "naked-and-famous",
+  "name": "True Girl",
+  "brand_label": "Classic straight",
+  "products": [
+    {
+      "id": "true-girl-brawler-selvedge",
+      "name": "Brawler Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-brawler-selvedge-indigo-1",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 17,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 232,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-brawler-selvedge-indigo-1",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-brawler-selvedge-indigo-1",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 25.5,
+                "front_rise": 12.25,
+                "back_rise": 13.75,
+                "seat": 17.25,
+                "thigh": 10.75,
+                "knee": 8.5,
+                "leg_opening": 7.75,
+                "inseam": 32.75
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 26.25,
+                "front_rise": 12.25,
+                "back_rise": 13.75,
+                "seat": 18,
+                "thigh": 11,
+                "knee": 8.5,
+                "leg_opening": 7.75,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 27,
+                "front_rise": 12.5,
+                "back_rise": 14,
+                "seat": 18.75,
+                "thigh": 11.5,
+                "knee": 8.75,
+                "leg_opening": 7.75,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 28,
+                "front_rise": 12.5,
+                "back_rise": 14.25,
+                "seat": 19,
+                "thigh": 11.75,
+                "knee": 9,
+                "leg_opening": 7.75,
+                "inseam": 32.25
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 12.75,
+                "back_rise": 14.5,
+                "seat": 19.5,
+                "thigh": 12,
+                "knee": 9.25,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 12.75,
+                "back_rise": 14.5,
+                "seat": 20.25,
+                "thigh": 12.25,
+                "knee": 9.5,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 13,
+                "back_rise": 14.75,
+                "seat": 21,
+                "thigh": 12.5,
+                "knee": 9.75,
+                "leg_opening": 8.25,
+                "inseam": 32.75
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 31.75,
+                "front_rise": 13,
+                "back_rise": 14.75,
+                "seat": 21.25,
+                "thigh": 12.5,
+                "knee": 9.75,
+                "leg_opening": 8.5,
+                "inseam": 32.75
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 32.5,
+                "front_rise": 13.25,
+                "back_rise": 14.75,
+                "seat": 21.75,
+                "thigh": 12.75,
+                "knee": 10,
+                "leg_opening": 8.75,
+                "inseam": 32.75
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 13.25,
+                "back_rise": 15,
+                "seat": 22.25,
+                "thigh": 13,
+                "knee": 10.25,
+                "leg_opening": 8.75,
+                "inseam": 32.75
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35.5,
+                "front_rise": 13.25,
+                "back_rise": 15.25,
+                "seat": 23,
+                "thigh": 13.5,
+                "knee": 10.75,
+                "leg_opening": 9,
+                "inseam": 32.75
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-girl-dia-de-los-muertos-selvedge-bat",
+      "name": "Dia De Los Muertos Selvedge, Bat",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-dia-de-los-muertos-bat-selvedge-indigo",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 12.5,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 192,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-dia-de-los-muertos-bat-selvedge-indigo",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-dia-de-los-muertos-bat-selvedge-indigo",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 27,
+                "front_rise": 10.5,
+                "back_rise": 13.25,
+                "seat": 18.25,
+                "thigh": 11.25,
+                "knee": 9,
+                "leg_opening": 7.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 27.5,
+                "front_rise": 10.75,
+                "back_rise": 13.25,
+                "seat": 18.75,
+                "thigh": 11.5,
+                "knee": 9.25,
+                "leg_opening": 7.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 28.5,
+                "front_rise": 11,
+                "back_rise": 13.5,
+                "seat": 19.25,
+                "thigh": 11.75,
+                "knee": 9.5,
+                "leg_opening": 7.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 29.5,
+                "front_rise": 11,
+                "back_rise": 13.75,
+                "seat": 19.75,
+                "thigh": 12,
+                "knee": 9.5,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11.25,
+                "back_rise": 14,
+                "seat": 20.25,
+                "thigh": 12.25,
+                "knee": 9.75,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.5,
+                "back_rise": 14,
+                "seat": 21,
+                "thigh": 12.5,
+                "knee": 10,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 11.5,
+                "back_rise": 14,
+                "seat": 21.25,
+                "thigh": 12.75,
+                "knee": 10,
+                "leg_opening": 8.25,
+                "inseam": 32.75
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 11.5,
+                "back_rise": 14.25,
+                "seat": 21.75,
+                "thigh": 13,
+                "knee": 10.25,
+                "leg_opening": 8.5,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 11.5,
+                "back_rise": 14.25,
+                "seat": 22.25,
+                "thigh": 13.25,
+                "knee": 10.5,
+                "leg_opening": 8.75,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 11.75,
+                "back_rise": 14.5,
+                "seat": 22.75,
+                "thigh": 13.5,
+                "knee": 10.75,
+                "leg_opening": 9.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37.5,
+                "front_rise": 12,
+                "back_rise": 14.75,
+                "seat": 23.5,
+                "thigh": 13.75,
+                "knee": 11,
+                "leg_opening": 9.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 39.5,
+                "front_rise": 12.25,
+                "back_rise": 15,
+                "seat": 24.25,
+                "thigh": 14.25,
+                "knee": 11.5,
+                "leg_opening": 9.5,
+                "inseam": 33.25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-girl-elephant-14-dirty-elephant-selvedge",
+      "name": "Elephant 14, Dirty Elephant Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-elephant-14-dirty-elephant-1",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 20,
+        "composition": null,
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 235,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-elephant-14-dirty-elephant-1",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-elephant-14-dirty-elephant-1",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 26.5,
+                "front_rise": 12,
+                "back_rise": 14.75,
+                "seat": 16.75,
+                "thigh": 10.5,
+                "knee": 8.25,
+                "leg_opening": 8,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 27.5,
+                "front_rise": 12.25,
+                "back_rise": 14.75,
+                "seat": 17.5,
+                "thigh": 11,
+                "knee": 8.5,
+                "leg_opening": 8.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 12.25,
+                "back_rise": 15,
+                "seat": 18,
+                "thigh": 11,
+                "knee": 8.75,
+                "leg_opening": 8.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 12.25,
+                "back_rise": 15,
+                "seat": 18.5,
+                "thigh": 11.25,
+                "knee": 9,
+                "leg_opening": 8.5,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30.5,
+                "front_rise": 12.5,
+                "back_rise": 15.25,
+                "seat": 19.25,
+                "thigh": 11.75,
+                "knee": 9.25,
+                "leg_opening": 8.5,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 12.5,
+                "back_rise": 15.5,
+                "seat": 19.75,
+                "thigh": 12.25,
+                "knee": 9.5,
+                "leg_opening": 8.75,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32.5,
+                "front_rise": 12.75,
+                "back_rise": 15.5,
+                "seat": 20,
+                "thigh": 12.25,
+                "knee": 9.75,
+                "leg_opening": 8.75,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 13,
+                "back_rise": 15.5,
+                "seat": 20.25,
+                "thigh": 12.25,
+                "knee": 9.75,
+                "leg_opening": 9,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 13,
+                "back_rise": 15.75,
+                "seat": 21,
+                "thigh": 12.5,
+                "knee": 10.25,
+                "leg_opening": 9,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 13,
+                "back_rise": 15.75,
+                "seat": 21.5,
+                "thigh": 12.75,
+                "knee": 10.5,
+                "leg_opening": 9,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 13.25,
+                "back_rise": 16,
+                "seat": 22,
+                "thigh": 13,
+                "knee": 10.5,
+                "leg_opening": 9.25,
+                "inseam": 33.25
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37.5,
+                "front_rise": 13.25,
+                "back_rise": 16,
+                "seat": 23,
+                "thigh": 13.25,
+                "knee": 10.75,
+                "leg_opening": 9.5,
+                "inseam": 33.25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-girl-elephant-2-selvedge-reborn",
+      "name": "Elephant 2 Selvedge Reborn",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-elephant-2-reborn-indigo",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 22,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 238,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-elephant-2-reborn-indigo",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-elephant-2-reborn-indigo",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 26,
+                "front_rise": 12,
+                "back_rise": 14.5,
+                "seat": 17.5,
+                "thigh": 10.25,
+                "knee": 8.25,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 27,
+                "front_rise": 12,
+                "back_rise": 14.5,
+                "seat": 18,
+                "thigh": 10.75,
+                "knee": 8.5,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 28.5,
+                "front_rise": 12,
+                "back_rise": 14.5,
+                "seat": 18.5,
+                "thigh": 11.5,
+                "knee": 8.75,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 12,
+                "back_rise": 14.75,
+                "seat": 18.75,
+                "thigh": 11.5,
+                "knee": 9,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 12.25,
+                "back_rise": 15,
+                "seat": 19,
+                "thigh": 11.75,
+                "knee": 9.25,
+                "leg_opening": 8.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 12.5,
+                "back_rise": 15,
+                "seat": 19.5,
+                "thigh": 12,
+                "knee": 9.25,
+                "leg_opening": 8.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 12.75,
+                "seat": 20,
+                "thigh": 12.25,
+                "knee": 9.5,
+                "leg_opening": 8.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12.75,
+                "back_rise": 15.25,
+                "seat": 20.5,
+                "thigh": 12.5,
+                "knee": 9.75,
+                "leg_opening": 9,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 13,
+                "back_rise": 15.5,
+                "seat": 21.25,
+                "thigh": 12.75,
+                "knee": 10.25,
+                "leg_opening": 9.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35.5,
+                "front_rise": 13,
+                "back_rise": 15.5,
+                "seat": 22,
+                "thigh": 13,
+                "knee": 10.5,
+                "leg_opening": 9.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 13.25,
+                "back_rise": 15.75,
+                "seat": 22.75,
+                "thigh": 13.25,
+                "knee": 10.75,
+                "leg_opening": 9.5,
+                "inseam": 32.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-girl-high-noon-selvedge",
+      "name": "High Noon Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-high-noon-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 10,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": false
+      },
+      "sold": "one-washed",
+      "list_price": {
+        "amount": 198,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-high-noon-selvedge",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-high-noon-selvedge",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 25.5,
+                "front_rise": 11.5,
+                "back_rise": 14,
+                "seat": 18,
+                "thigh": 11,
+                "knee": 8.5,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 26,
+                "front_rise": 11.5,
+                "back_rise": 14,
+                "seat": 18.5,
+                "thigh": 11,
+                "knee": 8.75,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 27,
+                "front_rise": 11.75,
+                "back_rise": 14.25,
+                "seat": 18.5,
+                "thigh": 11.25,
+                "knee": 9,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 28,
+                "front_rise": 11.75,
+                "back_rise": 14.25,
+                "seat": 19,
+                "thigh": 11.25,
+                "knee": 9,
+                "leg_opening": 8.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 28.5,
+                "front_rise": 12,
+                "back_rise": 14.5,
+                "seat": 19,
+                "thigh": 11.5,
+                "knee": 9.25,
+                "leg_opening": 8.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 12,
+                "back_rise": 14.5,
+                "seat": 19.5,
+                "thigh": 12,
+                "knee": 9.5,
+                "leg_opening": 8.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 12,
+                "back_rise": 14.5,
+                "seat": 20.5,
+                "thigh": 12,
+                "knee": 9.75,
+                "leg_opening": 8.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 12.25,
+                "back_rise": 14.75,
+                "seat": 21,
+                "thigh": 12,
+                "knee": 10,
+                "leg_opening": 8.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12.25,
+                "back_rise": 14.75,
+                "seat": 21,
+                "thigh": 12.25,
+                "knee": 10,
+                "leg_opening": 8.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12.5,
+                "back_rise": 15,
+                "seat": 22,
+                "thigh": 13,
+                "knee": 10.25,
+                "leg_opening": 9,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 12.5,
+                "back_rise": 15.25,
+                "seat": 22.5,
+                "thigh": 13,
+                "knee": 10.25,
+                "leg_opening": 9,
+                "inseam": 33.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-girl-max-brush-selvedge-indigo",
+      "name": "Max Brush Selvedge, Indigo",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-max-brush-selvedge-indigo",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 13.75,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 188,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-max-brush-selvedge-indigo",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-max-brush-selvedge-indigo",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 26,
+                "front_rise": 12,
+                "back_rise": 14,
+                "seat": 17,
+                "thigh": 10.5,
+                "knee": 8.5,
+                "leg_opening": 7.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 27,
+                "front_rise": 12,
+                "back_rise": 14,
+                "seat": 17,
+                "thigh": 10.75,
+                "knee": 8.5,
+                "leg_opening": 8,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 28,
+                "front_rise": 12.25,
+                "back_rise": 14.25,
+                "seat": 18,
+                "thigh": 10.75,
+                "knee": 9,
+                "leg_opening": 8,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 12.5,
+                "back_rise": 14.25,
+                "seat": 18.5,
+                "thigh": 11.5,
+                "knee": 9,
+                "leg_opening": 8.25,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 12.75,
+                "back_rise": 14.5,
+                "seat": 19,
+                "thigh": 11.5,
+                "knee": 9.5,
+                "leg_opening": 8.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 12.75,
+                "back_rise": 14.5,
+                "seat": 19,
+                "thigh": 11.75,
+                "knee": 9.5,
+                "leg_opening": 8.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31.5,
+                "front_rise": 13,
+                "back_rise": 15,
+                "seat": 20,
+                "thigh": 12,
+                "knee": 9.75,
+                "leg_opening": 8.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 13,
+                "back_rise": 15,
+                "seat": 20.5,
+                "thigh": 12.25,
+                "knee": 9.75,
+                "leg_opening": 8.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 13.25,
+                "back_rise": 15.25,
+                "seat": 21,
+                "thigh": 12.5,
+                "knee": 10,
+                "leg_opening": 9,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 13.5,
+                "back_rise": 15.25,
+                "seat": 21,
+                "thigh": 12.75,
+                "knee": 10.25,
+                "leg_opening": 9,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 13.5,
+                "back_rise": 15.5,
+                "seat": 21.5,
+                "thigh": 13,
+                "knee": 10.5,
+                "leg_opening": 9.25,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 13.75,
+                "back_rise": 15.5,
+                "seat": 23,
+                "thigh": 13.5,
+                "knee": 11,
+                "leg_opening": 9.5,
+                "inseam": 32
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-girl-nightfall-selvedge",
+      "name": "Nightfall Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-nightfall-selv-indigo",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 11.6,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 230,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-nightfall-selv-indigo",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-nightfall-selv-indigo",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 27,
+                "front_rise": 10.5,
+                "back_rise": 13.25,
+                "seat": 17.75,
+                "thigh": 11,
+                "knee": 8.75,
+                "leg_opening": 7.75,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 27.5,
+                "front_rise": 10.5,
+                "back_rise": 13.25,
+                "seat": 18.5,
+                "thigh": 11.25,
+                "knee": 9,
+                "leg_opening": 7.75,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 28.5,
+                "front_rise": 10.5,
+                "back_rise": 13.25,
+                "seat": 19.25,
+                "thigh": 11.75,
+                "knee": 9.25,
+                "leg_opening": 8,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 29.5,
+                "front_rise": 10.75,
+                "back_rise": 13.5,
+                "seat": 19.5,
+                "thigh": 12,
+                "knee": 9.5,
+                "leg_opening": 8,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30.5,
+                "front_rise": 11.25,
+                "back_rise": 13.75,
+                "seat": 20,
+                "thigh": 12.25,
+                "knee": 9.75,
+                "leg_opening": 8.25,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32.5,
+                "front_rise": 11.25,
+                "back_rise": 14,
+                "seat": 20.5,
+                "thigh": 12.25,
+                "knee": 10,
+                "leg_opening": 8.25,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 11.25,
+                "back_rise": 14.25,
+                "seat": 21,
+                "thigh": 12.5,
+                "knee": 10,
+                "leg_opening": 8.25,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34.5,
+                "front_rise": 11.25,
+                "back_rise": 14.25,
+                "seat": 21.5,
+                "thigh": 12.75,
+                "knee": 10.25,
+                "leg_opening": 8.5,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 11.5,
+                "back_rise": 14.25,
+                "seat": 22,
+                "thigh": 13,
+                "knee": 10.5,
+                "leg_opening": 8.75,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 12,
+                "back_rise": 14.25,
+                "seat": 22.5,
+                "thigh": 13.5,
+                "knee": 10.75,
+                "leg_opening": 9,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37.5,
+                "front_rise": 12,
+                "back_rise": 14.5,
+                "seat": 23.25,
+                "thigh": 13.75,
+                "knee": 11,
+                "leg_opening": 9,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 39.5,
+                "front_rise": 12,
+                "back_rise": 14.75,
+                "seat": 24.25,
+                "thigh": 14,
+                "knee": 11.5,
+                "leg_opening": 9.25,
+                "inseam": 32
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-girl-solid-black-selvedge-washed",
+      "name": "Solid Black Selvedge Washed",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-solid-black-selvedge-washed-black",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 13,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "one-washed",
+      "list_price": {
+        "amount": 193,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-solid-black-selvedge-washed-black",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-solid-black-selvedge-washed-black",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 25.5,
+                "front_rise": 12.25,
+                "back_rise": 13.5,
+                "seat": 18.5,
+                "thigh": 11.25,
+                "knee": 8.5,
+                "leg_opening": 7.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 26,
+                "front_rise": 12.25,
+                "back_rise": 13.5,
+                "seat": 19,
+                "thigh": 11.5,
+                "knee": 8.75,
+                "leg_opening": 7.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 27,
+                "front_rise": 12.5,
+                "back_rise": 13.75,
+                "seat": 19.5,
+                "thigh": 11.75,
+                "knee": 9,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 28,
+                "front_rise": 12.5,
+                "back_rise": 13.75,
+                "seat": 20,
+                "thigh": 12,
+                "knee": 9.25,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 12.5,
+                "back_rise": 13.75,
+                "seat": 20.5,
+                "thigh": 12.25,
+                "knee": 9.5,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 12.75,
+                "back_rise": 14,
+                "seat": 21,
+                "thigh": 12.25,
+                "knee": 9.5,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 12.75,
+                "back_rise": 14.25,
+                "seat": 21.5,
+                "thigh": 12.5,
+                "knee": 9.75,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 13,
+                "back_rise": 14.25,
+                "seat": 22,
+                "thigh": 12.75,
+                "knee": 10,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 13,
+                "back_rise": 14.5,
+                "seat": 22.5,
+                "thigh": 12.75,
+                "knee": 10,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 13.25,
+                "back_rise": 14.75,
+                "seat": 23,
+                "thigh": 13.25,
+                "knee": 10.25,
+                "leg_opening": 8.5,
+                "inseam": 32.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-girl-stretch-selvedge",
+      "name": "Stretch Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-stretch-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 12.5,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 98
+          },
+          {
+            "fibre": "elastane",
+            "percent": 2
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 176,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-stretch-selvedge",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-stretch-selvedge",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 26,
+                "front_rise": 12,
+                "back_rise": 14,
+                "seat": 17,
+                "thigh": 10.25,
+                "knee": 8.5,
+                "leg_opening": 7.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 27,
+                "front_rise": 12.25,
+                "back_rise": 14.25,
+                "seat": 17,
+                "thigh": 11,
+                "knee": 8.5,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 28,
+                "front_rise": 12.25,
+                "back_rise": 14.25,
+                "seat": 18,
+                "thigh": 11,
+                "knee": 8.75,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 12.5,
+                "back_rise": 14.5,
+                "seat": 18,
+                "thigh": 11.5,
+                "knee": 9,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 12.5,
+                "back_rise": 14.5,
+                "seat": 19,
+                "thigh": 11.5,
+                "knee": 9,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 12.75,
+                "back_rise": 14.75,
+                "seat": 20,
+                "thigh": 12,
+                "knee": 9.5,
+                "leg_opening": 8.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 12.75,
+                "back_rise": 14.75,
+                "seat": 20,
+                "thigh": 12,
+                "knee": 9.5,
+                "leg_opening": 8.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 13,
+                "back_rise": 15,
+                "seat": 20.5,
+                "thigh": 12.5,
+                "knee": 9.75,
+                "leg_opening": 8.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 13,
+                "back_rise": 15,
+                "seat": 20.5,
+                "thigh": 12.5,
+                "knee": 9.75,
+                "leg_opening": 8.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 13.25,
+                "back_rise": 15.25,
+                "seat": 21.5,
+                "thigh": 13,
+                "knee": 10,
+                "leg_opening": 9,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35.5,
+                "front_rise": 13.25,
+                "back_rise": 15.25,
+                "seat": 22,
+                "thigh": 13,
+                "knee": 10.5,
+                "leg_opening": 9.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 13.75,
+                "back_rise": 15.5,
+                "seat": 23,
+                "thigh": 13.75,
+                "knee": 10.75,
+                "leg_opening": 9.5,
+                "inseam": 32.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-girl-the-cats-pyjamas-selvedge-unsanforized",
+      "name": "The Cat’s Pyjamas Selvedge, Unsanforized",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-the-cat-s-pajamas-selvedge-blue",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 8.5,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": false
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 216,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-the-cat-s-pajamas-selvedge-blue",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-the-cat-s-pajamas-selvedge-blue",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 25.5,
+                "front_rise": 12,
+                "back_rise": 13.75,
+                "thigh": 11,
+                "knee": 8.5,
+                "leg_opening": 7.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 26.25,
+                "front_rise": 12,
+                "back_rise": 13.75,
+                "thigh": 11.25,
+                "knee": 8.5,
+                "leg_opening": 7.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 27,
+                "front_rise": 12,
+                "back_rise": 14,
+                "thigh": 11.5,
+                "knee": 8.75,
+                "leg_opening": 8,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 28,
+                "front_rise": 12.25,
+                "back_rise": 14.25,
+                "thigh": 11.75,
+                "knee": 9,
+                "leg_opening": 8,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 12.5,
+                "back_rise": 14.5,
+                "thigh": 12,
+                "knee": 9.25,
+                "leg_opening": 8.25,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30.25,
+                "front_rise": 12.5,
+                "back_rise": 14.5,
+                "thigh": 12.25,
+                "knee": 9.5,
+                "leg_opening": 8.25,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31.5,
+                "front_rise": 12.5,
+                "back_rise": 14.5,
+                "thigh": 12.75,
+                "knee": 9.75,
+                "leg_opening": 8.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 32.25,
+                "front_rise": 12.5,
+                "back_rise": 14.5,
+                "thigh": 12.75,
+                "knee": 9.75,
+                "leg_opening": 8.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 12.75,
+                "back_rise": 14.75,
+                "thigh": 13,
+                "knee": 10,
+                "leg_opening": 8.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 12.75,
+                "back_rise": 15,
+                "thigh": 13.25,
+                "knee": 10,
+                "leg_opening": 8.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 13,
+                "back_rise": 15.25,
+                "thigh": 13.5,
+                "knee": 10.25,
+                "leg_opening": 9,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 13,
+                "back_rise": 15.5,
+                "thigh": 14,
+                "knee": 10.75,
+                "leg_opening": 9.25,
+                "inseam": 32
+              }
+            }
+          ]
+        },
+        {
+          "state": "after-wash",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-the-cat-s-pajamas-selvedge-blue",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "estimated_by_brand": true,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 23.36,
+                "front_rise": 11.17,
+                "back_rise": 12.52,
+                "thigh": 10.62,
+                "knee": 7.99,
+                "leg_opening": 7.27,
+                "inseam": 29.6
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 24.05,
+                "front_rise": 11.17,
+                "back_rise": 12.52,
+                "thigh": 10.86,
+                "knee": 7.99,
+                "leg_opening": 7.27,
+                "inseam": 29.6
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 24.73,
+                "front_rise": 11.17,
+                "back_rise": 12.75,
+                "thigh": 11.1,
+                "knee": 8.23,
+                "leg_opening": 7.5,
+                "inseam": 29.6
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 25.65,
+                "front_rise": 11.4,
+                "back_rise": 12.98,
+                "thigh": 11.34,
+                "knee": 8.46,
+                "leg_opening": 7.5,
+                "inseam": 29.6
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 26.56,
+                "front_rise": 11.63,
+                "back_rise": 13.2,
+                "thigh": 11.58,
+                "knee": 8.7,
+                "leg_opening": 7.73,
+                "inseam": 29.6
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 27.71,
+                "front_rise": 11.63,
+                "back_rise": 13.2,
+                "thigh": 11.82,
+                "knee": 8.93,
+                "leg_opening": 7.73,
+                "inseam": 29.6
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 28.85,
+                "front_rise": 11.63,
+                "back_rise": 13.2,
+                "thigh": 12.31,
+                "knee": 9.17,
+                "leg_opening": 7.97,
+                "inseam": 29.6
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 29.54,
+                "front_rise": 11.63,
+                "back_rise": 13.2,
+                "thigh": 12.31,
+                "knee": 9.17,
+                "leg_opening": 7.97,
+                "inseam": 29.6
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 30.23,
+                "front_rise": 11.87,
+                "back_rise": 13.43,
+                "thigh": 12.55,
+                "knee": 9.4,
+                "leg_opening": 8.2,
+                "inseam": 29.6
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 31.14,
+                "front_rise": 11.87,
+                "back_rise": 13.66,
+                "thigh": 12.79,
+                "knee": 9.4,
+                "leg_opening": 8.2,
+                "inseam": 29.6
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 32.06,
+                "front_rise": 12.1,
+                "back_rise": 13.89,
+                "thigh": 13.03,
+                "knee": 9.64,
+                "leg_opening": 8.44,
+                "inseam": 29.6
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 33.89,
+                "front_rise": 12.1,
+                "back_rise": 14.11,
+                "thigh": 13.51,
+                "knee": 10.11,
+                "leg_opening": 8.67,
+                "inseam": 29.6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-girl-vintage-blues-selvedge-indigo",
+      "name": "Vintage Blues Selvedge, Indigo",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-vintage-blues-selvedge-indigo",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 11.6,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 230,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-vintage-blues-selvedge-indigo",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-vintage-blues-selvedge-indigo",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 27,
+                "front_rise": 10.5,
+                "back_rise": 13.25,
+                "seat": 18,
+                "thigh": 11.5,
+                "knee": 9,
+                "leg_opening": 8.25,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 28.5,
+                "front_rise": 10.5,
+                "back_rise": 13.5,
+                "seat": 18.25,
+                "thigh": 11.5,
+                "knee": 9.25,
+                "leg_opening": 8.25,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 29.5,
+                "front_rise": 10.75,
+                "back_rise": 14,
+                "seat": 18.75,
+                "thigh": 11.75,
+                "knee": 9.5,
+                "leg_opening": 8.5,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 10.75,
+                "back_rise": 14,
+                "seat": 19.25,
+                "thigh": 12,
+                "knee": 9.5,
+                "leg_opening": 8.5,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31.5,
+                "front_rise": 11,
+                "back_rise": 14,
+                "seat": 19.75,
+                "thigh": 12.25,
+                "knee": 9.75,
+                "leg_opening": 8.5,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32.5,
+                "front_rise": 11,
+                "back_rise": 14.25,
+                "seat": 20.25,
+                "thigh": 12.5,
+                "knee": 10,
+                "leg_opening": 8.75,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 11.25,
+                "back_rise": 14.5,
+                "seat": 20.25,
+                "thigh": 13,
+                "knee": 10.25,
+                "leg_opening": 9,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34.5,
+                "front_rise": 11.25,
+                "back_rise": 14.5,
+                "seat": 20.5,
+                "thigh": 13.25,
+                "knee": 10.5,
+                "leg_opening": 9,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 11.5,
+                "back_rise": 14.5,
+                "seat": 22,
+                "thigh": 13.5,
+                "knee": 10.75,
+                "leg_opening": 9.25,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36.5,
+                "front_rise": 11.5,
+                "back_rise": 14.75,
+                "seat": 22.75,
+                "thigh": 13.75,
+                "knee": 11,
+                "leg_opening": 9.25,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 11.5,
+                "back_rise": 15.25,
+                "seat": 23,
+                "thigh": 13.75,
+                "knee": 11,
+                "leg_opening": 9.5,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 39.5,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "seat": 24.25,
+                "thigh": 14.5,
+                "knee": 11.5,
+                "leg_opening": 9.75,
+                "inseam": 31.75
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true-girl-workforce-selvedge",
+      "name": "Workforce Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/true-girl-workforce-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": null,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 204,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/true-girl-workforce-selvedge",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/true-girl-workforce-selvedge",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 26,
+                "front_rise": 12,
+                "back_rise": 14,
+                "seat": 17.5,
+                "thigh": 10.75,
+                "knee": 8.5,
+                "leg_opening": 7.75,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 26.5,
+                "front_rise": 12,
+                "back_rise": 14.25,
+                "seat": 17.5,
+                "thigh": 10.75,
+                "knee": 8.5,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 27.5,
+                "front_rise": 12.25,
+                "back_rise": 14.25,
+                "seat": 18,
+                "thigh": 11,
+                "knee": 8.75,
+                "leg_opening": 8,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 28,
+                "front_rise": 12.5,
+                "back_rise": 14.5,
+                "seat": 18,
+                "thigh": 11.25,
+                "knee": 9,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 12.5,
+                "back_rise": 14.5,
+                "seat": 19,
+                "thigh": 11.5,
+                "knee": 9,
+                "leg_opening": 8.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30.5,
+                "front_rise": 12.75,
+                "back_rise": 14.75,
+                "seat": 20,
+                "thigh": 12,
+                "knee": 9.5,
+                "leg_opening": 8.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 13,
+                "back_rise": 15,
+                "seat": 20,
+                "thigh": 12,
+                "knee": 9.5,
+                "leg_opening": 8.5,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 13,
+                "back_rise": 15,
+                "seat": 20.5,
+                "thigh": 12.5,
+                "knee": 9.75,
+                "leg_opening": 9,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 13.25,
+                "back_rise": 15.25,
+                "seat": 21.5,
+                "thigh": 12.5,
+                "knee": 10,
+                "leg_opening": 9,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 13.25,
+                "back_rise": 15.25,
+                "seat": 22.5,
+                "thigh": 13.25,
+                "knee": 10.5,
+                "leg_opening": 9.25,
+                "inseam": 32.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 13.5,
+                "back_rise": 15.5,
+                "seat": 23,
+                "thigh": 13.25,
+                "knee": 10.5,
+                "leg_opening": 9.25,
+                "inseam": 32.5
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

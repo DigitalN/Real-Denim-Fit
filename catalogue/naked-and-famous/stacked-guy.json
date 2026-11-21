@@ -1,0 +1,733 @@
+{
+  "id": "stacked-guy",
+  "brand": "naked-and-famous",
+  "name": "Stacked Guy",
+  "brand_label": "Tight tapered",
+  "products": [
+    {
+      "id": "stacked-guy-black-cobra-stretch-selvedge",
+      "name": "Black Cobra Stretch Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/naked-famous-stacked-guy-black-cobra-stretch-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 12,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 98
+          },
+          {
+            "fibre": "elastane",
+            "percent": 2
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 193,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/naked-famous-stacked-guy-black-cobra-stretch-selvedge",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/naked-famous-stacked-guy-black-cobra-stretch-selvedge",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 11,
+                "back_rise": 14.25,
+                "thigh": 10.75,
+                "knee": 6.75,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11,
+                "back_rise": 14.25,
+                "thigh": 11,
+                "knee": 7,
+                "leg_opening": 6,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 11.25,
+                "back_rise": 14.25,
+                "thigh": 11,
+                "knee": 7.25,
+                "leg_opening": 6.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 11.25,
+                "back_rise": 14.5,
+                "thigh": 11.5,
+                "leg_opening": 6.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 11.25,
+                "back_rise": 14.75,
+                "thigh": 11.75,
+                "leg_opening": 6.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 7,
+                "leg_opening": 7,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "thigh": 12,
+                "knee": 7,
+                "leg_opening": 7,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 39,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 12.5,
+                "knee": 7.25,
+                "leg_opening": 7.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 41,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 13,
+                "knee": 7.75,
+                "leg_opening": 7.25,
+                "inseam": 33
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stacked-guy-deep-indigo-stretch-selvedge",
+      "name": "Deep Indigo Stretch Selvedge",
+      "url": "https://nakedandfamousdenim.com/products/stacked-guy-deep-indigo-stretch-selevdge-1",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 12,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 98
+          },
+          {
+            "fibre": "elastane",
+            "percent": 2
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 186,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/stacked-guy-deep-indigo-stretch-selevdge-1",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/stacked-guy-deep-indigo-stretch-selevdge-1",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 11.25,
+                "back_rise": 14.75,
+                "thigh": 11,
+                "knee": 7,
+                "leg_opening": 6.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 11.25,
+                "back_rise": 14.75,
+                "thigh": 11.25,
+                "knee": 7.25,
+                "leg_opening": 6.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "thigh": 11.25,
+                "knee": 7.5,
+                "leg_opening": 6.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 11.75,
+                "back_rise": 15,
+                "thigh": 11.5,
+                "knee": 7.75,
+                "leg_opening": 7,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 11.75,
+                "back_rise": 15.25,
+                "thigh": 11.75,
+                "knee": 8,
+                "leg_opening": 7,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 12,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 8.25,
+                "leg_opening": 7.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 38,
+                "front_rise": 12,
+                "back_rise": 15.5,
+                "thigh": 12.25,
+                "knee": 8.5,
+                "leg_opening": 7.25,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 40,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "thigh": 12.75,
+                "knee": 8.75,
+                "leg_opening": 7.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 42,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "thigh": 13.25,
+                "knee": 9,
+                "leg_opening": 8,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 44,
+                "front_rise": 13,
+                "back_rise": 16.25,
+                "thigh": 13.75,
+                "knee": 9.5,
+                "leg_opening": 8.5,
+                "inseam": 33
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 46,
+                "front_rise": 13.25,
+                "back_rise": 16.5,
+                "thigh": 14.25,
+                "knee": 10,
+                "leg_opening": 8.75,
+                "inseam": 33
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stacked-guy-indigo-power-stretch",
+      "name": "Indigo Power Stretch",
+      "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-stacked-guy-indigo-power-stretch",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 12,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 95
+          },
+          {
+            "fibre": "elastane",
+            "percent": 5
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 171,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-stacked-guy-indigo-power-stretch",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-stacked-guy-indigo-power-stretch",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 30.5,
+                "front_rise": 10.25,
+                "back_rise": 14,
+                "thigh": 10.5,
+                "knee": 6.5,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 31.5,
+                "front_rise": 10.25,
+                "back_rise": 14.25,
+                "thigh": 10.75,
+                "knee": 6.75,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 32.5,
+                "front_rise": 11,
+                "back_rise": 14.5,
+                "thigh": 11,
+                "knee": 7,
+                "leg_opening": 6.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 33.5,
+                "front_rise": 11,
+                "back_rise": 14.5,
+                "thigh": 11.25,
+                "knee": 7.25,
+                "leg_opening": 6.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 34.5,
+                "front_rise": 11.25,
+                "back_rise": 14.75,
+                "thigh": 11.5,
+                "knee": 7.25,
+                "leg_opening": 6.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 35.5,
+                "front_rise": 11.25,
+                "back_rise": 15,
+                "thigh": 11.75,
+                "knee": 7.5,
+                "leg_opening": 7,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 36.5,
+                "front_rise": 11.5,
+                "back_rise": 15.25,
+                "thigh": 12,
+                "knee": 7.75,
+                "leg_opening": 7.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 38.5,
+                "front_rise": 11.5,
+                "back_rise": 15.75,
+                "thigh": 12.5,
+                "knee": 8,
+                "leg_opening": 7.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 40.5,
+                "front_rise": 11.75,
+                "back_rise": 15.75,
+                "thigh": 13,
+                "knee": 8.5,
+                "leg_opening": 8,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "40",
+              "waist_tag": 40,
+              "measurements": {
+                "waist": 42.5,
+                "front_rise": 12,
+                "back_rise": 16,
+                "thigh": 13.5,
+                "knee": 9,
+                "leg_opening": 8,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "42",
+              "waist_tag": 42,
+              "measurements": {
+                "waist": 44.5,
+                "front_rise": 12.25,
+                "back_rise": 16,
+                "thigh": 13.75,
+                "knee": 9.25,
+                "leg_opening": 8.25,
+                "inseam": 33.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stacked-guy-wax-coated-black-stretch",
+      "name": "Wax Coated Black Stretch",
+      "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-stacked-guy-wax-coated-black-stretch",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 12,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 98
+          },
+          {
+            "fibre": "elastane",
+            "percent": 2
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 188,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-stacked-guy-wax-coated-black-stretch",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/naked-famous-denim-stacked-guy-wax-coated-black-stretch",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 10,
+                "thigh": 10.25,
+                "knee": 6.25,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 10.25,
+                "thigh": 10.5,
+                "knee": 6.5,
+                "leg_opening": 6,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 10.25,
+                "thigh": 10.75,
+                "knee": 6.75,
+                "leg_opening": 6.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 10.5,
+                "thigh": 11,
+                "knee": 7,
+                "leg_opening": 6.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 34,
+                "front_rise": 10.5,
+                "thigh": 11.25,
+                "knee": 7.25,
+                "leg_opening": 6.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 35,
+                "front_rise": 10.75,
+                "thigh": 11.5,
+                "knee": 7.25,
+                "leg_opening": 6.75,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 36,
+                "front_rise": 10.75,
+                "thigh": 11.75,
+                "knee": 7.5,
+                "leg_opening": 7,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 11,
+                "thigh": 12,
+                "knee": 7.75,
+                "leg_opening": 7.25,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 39,
+                "front_rise": 11.25,
+                "thigh": 12.5,
+                "knee": 8,
+                "leg_opening": 7.5,
+                "inseam": 33.5
+              }
+            },
+            {
+              "label": "38",
+              "waist_tag": 38,
+              "measurements": {
+                "waist": 41,
+                "front_rise": 11.5,
+                "thigh": 13,
+                "knee": 8.5,
+                "leg_opening": 8,
+                "inseam": 33.5
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

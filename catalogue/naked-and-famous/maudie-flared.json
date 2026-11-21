@@ -1,0 +1,223 @@
+{
+  "id": "maudie-flared",
+  "brand": "naked-and-famous",
+  "name": "Maudie Flared",
+  "brand_label": "Clean flared",
+  "products": [
+    {
+      "id": "maudie-flared-archive-blue",
+      "name": "Archive Blue",
+      "url": "https://nakedandfamousdenim.com/products/maudie-flared-archive-blue-indigo",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 14,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 178,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/maudie-flared-archive-blue-indigo",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/maudie-flared-archive-blue-indigo",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 28.5,
+                "front_rise": 11.5,
+                "back_rise": 14.75,
+                "seat": 18,
+                "thigh": 11.25,
+                "knee": 9.75,
+                "leg_opening": 10.5,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 29.5,
+                "front_rise": 11.5,
+                "back_rise": 14.75,
+                "seat": 18.25,
+                "thigh": 11.75,
+                "knee": 9.75,
+                "leg_opening": 10.5,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 30.5,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "seat": 18.75,
+                "thigh": 12.25,
+                "knee": 10,
+                "leg_opening": 10.5,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 31.5,
+                "front_rise": 11.5,
+                "back_rise": 15,
+                "seat": 19.25,
+                "thigh": 12.25,
+                "knee": 10,
+                "leg_opening": 11.25,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 32.5,
+                "front_rise": 11.5,
+                "back_rise": 15.25,
+                "seat": 19.75,
+                "thigh": 12.5,
+                "knee": 10.25,
+                "leg_opening": 11.25,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 11.75,
+                "back_rise": 15.25,
+                "seat": 20.25,
+                "thigh": 12.75,
+                "knee": 10.5,
+                "leg_opening": 11.25,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 34.5,
+                "front_rise": 11.75,
+                "back_rise": 15.5,
+                "seat": 20.5,
+                "thigh": 13,
+                "knee": 10.5,
+                "leg_opening": 11.25,
+                "inseam": 31.75
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 35.5,
+                "front_rise": 12,
+                "back_rise": 15.75,
+                "seat": 21,
+                "thigh": 13.25,
+                "knee": 10.75,
+                "leg_opening": 11.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 36.5,
+                "front_rise": 12.25,
+                "back_rise": 15.75,
+                "seat": 21.5,
+                "thigh": 13.25,
+                "knee": 11,
+                "leg_opening": 11.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "33",
+              "waist_tag": 33,
+              "measurements": {
+                "waist": 37,
+                "front_rise": 12.5,
+                "back_rise": 15.75,
+                "seat": 22.25,
+                "thigh": 13.5,
+                "knee": 11.25,
+                "leg_opening": 12.25,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "34",
+              "waist_tag": 34,
+              "measurements": {
+                "waist": 38.5,
+                "front_rise": 12.5,
+                "back_rise": 16,
+                "seat": 23,
+                "thigh": 14,
+                "knee": 11.5,
+                "leg_opening": 12.25,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "36",
+              "waist_tag": 36,
+              "measurements": {
+                "waist": 40.5,
+                "front_rise": 12.5,
+                "back_rise": 16.25,
+                "seat": 24,
+                "thigh": 14.5,
+                "knee": 12,
+                "leg_opening": 12.25,
+                "inseam": 32.25
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

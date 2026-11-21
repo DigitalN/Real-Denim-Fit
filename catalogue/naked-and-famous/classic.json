@@ -1,0 +1,175 @@
+{
+  "id": "classic",
+  "brand": "naked-and-famous",
+  "name": "Classic",
+  "brand_label": "Timeless straight",
+  "products": [
+    {
+      "id": "classic-indigo-selvedge-duck-canvas",
+      "name": "Indigo Selvedge Duck Canvas",
+      "url": "https://nakedandfamousdenim.com/products/womens-classic-indigo-selvedge-duck-canvas",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 10,
+        "composition": [
+          {
+            "fibre": "cotton",
+            "percent": 100
+          }
+        ],
+        "sanforized": true
+      },
+      "sold": "raw",
+      "list_price": {
+        "amount": 160,
+        "currency": "USD",
+        "url": "https://nakedandfamousdenim.com/products/womens-classic-indigo-selvedge-duck-canvas",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": {
+        "kind": "percent",
+        "length": 2,
+        "width": 2,
+        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
+        "source": {
+          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
+          "seen": "2026-11-20"
+        }
+      },
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://nakedandfamousdenim.com/products/womens-classic-indigo-selvedge-duck-canvas",
+            "seen": "2026-11-20"
+          },
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {
+              "label": "23",
+              "waist_tag": 23,
+              "measurements": {
+                "waist": 24,
+                "front_rise": 11.75,
+                "thigh": 11,
+                "knee": 8.25,
+                "leg_opening": 7.75,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "24",
+              "waist_tag": 24,
+              "measurements": {
+                "waist": 25,
+                "front_rise": 12,
+                "thigh": 11.25,
+                "knee": 8.25,
+                "leg_opening": 7.75,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "25",
+              "waist_tag": 25,
+              "measurements": {
+                "waist": 26,
+                "front_rise": 12,
+                "thigh": 11.25,
+                "knee": 8.5,
+                "leg_opening": 8,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "26",
+              "waist_tag": 26,
+              "measurements": {
+                "waist": 27,
+                "front_rise": 12.25,
+                "thigh": 11.5,
+                "knee": 8.75,
+                "leg_opening": 8.25,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "27",
+              "waist_tag": 27,
+              "measurements": {
+                "waist": 28,
+                "front_rise": 12.5,
+                "thigh": 11.75,
+                "knee": 9,
+                "leg_opening": 8.25,
+                "inseam": 31.5
+              }
+            },
+            {
+              "label": "28",
+              "waist_tag": 28,
+              "measurements": {
+                "waist": 29,
+                "front_rise": 12.5,
+                "thigh": 12,
+                "knee": 9,
+                "leg_opening": 8.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "29",
+              "waist_tag": 29,
+              "measurements": {
+                "waist": 30,
+                "front_rise": 12.75,
+                "thigh": 12.25,
+                "knee": 9.25,
+                "leg_opening": 8.5,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "30",
+              "waist_tag": 30,
+              "measurements": {
+                "waist": 31,
+                "front_rise": 12.75,
+                "thigh": 12.75,
+                "knee": 9.25,
+                "leg_opening": 8.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "31",
+              "waist_tag": 31,
+              "measurements": {
+                "waist": 32,
+                "front_rise": 13,
+                "thigh": 12.75,
+                "knee": 9.75,
+                "leg_opening": 8.75,
+                "inseam": 32
+              }
+            },
+            {
+              "label": "32",
+              "waist_tag": 32,
+              "measurements": {
+                "waist": 33,
+                "front_rise": 13,
+                "thigh": 13,
+                "knee": 9.75,
+                "leg_opening": 8.75,
+                "inseam": 32
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
