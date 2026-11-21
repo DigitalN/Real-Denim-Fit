@@ -3,6 +3,7 @@
   "brand": "iron-heart",
   "name": "555",
   "brand_label": "Slim Cut",
+  "line": null,
   "products": [
     {
       "id": "555-sst",
@@ -164,40 +165,6 @@
             {"label": "40", "waist_tag": 40, "measurements": {"waist": 41.0, "front_rise": 12.5, "back_rise": 17.3, "thigh": 14.7, "knee": 9.6, "leg_opening": 9.2, "inseam": 37.0}},
             {"label": "42", "waist_tag": 42, "measurements": {"waist": 43.7, "front_rise": 12.6, "back_rise": 17.4, "thigh": 15.0, "knee": 9.7, "leg_opening": 9.3, "inseam": 37.0}},
             {"label": "44", "waist_tag": 44, "measurements": {"waist": 45.5, "front_rise": 12.7, "back_rise": 17.5, "thigh": 15.3, "knee": 9.9, "leg_opening": 9.4, "inseam": 37.0}}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "555d",
-      "name": "17oz Duck - Brown",
-      "url": "https://www.ironheart.co.uk/products/ih-555d",
-      "status": "current",
-      "status_seen": "2026-11-20",
-      "fabric": {"weight_oz": 17, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
-      "sold": "one-washed",
-      "list_price": {"amount": 258, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-555d", "seen": "2026-11-20"},
-      "shrinkage": null,
-      "charts": [
-        {
-          "state": "as-sold",
-          "source": {"url": "https://www.ironheart.co.uk/products/ih-555d", "seen": "2026-11-20"},
-          "unit": "in",
-          "from_image": false,
-          "sizes": [
-            {"label": "28", "waist_tag": 28, "measurements": {"waist": 29.4, "front_rise": 10.0, "back_rise": 15.0, "thigh": 10.7, "knee": 6.9, "leg_opening": 6.3, "inseam": 36.0}},
-            {"label": "29", "waist_tag": 29, "measurements": {"waist": 30.4, "front_rise": 10.2, "back_rise": 15.2, "thigh": 11.0, "knee": 7.2, "leg_opening": 6.5, "inseam": 36.0}},
-            {"label": "30", "waist_tag": 30, "measurements": {"waist": 31.6, "front_rise": 10.4, "back_rise": 15.4, "thigh": 11.4, "knee": 7.5, "leg_opening": 6.8, "inseam": 36.0}},
-            {"label": "31", "waist_tag": 31, "measurements": {"waist": 32.5, "front_rise": 10.7, "back_rise": 15.8, "thigh": 11.9, "knee": 7.5, "leg_opening": 7.0, "inseam": 36.5}},
-            {"label": "32", "waist_tag": 32, "measurements": {"waist": 33.9, "front_rise": 11.0, "back_rise": 15.9, "thigh": 12.4, "knee": 7.8, "leg_opening": 7.4, "inseam": 36.5}},
-            {"label": "33", "waist_tag": 33, "measurements": {"waist": 35.0, "front_rise": 11.3, "back_rise": 16.3, "thigh": 12.6, "knee": 8.0, "leg_opening": 7.5, "inseam": 36.5}},
-            {"label": "34", "waist_tag": 34, "measurements": {"waist": 35.9, "front_rise": 11.4, "back_rise": 16.4, "thigh": 12.8, "knee": 8.2, "leg_opening": 7.7, "inseam": 36.5}},
-            {"label": "35", "waist_tag": 35, "measurements": {"waist": 36.5, "front_rise": 11.7, "back_rise": 16.6, "thigh": 13.1, "knee": 8.4, "leg_opening": 8.0, "inseam": 36.5}},
-            {"label": "36", "waist_tag": 36, "measurements": {"waist": 37.5, "front_rise": 11.8, "back_rise": 16.8, "thigh": 13.4, "knee": 8.6, "leg_opening": 8.1, "inseam": 36.5}},
-            {"label": "38", "waist_tag": 38, "measurements": {"waist": 39.4, "front_rise": 12.2, "back_rise": 17.1, "thigh": 14.0, "knee": 9.0, "leg_opening": 8.4, "inseam": 36.5}},
-            {"label": "40", "waist_tag": 40, "measurements": {"waist": 41.4, "front_rise": 12.4, "back_rise": 17.3, "thigh": 14.2, "knee": 9.3, "leg_opening": 8.6, "inseam": 36.5}},
-            {"label": "42", "waist_tag": 42, "measurements": {"waist": 43.4, "front_rise": 12.5, "back_rise": 17.4, "thigh": 14.4, "knee": 9.4, "leg_opening": 8.7, "inseam": 36.5}},
-            {"label": "44", "waist_tag": 44, "measurements": {"waist": 45.3, "front_rise": 12.6, "back_rise": 17.5, "thigh": 14.7, "knee": 9.5, "leg_opening": 8.8, "inseam": 36.5}}
           ]
         }
       ]

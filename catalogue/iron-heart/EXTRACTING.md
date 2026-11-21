@@ -1,6 +1,6 @@
 # Iron Heart: extraction notes
 
-Last full run: 2026-11-20. 115 products in 6 cuts (555, 634, 666, 777, 888, 1955), 1,473 sizes.
+Last full run: 2026-11-20. 110 products in 6 cuts (555, 634, 666, 777, 888, 1955), 1,408 sizes. 21 of the products were sold out on that day.
 
 ## Where things are
 
@@ -18,8 +18,13 @@ Last full run: 2026-11-20. 115 products in 6 cuts (555, 634, 666, 777, 888, 1955
 
 - Product type `Bottoms` (a few are also tagged OUTLET), with SKUs starting `IH-555`, `IH-634`, `IH-666`, `IH-777`, `IH-888`, `IH-1955` or `IH-684`, plus two collaborations sold on the site: `bs69xsop420` (777 cut) and `ihxsjf-634` (634 cut).
 - The cut comes from the rendered page's cut heading. The brand calls its cuts "The 555 Cut", "The 634 Cut" and so on ([our core cuts](https://www.ironheart.co.uk/pages/our-core-cuts)), so cut ids are the bare numbers. SKUs with and without the `S` (for example `IH-634S` and `IH-634-XHS`) carry the same cut heading and bullets, so they're in the same cut file.
-- **Included even though they aren't denim:** the 17oz Duck Canvas jeans (`ih-555d`, `ih-634d`, `ih-666d`, `ih-777d`, `ih-888d`). The brand sells them as jeans in its core cuts. Drop them if the catalogue should be denim only.
-- **Left out on purpose:** chinos (717, 721, 727, 730, 731), work pants, painter's pants, cargo pants (including the denim cargo `ihdr-502bb`), overalls, double-knee engineer pants (822), shorts and sweatpants. Also left out: "Hall of Fades" and "RELOVED Clothing", which are worn, pre-owned pairs rather than products.
+- **Sold-out products are included** with `"status": "current"`. `products.json` still lists them, with every variant `"available": false`; the catalogue never records stock.
+- **`line` is `null` on every cut:** the site doesn't file its jeans as men's, women's or unisex. The menu goes straight from BOTTOMS to the cuts, and `/collections.json` has no gendered collections.
+- **Left out because they aren't denim:** the 17oz Duck Canvas jeans (`ih-555d`, `ih-634d`, `ih-666d`, `ih-777d`, `ih-888d`). Their fabric heading reads "17oz Japanese Duck Canvas".
+- **Left out because they aren't jeans:**
+  - chinos (717, 721, 727, 730, 731), work pants, painter's pants (including the 12oz Wabash 814) and cargo pants (including the denim cargo `ihdr-502bb`)
+  - overalls (805, 812, 819), double-knee engineer pants (822), shorts and sweatpants
+  - "Hall of Fades" and "RELOVED Clothing", which are worn, pre-owned pairs rather than products
 
 ## Fabric Focus → `sanforized`, `sold`, `shrinkage`
 
@@ -52,7 +57,7 @@ None of the charts says which state it shows, so all are `"as-sold"`. The UHR fa
 
 ## Skipped (no chart)
 
-All 10 are tagged `future-release` and have no size chart yet:
+All 10 are tagged `future-release` and have no size chart yet (pages without a chart stay out):
 - `ih-634s-19lod`, `ih-666s-19lod`, `ih-777s-19lod`, `ih-888s-19lod` (19oz LHT overdyed)
 - `ih-684s-slb`, `ih-684s-18`, `ih-684s-142bb` (the whole 684 Relaxed Straight cut)
 - `ih-1955s-sb`, `ih-1955s-142bb`, `ih-1955s-18`
