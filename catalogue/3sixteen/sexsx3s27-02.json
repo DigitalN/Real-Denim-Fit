@@ -1,0 +1,39 @@
+{
+  "id": "sexsx3s27-02",
+  "brand": "3sixteen",
+  "name": "Self Edge x Samurai x 3sixteen SEXSX3s27-02",
+  "brand_label": "Straight Tapered",
+  "products": [
+    {
+      "id": "sexsx3s27-02",
+      "name": "Self Edge x Samurai x 3sixteen, 15oz Unsanforized Selvedge",
+      "url": "https://www.3sixteen.com/products/self-edge-x-samurai-x-3sixteen-sexsx3s27-02-jeans-straight-tapered",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 15, "composition": null, "sanforized": false},
+      "sold": "one-washed",
+      "list_price": {"amount": 345, "currency": "USD", "url": "https://www.3sixteen.com/products/self-edge-x-samurai-x-3sixteen-sexsx3s27-02-jeans-straight-tapered", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/self-edge-x-samurai-x-3sixteen-sexsx3s27-02-jeans-straight-tapered", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 28, "front_rise": 11, "back_rise": 14.5, "inseam": 34, "thigh": 11.5, "knee": 7.75, "leg_opening": 5.75}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 29, "front_rise": 11.25, "back_rise": 14.75, "inseam": 34, "thigh": 11.75, "knee": 8, "leg_opening": 6}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 30, "front_rise": 11.5, "back_rise": 15, "inseam": 34, "thigh": 12, "knee": 8.25, "leg_opening": 6}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 31, "front_rise": 11.75, "back_rise": 15.5, "inseam": 34, "thigh": 12.5, "knee": 8.5, "leg_opening": 6.25}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 32, "front_rise": 12, "back_rise": 15.75, "inseam": 34, "thigh": 12.75, "knee": 8.75, "leg_opening": 6.25}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 33, "front_rise": 12.25, "back_rise": 16, "inseam": 34, "thigh": 13, "knee": 9, "leg_opening": 6.5}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 34.5, "front_rise": 12.5, "back_rise": 16.5, "inseam": 34, "thigh": 13.5, "knee": 9.25, "leg_opening": 7}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 36.5, "front_rise": 13.25, "back_rise": 16.5, "inseam": 34, "thigh": 13.5, "knee": 9.25, "leg_opening": 7.25}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 38, "front_rise": 13, "back_rise": 17.25, "inseam": 34, "thigh": 14.25, "knee": 10, "leg_opening": 7.5}},
+            {"label": "44", "waist_tag": 44, "measurements": {"waist": 40, "front_rise": 13.25, "back_rise": 17.75, "inseam": 34, "thigh": 13.5, "knee": 10.5, "leg_opening": 8}}
+          ]
+        }
+      ]
+    }
+  ]
+}

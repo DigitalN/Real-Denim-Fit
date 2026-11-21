@@ -1,0 +1,395 @@
+{
+  "id": "ct",
+  "brand": "3sixteen",
+  "name": "CT",
+  "brand_label": "Classic Tapered",
+  "products": [
+    {
+      "id": "ct-100x",
+      "name": "100x Indigo Selvedge",
+      "url": "https://www.3sixteen.com/products/ct-100x-classic-tapered-indigo-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
+      "sold": "raw",
+      "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-100x-classic-tapered-indigo-selvedge", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-100x-classic-tapered-indigo-selvedge", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 29, "front_rise": 10.75, "back_rise": 14.5, "inseam": 33, "thigh": 9.75, "knee": 8, "leg_opening": 6.5}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 30, "front_rise": 11, "back_rise": 14.5, "inseam": 33, "thigh": 10.25, "knee": 8, "leg_opening": 7}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 31, "front_rise": 11, "back_rise": 15, "inseam": 33, "thigh": 10.75, "knee": 8.25, "leg_opening": 7}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 31.5, "front_rise": 11.25, "back_rise": 15.5, "inseam": 33, "thigh": 11, "knee": 8.25, "leg_opening": 7.25}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 32.5, "front_rise": 11.25, "back_rise": 15.5, "inseam": 35, "thigh": 11, "knee": 8.5, "leg_opening": 7.25}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33.5, "front_rise": 11.25, "back_rise": 15.5, "inseam": 35, "thigh": 11.75, "knee": 9.75, "leg_opening": 7.5}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 35, "front_rise": 11.75, "back_rise": 15.75, "inseam": 35.5, "thigh": 12, "knee": 9, "leg_opening": 7.5}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 36, "front_rise": 11.75, "back_rise": 16, "inseam": 35.5, "thigh": 12.25, "knee": 9.25, "leg_opening": 7.5}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 37, "front_rise": 12, "back_rise": 16, "inseam": 35.5, "thigh": 12.5, "knee": 9.5, "leg_opening": 7.75}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38.5, "front_rise": 12.25, "back_rise": 16.25, "inseam": 35.5, "thigh": 13, "knee": 9.5, "leg_opening": 8}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40.5, "front_rise": 12.25, "back_rise": 16.75, "inseam": 35.5, "thigh": 13.5, "knee": 9.5, "leg_opening": 8}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 43.5, "front_rise": 12.75, "back_rise": 16.75, "inseam": 35.75, "thigh": 14.25, "knee": 10, "leg_opening": 8.5}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-100xk",
+      "name": "100xk Rinsed Indigo Kibata",
+      "url": "https://www.3sixteen.com/products/ct-100xk-classic-tapered-rinsed-indigo-kibata",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": false},
+      "sold": "one-washed",
+      "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-100xk-classic-tapered-rinsed-indigo-kibata", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-100xk-classic-tapered-rinsed-indigo-kibata", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28, "front_rise": 10.5, "back_rise": 13.75, "inseam": 34, "thigh": 10.25, "knee": 7.5, "leg_opening": 6.75}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29, "front_rise": 10.75, "back_rise": 14.5, "inseam": 34, "thigh": 10.25, "knee": 7.75, "leg_opening": 6.75}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 30, "front_rise": 10.75, "back_rise": 15, "inseam": 34, "thigh": 10.75, "knee": 7.75, "leg_opening": 7}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 31.5, "front_rise": 11, "back_rise": 15, "inseam": 34, "thigh": 11, "knee": 8.25, "leg_opening": 7}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 32, "front_rise": 11, "back_rise": 15, "inseam": 34, "thigh": 11.25, "knee": 8.25, "leg_opening": 7}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33, "front_rise": 11.5, "back_rise": 15.25, "inseam": 34.5, "thigh": 11.5, "knee": 8.5, "leg_opening": 7.25}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34, "front_rise": 11.5, "back_rise": 15.5, "inseam": 34.5, "thigh": 12.25, "knee": 8.75, "leg_opening": 7.5}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 35, "front_rise": 11.5, "back_rise": 15.5, "inseam": 34.5, "thigh": 12.25, "knee": 8.5, "leg_opening": 7.75}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 36, "front_rise": 11.5, "back_rise": 15.5, "inseam": 34.5, "thigh": 12.5, "knee": 8.5, "leg_opening": 7.75}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38, "front_rise": 12, "back_rise": 15.5, "inseam": 34.5, "thigh": 13, "knee": 9, "leg_opening": 8}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40, "front_rise": 12, "back_rise": 15.5, "inseam": 34.5, "thigh": 13, "knee": 9, "leg_opening": 8}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 42, "front_rise": 12.25, "back_rise": 16.25, "inseam": 34.25, "thigh": 14.25, "knee": 9.75, "leg_opening": 8.25}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-101x",
+      "name": "101x Lightweight Selvedge",
+      "url": "https://www.3sixteen.com/products/ct-101x-classic-tapered-lightweight-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 12, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
+      "sold": "one-washed",
+      "list_price": {"amount": 250, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-101x-classic-tapered-lightweight-selvedge", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-101x-classic-tapered-lightweight-selvedge", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28, "front_rise": 10.75, "back_rise": 14.25, "inseam": 33.5, "thigh": 10.75, "knee": 8.25, "leg_opening": 6.75}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29, "front_rise": 11, "back_rise": 14.75, "inseam": 33.5, "thigh": 10.75, "knee": 8.25, "leg_opening": 7}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 30, "front_rise": 11, "back_rise": 15, "inseam": 33.75, "thigh": 11.25, "knee": 8.5, "leg_opening": 7.5}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 31.5, "front_rise": 11.5, "back_rise": 15, "inseam": 33.75, "thigh": 11.5, "knee": 8.5, "leg_opening": 7.5}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 32.5, "front_rise": 11.75, "back_rise": 15.25, "inseam": 33.75, "thigh": 11.75, "knee": 8.75, "leg_opening": 7.5}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 34, "front_rise": 11.75, "back_rise": 15.75, "inseam": 34, "thigh": 12.5, "knee": 9, "leg_opening": 7.5}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34.5, "front_rise": 11.75, "back_rise": 15.75, "inseam": 34, "thigh": 12.5, "knee": 9, "leg_opening": 7.75}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 35, "front_rise": 11.75, "back_rise": 15.5, "inseam": 34, "thigh": 13, "knee": 9.25, "leg_opening": 7.75}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 36.5, "front_rise": 12, "back_rise": 16, "inseam": 34, "thigh": 13, "knee": 9.25, "leg_opening": 8}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38, "front_rise": 12.25, "back_rise": 16, "inseam": 34, "thigh": 13.75, "knee": 9.75, "leg_opening": 8.25}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40, "front_rise": 12.5, "back_rise": 16, "inseam": 34, "thigh": 14.25, "knee": 10, "leg_opening": 8.5}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-101xs",
+      "name": "101xs Stonewashed Indigo Selvedge",
+      "url": "https://www.3sixteen.com/products/ct-101xs-classic-tapered-stonewashed-indigo-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
+      "sold": "one-washed",
+      "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-101xs-classic-tapered-stonewashed-indigo-selvedge", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-101xs-classic-tapered-stonewashed-indigo-selvedge", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28.5, "front_rise": 11, "back_rise": 15.5, "inseam": 31, "thigh": 11, "knee": 8, "leg_opening": 6.5}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29, "front_rise": 11, "back_rise": 15.5, "inseam": 31, "thigh": 11.25, "knee": 8, "leg_opening": 6.75}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 30, "front_rise": 11.25, "back_rise": 15.75, "inseam": 31, "thigh": 11.5, "knee": 8.25, "leg_opening": 7}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 31, "front_rise": 11.25, "back_rise": 16, "inseam": 31, "thigh": 11.75, "knee": 8.5, "leg_opening": 7.25}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 32, "front_rise": 11.5, "back_rise": 16, "inseam": 31, "thigh": 12, "knee": 8.5, "leg_opening": 7.25}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33.5, "front_rise": 11.5, "back_rise": 16, "inseam": 31, "thigh": 12.25, "knee": 8.75, "leg_opening": 7.5}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34.5, "front_rise": 11.75, "back_rise": 16, "inseam": 33, "thigh": 12.75, "knee": 8.75, "leg_opening": 7.75}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 36, "front_rise": 12, "back_rise": 16.25, "inseam": 33.5, "thigh": 13, "knee": 9.25, "leg_opening": 7.75}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 37, "front_rise": 12, "back_rise": 17, "inseam": 33.5, "thigh": 13, "knee": 9.25, "leg_opening": 8}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38.5, "front_rise": 12.5, "back_rise": 17, "inseam": 33.5, "thigh": 13.5, "knee": 9.5, "leg_opening": 8}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40.5, "front_rise": 12.5, "back_rise": 17.25, "inseam": 34.5, "thigh": 14.75, "knee": 9.75, "leg_opening": 8.25}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-102xn",
+      "name": "102xn Natural Indigo Selvedge",
+      "url": "https://www.3sixteen.com/products/ct-102xn-classic-tapered-natural-indigo-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 15.4, "composition": null, "sanforized": true},
+      "sold": "raw",
+      "list_price": {"amount": 485, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-102xn-classic-tapered-natural-indigo-selvedge", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-102xn-classic-tapered-natural-indigo-selvedge", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 29, "front_rise": 10.75, "back_rise": 14.75, "inseam": 35.5, "thigh": 10.5, "knee": 7.75, "leg_opening": 6.75}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 30, "front_rise": 10.75, "back_rise": 14.75, "inseam": 35.5, "thigh": 10.5, "knee": 7.75, "leg_opening": 7}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 31, "front_rise": 11, "back_rise": 15, "inseam": 35.75, "thigh": 10.75, "knee": 8, "leg_opening": 7}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 32, "front_rise": 11, "back_rise": 15.25, "inseam": 35.75, "thigh": 11, "knee": 8, "leg_opening": 7.25}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 33, "front_rise": 11.25, "back_rise": 15.5, "inseam": 36, "thigh": 11.5, "knee": 8.25, "leg_opening": 7.25}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 34, "front_rise": 11.25, "back_rise": 15.5, "inseam": 36, "thigh": 11.75, "knee": 8.5, "leg_opening": 7.25}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 35, "front_rise": 11.5, "back_rise": 15.5, "inseam": 36, "thigh": 12.25, "knee": 8.5, "leg_opening": 7.75}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 36, "front_rise": 11.5, "back_rise": 15.75, "inseam": 36, "thigh": 12.5, "knee": 8.75, "leg_opening": 8}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 37, "front_rise": 12, "back_rise": 16, "inseam": 36, "thigh": 12.75, "knee": 9, "leg_opening": 8}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 39, "front_rise": 12, "back_rise": 16.25, "inseam": 36, "thigh": 13.5, "knee": 9.25, "leg_opening": 8}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 41, "front_rise": 12, "back_rise": 16.5, "inseam": 36, "thigh": 13.75, "knee": 9.25, "leg_opening": 8.25}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-120x",
+      "name": "120x Shadow Selvedge",
+      "url": "https://www.3sixteen.com/products/ct-120x-classic-tapered-shadow-selvedge-1",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
+      "sold": "raw",
+      "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-120x-classic-tapered-shadow-selvedge-1", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-120x-classic-tapered-shadow-selvedge-1", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28, "front_rise": 11, "back_rise": 15, "inseam": 36.5, "thigh": 10.75, "knee": 8.25, "leg_opening": 7}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29, "front_rise": 11.25, "back_rise": 15.375, "inseam": 36.5, "thigh": 11, "knee": 8.5, "leg_opening": 7.25}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 30, "front_rise": 11.25, "back_rise": 15.125, "inseam": 36.5, "thigh": 11.25, "knee": 8.5, "leg_opening": 7.25}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 31, "front_rise": 11.5, "back_rise": 15.5, "inseam": 37, "thigh": 11.5, "knee": 8.75, "leg_opening": 7.375}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 32, "front_rise": 11.5, "back_rise": 15.5, "inseam": 37, "thigh": 11.75, "knee": 8.75, "leg_opening": 7.5}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33, "front_rise": 11.5, "back_rise": 15.75, "inseam": 37, "thigh": 12, "knee": 9, "leg_opening": 7.625}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34, "front_rise": 11.5, "back_rise": 16, "inseam": 37, "thigh": 12.25, "knee": 9.25, "leg_opening": 7.75}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 35, "front_rise": 11.5, "back_rise": 16.25, "inseam": 37, "thigh": 13, "knee": 9.5, "leg_opening": 8}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 36, "front_rise": 11.5, "back_rise": 16.75, "inseam": 37, "thigh": 13.5, "knee": 9.5, "leg_opening": 8.25}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38, "front_rise": 12, "back_rise": 17, "inseam": 37, "thigh": 14, "knee": 10, "leg_opening": 8.5}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40, "front_rise": 12.5, "back_rise": 17.25, "inseam": 37, "thigh": 14.25, "knee": 10.25, "leg_opening": 8.5}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-120xk",
+      "name": "120xk Rinsed Shadow Kibata",
+      "url": "https://www.3sixteen.com/products/ct-120xk-classic-tapered-rinsed-shadow-kibata",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 14, "composition": null, "sanforized": false},
+      "sold": "one-washed",
+      "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-120xk-classic-tapered-rinsed-shadow-kibata", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-120xk-classic-tapered-rinsed-shadow-kibata", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28, "front_rise": 10.5, "back_rise": 15, "inseam": 31, "thigh": 10, "knee": 7.5, "leg_opening": 6}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 28.5, "front_rise": 10.75, "back_rise": 15, "inseam": 31, "thigh": 10, "knee": 7.75, "leg_opening": 6.75}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 29, "front_rise": 10.75, "back_rise": 15.25, "inseam": 31, "thigh": 11, "knee": 8, "leg_opening": 6.75}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 30, "front_rise": 11, "back_rise": 15, "inseam": 31, "thigh": 11.25, "knee": 8, "leg_opening": 7}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 32, "front_rise": 11, "back_rise": 15.5, "inseam": 31, "thigh": 11.25, "knee": 8, "leg_opening": 7}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33, "front_rise": 11, "back_rise": 15.5, "inseam": 31, "thigh": 11.5, "knee": 8.25, "leg_opening": 7}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34, "front_rise": 11, "back_rise": 15.5, "inseam": 32, "thigh": 11.5, "knee": 8.5, "leg_opening": 7}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 35, "front_rise": 11, "back_rise": 15.75, "inseam": 32, "thigh": 12.5, "knee": 8.5, "leg_opening": 7.5}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 36, "front_rise": 11.5, "back_rise": 16, "inseam": 33, "thigh": 12.25, "knee": 8.5, "leg_opening": 7.5}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 37.75, "front_rise": 12, "back_rise": 16.5, "inseam": 33, "thigh": 12.5, "knee": 8.5, "leg_opening": 7.5}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40, "front_rise": 12, "back_rise": 16.5, "inseam": 33, "thigh": 13, "knee": 8.75, "leg_opening": 8}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-220x",
+      "name": "220x Double Black",
+      "url": "https://www.3sixteen.com/products/ct-220x-classic-tapered-double-black",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 14.5, "composition": null, "sanforized": true},
+      "sold": "raw",
+      "list_price": {"amount": 270, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-220x-classic-tapered-double-black", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-220x-classic-tapered-double-black", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 29, "front_rise": 11, "back_rise": 14.75, "inseam": 35.5, "thigh": 10, "knee": 7.75, "leg_opening": 6.75}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 30, "front_rise": 11.25, "back_rise": 14.75, "inseam": 35.5, "thigh": 10.75, "knee": 7.75, "leg_opening": 7}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 31, "front_rise": 11.25, "back_rise": 14.75, "inseam": 35.5, "thigh": 11, "knee": 8, "leg_opening": 7}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 32, "front_rise": 11.75, "back_rise": 15, "inseam": 35.5, "thigh": 11, "knee": 8, "leg_opening": 7}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 33, "front_rise": 11.75, "back_rise": 15.25, "inseam": 35.5, "thigh": 11.25, "knee": 8.25, "leg_opening": 7.25}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 34, "front_rise": 11.5, "back_rise": 15.75, "inseam": 36, "thigh": 11.5, "knee": 8.75, "leg_opening": 7.25}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 35, "front_rise": 11.75, "back_rise": 15.5, "inseam": 36, "thigh": 12.75, "knee": 8.75, "leg_opening": 7.25}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 36, "front_rise": 12, "back_rise": 15.75, "inseam": 36, "thigh": 12.75, "knee": 9, "leg_opening": 7.5}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 37, "front_rise": 12, "back_rise": 16, "inseam": 36, "thigh": 13, "knee": 9, "leg_opening": 8}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 39, "front_rise": 12.25, "back_rise": 16.25, "inseam": 36, "thigh": 13.25, "knee": 9.25, "leg_opening": 7.5}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 41, "front_rise": 12.5, "back_rise": 16.5, "inseam": 36, "thigh": 13.5, "knee": 9.25, "leg_opening": 8.25}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-220xk",
+      "name": "220xk Rinsed Black Kibata",
+      "url": "https://www.3sixteen.com/products/ct-220xk-classic-tapered-rinsed-black-kibata",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 13.25, "composition": null, "sanforized": false},
+      "sold": "one-washed",
+      "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-220xk-classic-tapered-rinsed-black-kibata", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-220xk-classic-tapered-rinsed-black-kibata", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28, "front_rise": 11, "back_rise": 15, "inseam": 35, "thigh": 10, "knee": 7.75, "leg_opening": 6}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29, "front_rise": 11.25, "back_rise": 15.25, "inseam": 35, "thigh": 10.5, "knee": 7.75, "leg_opening": 6.5}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 30.5, "front_rise": 11.25, "back_rise": 15.25, "inseam": 35, "thigh": 11, "knee": 8, "leg_opening": 6.5}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 31.5, "front_rise": 11.25, "back_rise": 15.75, "inseam": 35, "thigh": 11, "knee": 8, "leg_opening": 6.75}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 32, "front_rise": 11.5, "back_rise": 15.75, "inseam": 35, "thigh": 11, "knee": 8.25, "leg_opening": 7}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33.5, "front_rise": 11.5, "back_rise": 16, "inseam": 35, "thigh": 11, "knee": 8.25, "leg_opening": 7}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34, "front_rise": 11.5, "back_rise": 16, "inseam": 35, "thigh": 12, "knee": 8.5, "leg_opening": 7}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 35, "front_rise": 11.75, "back_rise": 16, "inseam": 35, "thigh": 12.25, "knee": 8.5, "leg_opening": 7.25}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 36, "front_rise": 11.75, "back_rise": 16.25, "inseam": 35, "thigh": 12.25, "knee": 9, "leg_opening": 7.25}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38, "front_rise": 12, "back_rise": 16.5, "inseam": 35, "thigh": 13.25, "knee": 9.25, "leg_opening": 7.5}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40, "front_rise": 12, "back_rise": 16.75, "inseam": 35, "thigh": 13, "knee": 9, "leg_opening": 7.5}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 42, "front_rise": 12.5, "back_rise": 16.75, "inseam": 35, "thigh": 13.5, "knee": 9.75, "leg_opening": 8}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-222x",
+      "name": "222x Lightweight Double Black",
+      "url": "https://www.3sixteen.com/products/ct-222x-classic-tapered-lightweight-double-black",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
+      "sold": "one-washed",
+      "list_price": {"amount": 250, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-222x-classic-tapered-lightweight-double-black", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-222x-classic-tapered-lightweight-double-black", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28, "front_rise": 10.75, "back_rise": 14.25, "inseam": 33.5, "thigh": 10.75, "knee": 8, "leg_opening": 6.5}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29, "front_rise": 11, "back_rise": 14.75, "inseam": 33.5, "thigh": 10.5, "knee": 8, "leg_opening": 6.5}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 30, "front_rise": 11, "back_rise": 14.5, "inseam": 33.5, "thigh": 10.75, "knee": 8.25, "leg_opening": 6.75}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 32, "front_rise": 11.5, "back_rise": 15.25, "inseam": 33.5, "thigh": 11, "knee": 8.5, "leg_opening": 7}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 32.5, "front_rise": 11.5, "back_rise": 15.25, "inseam": 34, "thigh": 11, "knee": 8.5, "leg_opening": 7}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33.5, "front_rise": 11.5, "back_rise": 15.5, "inseam": 34, "thigh": 11.25, "knee": 8.75, "leg_opening": 7}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34.5, "front_rise": 11.75, "back_rise": 15.5, "inseam": 34, "thigh": 11.5, "knee": 8.5, "leg_opening": 7}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 35, "front_rise": 11.75, "back_rise": 15.75, "inseam": 34, "thigh": 11.75, "knee": 9, "leg_opening": 7.5}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 36, "front_rise": 11.75, "back_rise": 16, "inseam": 34.25, "thigh": 12.25, "knee": 9, "leg_opening": 7.5}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38.5, "front_rise": 12.5, "back_rise": 15.75, "inseam": 34, "thigh": 13, "knee": 9, "leg_opening": 7.75}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40, "front_rise": 12.5, "back_rise": 16, "inseam": 34, "thigh": 14.25, "knee": 10, "leg_opening": 8.5}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-222xs",
+      "name": "222xs Stonewashed Double Black",
+      "url": "https://www.3sixteen.com/products/ct-222xs-classic-tapered-stonewashed-double-black",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 12, "composition": null, "sanforized": true},
+      "sold": "one-washed",
+      "list_price": {"amount": 290, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-222xs-classic-tapered-stonewashed-double-black", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-222xs-classic-tapered-stonewashed-double-black", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28, "front_rise": 11, "back_rise": 15.25, "inseam": 31, "thigh": 10.75, "knee": 7.75, "leg_opening": 6.5}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29.5, "front_rise": 11, "back_rise": 15.25, "inseam": 31, "thigh": 11.25, "knee": 8, "leg_opening": 6.75}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 30, "front_rise": 11.25, "back_rise": 15.5, "inseam": 31, "thigh": 11.75, "knee": 8.25, "leg_opening": 7}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 31, "front_rise": 11.5, "back_rise": 15.75, "inseam": 31.5, "thigh": 11.75, "knee": 8.5, "leg_opening": 7}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 32, "front_rise": 11.5, "back_rise": 16, "inseam": 31.5, "thigh": 12, "knee": 8.5, "leg_opening": 7.25}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33, "front_rise": 11.5, "back_rise": 16, "inseam": 31.5, "thigh": 12.25, "knee": 8.5, "leg_opening": 7.25}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34, "front_rise": 11.75, "back_rise": 16.5, "inseam": 33.25, "thigh": 12.5, "knee": 8.75, "leg_opening": 7.25}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 35.5, "front_rise": 11.75, "back_rise": 16.75, "inseam": 33.5, "thigh": 13, "knee": 9, "leg_opening": 7.5}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 36.5, "front_rise": 12, "back_rise": 16.75, "inseam": 33.5, "thigh": 13.5, "knee": 9.25, "leg_opening": 7.75}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38, "front_rise": 12.5, "back_rise": 17, "inseam": 33.5, "thigh": 14, "knee": 9.5, "leg_opening": 8}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40, "front_rise": 12.5, "back_rise": 17, "inseam": 33.5, "thigh": 14.5, "knee": 9.75, "leg_opening": 8.25}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct-bf1x",
+      "name": "BF1x Burkina Faso Selvedge",
+      "url": "https://www.3sixteen.com/products/ct-bf1x-classic-tapered-burkina-faso-selvedge",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 13.4, "composition": null, "sanforized": true},
+      "sold": "one-washed",
+      "list_price": {"amount": 250, "currency": "USD", "url": "https://www.3sixteen.com/products/ct-bf1x-classic-tapered-burkina-faso-selvedge", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/ct-bf1x-classic-tapered-burkina-faso-selvedge", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 30, "front_rise": 11, "back_rise": 15.5, "inseam": 36.5, "thigh": 10.5, "knee": 8, "leg_opening": 7}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 31, "front_rise": 11.25, "back_rise": 15.75, "inseam": 37, "thigh": 11.25, "knee": 8.25, "leg_opening": 7}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 32, "front_rise": 11.5, "back_rise": 16, "inseam": 37, "thigh": 11.25, "knee": 8.25, "leg_opening": 7.25}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 33, "front_rise": 11.5, "back_rise": 16.5, "inseam": 37, "thigh": 11.75, "knee": 8.5, "leg_opening": 7.25}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 34, "front_rise": 11.75, "back_rise": 16.5, "inseam": 37, "thigh": 12, "knee": 8.5, "leg_opening": 7.5}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 35, "front_rise": 12, "back_rise": 16.5, "inseam": 37, "thigh": 12.25, "knee": 8.75, "leg_opening": 7.75}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 36, "front_rise": 12, "back_rise": 16.5, "inseam": 37, "thigh": 12.5, "knee": 9, "leg_opening": 7.75}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 37, "front_rise": 12.25, "back_rise": 16.75, "inseam": 37, "thigh": 12.75, "knee": 9, "leg_opening": 7.75}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 38, "front_rise": 12.5, "back_rise": 17.25, "inseam": 37, "thigh": 13, "knee": 9.25, "leg_opening": 8}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 39.5, "front_rise": 12.5, "back_rise": 17.25, "inseam": 37, "thigh": 13.75, "knee": 9.5, "leg_opening": 8}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 41, "front_rise": 12.5, "back_rise": 17.25, "inseam": 37, "thigh": 14, "knee": 9.5, "leg_opening": 8.25}}
+          ]
+        }
+      ]
+    }
+  ]
+}
