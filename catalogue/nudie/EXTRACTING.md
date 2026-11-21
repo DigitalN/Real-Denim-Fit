@@ -85,7 +85,12 @@ Product pages are server-rendered Next.js. Plain `curl` with a browser user agen
     - Lean Dean Everblue, Rad Rufus Everblue, Rad Rufus Everlion
   - The same Everblue fabric appears on both sides of that line. Check it next run.
 - **Dry, but no measurements (left out):** Gritty Jackson Dry Deadstock 22, Tuff Tony Dry Deadstock 23, Rad Rufus Deep Black and Regular Alf Dry Black Selvage. Virtusize returns `validProduct: false` for them, so no chart is published.
-- **Kept with `sold: "one-washed"`:** Gritty Jackson Dry Everblack. Nudie names it Dry, but "these jeans have been rinsed".
+- **Finish:** `raw` for 78 products. `rinsed` (with `sold: "one-washed"`) for 3 that Nudie names Dry but whose pages say they were rinsed:
+  - Gritty Jackson Dry Everblack and Steady Eddie II Dry Everblack ("these jeans have been rinsed")
+  - Gritty Jackson Dry Onyx Selvage ("We have treated these jeans to a rinse")
+- **Doubtful finish calls:**
+  - **Tight Terry Rinse Twill stays `raw`.** "Rinse" is only in the name, and the page says "Jeans made in dry, power stretch fabric" and "not to wash them for 6 months".
+  - **Lean Dean Dry 16 Dips** says "Unlike other stretch denim, these are not rinsed". That hints Nudie's other stretch dry denims may be rinsed, but none of their pages says so, so they're `raw`.
 - **Not dry, so not in:** "One Wash" pairs (they've been rinsed, so they're like other brands' one-washed raw denim), including Rad Rufus Dusk Selvage One Wash, which is flagged Dry. Also every washed product.
 - **Not jeans:** jackets, shirts (Jonas Dry Black Selvage is a shirt), shorts, skirts, dungarees, kids' Tiny Tony / Tiny Turner, and the Tuff Tony pants.
 - **Sold out:** the listings can hide pages, and the sitemap is the fullest list of product pages found, so always compare against it. Product pages list every size, sold-out ones included (`stock.available: false`). Everything is recorded as `current`.
