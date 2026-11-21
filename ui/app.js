@@ -13,6 +13,18 @@ const invoke = window.__TAURI__
     };
 
 const $app = document.getElementById("app");
+
+// The app's webview ignores target="_blank" links, so every https link opens
+// in the default browser through the opener plugin (https only, per the
+// app's capabilities). The browser preview keeps ordinary links.
+if (window.__TAURI__) {
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest && e.target.closest('a[href^="https://"]');
+    if (!link) return;
+    e.preventDefault();
+    invoke("plugin:opener|open_url", { url: link.href }).catch(showError);
+  });
+}
 let S = null; // everything the user has entered
 let CAT = null; // brands and products, without charts
 const PRODUCTS = new Map();

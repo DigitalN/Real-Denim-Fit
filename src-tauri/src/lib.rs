@@ -231,6 +231,9 @@ pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_updater::Builder::new().build())
         .plugin(tauri_plugin_process::init())
+        // Opens brand pages and sources in the default browser: the webview
+        // ignores target="_blank" links.
+        .plugin(tauri_plugin_opener::init())
         .manage(data())
         .manage(updates::Pending::default())
         .invoke_handler(tauri::generate_handler![

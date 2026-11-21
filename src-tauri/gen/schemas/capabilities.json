@@ -1,1 +1,1 @@
-{"default":{"identifier":"default","description":"The main window. The screens talk only to the app's own commands; updates are checked and installed from Rust.","local":true,"windows":["main"],"permissions":["core:default"]}}
+{"default":{"identifier":"default","description":"The main window. The screens talk only to the app's own commands, and may open https links in the default browser; updates are checked and installed from Rust.","local":true,"windows":["main"],"permissions":["core:default",{"identifier":"opener:allow-open-url","allow":[{"url":"https://*"}]}]}}
