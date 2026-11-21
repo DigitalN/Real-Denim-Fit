@@ -127,7 +127,8 @@ pub struct Results {
     pub rows: Vec<CutRow>,
     /// Rows hidden because their leg shape or rise isn't the one you chose.
     pub hidden_by_shape_or_rise: usize,
-    /// No reference pair: matched from the body and typical ease.
+    /// No reference pair, or one with no readings: matched from the body
+    /// and typical ease.
     pub from_body_only: bool,
 }
 
@@ -483,6 +484,6 @@ pub fn find_matches_prepared(
             chosen
         },
         hidden_by_shape_or_rise: hidden,
-        from_body_only: pair.is_none(),
+        from_body_only: pair.as_ref().is_none_or(|p| p.is_empty()),
     }
 }

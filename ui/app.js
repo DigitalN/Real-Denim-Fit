@@ -495,10 +495,12 @@ function renderFit() {
 
 // ------------------------------------------------------------- results ----
 
-function compareHint() {
-  return activePair()
-    ? "Matched to this pair. Your body still rules out anything too tight."
-    : "Matched from your body and typical room for your fit";
+/** What the results were matched on: a pair only counts when it has readings. */
+function compareHint(results) {
+  if (!results) return "";
+  return results.from_body_only
+    ? "Matched from your body and typical room for your fit"
+    : "Matched to this pair. Your body still rules out anything too tight.";
 }
 
 function filtersForRust() {
@@ -576,7 +578,7 @@ async function renderResults() {
         <label class="checkline wrap"><input type="radio" name="compare" value="" ${S.activePairId ? "" : "checked"}/> <span>My body</span></label>
         ${pairs.map((p) => `<label class="checkline wrap"><input type="radio" name="compare" value="${esc(p.id)}" ${p.id === S.activePairId ? "checked" : ""}/> <span>${esc(p.name)}</span></label>`).join("")}
       </div>
-      <p class="hint" id="compare-hint">${compareHint()}</p>
+      <p class="hint" id="compare-hint"></p>
       <h3>Leg shape and rise</h3>
       <p class="small">${cap(usualName(S.desiredFit))} · <a href="#/fit">change</a></p>
       <label class="checkline"><input type="checkbox" id="f-rest" ${f.show_other_shapes_and_rises ? "checked" : ""}/> Show other leg shapes and rises</label>
@@ -610,7 +612,6 @@ async function renderResults() {
   };
   const onChange = () => {
     S.activePairId = $app.querySelector('input[name="compare"]:checked')?.value || null;
-    document.getElementById("compare-hint").textContent = compareHint();
     // The brands left out are saved, so a brand added in a later release
     // starts ticked.
     f.excluded_brands = [...$app.querySelectorAll("[data-brand]:not(:checked)")].map((c) => c.dataset.brand);
@@ -642,6 +643,8 @@ async function refreshResults() {
     return;
   }
   lastResults = results;
+  const hint = document.getElementById("compare-hint");
+  if (hint) hint.textContent = compareHint(results);
   const summary = document.getElementById("summary");
   const rowsEl = document.getElementById("rows");
   if (!summary) return;

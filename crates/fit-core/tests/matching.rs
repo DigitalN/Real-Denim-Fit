@@ -673,3 +673,26 @@ fn preparing_the_built_in_catalogue_is_quick() {
     eprintln!("prepared {} products in {took:?}", prepared.items.len());
     assert!(took < std::time::Duration::from_millis(1500), "took {took:?}");
 }
+
+#[test]
+fn a_pair_without_readings_still_counts_as_matched_from_the_body() {
+    let mut p = profile(Room::Regular);
+    p.reference_pair = Some(ReferencePair {
+        id: "x".into(),
+        name: "Reference pair".into(),
+        source: PairSource::Measured {
+            readings: PairReadings::default(),
+        },
+        feel: Default::default(),
+        notes: String::new(),
+    });
+    let r = run(vec![simple("a", "A", &[("32", 12.56)])], &p, &filters());
+    assert!(r.from_body_only);
+    // A pair picked from the catalogue that's no longer there adds nothing either.
+    p.reference_pair.as_mut().unwrap().source = PairSource::FromCatalogue {
+        product_id: "b/gone".into(),
+        size: "32".into(),
+    };
+    let r = run(vec![simple("a", "A", &[("32", 12.56)])], &p, &filters());
+    assert!(r.from_body_only);
+}

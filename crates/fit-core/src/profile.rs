@@ -173,6 +173,11 @@ pub struct PairReadings {
 }
 
 impl PairReadings {
+    /// True when the pair has no reading at all, so it adds nothing.
+    pub fn is_empty(&self) -> bool {
+        *self == PairReadings::default()
+    }
+
     pub fn thigh_at(&self, point: ThighPoint) -> Option<f64> {
         match point {
             ThighPoint::Crotch => self.thigh_crotch,

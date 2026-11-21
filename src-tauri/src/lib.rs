@@ -123,8 +123,15 @@ fn summary<'a>(brand: &'a Brand, cut: &'a Cut, p: &'a Product) -> ProductSummary
         current: p.is_current(),
         url: &p.url,
         list_price: p.list_price.as_ref(),
+        // Only sizes with measurements: the others can't be a reference pair.
         sizes: chart
-            .map(|c| c.sizes.iter().map(|s| s.label.as_str()).collect())
+            .map(|c| {
+                c.sizes
+                    .iter()
+                    .filter(|s| !s.measurements.is_empty())
+                    .map(|s| s.label.as_str())
+                    .collect()
+            })
             .unwrap_or_default(),
     }
 }
