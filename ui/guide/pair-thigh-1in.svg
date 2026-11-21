@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" fill="none" aria-hidden="true" focusable="false">
+<path d="M70.4 12.2C116.8 12.2 163.2 12.2 209.6 12.2C218.3 41.2 225.55 70.2 228.45 105C230.62 131.1 222.65 267.4 209.6 381.95C192.2 381.95 174.8 381.95 157.4 381.95C154.5 267.4 145.8 151.4 140 105C134.2 151.4 125.5 267.4 122.6 381.95C105.2 381.95 87.8 381.95 70.4 381.95C57.35 267.4 49.38 131.1 51.55 105C54.45 70.2 61.7 41.2 70.4 12.2Z" fill="currentColor" fill-opacity="0.06" stroke="none"/>
+<path d="M70.4 12.2C116.8 12.2 163.2 12.2 209.6 12.2C218.3 41.2 225.55 70.2 228.45 105C230.62 131.1 222.65 267.4 209.6 381.95C192.2 381.95 174.8 381.95 157.4 381.95C154.5 267.4 145.8 151.4 140 105C134.2 151.4 125.5 267.4 122.6 381.95C105.2 381.95 87.8 381.95 70.4 381.95C57.35 267.4 49.38 131.1 51.55 105C54.45 70.2 61.7 41.2 70.4 12.2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M67.01 23.8C115.67 23.8 164.33 23.8 212.99 23.8" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="87.8" y="10.03" width="5.8" height="18.12" rx="0.8" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="186.4" y="10.03" width="5.8" height="18.12" rx="0.8" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="140" cy="18" r="3.48" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M140 23.8 L140 105" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M126.95 23.8C126.95 41.2 126.95 58.6 126.95 76C126.95 87.6 132.75 91.95 140 93.4" fill="none" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.4" stroke-dasharray="2 2"/>
+<path d="M102.3 23.8C99.4 47 82 58.6 58.05 60.05" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M177.7 23.8C180.6 47 198 58.6 221.95 60.05" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M140 105 L51.55 105" fill="none" stroke="currentColor" stroke-width="2" stroke-opacity="0.3" stroke-linecap="round"/>
+<rect x="132.01" y="111.1" width="14" height="4.5" rx="0.8" fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-width="1" stroke-opacity="0.85"/>
+<path d="M139.01 113.35 L51.22 113.35" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M139.01 108.35 L139.01 118.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<path d="M51.22 108.35 L51.22 118.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<circle cx="140" cy="105" r="2.6" fill="currentColor" stroke="none"/>
+<path d="M34.22 105 L42.22 105" fill="none" stroke="currentColor" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<path d="M34.22 113.35 L42.22 113.35" fill="none" stroke="currentColor" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<path d="M38.22 105 L38.22 113.35" fill="none" stroke="currentColor" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<path d="M42.22 105 L49.55 105" fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.7" stroke-dasharray="2 2.5" stroke-linecap="round"/>
+</svg>

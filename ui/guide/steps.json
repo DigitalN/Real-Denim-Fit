@@ -1,0 +1,309 @@
+[
+  {
+    "id": "body-intro",
+    "for": "body",
+    "measurement": null,
+    "point": null,
+    "title": "Before you start",
+    "steps": [
+      "You'll need a soft tape measure, a few strips of masking tape and thin underwear. Measure over the underwear, not over clothes.",
+      "Stand straight and relaxed in front of a mirror, with your weight on both feet.",
+      "Keep the tape flat against your skin and level with the floor: snug, but not pressing in."
+    ],
+    "mistake": "Pulling the tape tight. It should lie flat against your skin without pressing in, or every measurement comes out small.",
+    "image": "body-intro.svg"
+  },
+  {
+    "id": "body-waist",
+    "for": "body",
+    "measurement": "waist",
+    "point": null,
+    "title": "Waist, where you wear your jeans",
+    "steps": [
+      "Put on jeans you like and stick a strip of masking tape on your front, level with the top of the waistband. Then take them off.",
+      "Wrap the tape around you at that height, over the strip and level all the way round.",
+      "Breathe normally, without holding your stomach in, and read it."
+    ],
+    "mistake": "Measuring at your natural waist, above your belly button. Jeans usually sit lower, and the difference can be several centimetres.",
+    "image": "body-waist.svg"
+  },
+  {
+    "id": "body-seat",
+    "for": "body",
+    "measurement": "seat",
+    "point": "fullest",
+    "title": "Seat, at its fullest",
+    "steps": [
+      "Stand with your feet together.",
+      "Wrap the tape around the fullest part of your seat, usually 18–23 cm (7–9″) below your natural waist. Slide it up and down a little to find the biggest reading.",
+      "Check from the side in the mirror that it's level all the way round."
+    ],
+    "mistake": "Measuring at your hip bones. The fullest part of the seat is lower down.",
+    "image": "body-seat.svg"
+  },
+  {
+    "id": "body-thigh-top",
+    "for": "body",
+    "measurement": "thigh",
+    "point": "at-crotch",
+    "title": "Thigh, at the top",
+    "steps": [
+      "Stand with your feet a little apart, your weight on both legs and your thigh relaxed.",
+      "Wrap the tape around one thigh right at the top, just below the crotch, where the leg is fullest.",
+      "Keep it square to the leg all the way round, not dropping at the back."
+    ],
+    "mistake": "Measuring partway down the thigh. The tape goes right up at the top, where the leg is widest.",
+    "image": "body-thigh-top.svg"
+  },
+  {
+    "id": "body-thigh-1in",
+    "for": "body",
+    "measurement": "thigh",
+    "point": "1in-below-crotch",
+    "title": "Thigh, 2.5 cm (1″) lower",
+    "steps": [
+      "Stick a strip of masking tape on the front of the same thigh, 2.5 cm (1″) below where you just measured.",
+      "Wrap the tape around the thigh at the strip, square to the leg, and read it."
+    ],
+    "mistake": "Guessing the distance. Measure the 2.5 cm (1″) with the tape: the thigh narrows quickly here.",
+    "image": "body-thigh-1in.svg"
+  },
+  {
+    "id": "body-leg-12in",
+    "for": "body",
+    "measurement": "knee",
+    "point": "12in-below-crotch",
+    "title": "Leg, 30.5 cm (12″) below the crotch",
+    "steps": [
+      "Mark all four leg points first. Hold the end of the tape up at your crotch and run it straight down the inside of your leg.",
+      "Stick a strip of masking tape on the front of the leg at 30.5, 33 and 35.5 cm (12″, 13″, 14″), and one halfway between your crotch and where you want the hem.",
+      "Now wrap the tape around your leg at the 30.5 cm (12″) strip, level with the floor, and read it."
+    ],
+    "mistake": "Measuring the distances from your waist or hip. They start at the crotch and run down the inside of the leg.",
+    "image": "body-leg-12in.svg"
+  },
+  {
+    "id": "body-leg-13in",
+    "for": "body",
+    "measurement": "knee",
+    "point": "13in-below-crotch",
+    "title": "Leg, 33 cm (13″) below the crotch",
+    "steps": [
+      "Wrap the tape around your leg at the 33 cm (13″) strip.",
+      "Keep it level with the floor and your leg relaxed, then read it."
+    ],
+    "mistake": "Letting the tape slope down at the back of the leg. Check in the mirror that it's level.",
+    "image": "body-leg-13in.svg"
+  },
+  {
+    "id": "body-leg-14in",
+    "for": "body",
+    "measurement": "knee",
+    "point": "14in-below-crotch",
+    "title": "Leg, 35.5 cm (14″) below the crotch",
+    "steps": [
+      "Wrap the tape around your leg at the 35.5 cm (14″) strip. On many people this is about level with the middle of the kneecap.",
+      "Stand naturally with the knee straight but not braced, then read it."
+    ],
+    "mistake": "Tensing the leg. A tensed muscle reads bigger, so stand relaxed with your weight on both feet.",
+    "image": "body-leg-14in.svg"
+  },
+  {
+    "id": "body-leg-half",
+    "for": "body",
+    "measurement": "knee",
+    "point": "half-inseam",
+    "title": "Leg, halfway down the inseam",
+    "steps": [
+      "Wrap the tape around your leg at the last strip, halfway between your crotch and where you want the hem.",
+      "Keep it level and your leg relaxed, then read it."
+    ],
+    "mistake": "Halving the distance to the floor. Halve the distance to where you want the hem.",
+    "image": "body-leg-half.svg"
+  },
+  {
+    "id": "body-inseam",
+    "for": "body",
+    "measurement": "inseam",
+    "point": null,
+    "title": "The inseam you want",
+    "steps": [
+      "Stand in the shoes you usually wear with jeans. Hold the end of the tape up at your crotch and run it down the inside of your leg to where you want the hem.",
+      "Wearing them cuffed? Add what the cuff uses: twice its width for a double roll, so 8 cm (3″) for a 4 cm (1½″) cuff. For a stack at the ankle, add 5–10 cm (2–4″).",
+      "Don't add anything for shrinkage: the app already allows for it."
+    ],
+    "mistake": "Measuring from your waist down the outside of the leg. That's the outseam, which is much longer.",
+    "image": "body-inseam.svg"
+  },
+  {
+    "id": "pair-intro",
+    "for": "pair",
+    "measurement": null,
+    "point": null,
+    "title": "Lay the pair flat",
+    "steps": [
+      "Button it all the way up and unroll any cuffs.",
+      "Lay it front up on a table or a hard floor.",
+      "Smooth out the wrinkles with flat hands, without pulling or stretching the denim."
+    ],
+    "mistake": "Stretching the denim as you smooth it. Press it flat and don't pull, or every measurement comes out big.",
+    "image": "pair-intro.svg"
+  },
+  {
+    "id": "pair-waist",
+    "for": "pair",
+    "measurement": "waist",
+    "point": null,
+    "title": "Waist, measured flat",
+    "steps": [
+      "With the pair front up, measure straight across the top edge of the waistband, from one side to the other.",
+      "Enter that flat number. The app doubles it to get the waist all the way round."
+    ],
+    "mistake": "Doubling it yourself. Enter what the tape says; the app does the doubling.",
+    "image": "pair-waist.svg"
+  },
+  {
+    "id": "pair-front-rise",
+    "for": "pair",
+    "measurement": "front_rise",
+    "point": null,
+    "title": "Front rise",
+    "steps": [
+      "Find the crotch point at the front, where the seams meet between the legs.",
+      "Measure from there straight up the centre seam, past the fly, to the top of the waistband."
+    ],
+    "mistake": "Starting at the bottom of the fly. Start lower, at the crotch point.",
+    "image": "pair-front-rise.svg"
+  },
+  {
+    "id": "pair-back-rise",
+    "for": "pair",
+    "measurement": "back_rise",
+    "point": null,
+    "title": "Back rise",
+    "steps": [
+      "Turn the pair over, back up.",
+      "Measure from the crotch point up the centre back seam to the top of the waistband, keeping the tape on the seam."
+    ],
+    "mistake": "Stopping at the yoke or the bottom of the waistband. Go right up to the top edge, which sits higher at the back.",
+    "image": "pair-back-rise.svg"
+  },
+  {
+    "id": "pair-seat",
+    "for": "pair",
+    "measurement": "seat",
+    "point": "fullest",
+    "title": "Seat",
+    "steps": [
+      "Keep the pair back up and smooth.",
+      "Measure straight across, from one side edge to the other, at the widest part of the seat. On most jeans that's a few centimetres above the crotch."
+    ],
+    "mistake": "Measuring up near the yoke, which is too high. The widest part is lower, just above the crotch.",
+    "image": "pair-seat.svg"
+  },
+  {
+    "id": "pair-thigh-crotch",
+    "for": "pair",
+    "measurement": "thigh",
+    "point": "at-crotch",
+    "title": "Thigh at the crotch",
+    "steps": [
+      "Turn the pair front up again and smooth one leg flat, with its seams along the edges.",
+      "Measure straight across the leg from the crotch point to the outside edge, square to the leg."
+    ],
+    "mistake": "Letting the tape angle down the leg. Start right at the crotch point and keep the tape square across.",
+    "image": "pair-thigh-crotch.svg"
+  },
+  {
+    "id": "pair-thigh-1in",
+    "for": "pair",
+    "measurement": "thigh",
+    "point": "1in-below-crotch",
+    "title": "Thigh, 2.5 cm (1″) below the crotch",
+    "steps": [
+      "Measure 2.5 cm (1″) down the inseam from the crotch point and mark it with a strip of masking tape.",
+      "Measure straight across the leg at the strip, square to the leg."
+    ],
+    "mistake": "Guessing the distance. Measure the 2.5 cm (1″): the leg narrows quickly just below the crotch.",
+    "image": "pair-thigh-1in.svg"
+  },
+  {
+    "id": "pair-knee-12in",
+    "for": "pair",
+    "measurement": "knee",
+    "point": "12in-below-crotch",
+    "title": "Knee, 30.5 cm (12″) below the crotch",
+    "steps": [
+      "Lay the tape along the inseam from the crotch point. Reading it as you go, stick a strip of masking tape on the inseam at 30.5, 33 and 35.5 cm (12″, 13″, 14″).",
+      "Measure the inseam from the crotch point to the bottom of the hem, halve it, and put a last strip there.",
+      "Leave the strips on. Measure straight across the leg at the 30.5 cm (12″) strip, square to the leg."
+    ],
+    "mistake": "Measuring the distances down the outside seam. They run down the inseam, from the crotch point.",
+    "image": "pair-knee-12in.svg"
+  },
+  {
+    "id": "pair-knee-13in",
+    "for": "pair",
+    "measurement": "knee",
+    "point": "13in-below-crotch",
+    "title": "Knee, 33 cm (13″) below the crotch",
+    "steps": [
+      "Measure straight across the leg at the 33 cm (13″) strip, from the inseam to the outside edge.",
+      "Keep the tape square to the leg."
+    ],
+    "mistake": "Angling the tape. Square across is the shortest line from edge to edge; a slanted one reads too big.",
+    "image": "pair-knee-13in.svg"
+  },
+  {
+    "id": "pair-knee-14in",
+    "for": "pair",
+    "measurement": "knee",
+    "point": "14in-below-crotch",
+    "title": "Knee, 35.5 cm (14″) below the crotch",
+    "steps": [
+      "Check the leg is still flat, with the seams running along its edges.",
+      "Measure straight across the leg at the 35.5 cm (14″) strip, square to the leg."
+    ],
+    "mistake": "Measuring a twisted leg. Raw denim legs often twist, so straighten the leg until both seams sit on its edges.",
+    "image": "pair-knee-14in.svg"
+  },
+  {
+    "id": "pair-knee-half",
+    "for": "pair",
+    "measurement": "knee",
+    "point": "half-inseam",
+    "title": "Knee, halfway down the inseam",
+    "steps": [
+      "Measure straight across the leg at the last strip, halfway down the inseam.",
+      "Keep the tape square to the leg, from the inseam to the outside edge."
+    ],
+    "mistake": "Halving the outside seam. Half the inseam is measured from the crotch point, down the inside.",
+    "image": "pair-knee-half.svg"
+  },
+  {
+    "id": "pair-leg-opening",
+    "for": "pair",
+    "measurement": "leg_opening",
+    "point": null,
+    "title": "Leg opening",
+    "steps": [
+      "Measure straight across the bottom of the leg, from edge to edge.",
+      "Enter it as measured, flat. The app doubles only the waist."
+    ],
+    "mistake": "Measuring with the hem rolled up. Unroll it and measure across the very bottom edge.",
+    "image": "pair-leg-opening.svg"
+  },
+  {
+    "id": "pair-inseam",
+    "for": "pair",
+    "measurement": "inseam",
+    "point": null,
+    "title": "Inseam",
+    "steps": [
+      "Measure from the crotch point down the inseam to the bottom of the hem.",
+      "Keep the leg flat and the tape on the seam all the way."
+    ],
+    "mistake": "Measuring down the outside seam from the waistband. That's the outseam, which is much longer.",
+    "image": "pair-inseam.svg"
+  }
+]
