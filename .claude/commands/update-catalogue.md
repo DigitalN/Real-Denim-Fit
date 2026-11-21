@@ -7,6 +7,8 @@ Update the catalogue for one brand: **$ARGUMENTS**. If no brand was given, ask w
 
 Running `/update-catalogue` is the user's go-ahead for these: make a branch, commit, push it and open a pull request for this one brand. Nothing else gets pushed or merged.
 
+**Each brand has an extraction script** in `tools/catalogue/<brand-id>/`: Python 3 with the standard library only, plus browser JavaScript snippets where a page needs them. The script does the extraction, so it's what gets fixed when a site changes (step 2).
+
 **Nobody checks the numbers by hand.** The user merges the PR after reading its verification summary, so this command has to do the checking itself:
 - every number read from an image is read twice, independently (step 3)
 - an independent sample check compares numbers against the live pages (step 6)
@@ -25,9 +27,11 @@ Every number here helps someone choose jeans they can't try on, so **accuracy ma
   - its `EXTRACTING.md`, which says where the charts are and what's tricky
   - `brand.json`
   - every cut file
+  - its script in `tools/catalogue/<brand-id>/`: the `README.md` there says how to run it, and the code shows what it reads
 - **For a brand that isn't in the catalogue yet:**
   - Research it on **the brand's own site only**: its size charts, its "how we measure" page, its tolerance, its shrinkage notes and its currency. Never use retailers, forums or reviews. Their numbers aren't the brand's.
   - Create `catalogue/<brand-id>/` with `brand.json` (including `measuring_points` and `conventions`), one file per cut, and an `EXTRACTING.md` for the next run.
+  - Write its extraction script in `tools/catalogue/<brand-id>/` (see step 2), with a short `README.md` that says how to run it and what it writes.
   - If the brand doesn't say where it measures, that point is `"unknown"`.
   - If it measures somewhere the format has no name for, such as a knee point 11″ below the crotch, stop and tell the user. The format, the measuring guide and the app all need that point first.
 
@@ -40,9 +44,29 @@ git switch -c catalogue/<brand-id>-<YYYY-MM-DD> origin/main
 
 ## 2. Fetch the current charts and update the files
 
-Use the built-in browser pane to read brand pages, because many of their charts only appear once the page's scripts run. Use `get_page_text` or `read_page` to read text.
+**Run the brand's script first**, as its `README.md` says.
+- Python parts run with `python3`.
+- Browser snippets run in the built-in browser pane, on the page they're written for, with `javascript_tool`. Snippets only read the page. They never click, never dismiss banners and never set cookies (step 5).
+- Run the parts that fetch and parse pages before anything else.
 
-**For each product on the brand's site:**
+**When the script fails, or its output looks wrong because the site has changed:** fix the script, run it again, and commit the fix in the same PR.
+- A site change means a new layout, a moved chart, a new data feed or a renamed field. You'll see it as an error, missing products, missing sizes, or numbers that don't fit the format.
+- **Don't extract by hand around a broken script.** The next run would hit the same problem.
+- Note what changed in `EXTRACTING.md`.
+- If you can't make the script work, stop and tell the user what broke, rather than filling in numbers by hand.
+
+**Writing a script, for a new brand or when rewriting one:**
+- Use Python 3's standard library only (`urllib`, `json`, `html.parser`, `re`, and so on): no `pip install`.
+- Use a browser snippet only where the numbers appear after the page's own scripts run. Keep each snippet in its own `.js` file next to the Python.
+- Read only the brand's own site, or a data feed its own pages load, as `EXTRACTING.md` records. Send a plain user agent and pause between requests.
+- Write the cut files in the format in `docs/catalogue-format.md`, with the source URL and today's date on every number.
+- Keep the unit as published, and never fill a number the page doesn't give.
+- Report what the script couldn't read rather than skipping it silently.
+- Leave the numbers in chart images to step 3. The script can save the images and their URLs, but it doesn't read them.
+
+Use the built-in browser pane to see brand pages, because many of their charts only appear once the page's scripts run. Use `get_page_text` or `read_page` to read text.
+
+**What the run must produce, whether the script writes it or you do, for each product on the brand's site:**
 
 - Read its size chart, fabric (weight, composition, sanforized or not), whether it's sold raw or washed, shrinkage, and list price.
 - Record each number exactly as the brand publishes it, in its unit, with no converting or rounding.
@@ -106,13 +130,21 @@ Before opening the PR, a sub-agent that didn't do the extraction re-reads part o
    - At least 10% of this brand's current products (rounded up), and enough of them to cover at least 20 sizes. If the brand has fewer than 20 sizes in all, take every size.
    - Include at least one product with an image chart, and at least one product added or changed in this run, where there are any.
    - For each product, the sample lists: its URL, which charts (`as-sold`, `after-wash`) and the size labels. It holds no numbers.
-2. **Start the checker:** a fresh sub-agent. Give it `sample.json`, the rules in "Record each number exactly as the brand publishes it" and step 4, the cookie rules in step 5, and a path to write its readings to. Tell it not to open `catalogue/` or any file in the working folder except `sample.json`.
+2. **Start the checker:** a fresh sub-agent. Give it:
+   - `sample.json`
+   - the rules in "Record each number exactly as the brand publishes it" and step 4
+   - the cookie rules in step 5
+   - a path to write its readings to
+
+   Tell it not to open `catalogue/`, `tools/catalogue/`, or any file in the working folder except `sample.json`. It reads the pages itself, so a bug in the script can't pass its own check.
    - It reads every number for those products from the live pages: each listed size's measurements, plus fabric weight, composition percentages, shrinkage figures and list price.
    - For an image chart, it saves the image again and reads it itself.
    - It leaves out what isn't published, and writes `"?"` for anything it can't read for certain.
 3. **Compare with a script** every number the checker read against the cut files, and every number the cut files hold for the sampled sizes against the checker's. A value that differs, or is present on one side only, is a mismatch. So is a `"?"`, unless that number was already left out of the catalogue.
 4. **For each product with a mismatch:**
-   - Re-extract it from scratch from its live page, including step 3 for any image chart. Don't start from your old reading.
+   - Find out which side is wrong: look at the live page.
+   - If the script got it wrong, fix the script and run it again (step 2). Then check whether the same bug touched other products.
+   - Re-extract the product from scratch, including step 3 for any image chart. Don't start from your old reading.
    - Then check that product again with another fresh checker.
    - It passes when the new extraction and the new checker agree on every number.
 5. **If any product still has a mismatch after one re-extraction, stop.**
@@ -135,13 +167,17 @@ The tests include catalogue validation: every number has a link and a date, numb
 
 ## 8. Commit, push and open the PR
 
-**One brand per PR.** Only this brand's folder and `catalogue/exchange-rates.json` change.
+**One brand per PR.** Only these change:
+- this brand's `catalogue/<brand-id>/` folder
+- its `tools/catalogue/<brand-id>/` script
+- `catalogue/exchange-rates.json`
 
 1. Update `EXTRACTING.md`:
    - what you learned, and any quirks
    - what was skipped or left out, and why
+   - any change to the script
    - "Last full run: <today>"
-2. Run `git status` and check that nothing outside those files changed.
+2. Run `git status` and check that nothing outside those paths changed.
 3. Commit: `Update <Brand name> catalogue (<YYYY-MM-DD>)`, or `Add <Brand name> to the catalogue` for a new brand.
 4. Push: `git push -u origin HEAD`.
 5. Open the PR: `gh pr create --base main --title "<same as the commit>" --body-file <working folder>/pr.md`, with a body like this:
@@ -164,6 +200,7 @@ The tests include catalogue validation: every number has a link and a date, numb
 ## What changed
 
 - <N> products checked across <N> cuts, all seen <date>.
+- **Script:** <"ran unchanged", or what was fixed and why: the site change it handles>
 - **Added:** <products or cuts, or "none">
 - **Discontinued:** <products no longer on the brand's site, or "none">
 - **Changed numbers:** <product, size, measurement: old → new; or "none">
