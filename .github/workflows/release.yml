@@ -1,0 +1,259 @@
+# Builds a release and puts it in a DRAFT GitHub release. It never publishes:
+# `/release` (or a person) does that after checking the draft.
+#
+# Run it by hand from main with the version number, e.g. 0.2.0. The version in
+# src-tauri/tauri.conf.json and src-tauri/Cargo.toml must already say the same.
+# See docs/RELEASING.md.
+
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release, without the v (for example 0.2.0)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+env:
+  CARGO_TERM_COLOR: always
+  VERSION: ${{ inputs.version }}
+
+jobs:
+  prepare:
+    name: Check the version and make the draft
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      release-id: ${{ steps.draft.outputs.release-id }}
+      tag: ${{ steps.check.outputs.tag }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Check the version
+        id: check
+        env:
+          REF: ${{ github.ref }}
+          SIGNING_KEY_SET: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY != '' }}
+        run: |
+          set -euo pipefail
+          fail() { echo "::error::$1"; exit 1; }
+
+          [ "$REF" = "refs/heads/main" ] || fail "Run this workflow from main, not $REF."
+          [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] \
+            || fail "\"$VERSION\" isn't a version like 0.2.0 (no v, no suffix)."
+          [ "$SIGNING_KEY_SET" = "true" ] \
+            || fail "The TAURI_SIGNING_PRIVATE_KEY secret isn't set. See docs/RELEASING.md."
+
+          conf_version=$(jq -r '.version // empty' src-tauri/tauri.conf.json)
+          cargo_version=$(python3 -I -c '
+          import sys, tomllib
+          with open("src-tauri/Cargo.toml", "rb") as f:
+              v = tomllib.load(f).get("package", {}).get("version")
+          print(v if isinstance(v, str) else "")
+          ')
+
+          [ "$conf_version" = "$VERSION" ] \
+            || fail "src-tauri/tauri.conf.json says version \"$conf_version\", but you asked for $VERSION."
+          [ "$cargo_version" = "$VERSION" ] \
+            || fail "src-tauri/Cargo.toml says version \"$cargo_version\", but you asked for $VERSION."
+
+          echo "tag=v$VERSION" >> "$GITHUB_OUTPUT"
+          echo "Both files say $VERSION."
+
+      - name: Make the tag and the draft release
+        id: draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.check.outputs.tag }}
+        run: |
+          set -euo pipefail
+          fail() { echo "::error::$1"; exit 1; }
+
+          # The tag: make it at this commit, or reuse it if an earlier run of
+          # this same commit already made it.
+          if tag_ref=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$TAG" 2>/dev/null); then
+            tag_type=$(jq -r '.object.type' <<<"$tag_ref")
+            tag_sha=$(jq -r '.object.sha' <<<"$tag_ref")
+            [ "$tag_type" = "commit" ] && [ "$tag_sha" = "$GITHUB_SHA" ] \
+              || fail "Tag $TAG already exists at another commit ($tag_sha). Pick a new version, or delete the old draft and tag first."
+            echo "Tag $TAG already points at this commit; reusing it."
+          else
+            gh api "repos/$GITHUB_REPOSITORY/git/refs" \
+              -f ref="refs/tags/$TAG" -f sha="$GITHUB_SHA" > /dev/null
+            echo "Made tag $TAG at $GITHUB_SHA."
+          fi
+
+          # The release: reuse a draft for this tag, never touch a published one.
+          existing=$(gh api --paginate "repos/$GITHUB_REPOSITORY/releases" \
+            --jq ".[] | select(.tag_name == \"$TAG\") | \"\(.id) \(.draft)\"")
+          if [ -n "$existing" ]; then
+            read -r release_id is_draft <<<"$existing"
+            [ "$is_draft" = "true" ] || fail "Release $TAG is already published."
+            echo "Reusing draft release $release_id."
+          else
+            release_id=$(gh api "repos/$GITHUB_REPOSITORY/releases" \
+              -f tag_name="$TAG" \
+              -f name="Real Denim Fit $VERSION" \
+              -f body="Draft. /release writes the notes before it's published." \
+              -F draft=true \
+              --jq '.id')
+            echo "Made draft release $release_id."
+          fi
+          echo "release-id=$release_id" >> "$GITHUB_OUTPUT"
+
+  build:
+    name: Build (${{ matrix.name }})
+    needs: prepare
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: macOS universal
+            os: macos-latest
+            rust-targets: aarch64-apple-darwin,x86_64-apple-darwin
+            args: --target universal-apple-darwin --bundles app,dmg
+            asset-names: Real-Denim-Fit-[version]-macOS-[arch][ext]
+          - name: Windows x64
+            os: windows-latest
+            rust-targets: x86_64-pc-windows-msvc
+            args: --bundles nsis
+            asset-names: Real-Denim-Fit-[version]-Windows-[arch][setup][ext]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.rust-targets }}
+
+      - name: Cache cargo
+        uses: Swatinem/rust-cache@v2
+        with:
+          key: release
+
+      - name: Install the Tauri CLI
+        run: cargo install tauri-cli --version "^2.0" --locked
+
+      - name: Build, sign the update files and upload to the draft
+        uses: tauri-apps/tauri-action@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+          # No Apple Developer ID: sign the app ad hoc ("-"). Without any
+          # signature, Apple silicon Macs call a downloaded app "damaged"
+          # instead of offering Open Anyway. Ignored on Windows.
+          APPLE_SIGNING_IDENTITY: "-"
+        with:
+          projectPath: .
+          tauriScript: cargo tauri
+          args: ${{ matrix.args }}
+          releaseId: ${{ needs.prepare.outputs.release-id }}
+          tagName: ${{ needs.prepare.outputs.tag }}
+          releaseDraft: true
+          releaseAssetNamePattern: ${{ matrix.asset-names }}
+          uploadUpdaterJson: true
+          updaterJsonPreferNsis: true
+          retryAttempts: 2
+
+  check:
+    name: Check the draft
+    needs: [prepare, build]
+    runs-on: ubuntu-latest
+    # Drafts are only visible to tokens that can write to the repo.
+    permissions:
+      contents: write
+    steps:
+      - name: Check the downloads and latest.json
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ needs.prepare.outputs.release-id }}
+        run: |
+          set -euo pipefail
+          problems=0
+          problem() { echo "::error::$1"; problems=$((problems + 1)); }
+
+          gh api --paginate "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets" \
+            --jq '.[] | "\(.id) \(.name)"' > assets.txt
+          echo "Assets in the draft:"
+          cat assets.txt
+
+          count() { grep -cE "$1" assets.txt || true; }
+          [ "$(count ' [^ ]+\.dmg$')" = 1 ]        || problem "Expected exactly one .dmg."
+          [ "$(count ' [^ ]+-setup\.exe$')" = 1 ]  || problem "Expected exactly one Windows -setup.exe."
+          [ "$(count ' latest\.json$')" = 1 ]      || problem "Expected latest.json."
+
+          download() {
+            gh api -H "Accept: application/octet-stream" \
+              "repos/$GITHUB_REPOSITORY/releases/assets/$1"
+          }
+
+          latest_id=$(awk '$2 == "latest.json" { print $1 }' assets.txt)
+          [ -n "$latest_id" ] || { echo "Stopping: no latest.json."; exit 1; }
+          download "$latest_id" > latest.json
+          echo "latest.json:"
+          cat latest.json
+
+          [ "$(jq -r .version latest.json)" = "$VERSION" ] \
+            || problem "latest.json says version $(jq -r .version latest.json), not $VERSION."
+
+          # Finds the asset a latest.json URL points at, and prints its name.
+          # tauri-action v1 writes API URLs that end in the asset's numeric
+          # id (".../releases/assets/<id>", see its upload-version-json.ts).
+          # Download URLs (".../releases/download/<tag>/<name>") are matched
+          # too, by URL-decoded name, in case a later v1.x switches to them.
+          # GitHub turns spaces in asset names into dots, so a decoded space
+          # is matched as a dot.
+          asset_for_url() {
+            local last=${1##*/} name
+            if [[ "$1" == */releases/assets/* && "$last" =~ ^[0-9]+$ ]]; then
+              awk -v id="$last" '$1 == id { print $2 }' assets.txt
+            else
+              name=$(python3 -I -c '
+          import sys, urllib.parse
+          print(urllib.parse.unquote(sys.argv[1]).replace(" ", "."))
+          ' "$last")
+              awk -v n="$name" '$2 == n { print $2 }' assets.txt
+            fi
+          }
+
+          # Each platform the app updates on must point at an asset in this
+          # draft, and its signature must be that asset's .sig file.
+          for platform in darwin-aarch64 darwin-x86_64 windows-x86_64; do
+            url=$(jq -r --arg p "$platform" '.platforms[$p].url // empty' latest.json)
+            sig=$(jq -r --arg p "$platform" '.platforms[$p].signature // empty' latest.json)
+            if [ -z "$url" ] || [ -z "$sig" ]; then
+              problem "latest.json has no complete entry for $platform."
+              continue
+            fi
+            asset_name=$(asset_for_url "$url")
+            if [ -z "$asset_name" ]; then
+              problem "$platform points at $url, which isn't an asset in this draft."
+              continue
+            fi
+            sig_id=$(awk -v n="$asset_name.sig" '$2 == n { print $1 }' assets.txt)
+            if [ -z "$sig_id" ]; then
+              problem "$asset_name has no .sig file in the draft."
+              continue
+            fi
+            if [ "$(download "$sig_id")" != "$sig" ]; then
+              problem "The $platform signature in latest.json doesn't match $asset_name.sig."
+              continue
+            fi
+            echo "$platform -> $asset_name (signature matches)"
+          done
+
+          [ "$problems" = 0 ] || exit 1
+          echo "The draft has both installers and a complete latest.json."

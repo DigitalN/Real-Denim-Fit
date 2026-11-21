@@ -1,0 +1,11 @@
+{
+  "id": "naked-and-famous",
+  "name": "Naked & Famous",
+  "site": "https://nakedandfamousdenim.com",
+  "currency": "USD",
+  "sizing": "waist",
+  "tolerance": { "value": 0.5, "unit": "in" },
+  "conventions": { "waist": "around", "seat": "flat", "thigh": "flat", "knee": "flat", "leg_opening": "flat" },
+  "measuring_points": { "thigh": "at-crotch", "knee": "12in-below-crotch", "seat": "unknown" },
+  "method_source": { "url": "https://nakedandfamousdenim.com/pages/copy-of-measuring-guide", "seen": "2026-11-20" }
+}

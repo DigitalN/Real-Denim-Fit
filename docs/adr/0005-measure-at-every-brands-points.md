@@ -1,0 +1,3 @@
+# Measure at every brand's measuring points
+
+Brands measure the thigh and knee at different points: the thigh at the crotch or 1″ below it, the knee 12″, 13″ or 14″ below the crotch or halfway down the inseam. Instead of converting between them, the measuring guide has the user read their reference pair at every point any brand uses, and measure around their own leg at the same knee points too. Each brand is then compared with the readings taken its way. That's a couple of extra minutes with the tape. Converting would mean guessing the shape of the leg, and the guess would be furthest off exactly where fit matters most. A brand that doesn't say where it measures is compared with the nearest reading, and its matches are marked approximate.

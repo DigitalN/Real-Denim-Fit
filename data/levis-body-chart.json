@@ -1,0 +1,32 @@
+{
+  "about": "Levi's men's bottoms body size chart, used only by the ease-table calibration test (docs/research/ease.md). Body measurements, all the way around, in cm, exactly as published.",
+  "source": { "url": "https://www.levi.com/NL/en/info/sizechart", "seen": "2026-11-21" },
+  "unit": "cm",
+  "sizes": [
+    { "size": 24, "waist": 61, "seat": 77.5, "thigh": 47 },
+    { "size": 25, "waist": 63.5, "seat": 80, "thigh": 48.3 },
+    { "size": 26, "waist": 66, "seat": 82.5, "thigh": 49.4 },
+    { "size": 27, "waist": 68.6, "seat": 85, "thigh": 50.8 },
+    { "size": 28, "waist": 71.1, "seat": 87.5, "thigh": 52 },
+    { "size": 29, "waist": 73.7, "seat": 90.2, "thigh": 53.3 },
+    { "size": 30, "waist": 76.2, "seat": 92.7, "thigh": 54.6 },
+    { "size": 31, "waist": 78.7, "seat": 95.3, "thigh": 56 },
+    { "size": 32, "waist": 81.3, "seat": 97.8, "thigh": 57.2 },
+    { "size": 33, "waist": 83.8, "seat": 100.3, "thigh": 58.4 },
+    { "size": 34, "waist": 86.4, "seat": 103, "thigh": 59.7 },
+    { "size": 35, "waist": 89, "seat": 105.5, "thigh": 61 },
+    { "size": 36, "waist": 91.4, "seat": 108, "thigh": 62.2 },
+    { "size": 38, "waist": 96.5, "seat": 113, "thigh": 64 },
+    { "size": 40, "waist": 101.6, "seat": 118, "thigh": 66.5 },
+    { "size": 42, "waist": 106.7, "seat": 123.2, "thigh": 68.3 },
+    { "size": 44, "waist": 111.8, "seat": 128.3, "thigh": 70.5 },
+    { "size": 46, "waist": 116.7, "seat": 133.5, "thigh": 72.5 },
+    { "size": 48, "waist": 121.9, "seat": 138.5, "thigh": 74.3 },
+    { "size": 50, "waist": 127, "seat": 143.5, "thigh": 76.2 },
+    { "size": 52, "waist": 132, "seat": 148.6, "thigh": 78 },
+    { "size": 54, "waist": 137.2, "seat": 153.7, "thigh": 80 },
+    { "size": 56, "waist": 142.2, "seat": 158.8, "thigh": 82 },
+    { "size": 58, "waist": 147.2, "seat": 163.8, "thigh": 83.8 },
+    { "size": 60, "waist": 152.4, "seat": 169, "thigh": 85.7 }
+  ]
+}

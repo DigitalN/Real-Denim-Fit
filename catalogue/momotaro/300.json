@@ -1,0 +1,305 @@
+{
+  "id": "300",
+  "brand": "momotaro",
+  "name": "#300",
+  "brand_label": "Slim",
+  "line": null,
+  "products": [
+    {
+      "id": "300-standard-14-7oz-indigo",
+      "name": "Standard 14.7oz, Indigo",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-300-standard-slim-14.7oz/M300ST.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 14.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "finish": "raw",
+      "list_price": {
+        "amount": 307.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-300-standard-slim-14.7oz/M300ST.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-300-standard-slim-14.7oz/M300ST.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 25.5, "seat": 86.1, "thigh": 26.7, "leg_opening": 14.8, "inseam": 76.2}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 25.9, "seat": 88.6, "thigh": 27.5, "leg_opening": 14.8, "inseam": 76.2}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 26.3, "seat": 91.1, "thigh": 28.3, "leg_opening": 14.8, "inseam": 81.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 26.7, "seat": 93.6, "thigh": 29.1, "leg_opening": 15.1, "inseam": 81.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 27.1, "seat": 96.1, "thigh": 29.9, "leg_opening": 15.4, "inseam": 81.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81, "front_rise": 27.5, "seat": 98.6, "thigh": 30.7, "leg_opening": 15.7, "inseam": 81.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 27.9, "seat": 101.1, "thigh": 31.5, "leg_opening": 16, "inseam": 81.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 28.3, "seat": 103.6, "thigh": 32.3, "leg_opening": 16.3, "inseam": 81.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 28.7, "seat": 106.1, "thigh": 33.1, "leg_opening": 16.6, "inseam": 81.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 29.5, "seat": 111.1, "thigh": 34.7, "leg_opening": 17.2, "inseam": 81.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 30.3, "seat": 116.1, "thigh": 36.3, "leg_opening": 17.8, "inseam": 81.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 104, "front_rise": 31.1, "seat": 121.1, "thigh": 37.9, "leg_opening": 18.4, "inseam": 81.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 109, "front_rise": 31.9, "seat": 126.1, "thigh": 39.5, "leg_opening": 18.9, "inseam": 81.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "300-standard-14-7oz-black",
+      "name": "Standard 14.7oz, Black",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-300-standard-slim-14.7oz/M300ST.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 14.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "finish": "raw",
+      "list_price": {
+        "amount": 307.6,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-300-standard-slim-14.7oz/M300ST.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-300-standard-slim-14.7oz/M300ST.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 25.5, "seat": 86.1, "thigh": 26.7, "leg_opening": 14.8, "inseam": 76.2}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 25.9, "seat": 88.6, "thigh": 27.5, "leg_opening": 14.8, "inseam": 76.2}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 26.3, "seat": 91.1, "thigh": 28.3, "leg_opening": 14.8, "inseam": 81.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 26.7, "seat": 93.6, "thigh": 29.1, "leg_opening": 15.1, "inseam": 81.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 27.1, "seat": 96.1, "thigh": 29.9, "leg_opening": 15.4, "inseam": 81.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81, "front_rise": 27.5, "seat": 98.6, "thigh": 30.7, "leg_opening": 15.7, "inseam": 81.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 27.9, "seat": 101.1, "thigh": 31.5, "leg_opening": 16, "inseam": 81.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 28.3, "seat": 103.6, "thigh": 32.3, "leg_opening": 16.3, "inseam": 81.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 28.7, "seat": 106.1, "thigh": 33.1, "leg_opening": 16.6, "inseam": 81.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 29.5, "seat": 111.1, "thigh": 34.7, "leg_opening": 17.2, "inseam": 81.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 30.3, "seat": 116.1, "thigh": 36.3, "leg_opening": 17.8, "inseam": 81.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 104, "front_rise": 31.1, "seat": 121.1, "thigh": 37.9, "leg_opening": 18.4, "inseam": 81.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 109, "front_rise": 31.9, "seat": 126.1, "thigh": 39.5, "leg_opening": 18.9, "inseam": 81.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "300-classic-15-7oz-indigo",
+      "name": "Classic 15.7oz, Indigo",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-300-classic-slim-15.7oz/M300CL.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 15.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": false
+      },
+      "sold": "one-washed",
+      "finish": "rinsed",
+      "list_price": {
+        "amount": 276.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-300-classic-slim-15.7oz/M300CL.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-300-classic-slim-15.7oz/M300CL.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 25.5, "seat": 86.1, "thigh": 26.7, "leg_opening": 14.8, "inseam": 78.7}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 25.9, "seat": 88.6, "thigh": 27.5, "leg_opening": 14.8, "inseam": 78.7}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 26.3, "seat": 91.1, "thigh": 28.3, "leg_opening": 14.8, "inseam": 83.8}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 26.7, "seat": 93.6, "thigh": 29.1, "leg_opening": 15.1, "inseam": 83.8}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 27.1, "seat": 96.1, "thigh": 29.9, "leg_opening": 15.4, "inseam": 83.8}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81, "front_rise": 27.5, "seat": 98.6, "thigh": 30.7, "leg_opening": 15.7, "inseam": 83.8}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 27.9, "seat": 101.1, "thigh": 31.5, "leg_opening": 16, "inseam": 83.8}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 28.3, "seat": 103.6, "thigh": 32.3, "leg_opening": 16.3, "inseam": 83.8}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 28.7, "seat": 106.1, "thigh": 33.1, "leg_opening": 16.6, "inseam": 83.8}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 29.5, "seat": 111.1, "thigh": 34.7, "leg_opening": 17.2, "inseam": 83.8}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 30.3, "seat": 116.1, "thigh": 36.3, "leg_opening": 17.8, "inseam": 83.8}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 104, "front_rise": 31.1, "seat": 121.1, "thigh": 37.9, "leg_opening": 18.4, "inseam": 83.8}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 109, "front_rise": 31.9, "seat": 126.1, "thigh": 39.5, "leg_opening": 18.9, "inseam": 83.8}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "300-classic-15-7oz-black",
+      "name": "Classic 15.7oz, Black",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-300-classic-slim-15.7oz/M300CL.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 15.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": false
+      },
+      "sold": "one-washed",
+      "finish": "rinsed",
+      "list_price": {
+        "amount": 276.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-300-classic-slim-15.7oz/M300CL.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-300-classic-slim-15.7oz/M300CL.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 25.5, "seat": 86.1, "thigh": 26.7, "leg_opening": 14.8, "inseam": 78.7}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 25.9, "seat": 88.6, "thigh": 27.5, "leg_opening": 14.8, "inseam": 78.7}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 26.3, "seat": 91.1, "thigh": 28.3, "leg_opening": 14.8, "inseam": 83.8}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 26.7, "seat": 93.6, "thigh": 29.1, "leg_opening": 15.1, "inseam": 83.8}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 27.1, "seat": 96.1, "thigh": 29.9, "leg_opening": 15.4, "inseam": 83.8}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81, "front_rise": 27.5, "seat": 98.6, "thigh": 30.7, "leg_opening": 15.7, "inseam": 83.8}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 27.9, "seat": 101.1, "thigh": 31.5, "leg_opening": 16, "inseam": 83.8}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 28.3, "seat": 103.6, "thigh": 32.3, "leg_opening": 16.3, "inseam": 83.8}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 28.7, "seat": 106.1, "thigh": 33.1, "leg_opening": 16.6, "inseam": 83.8}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 29.5, "seat": 111.1, "thigh": 34.7, "leg_opening": 17.2, "inseam": 83.8}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 30.3, "seat": 116.1, "thigh": 36.3, "leg_opening": 17.8, "inseam": 83.8}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 104, "front_rise": 31.1, "seat": 121.1, "thigh": 37.9, "leg_opening": 18.4, "inseam": 83.8}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 109, "front_rise": 31.9, "seat": 126.1, "thigh": 39.5, "leg_opening": 18.9, "inseam": 83.8}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "300-silk-15oz",
+      "name": "Silk 15oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-300-silk-slim-15oz-zipper-fly/M300SL.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 15,
+        "composition": [
+          {"fibre": "cotton", "percent": 58},
+          {"fibre": "silk", "percent": 42}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "finish": "raw",
+      "list_price": {
+        "amount": 717.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-300-silk-slim-15oz-zipper-fly/M300SL.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-300-silk-slim-15oz-zipper-fly/M300SL.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 25.5, "seat": 86.1, "thigh": 26.7, "leg_opening": 14.8, "inseam": 76.2}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 25.9, "seat": 88.6, "thigh": 27.5, "leg_opening": 14.8, "inseam": 76.2}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 26.3, "seat": 91.1, "thigh": 28.3, "leg_opening": 14.8, "inseam": 81.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 26.7, "seat": 93.6, "thigh": 29.1, "leg_opening": 15.1, "inseam": 81.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 27.1, "seat": 96.1, "thigh": 29.9, "leg_opening": 15.4, "inseam": 81.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81, "front_rise": 27.5, "seat": 98.6, "thigh": 30.7, "leg_opening": 15.7, "inseam": 81.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 27.9, "seat": 101.1, "thigh": 31.5, "leg_opening": 16, "inseam": 81.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 28.3, "seat": 103.6, "thigh": 32.3, "leg_opening": 16.3, "inseam": 81.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 28.7, "seat": 106.1, "thigh": 33.1, "leg_opening": 16.6, "inseam": 81.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 29.5, "seat": 111.1, "thigh": 34.7, "leg_opening": 17.2, "inseam": 81.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 30.3, "seat": 116.1, "thigh": 36.3, "leg_opening": 17.8, "inseam": 81.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 106, "seat": 121.3, "thigh": 37.9, "leg_opening": 19.4, "inseam": 82.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 111, "seat": 126.3, "thigh": 39.5, "leg_opening": 20, "inseam": 82.3}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "300-cashmere-13-7oz",
+      "name": "Cashmere 13.7oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/-300-cashmere-slim-13.7oz-zipper-fly/MMJZ03035S.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 13.7,
+        "composition": [
+          {"fibre": "cotton", "percent": 65},
+          {"fibre": "cashmere", "percent": 35}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "finish": "raw",
+      "list_price": {
+        "amount": 1230.5,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/-300-cashmere-slim-13.7oz-zipper-fly/MMJZ03035S.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/-300-cashmere-slim-13.7oz-zipper-fly/MMJZ03035S.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 69, "front_rise": 25.5, "seat": 86.1, "thigh": 26.7, "leg_opening": 14.8, "inseam": 76.2}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 71.5, "front_rise": 25.9, "seat": 88.6, "thigh": 27.5, "leg_opening": 14.8, "inseam": 76.2}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 74, "front_rise": 26.3, "seat": 91.1, "thigh": 28.3, "leg_opening": 14.8, "inseam": 81.3}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 76.5, "front_rise": 26.7, "seat": 93.6, "thigh": 29.1, "leg_opening": 15.1, "inseam": 81.3}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 79, "front_rise": 27.1, "seat": 96.1, "thigh": 29.9, "leg_opening": 15.4, "inseam": 81.3}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 81, "front_rise": 27.5, "seat": 98.6, "thigh": 30.7, "leg_opening": 15.7, "inseam": 81.3}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 84, "front_rise": 27.9, "seat": 101.1, "thigh": 31.5, "leg_opening": 16, "inseam": 81.3}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 86.5, "front_rise": 28.3, "seat": 103.6, "thigh": 32.3, "leg_opening": 16.3, "inseam": 81.3}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 89, "front_rise": 28.7, "seat": 106.1, "thigh": 33.1, "leg_opening": 16.6, "inseam": 81.3}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 94, "front_rise": 29.5, "seat": 111.1, "thigh": 34.7, "leg_opening": 17.2, "inseam": 81.3}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 99, "front_rise": 30.3, "seat": 116.1, "thigh": 36.3, "leg_opening": 17.8, "inseam": 81.3}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 104, "front_rise": 31.1, "seat": 121.1, "thigh": 37.9, "leg_opening": 18.4, "inseam": 81.3}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 109, "front_rise": 31.9, "seat": 126.1, "thigh": 39.5, "leg_opening": 18.9, "inseam": 81.3}}
+          ]
+        }
+      ]
+    }
+  ]
+}

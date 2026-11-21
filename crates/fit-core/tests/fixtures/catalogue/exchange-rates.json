@@ -1,0 +1,6 @@
+{
+  "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+  "date": "2026-11-20",
+  "base": "EUR",
+  "rates": { "USD": 1.25, "GBP": 0.8 }
+}

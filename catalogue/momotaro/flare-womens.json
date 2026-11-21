@@ -1,0 +1,52 @@
+{
+  "id": "flare-womens",
+  "brand": "momotaro",
+  "name": "Flare Womens",
+  "brand_label": "Flare",
+  "line": "women",
+  "products": [
+    {
+      "id": "flare-womens-11oz",
+      "name": "11oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/flare-womens-11oz/MWJZ6600.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 11,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "finish": "raw",
+      "list_price": {
+        "amount": 276.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/flare-womens-11oz/MWJZ6600.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/flare-womens-11oz/MWJZ6600.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "24", "waist_tag": 24, "measurements": {"waist": 70.5, "front_rise": 27.9, "seat": 90, "thigh": 27.6, "leg_opening": 25.2, "inseam": 76}},
+            {"label": "25", "waist_tag": 25, "measurements": {"waist": 73, "front_rise": 28.3, "seat": 92.5, "thigh": 28.4, "leg_opening": 25.5, "inseam": 76}},
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 75.5, "front_rise": 28.7, "seat": 95, "thigh": 29.2, "leg_opening": 25.8, "inseam": 79}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 78, "front_rise": 29.1, "seat": 97.5, "thigh": 30, "leg_opening": 26.1, "inseam": 79}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 80.5, "front_rise": 29.5, "seat": 100, "thigh": 30.8, "leg_opening": 26.4, "inseam": 79}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 83, "front_rise": 29.9, "seat": 102.5, "thigh": 31.6, "leg_opening": 26.7, "inseam": 82}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 85.5, "front_rise": 30.3, "seat": 105, "thigh": 32.4, "leg_opening": 27, "inseam": 82}}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+/target
+/node_modules
+.DS_Store
+# Never commit the update signing key
+*.key
+*.key.pub.bak

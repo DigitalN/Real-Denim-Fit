@@ -1,0 +1,41 @@
+{
+  "id": "big-jean",
+  "brand": "3sixteen",
+  "name": "Big Jean",
+  "brand_label": null,
+  "line": null,
+  "products": [
+    {
+      "id": "big-jean-103xs",
+      "name": "Throwing Fits \"Big Jean\", Stonewashed 103xs",
+      "url": "https://www.3sixteen.com/products/throwing-fits-big-jean-stonewash-103xs",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 14, "composition": null, "sanforized": true},
+      "sold": "one-washed",
+      "finish": "washed",
+      "list_price": {"amount": 310, "currency": "USD", "url": "https://www.3sixteen.com/products/throwing-fits-big-jean-stonewash-103xs", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.3sixteen.com/products/throwing-fits-big-jean-stonewash-103xs", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28, "front_rise": 11.75, "back_rise": 16.5, "inseam": 31, "thigh": 12, "knee": 9.5, "leg_opening": 8}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29, "front_rise": 12, "back_rise": 17, "inseam": 31, "thigh": 12.5, "knee": 9.75, "leg_opening": 8}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 30, "front_rise": 12.5, "back_rise": 17.25, "inseam": 31.5, "thigh": 12.75, "knee": 10, "leg_opening": 8.25}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 31, "front_rise": 12.75, "back_rise": 17.5, "inseam": 31.5, "thigh": 13, "knee": 10, "leg_opening": 8.25}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 32, "front_rise": 13, "back_rise": 17.75, "inseam": 31.5, "thigh": 13.25, "knee": 10.5, "leg_opening": 8.5}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33, "front_rise": 13, "back_rise": 17.75, "inseam": 31.5, "thigh": 13.75, "knee": 10.75, "leg_opening": 8.5}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34, "front_rise": 13.25, "back_rise": 17.75, "inseam": 31.5, "thigh": 14, "knee": 11, "leg_opening": 8.5}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 35, "front_rise": 13, "back_rise": 18, "inseam": 31.5, "thigh": 14, "knee": 11, "leg_opening": 8.75}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 36, "front_rise": 13.25, "back_rise": 18, "inseam": 31.5, "thigh": 14.25, "knee": 11, "leg_opening": 8.75}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38, "front_rise": 13.25, "back_rise": 18.25, "inseam": 31.5, "thigh": 15, "knee": 11.25, "leg_opening": 9}}
+          ]
+        }
+      ]
+    }
+  ]
+}

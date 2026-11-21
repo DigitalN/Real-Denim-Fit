@@ -1,0 +1,52 @@
+{
+  "id": "super-wide-womens",
+  "brand": "momotaro",
+  "name": "Super Wide Womens",
+  "brand_label": "Super Wide",
+  "line": "women",
+  "products": [
+    {
+      "id": "super-wide-womens-11oz",
+      "name": "11oz",
+      "url": "https://www.momotaro-jeans.com/en_US/product/super-wide-womens-11oz/MWJZ6500.html",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {
+        "weight_oz": 11,
+        "composition": [
+          {"fibre": "cotton", "percent": 100}
+        ],
+        "sanforized": null
+      },
+      "sold": "raw",
+      "finish": "raw",
+      "list_price": {
+        "amount": 276.8,
+        "currency": "USD",
+        "url": "https://www.momotaro-jeans.com/en_US/product/super-wide-womens-11oz/MWJZ6500.html",
+        "seen": "2026-11-20"
+      },
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {
+            "url": "https://www.momotaro-jeans.com/en_US/product/super-wide-womens-11oz/MWJZ6500.html",
+            "seen": "2026-11-20"
+          },
+          "unit": "cm",
+          "from_image": false,
+          "sizes": [
+            {"label": "24", "waist_tag": 24, "measurements": {"waist": 69.5, "front_rise": 29.1, "seat": 92.5, "thigh": 32.1, "leg_opening": 28.7, "inseam": 79}},
+            {"label": "25", "waist_tag": 25, "measurements": {"waist": 72, "front_rise": 29.5, "seat": 95, "thigh": 32.9, "leg_opening": 29, "inseam": 79}},
+            {"label": "26", "waist_tag": 26, "measurements": {"waist": 74.5, "front_rise": 29.9, "seat": 97.5, "thigh": 33.7, "leg_opening": 29.3, "inseam": 82}},
+            {"label": "27", "waist_tag": 27, "measurements": {"waist": 77, "front_rise": 30.3, "seat": 100, "thigh": 34.5, "leg_opening": 29.6, "inseam": 82}},
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 79.5, "front_rise": 30.7, "seat": 102.5, "thigh": 35.3, "leg_opening": 29.9, "inseam": 82}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 82, "front_rise": 31.1, "seat": 105, "thigh": 36.1, "leg_opening": 30.2, "inseam": 85}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 84.5, "front_rise": 31.5, "seat": 107.5, "thigh": 36.9, "leg_opening": 30.5, "inseam": 85}}
+          ]
+        }
+      ]
+    }
+  ]
+}

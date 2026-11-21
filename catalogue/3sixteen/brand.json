@@ -1,0 +1,11 @@
+{
+  "id": "3sixteen",
+  "name": "3sixteen",
+  "site": "https://www.3sixteen.com",
+  "currency": "USD",
+  "sizing": "waist",
+  "tolerance": null,
+  "conventions": {"waist": "around", "seat": "flat", "thigh": "flat", "knee": "flat", "leg_opening": "flat"},
+  "measuring_points": {"thigh": "1in-below-crotch", "knee": "14in-below-crotch", "seat": "unknown"},
+  "method_source": {"url": "https://www.3sixteen.com/pages/measuring-guide-jeans", "seen": "2026-11-20"}
+}
