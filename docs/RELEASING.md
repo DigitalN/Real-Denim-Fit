@@ -88,6 +88,15 @@ There's no paid code signing on either system yet, so each shows a one-time warn
 
 Updates don't show the warning again. They're checked against the update signing key, not against Apple's or Microsoft's signature.
 
+### The macOS disk image
+
+When someone opens the `.dmg`, Finder shows Real Denim Fit and the Applications folder on a light background, with an arrow between them, the words "Drag Real Denim Fit into Applications", and a card explaining the one-time Open Anyway step. It's made to look like Mac Engine Room's.
+
+- **The background** is `src-tauri/dmg/background.tiff`, drawn by `scripts/make-dmg-background.swift`. It holds a 1× and a 2× image, so it's sharp on Retina screens. It's committed, so builds don't run the script. After changing the script, regenerate it on a Mac with `swift scripts/make-dmg-background.swift src-tauri/dmg/background.tiff` and commit both.
+- **The layout** is `bundle.macOS.dmg` in `src-tauri/tauri.conf.json`: a 660 × 448 pt window (420 pt of content under the title bar), the app at (170, 205) and Applications at (490, 205). The background's arrow, platforms and card are drawn for exactly these positions, so change them together.
+- **Tauri does the rest:** it hides the toolbar and status bar, uses the app's icon as the disk's icon, hides the `.app` extension, and compresses the image (UDZO, zlib level 9). Its icons are always 128 pt with 16 pt names, a little larger than Mac Engine Room's 112 pt and 13 pt, and that can't be changed in `tauri.conf.json`.
+- **Finder lays out the window**, through AppleScript, during the build. On a Mac, the first local `cargo tauri build` asks to let your terminal control Finder (**System Settings → Privacy & Security → Automation**). On GitHub's Macs, `osascript` already has that permission, and tauri-action sets `TAURI_BUNDLER_DMG_IGNORE_CI=true` so the layout step isn't skipped on CI.
+
 ## Settings the workflows depend on
 
 The release workflow assumes the following. They live in files the app's build owns, so whoever edits those files needs to keep them.
@@ -139,6 +148,8 @@ What each one is for:
 | `bundle.windows.nsis.installMode: "currentUser"` | Installs into the user's own folder (`%LOCALAPPDATA%`), so the installer and every update run without an administrator password. It's Tauri's default; set it anyway so nobody changes it by accident. Not `perMachine` or `both`. |
 | `plugins.updater.pubkey` | The public half of the update signing key, pasted in as text. It can't be a file path. It must match the private key in the secrets, or every update is refused. |
 | `plugins.updater.endpoints` | Exactly the URL above. GitHub's "latest" skips drafts and pre-releases, so only a published release reaches people. |
+
+Optional: `bundle.macOS.dmg` sets how the disk image's window looks (see [The macOS disk image](#the-macos-disk-image)). Without it the release still works, with a plain white window.
 
 Optional: `plugins.updater.windows.installMode` sets how an update installs on Windows. The default, `"passive"`, shows a small progress window and needs no clicks. `"quiet"` shows nothing, and works only because the app is installed per user. The workflows work with either.
 
