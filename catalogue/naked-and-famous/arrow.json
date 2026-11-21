@@ -26,6 +26,7 @@
         "sanforized": true
       },
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {
         "amount": 232,
         "currency": "USD",
@@ -194,6 +195,7 @@
         "sanforized": true
       },
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {
         "amount": 189,
         "currency": "USD",
@@ -386,6 +388,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 195,
         "currency": "USD",

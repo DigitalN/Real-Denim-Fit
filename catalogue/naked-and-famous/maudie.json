@@ -26,6 +26,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 128,
         "currency": "USD",
@@ -231,6 +232,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 195,
         "currency": "USD",
@@ -446,6 +448,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 162,
         "currency": "USD",
@@ -651,6 +654,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 128,
         "currency": "USD",

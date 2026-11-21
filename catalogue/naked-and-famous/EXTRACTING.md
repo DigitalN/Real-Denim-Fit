@@ -76,16 +76,34 @@ The rules are in "What goes in" in [catalogue-format.md](../../docs/catalogue-fo
 - **Sanforized:**
   - `false` where the description says unsanforized or loomstate (38 products).
   - Otherwise `true`, from the [FAQ](https://nakedandfamousdenim.com/pages/faq): "All of our jeans are sanforized unless otherwise specified in the item description."
-- **Sold:**
-  - `one-washed` (20 products) where the description says the jeans themselves were washed: "Rinse-washed", "This jean has been rinse-washed", "each pair has undergone a rinse wash", "This denim has been rinsed".
-  - Otherwise `raw`. The site footer says "no washes, no distressing".
-  - Treatments to the fabric before sewing don't count as a wash: "Fabric rinsed", "enzyme washed in Japan", "fabric bleached", "tempi treated" on its own.
+- **Finish and sold:** decided from each product's description, not the fabric name. `sold` follows `finish`: `raw` goes with `"raw"`, and rinsed or washed go with `"one-washed"`. On this run: 346 raw, 54 rinsed, 8 washed, 0 `null`.
+  - **`washed` (8):** faded on purpose.
+    - Secret Agent Denim, Bleach Blue (6): "fabric bleached".
+    - Vintage Blues Selvedge (2): "enzyme washed in Japan … bringing out a beautifully faded blue tone".
+  - **`rinsed` (54):** washed or soaked once, not faded.
+    - Jeans rinsed after sewing: "Rinse-washed", "This jean has been rinse-washed", "each pair has undergone a rinse wash", "This denim has been rinsed".
+    - "Pre-washed": Active Motion Denim.
+    - Fabric rinsed before sewing: Archive Blue, Nightfall, Laidback Black, Vertical Slub Denim, 10oz Rinsed Denim.
+    - Tempi (or "Tenpi") treated: the Made-in-Japan series.
+  - **`raw`:** everything else. The site footer says "no washes, no distressing". Fabrics that are made to fade, like Dirty Fade Selvedge and Vintage Nudes Redux, are raw when the page doesn't say they were washed.
 - **Shrinkage:**
   - Sanforized raw products get `percent`, length 2 and width 2, from the [Raw Denim Guide](https://nakedandfamousdenim.com/pages/raw-denim): "will shrink only about 1–3% after the first wash".
-  - Washed products get `null`.
-  - Unsanforized products without a figure get `null`: Cat's Pyjamas only says "approximately two sizes".
+  - Rinsed and washed products get `null`.
+  - Unsanforized raw products without a figure get `null`: Cat's Pyjamas only says "approximately two sizes".
   - The Hedorah products have their own figure.
-- **Unsanforized with one chart:** the Made-in-Japan series (MIJ7, 9, 10, 14, 16, 17, 19) and High Noon. The pages say the fabric is pre-shrunk ("tempi"/"Tenpi treated", "removes the fabric's residual shrinkage", "eliminates shrinkage") or the pair was rinse-washed, so the one chart is the size to choose. Shrinkage is `null`, as for any product that won't shrink, or whose shrinkage the brand doesn't give.
+- **Unsanforized with one chart:** the Made-in-Japan series (MIJ7, 9, 10, 14, 16, 17, 19) and High Noon. The pages say the fabric is pre-shrunk ("tempi"/"Tenpi treated", "removes the fabric's residual shrinkage", "eliminates shrinkage") or the pair was rinse-washed. So these are `rinsed` and `one-washed`, and the one chart is the size to choose.
+
+### Doubtful finish calls
+
+- **Tempi-treated Made-in-Japan products → `rinsed`.** Tempi is "a soak and hang-dry process" that shrinks the fabric, so it isn't "never washed". But N&F stresses that it keeps "the crispy raw feel", so someone could call these raw.
+- **Fabric rinsed before sewing → `rinsed`** (Archive Blue, Nightfall, Laidback Black, Vertical Slub Denim, 10oz Rinsed Denim). The jeans themselves weren't washed after sewing.
+- **Secret Agent Denim, Bleach Blue → `washed`.** The fabric was bleached by a dye house "at the fabric stage" and then "cut and sewn without any garment washing". It looks bleached, which the format counts as washed.
+- **Active Motion Denim → `rinsed`.** The page only says "Pre-washed" and mentions no fading.
+- **Solid Black Selvedge Washed (True Girl) → `rinsed`.** Despite "Washed" in the name, the page says "This denim has been rinsed for extra comfort".
+- **Kept `raw`, though the colour may look faded:**
+  - 2x1 Dungaree Nep Denim, Mid Indigo: "a bright, faded look", from its light indigo and grey weft.
+  - Antique Blue Denim Stretch: "vintagecast blue".
+  - Neither page mentions a wash.
 - **Price:**
   - USD, the store's base currency. `products.json` and the page's JSON-LD agree on all 575 pages. A browser in Canada shows CAD.
   - When `compare_at_price` > `price` the product is on sale, and the list price is `compare_at_price`. 92 of the 408 were on sale for Black Friday.
@@ -201,4 +219,6 @@ The extraction script was a throwaway in the session's scratchpad; this section 
    - no after-wash number is above its as-sold number
    - values fall in sensible ranges
    - `line` is set on every cut
+   - `finish` is set on every product, and `sold` matches it
+   - no rinsed or washed product carries the raw-denim shrinkage
 6. Spot-check sizes in a browser: open "Size chart" on the page and compare. A newsletter popup may cover the page, and unsanforized products open a sizing dialog with pre-wash and post-wash tabs.

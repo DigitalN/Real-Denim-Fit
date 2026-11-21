@@ -25,23 +25,15 @@
         ],
         "sanforized": true
       },
-      "sold": "raw",
+      "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {
         "amount": 162,
         "currency": "USD",
         "url": "https://nakedandfamousdenim.com/products/womens-max-active-motion-denim",
         "seen": "2026-11-20"
       },
-      "shrinkage": {
-        "kind": "percent",
-        "length": 2,
-        "width": 2,
-        "note": "Sanforized raw denim \"will shrink only about 1–3% after the first wash\" (N&F Raw Denim Guide)",
-        "source": {
-          "url": "https://nakedandfamousdenim.com/pages/raw-denim",
-          "seen": "2026-11-20"
-        }
-      },
+      "shrinkage": null,
       "charts": [
         {
           "state": "as-sold",
@@ -231,6 +223,7 @@
         "sanforized": true
       },
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {
         "amount": 232,
         "currency": "USD",
@@ -399,6 +392,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 193,
         "currency": "USD",
@@ -618,6 +612,7 @@
         "sanforized": true
       },
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {
         "amount": 189,
         "currency": "USD",
@@ -817,6 +812,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 247,
         "currency": "USD",
@@ -1022,6 +1018,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 174,
         "currency": "USD",
@@ -1223,6 +1220,7 @@
         "sanforized": true
       },
       "sold": "one-washed",
+      "finish": "rinsed",
       "list_price": {
         "amount": 193,
         "currency": "USD",
@@ -1405,6 +1403,7 @@
         "sanforized": true
       },
       "sold": "raw",
+      "finish": "raw",
       "list_price": {
         "amount": 176,
         "currency": "USD",
