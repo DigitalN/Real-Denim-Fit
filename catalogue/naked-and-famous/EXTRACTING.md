@@ -198,27 +198,30 @@ These are errors in N&F's own charts. Check each one again on the next run: N&F 
 
 ## How to rerun
 
-The extraction script was a throwaway in the session's scratchpad; this section describes everything it did.
+Use [`tools/catalogue/naked-and-famous/nf_catalogue.py`](../../tools/catalogue/naked-and-famous/nf_catalogue.py). It's Python 3 standard library only, and its header says how to run it. From the repository root:
 
-1. Fetch `products.json?limit=250&page=1…` until a page is empty, and keep every `product_type == "Jeans"` product.
-2. Leave out the non-denim and non-jeans fabrics above. Fetch each remaining product page, about 3 s apart, and save it as `<handle>.html`. Note the date for each page.
-3. For each page, read the panel as described above. Cut and product name come from the `products.json` title, split on " - ".
-   - Product id: cut id plus the slug of the fabric part.
-   - Product name: the fabric part, with " - " replaced by ", ".
-   - Then apply the fabric, state, shrinkage and price rules above.
-4. Flag anything that breaks the run of a row, falls outside sensible ranges, or contradicts the format, and decide each case by hand, as above:
-   - a value more than 2″ (waist 4″) from both its neighbours
-   - a waist more than 3″ below or 9″ above its tag
-   - a seat smaller than the thigh
-   - a size smaller than the size before it
-   - a size header that isn't a two-digit tag
-5. Validate:
-   - every file parses
-   - every chart has a waist and a thigh
-   - sizes are in order
-   - no after-wash number is above its as-sold number
-   - values fall in sensible ranges
-   - `line` is set on every cut
-   - `finish` is set on every product, and `sold` matches it
-   - no rinsed or washed product carries the raw-denim shrinkage
-6. Spot-check sizes in a browser: open "Size chart" on the page and compare. A newsletter popup may cover the page, and unsanforized products open a sizing dialog with pre-wash and post-wash tabs.
+```bash
+python3 tools/catalogue/naked-and-famous/nf_catalogue.py fetch --cache ~/nf-cache
+```
+
+```bash
+python3 tools/catalogue/naked-and-famous/nf_catalogue.py build --cache ~/nf-cache
+```
+
+```bash
+python3 tools/catalogue/naked-and-famous/nf_catalogue.py check
+```
+
+1. **`fetch`** saves today's `products.json` and every in-scope product page into the cache, 3 s apart. It skips pages already cached unless you pass `--refresh`, and records the date each page was read.
+2. **`build`** rewrites the cut files from the cache.
+   - It follows every rule in this file, plus the manual calls in [`decisions.json`](../../tools/catalogue/naked-and-famous/decisions.json): cuts, lines and labels, exclusion rules, and numbers left out, each with its reason.
+   - Products N&F no longer lists stay, marked `"discontinued"`.
+   - It writes `report.json` in the cache: every product included or skipped, every number left out and why, and every flag.
+   - It exits 2 while anything is flagged: a new cut, a chart typo, a description that never calls the fabric denim, or a fabric it can't read. Decide each flag in `decisions.json` (or add an exclusion rule), then run `build` again. Re-check the old calls too: N&F may fix its charts.
+3. **`check`** checks every file against the format and the CI rules.
+4. **Spot-check** a few sizes in a browser: open "Size chart" on the page and compare. A newsletter popup may cover the page, and unsanforized products open a sizing dialog with pre-wash and post-wash tabs.
+
+**Known problem, 2026-11-21:**
+- N&F answered `fetch`'s requests (Python `urllib`) with HTTP 429 every time, while the same URLs loaded normally with curl.
+- Until that's settled, `fetch` stops with a message. You can fill the cache another way, in the layout described at the top of the script, and `build` and `check` work as usual.
+- The 2026-11-21 catalogue was read with curl, and `build` reproduces it exactly from those saved pages.
