@@ -35,6 +35,8 @@ Once everything is entered, a single form lets you change any number.
 
 The app shows the usual name for the combination, such as "slim tapered". The waist isn't a choice: it should fit your waist.
 
+- **Importance:** each measurement counts from 1 (least) to 5 (most), starting at 3, set with five dots per measurement.
+
 ### Reference pairs (optional, as many as you like, each with a name)
 
 - **Measured by you.** Button it, lay it flat and smooth it without stretching. Then measure flat:
@@ -70,8 +72,8 @@ The app shows the usual name for the combination, such as "slim tapered". The wa
    - **Otherwise:** your body plus the ease your room calls for there, from the **ease table** below. Each brand's knee is compared with your leg reading at that brand's knee point.
    - **Inseam:** at least the inseam you want, or, where a reference pair has an inseam reading, at least that reading shifted by its nudge. Longer is fine, because raw denim gets hemmed. Shorter scores like passing a target's edge.
    - **Leg opening, front rise and back rise:** only from a reference pair. Without one, leg shape and rise act as filters instead (step 4).
-   - **Any measurement** can be set to "doesn't matter".
-3. **Hard limit.** Anything tighter than your body plus **minimum ease**, at any point that can be compared, is left out entirely.
+   - **Every measurement** keeps its target whatever its **importance**; importance only changes how much it counts in closeness (step 5).
+3. **Hard limit.** Anything tighter than your body plus **minimum ease**, at any point that can be compared, is left out entirely, at every importance.
 4. **Leg shape and rise** are worked out from each size's own numbers ([ADR 0008](adr/0008-leg-shape-and-rise-from-the-numbers.md)):
    - Leg shape from knee minus leg opening, flat: tapered is 3 cm or more, straight is 1–3 cm, wide is under 1 cm.
    - Rise is low, mid or high by which third its front rise falls in among every product in the catalogue at the same waist.
@@ -79,7 +81,9 @@ The app shows the usual name for the combination, such as "slim tapered". The wa
 5. **Closeness** ([ADR 0009](adr/0009-closeness-judged-by-the-worst-measurement.md)):
    - Each measurement scores 100% at the middle of its target and 80% at its edges.
    - Beyond the edges it loses 10% for every ⅛″ (3 mm) flat, down to 0%.
-   - A match's closeness is its worst measurement's, and ties go to the higher average.
+   - Each measurement's shortfall is 100% minus its closeness, and counts in proportion to its **importance** divided by the highest importance currently set.
+   - A match's closeness is 100% minus its largest weighted shortfall, and ties go to the smaller weighted average. With every importance equal, that's the worst measurement's closeness and the higher average.
+   - The closeness shown for each measurement stays unweighted.
    - A measurement the brand doesn't publish shows "not published". When two matches are equally close, the one compared on more measurements comes first.
    - Matches from a brand that doesn't say where it measures are marked "approximate".
 6. **Stretch products** have every ease range 2 cm lower, measured around the body (1 cm flat), never below their minimum ease, which is 0.

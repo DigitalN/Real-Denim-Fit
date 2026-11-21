@@ -133,6 +133,10 @@ _Avoid_: rating, feedback, review
 A small shift the user asks for at one measurement, a little more or a little less, on top of the target.
 _Avoid_: adjustment, offset, tweak
 
+**Importance**:
+How much one measurement counts in a user's matches, from 1 (least) to 5 (most).
+_Avoid_: weight, priority
+
 **Try-on Brand**:
 A brand the user has marked as one they can try on locally.
 _Avoid_: local brand, nearby brand, stockist
@@ -162,5 +166,5 @@ A product in one size, with how close each of its garment measurements comes to 
 _Avoid_: recommendation, result, suggestion
 
 **Closeness**:
-How near a measurement comes to the middle of its target, as a percentage. A match's closeness is that of its furthest-off measurement.
+How near a measurement comes to the middle of its target, as a percentage. A match's closeness is that of its furthest-off measurement, each one's shortfall weighted by its importance.
 _Avoid_: score, match rate, rating
