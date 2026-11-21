@@ -1,21 +1,29 @@
 # Repo layout
 
-Where everything lives. Parts of the first build are being written in parallel, so these paths and names are fixed: keep to them.
+Where everything lives. Paths and names can change, but only in a PR that updates this file in the same change, so this table always matches the repo.
 
 | Path | What it is |
 |---|---|
-| `Cargo.toml` | Cargo workspace at the root. `cargo test --workspace` runs every test, including catalogue validation. |
+| `Cargo.toml`, `Cargo.lock` | Cargo workspace at the root. `cargo test --workspace` runs every test, including catalogue validation. |
+| `.rustfmt.toml` | `cargo fmt` settings (`max_width = 120`). |
+| `README.md`, `LICENSE` | What the app is, and its licence. |
 | `src-tauri/` | The Tauri 2 app crate, `real-denim-fit`. Product name "Real Denim Fit", bundle identifier `io.github.digitaln.realdenimfit`. |
+| `src-tauri/examples/preview.rs` | Serves the screens at http://localhost:1420 with the same Rust behind them, without building the app (`cargo run -p real-denim-fit --example preview`). |
 | `src-tauri/dmg/` | The macOS disk image's window background, `background.tiff`, and `make-dmg-background.swift`, the script that draws it. The script is run by hand on a Mac and never built into the app. See [RELEASING.md](RELEASING.md#the-macos-disk-image). |
-| `crates/` | Rust library crates, such as the matching core. |
 | `ui/` | The screens: static HTML, CSS and JavaScript, with no bundler and no npm. `tauri.conf.json` has `"frontendDist": "../ui"`. |
 | `ui/guide/` | The measuring guide: one SVG drawing per step, plus `steps.json` (format below). |
+| `crates/fit-core/` | The matching core: matching, catalogue and ease table. Its tests are in `crates/fit-core/tests/`. |
+| `crates/fit-core/data/` | `ease-table.json`, the ease table, with a source on every number, and `levis-body-chart.json`, which only the calibration test reads. `crates/fit-core/build.rs` builds both into the app. |
 | `catalogue/` | The catalogue, in the format in [catalogue-format.md](catalogue-format.md). The app builds in only `catalogue/exchange-rates.json` and `catalogue/<brand>/*.json`. |
-| `catalogue/<brand-id>/tools/` | Each brand's extraction scripts, used by `/update-catalogue`: Python 3 with the standard library only, plus browser JavaScript snippets. The build (`crates/fit-core/build.rs`) and validation (`Catalogue::from_dir`) read only the JSON files directly inside a brand folder and skip sub-folders, so nothing here, not even a JSON file such as `naked-and-famous/tools/decisions.json`, reaches the app. |
-| `crates/fit-core/data/` | `ease-table.json`, the ease table, with a source on every number, and `levis-body-chart.json`, which only the calibration test reads. Both are built into the app. |
+| `catalogue/<brand-id>/tools/` | Each brand's extraction scripts, used by `/update-catalogue`: Python 3 with the standard library only, plus browser JavaScript snippets. Run them from the repo root. The build (`crates/fit-core/build.rs`) and validation (`Catalogue::from_dir`) read only the JSON files directly inside a brand folder and skip sub-folders, so nothing here, not even a JSON file such as `naked-and-famous/tools/decisions.json`, reaches the app. |
+| `docs/` | [PLAN.md](PLAN.md) (the design), [GLOSSARY.md](GLOSSARY.md) (the words), [catalogue-format.md](catalogue-format.md), [RELEASING.md](RELEASING.md) and this file. |
+| `docs/adr/` | The decisions behind the design, one file each. |
+| `docs/research/` | The facts the design rests on: what brands publish and the ease research. |
+| `docs/verification/` | Dated records of checks on a build. They describe the repo as it was on that date, so their paths aren't updated. |
 | `.github/workflows/` | `ci.yml` (on pull requests) and `release.yml` (run by hand). |
 | `.claude/CLAUDE.md` | Instructions Claude Code reads in every session here. |
 | `.claude/commands/` | `update-catalogue.md` and `release.md`. |
+| `.claude/launch.json` | The `preview` dev server config, on port 1420. |
 
 ## Building
 
