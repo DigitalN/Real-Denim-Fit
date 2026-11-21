@@ -1,0 +1,11 @@
+{
+  "id": "iron-heart",
+  "name": "Iron Heart",
+  "site": "https://www.ironheart.co.uk",
+  "currency": "GBP",
+  "sizing": "waist",
+  "tolerance": null,
+  "conventions": {"waist": "around", "seat": "flat", "thigh": "flat", "knee": "flat", "leg_opening": "flat"},
+  "measuring_points": {"thigh": "at-crotch", "knee": "13in-below-crotch", "seat": "unknown"},
+  "method_source": {"url": "https://www.ironheart.co.uk/pages/how-we-measure-bottoms", "seen": "2026-11-20"}
+}

@@ -1,0 +1,177 @@
+{
+  "id": "1955",
+  "brand": "iron-heart",
+  "name": "1955",
+  "brand_label": "Vintage Tapered Cut",
+  "products": [
+    {
+      "id": "1955s",
+      "name": "21oz Selvedge Denim - Indigo",
+      "url": "https://www.ironheart.co.uk/products/ih-1955s",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
+      "sold": "one-washed",
+      "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-1955s", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.ironheart.co.uk/products/ih-1955s", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 29.0, "front_rise": 12.1, "back_rise": 15.5, "thigh": 11.7, "knee": 8.7, "leg_opening": 7.3, "inseam": 36.0}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29.6, "front_rise": 12.1, "back_rise": 15.5, "thigh": 11.7, "knee": 8.9, "leg_opening": 7.4, "inseam": 35.6}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 31.2, "front_rise": 12.6, "back_rise": 15.8, "thigh": 12.2, "knee": 9.2, "leg_opening": 7.7, "inseam": 36.2}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 32.1, "front_rise": 12.6, "back_rise": 15.9, "thigh": 12.5, "knee": 9.4, "leg_opening": 7.8, "inseam": 35.9}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 33.3, "front_rise": 12.8, "back_rise": 16.1, "thigh": 12.9, "knee": 9.6, "leg_opening": 8.1, "inseam": 36.1}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33.7, "front_rise": 12.9, "back_rise": 16.2, "thigh": 13.1, "knee": 9.8, "leg_opening": 8.3, "inseam": 36.0}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34.6, "front_rise": 13.3, "back_rise": 16.5, "thigh": 13.4, "knee": 10.0, "leg_opening": 8.4, "inseam": 36.2}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 36.2, "front_rise": 13.4, "back_rise": 16.8, "thigh": 13.7, "knee": 10.1, "leg_opening": 8.7, "inseam": 36.2}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 36.8, "front_rise": 13.7, "back_rise": 17.1, "thigh": 14.2, "knee": 10.4, "leg_opening": 8.9, "inseam": 36.2}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38.6, "front_rise": 14.1, "back_rise": 17.2, "thigh": 14.7, "knee": 10.7, "leg_opening": 9.3, "inseam": 36.2}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40.4, "front_rise": 14.4, "back_rise": 17.9, "thigh": 15.2, "knee": 11.2, "leg_opening": 9.6, "inseam": 36.4}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 42.7, "front_rise": 14.7, "back_rise": 18.2, "thigh": 15.8, "knee": 11.5, "leg_opening": 10.4, "inseam": 36.3}},
+            {"label": "44", "waist_tag": 44, "measurements": {"waist": 44.8, "front_rise": 15.1, "back_rise": 18.5, "thigh": 16.6, "knee": 11.9, "leg_opening": 10.3, "inseam": 36.5}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1955s-142",
+      "name": "14oz Selvedge Denim - Indigo",
+      "url": "https://www.ironheart.co.uk/products/ih-1955s-142",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
+      "sold": "one-washed",
+      "list_price": {"amount": 255, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-1955s-142", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.ironheart.co.uk/products/ih-1955s-142", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28.8, "front_rise": 12.0, "back_rise": 15.3, "thigh": 11.5, "knee": 8.6, "leg_opening": 7.3, "inseam": 35.5}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29.9, "front_rise": 12.2, "back_rise": 15.6, "thigh": 12.0, "knee": 8.9, "leg_opening": 7.4, "inseam": 35.5}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 30.5, "front_rise": 12.3, "back_rise": 15.7, "thigh": 12.3, "knee": 9.1, "leg_opening": 7.5, "inseam": 35.5}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 31.2, "front_rise": 12.5, "back_rise": 15.9, "thigh": 12.5, "knee": 9.3, "leg_opening": 7.8, "inseam": 35.5}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 32.2, "front_rise": 12.6, "back_rise": 16.0, "thigh": 12.7, "knee": 9.5, "leg_opening": 8.0, "inseam": 35.5}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33.3, "front_rise": 13.0, "back_rise": 16.2, "thigh": 13.2, "knee": 9.6, "leg_opening": 8.2, "inseam": 35.5}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34.0, "front_rise": 13.1, "back_rise": 16.4, "thigh": 13.5, "knee": 9.8, "leg_opening": 8.3, "inseam": 35.5}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 35.2, "front_rise": 13.4, "back_rise": 16.7, "thigh": 13.8, "knee": 10.1, "leg_opening": 8.5, "inseam": 35.5}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 36.5, "front_rise": 13.6, "back_rise": 16.9, "thigh": 14.0, "knee": 10.3, "leg_opening": 8.8, "inseam": 36.0}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38.9, "front_rise": 14.1, "back_rise": 17.3, "thigh": 14.6, "knee": 10.7, "leg_opening": 9.1, "inseam": 36.0}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40.0, "front_rise": 14.3, "back_rise": 17.4, "thigh": 15.2, "knee": 11.0, "leg_opening": 9.3, "inseam": 36.0}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 42.0, "front_rise": 14.4, "back_rise": 17.5, "thigh": 15.3, "knee": 11.1, "leg_opening": 9.4, "inseam": 36.0}},
+            {"label": "44", "waist_tag": 44, "measurements": {"waist": 43.2, "front_rise": 14.4, "back_rise": 17.7, "thigh": 15.5, "knee": 11.3, "leg_opening": 9.5, "inseam": 36.0}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1955s-142od",
+      "name": "14oz Selvedge Denim - Indigo Overdyed Black",
+      "url": "https://www.ironheart.co.uk/products/ih-1955s-142od",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 14, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
+      "sold": "one-washed",
+      "list_price": {"amount": 293, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-1955s-142od", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.ironheart.co.uk/products/ih-1955s-142od", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28.3, "front_rise": 11.6, "back_rise": 15.1, "thigh": 11.4, "knee": 8.5, "leg_opening": 7.2, "inseam": 34.5}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29.3, "front_rise": 11.8, "back_rise": 15.3, "thigh": 11.8, "knee": 8.8, "leg_opening": 7.4, "inseam": 34.5}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 30.0, "front_rise": 12.1, "back_rise": 15.5, "thigh": 12.1, "knee": 9.0, "leg_opening": 7.6, "inseam": 34.5}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 31.0, "front_rise": 12.3, "back_rise": 15.8, "thigh": 12.4, "knee": 9.2, "leg_opening": 7.7, "inseam": 34.5}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 31.9, "front_rise": 12.7, "back_rise": 16.0, "thigh": 12.6, "knee": 9.3, "leg_opening": 7.9, "inseam": 35.0}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33.3, "front_rise": 12.9, "back_rise": 16.1, "thigh": 12.9, "knee": 9.5, "leg_opening": 8.1, "inseam": 35.0}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34.0, "front_rise": 13.0, "back_rise": 16.3, "thigh": 13.4, "knee": 9.9, "leg_opening": 8.3, "inseam": 35.0}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 35.3, "front_rise": 13.3, "back_rise": 16.4, "thigh": 13.6, "knee": 10.0, "leg_opening": 8.5, "inseam": 35.0}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 36.1, "front_rise": 13.5, "back_rise": 16.7, "thigh": 14.0, "knee": 10.1, "leg_opening": 8.7, "inseam": 35.0}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38.1, "front_rise": 13.9, "back_rise": 17.0, "thigh": 14.4, "knee": 10.5, "leg_opening": 9.0, "inseam": 35.5}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 40.2, "front_rise": 14.2, "back_rise": 17.3, "thigh": 15.1, "knee": 10.8, "leg_opening": 9.4, "inseam": 35.5}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 42.0, "front_rise": 14.3, "back_rise": 17.4, "thigh": 15.2, "knee": 10.9, "leg_opening": 9.5, "inseam": 35.5}},
+            {"label": "44", "waist_tag": 44, "measurements": {"waist": 43.0, "front_rise": 14.4, "back_rise": 17.5, "thigh": 15.6, "knee": 11.0, "leg_opening": 9.6, "inseam": 35.5}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1955s-od",
+      "name": "21oz Selvedge Denim - Indigo Overdyed Black",
+      "url": "https://www.ironheart.co.uk/products/ih-1955s-od",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 21, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
+      "sold": "one-washed",
+      "list_price": {"amount": 315, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-1955s-od", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.ironheart.co.uk/products/ih-1955s-od", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 28.4, "front_rise": 11.7, "back_rise": 15.0, "thigh": 11.8, "knee": 8.8, "leg_opening": 7.3, "inseam": 34.5}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 29.1, "front_rise": 11.9, "back_rise": 15.2, "thigh": 12.1, "knee": 9.0, "leg_opening": 7.5, "inseam": 34.5}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 30.5, "front_rise": 12.1, "back_rise": 15.5, "thigh": 12.3, "knee": 9.2, "leg_opening": 7.7, "inseam": 34.5}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 31.4, "front_rise": 12.4, "back_rise": 15.7, "thigh": 12.7, "knee": 9.4, "leg_opening": 7.8, "inseam": 34.5}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 32.4, "front_rise": 12.6, "back_rise": 15.8, "thigh": 12.9, "knee": 9.6, "leg_opening": 7.9, "inseam": 34.5}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 33.4, "front_rise": 12.7, "back_rise": 16.1, "thigh": 13.1, "knee": 9.7, "leg_opening": 8.1, "inseam": 35.0}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 34.3, "front_rise": 13.0, "back_rise": 16.2, "thigh": 13.5, "knee": 10.0, "leg_opening": 8.2, "inseam": 35.0}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 35.7, "front_rise": 13.1, "back_rise": 16.4, "thigh": 14.0, "knee": 10.1, "leg_opening": 8.5, "inseam": 35.0}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 37.2, "front_rise": 13.6, "back_rise": 16.9, "thigh": 14.6, "knee": 10.6, "leg_opening": 8.9, "inseam": 35.0}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 38.9, "front_rise": 13.8, "back_rise": 17.1, "thigh": 15.1, "knee": 10.8, "leg_opening": 9.4, "inseam": 35.0}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 41.0, "front_rise": 14.5, "back_rise": 17.7, "thigh": 15.7, "knee": 11.3, "leg_opening": 9.7, "inseam": 35.0}},
+            {"label": "44", "waist_tag": 44, "measurements": {"waist": 42.8, "front_rise": 14.8, "back_rise": 17.8, "thigh": 16.2, "knee": 11.8, "leg_opening": 10.1, "inseam": 35.0}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1955s-slb",
+      "name": "The Shop Vancouver x Iron Heart Collaboration 16oz Slubby Selvedge Denim - Indigo",
+      "url": "https://www.ironheart.co.uk/products/ih-1955s-slb",
+      "status": "current",
+      "status_seen": "2026-11-20",
+      "fabric": {"weight_oz": 16, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
+      "sold": "one-washed",
+      "list_price": {"amount": 266, "currency": "GBP", "url": "https://www.ironheart.co.uk/products/ih-1955s-slb", "seen": "2026-11-20"},
+      "shrinkage": null,
+      "charts": [
+        {
+          "state": "as-sold",
+          "source": {"url": "https://www.ironheart.co.uk/products/ih-1955s-slb", "seen": "2026-11-20"},
+          "unit": "in",
+          "from_image": false,
+          "sizes": [
+            {"label": "28", "waist_tag": 28, "measurements": {"waist": 28.8, "front_rise": 11.5, "back_rise": 15.0, "thigh": 11.7, "knee": 8.8, "leg_opening": 7.3, "inseam": 36.5}},
+            {"label": "29", "waist_tag": 29, "measurements": {"waist": 29.7, "front_rise": 11.7, "back_rise": 15.3, "thigh": 12.0, "knee": 9.0, "leg_opening": 7.6, "inseam": 36.5}},
+            {"label": "30", "waist_tag": 30, "measurements": {"waist": 30.4, "front_rise": 12.0, "back_rise": 15.3, "thigh": 12.2, "knee": 9.3, "leg_opening": 7.7, "inseam": 36.5}},
+            {"label": "31", "waist_tag": 31, "measurements": {"waist": 31.4, "front_rise": 12.3, "back_rise": 15.5, "thigh": 12.5, "knee": 9.4, "leg_opening": 8.0, "inseam": 36.5}},
+            {"label": "32", "waist_tag": 32, "measurements": {"waist": 33.0, "front_rise": 12.4, "back_rise": 15.9, "thigh": 12.8, "knee": 9.5, "leg_opening": 8.1, "inseam": 36.5}},
+            {"label": "33", "waist_tag": 33, "measurements": {"waist": 33.5, "front_rise": 12.4, "back_rise": 15.9, "thigh": 13.2, "knee": 9.8, "leg_opening": 8.3, "inseam": 36.5}},
+            {"label": "34", "waist_tag": 34, "measurements": {"waist": 34.1, "front_rise": 12.8, "back_rise": 16.2, "thigh": 13.4, "knee": 10.1, "leg_opening": 8.4, "inseam": 37.0}},
+            {"label": "35", "waist_tag": 35, "measurements": {"waist": 35.0, "front_rise": 13.0, "back_rise": 16.3, "thigh": 13.6, "knee": 10.2, "leg_opening": 8.6, "inseam": 37.0}},
+            {"label": "36", "waist_tag": 36, "measurements": {"waist": 35.8, "front_rise": 13.3, "back_rise": 16.6, "thigh": 13.9, "knee": 10.4, "leg_opening": 8.7, "inseam": 37.0}},
+            {"label": "38", "waist_tag": 38, "measurements": {"waist": 38.2, "front_rise": 13.6, "back_rise": 17.0, "thigh": 14.6, "knee": 10.6, "leg_opening": 9.1, "inseam": 37.0}},
+            {"label": "40", "waist_tag": 40, "measurements": {"waist": 39.9, "front_rise": 13.8, "back_rise": 17.2, "thigh": 15.2, "knee": 11.0, "leg_opening": 9.5, "inseam": 37.0}},
+            {"label": "42", "waist_tag": 42, "measurements": {"waist": 41.5, "front_rise": 14.2, "back_rise": 17.3, "thigh": 15.3, "knee": 11.3, "leg_opening": 9.7, "inseam": 37.0}},
+            {"label": "44", "waist_tag": 44, "measurements": {"waist": 43.5, "front_rise": 14.4, "back_rise": 17.4, "thigh": 15.4, "knee": 11.4, "leg_opening": 9.8, "inseam": 37.0}}
+          ]
+        }
+      ]
+    }
+  ]
+}
