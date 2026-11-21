@@ -83,8 +83,11 @@ pub struct Match {
     /// `<brand>/<product>`.
     pub product_id: String,
     pub size: String,
-    /// The worst measurement's closeness.
+    /// 100% minus the largest shortfall, each weighted by its importance
+    /// over the highest importance set: with equal importance, the worst
+    /// measurement's closeness.
     pub closeness: f64,
+    /// 100% minus the average weighted shortfall; the tie-breaker.
     pub average: f64,
     /// How many measurements were compared.
     pub compared: usize,
@@ -374,12 +377,22 @@ pub fn find_matches_prepared(
                         })
                     })
                     .collect();
-                let scores: Vec<f64> = measurements.iter().filter_map(|m| m.closeness).collect();
-                let worst = scores.iter().copied().fold(100.0, f64::min);
-                let average = if scores.is_empty() {
+                // Each shortfall (100% minus closeness) counts in proportion to
+                // its importance over the highest importance set. With every
+                // importance equal this is the plain worst and average.
+                let highest = f64::from(fit.highest_importance());
+                let shortfalls: Vec<f64> = measurements
+                    .iter()
+                    .filter_map(|m| {
+                        let weight = f64::from(fit.importance_of(m.measurement)) / highest;
+                        Some((100.0 - m.closeness?) * weight)
+                    })
+                    .collect();
+                let worst = 100.0 - shortfalls.iter().copied().fold(0.0, f64::max);
+                let average = if shortfalls.is_empty() {
                     100.0
                 } else {
-                    scores.iter().sum::<f64>() / scores.len() as f64
+                    100.0 - shortfalls.iter().sum::<f64>() / shortfalls.len() as f64
                 };
                 let shape = leg_shape(&s.after);
                 let rise = item.rises[i];
@@ -392,7 +405,7 @@ pub fn find_matches_prepared(
                     size: s.size.clone(),
                     closeness: worst,
                     average,
-                    compared: scores.len(),
+                    compared: shortfalls.len(),
                     measurements,
                     leg_shape: shape,
                     rise,

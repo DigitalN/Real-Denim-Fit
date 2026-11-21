@@ -145,17 +145,29 @@ fn equally_close_matches_go_to_the_higher_average_then_more_measurements() {
     // Same worst and average, but C also publishes a seat, exactly as far
     // past its target's edge as the thigh is.
     let thigh_over = 13.2 * IN - (57.2 / 2.0 + 1.6 * IN);
-    let c_size = {
-        let mut s = size("32", 13.2);
-        s.measurements.insert(Seat, (97.8 / 2.0 + 1.8 * IN + thigh_over) / IN);
-        s
-    };
-    let c = product("c", "C", vec![chart(ChartState::AsSold, Unit::In, vec![c_size])]);
-    let d = simple("d", "D", &[("32", 13.2)]);
-    let mut p = profile(Room::Regular);
-    p.desired_fit.doesnt_matter = vec![Knee, Waist, Inseam];
-    let r = run(vec![d, c], &p, &filters());
+    let seat = (97.8 / 2.0 + 1.8 * IN + thigh_over) / IN;
+    let c = product(
+        "c",
+        "C",
+        vec![chart(
+            ChartState::AsSold,
+            Unit::In,
+            vec![row("32", 32.0, &[(Thigh, 13.2), (Seat, seat)])],
+        )],
+    );
+    let d = product(
+        "d",
+        "D",
+        vec![chart(
+            ChartState::AsSold,
+            Unit::In,
+            vec![row("32", 32.0, &[(Thigh, 13.2)])],
+        )],
+    );
+    let r = run(vec![d, c], &profile(Room::Regular), &filters());
     let (first, second) = (&r.rows[0].best, &r.rows[1].best);
+    assert!(close(first.closeness, second.closeness));
+    assert!(close(first.average, second.average));
     assert_eq!(first.product_id, "b/c");
     assert!(first.compared > second.compared);
 }
@@ -503,4 +515,108 @@ fn the_line_filter_keeps_unisex_cuts_with_either_line_and_unsaid_cuts_always() {
         }),
         ["Unsaid"]
     );
+}
+
+// --- Importance -------------------------------------------------------------
+
+fn with_importance(pairs: &[(fit_core::catalogue::Measurement, u8)]) -> Profile {
+    let mut p = profile(Room::Regular);
+    p.desired_fit.importance = pairs.iter().copied().collect();
+    p
+}
+
+fn measurement(m: &fit_core::matching::Match, which: fit_core::catalogue::Measurement) -> f64 {
+    m.measurements
+        .iter()
+        .find(|x| x.measurement == which)
+        .unwrap()
+        .closeness
+        .unwrap()
+}
+
+#[test]
+fn every_measurement_starts_at_importance_3() {
+    assert_eq!(profile(Room::Regular).desired_fit.importance_of(Thigh), 3);
+}
+
+#[test]
+fn a_shortfall_counts_in_proportion_to_its_importance_over_the_highest_set() {
+    // The thigh (13.2") is the worst measurement; everything else is close.
+    let products = || vec![simple("a", "A", &[("32", 13.2)])];
+    let plain = run(products(), &profile(Room::Regular), &filters());
+    let thigh = measurement(&plain.rows[0].best, Thigh);
+    assert!(
+        close(plain.rows[0].best.closeness, thigh),
+        "equal importance: the worst measurement"
+    );
+
+    // Thigh at 1 while the rest stay at 3: its shortfall counts a third.
+    let r = run(products(), &with_importance(&[(Thigh, 1)]), &filters());
+    let m = &r.rows[0].best;
+    let others_worst = m
+        .measurements
+        .iter()
+        .filter(|x| x.measurement != Thigh)
+        .filter_map(|x| x.closeness)
+        .fold(100.0, f64::min);
+    let expected = (100.0 - (100.0 - thigh) / 3.0).min(others_worst);
+    assert!(close(m.closeness, expected), "{} vs {}", m.closeness, expected);
+    assert!(m.closeness > thigh + 20.0);
+    // The closeness shown for each measurement stays unweighted.
+    assert!(close(measurement(m, Thigh), thigh));
+}
+
+#[test]
+fn importance_decides_which_shortfall_ranks_first() {
+    // A misses at the thigh, B misses at the knee, by similar amounts.
+    let a = simple("a", "A", &[("32", 13.2)]);
+    let mut b = simple("b", "B", &[("32", 12.56)]);
+    b.charts[0].sizes[0].measurements.insert(Knee, 10.5);
+    let thigh_less = run(vec![a.clone(), b.clone()], &with_importance(&[(Thigh, 1)]), &filters());
+    assert_eq!(thigh_less.rows[0].cut, "A");
+    let knee_less = run(vec![a, b], &with_importance(&[(Knee, 1)]), &filters());
+    assert_eq!(knee_less.rows[0].cut, "B");
+}
+
+#[test]
+fn the_same_importance_everywhere_ranks_exactly_as_the_default() {
+    let products = || {
+        vec![
+            simple("a1", "A", &[("31", 12.0), ("32", 12.55)]),
+            simple("b1", "B", &[("32", 13.2)]),
+            simple("c1", "C", &[("32", 12.9)]),
+        ]
+    };
+    let default = run(products(), &profile(Room::Regular), &filters());
+    for level in [1, 5] {
+        let all: Vec<_> = fit_core::catalogue::Measurement::ALL
+            .iter()
+            .map(|m| (*m, level))
+            .collect();
+        let r = run(products(), &with_importance(&all), &filters());
+        let key = |r: &fit_core::matching::Results| -> Vec<(String, String, i64)> {
+            r.rows
+                .iter()
+                .map(|x| {
+                    (
+                        x.cut.clone(),
+                        x.best.size.clone(),
+                        (x.best.closeness * 1000.0).round() as i64,
+                    )
+                })
+                .collect()
+        };
+        assert_eq!(key(&r), key(&default), "everything at {level}");
+    }
+}
+
+#[test]
+fn the_hard_limit_applies_at_every_importance() {
+    let r = run(
+        vec![simple("a", "A", &[("tight", 11.4), ("ok", 12.0)])],
+        &with_importance(&[(Thigh, 1)]),
+        &filters(),
+    );
+    assert_eq!(r.rows[0].best.size, "ok");
+    assert!(r.rows[0].other_sizes.is_empty());
 }

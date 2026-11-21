@@ -81,9 +81,33 @@ pub struct DesiredFit {
     pub leg_shape: Option<LegShape>,
     /// `None` means any.
     pub rise: Option<Rise>,
-    /// Measurements set to "doesn't matter".
+    /// How much each measurement counts, from 1 (least) to 5 (most). A
+    /// measurement that isn't listed is at 3.
     #[serde(default)]
-    pub doesnt_matter: Vec<Measurement>,
+    pub importance: BTreeMap<Measurement, u8>,
+}
+
+/// The importance every measurement starts at.
+pub const DEFAULT_IMPORTANCE: u8 = 3;
+
+impl DesiredFit {
+    /// A measurement's importance, 1 to 5.
+    pub fn importance_of(&self, m: Measurement) -> u8 {
+        self.importance
+            .get(&m)
+            .copied()
+            .unwrap_or(DEFAULT_IMPORTANCE)
+            .clamp(1, 5)
+    }
+
+    /// The highest importance currently set across all measurements.
+    pub fn highest_importance(&self) -> u8 {
+        Measurement::ALL
+            .iter()
+            .map(|m| self.importance_of(*m))
+            .max()
+            .unwrap_or(DEFAULT_IMPORTANCE)
+    }
 }
 
 impl DesiredFit {

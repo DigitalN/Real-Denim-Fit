@@ -163,13 +163,13 @@ fn a_pairs_inseam_shifted_by_its_feel_sets_the_least_inseam() {
 }
 
 #[test]
-fn a_measurement_set_to_doesnt_matter_has_no_target() {
+fn every_measurement_keeps_its_target_at_any_importance() {
     let mut p = profile(Room::Regular);
-    p.desired_fit.doesnt_matter = vec![Seat, Inseam];
+    p.desired_fit.importance = [(Seat, 1), (Inseam, 1)].into();
     let t = targets(&p, None, &ease(), ih_points(), false);
-    assert!(!t.targets.contains_key(&Seat));
-    assert!(!t.targets.contains_key(&Inseam));
-    assert!(t.targets.contains_key(&Thigh));
+    assert!(t.targets.contains_key(&Seat));
+    // The inseam stays an "at least" target.
+    assert_eq!(t.targets[&Inseam].target, Target::AtLeast { min: 81.0 });
 }
 
 #[test]

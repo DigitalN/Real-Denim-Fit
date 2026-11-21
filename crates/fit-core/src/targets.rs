@@ -127,9 +127,6 @@ pub fn targets(
         if let (Some(b), Some(min)) = (body_flat(m), ease.minimum(m, stretch)) {
             set.limits.insert(m, b + min);
         }
-        if fit.doesnt_matter.contains(&m) {
-            continue;
-        }
         let target = if m == Measurement::Inseam {
             match pair_reading(m) {
                 Some(r) => TargetFor {

@@ -196,7 +196,7 @@ pub fn profile(room: Room) -> Profile {
             room,
             leg_shape: None,
             rise: None,
-            doesnt_matter: vec![],
+            importance: Default::default(),
         },
         reference_pair: None,
     }
