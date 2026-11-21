@@ -68,7 +68,7 @@ The app shows the usual name for the combination, such as "slim tapered". The wa
 2. **A target at each measuring point** ([ADR 0006](adr/0006-body-first-reference-pair-optional.md)). Every **target** is a range with an ideal middle:
    - **Where a reference pair has a reading:** the reading ±¼″ (0.5 cm), shifted by its nudges.
    - **Otherwise:** your body plus the ease your room calls for there, from the **ease table** below. Each brand's knee is compared with your leg reading at that brand's knee point.
-   - **Inseam:** at least the inseam you want. Longer is fine, because raw denim gets hemmed.
+   - **Inseam:** at least the inseam you want, or, where a reference pair has an inseam reading, at least that reading shifted by its nudge. Longer is fine, because raw denim gets hemmed. Shorter scores like passing a target's edge.
    - **Leg opening, front rise and back rise:** only from a reference pair. Without one, leg shape and rise act as filters instead (step 4).
    - **Any measurement** can be set to "doesn't matter".
 3. **Hard limit.** Anything tighter than your body plus **minimum ease**, at any point that can be compared, is left out entirely.
@@ -82,12 +82,12 @@ The app shows the usual name for the combination, such as "slim tapered". The wa
    - A match's closeness is its worst measurement's, and ties go to the higher average.
    - A measurement the brand doesn't publish shows "not published". When two matches are equally close, the one compared on more measurements comes first.
    - Matches from a brand that doesn't say where it measures are marked "approximate".
-6. **Stretch products** have every ease range 2 cm lower and a minimum ease of 0.
+6. **Stretch products** have every ease range 2 cm lower, measured around the body (1 cm flat), never below their minimum ease, which is 0.
 7. **Brands sold in lengths** (Nudie's W32 L30/L32/L34): the app picks the shortest length that's at least your inseam.
 
 ### The starting ease table
 
-Ease is garment minus body, shown flat in inches here, for rigid denim after its first wash. It's stored in the repo with a source on every number, each marked "well sourced" or "best estimate". Only the minimums are well sourced: they come from a 2021 study of sitting in woven trousers (women only; no study on men turned up) and a pattern-cutting text. Changes go through a PR. Before the first release, tests compare every cut with Levi's published body chart for its size. If the cuts brands call slim mostly land in regular, the snug and regular ranges move up.
+Ease is garment minus body, shown flat in inches here, for rigid denim after its first wash. It's stored in the repo (`data/ease-table.json`) with a source on every number, each marked "well sourced" or "best estimate". Only the minimums are well sourced: they come from a 2021 study of sitting in woven trousers (women only; no study on men turned up) and a pattern-cutting text. Changes go through a PR. Before the first release, tests compare every cut with Levi's published body chart for its size. If the cuts brands call slim mostly land in regular, the snug and regular ranges move up.
 
 | Flat, inches | Snug | Regular | Roomy | Minimum |
 |---|---|---|---|---|
