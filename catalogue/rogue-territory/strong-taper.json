@@ -13,6 +13,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15.25, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 265, "currency": "USD", "url": "https://www.rogueterritory.com/products/strong-taper-15oz", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [
@@ -44,6 +45,7 @@
       "status_seen": "2026-11-20",
       "fabric": {"weight_oz": 15, "composition": [{"fibre": "cotton", "percent": 100}], "sanforized": true},
       "sold": "raw",
+      "finish": "raw",
       "list_price": {"amount": 265, "currency": "USD", "url": "https://www.rogueterritory.com/products/stealth-strong-taper-15oz", "seen": "2026-11-20"},
       "shrinkage": null,
       "charts": [

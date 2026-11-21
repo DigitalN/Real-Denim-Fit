@@ -32,6 +32,13 @@ Last full run: 2026-11-20. 30 products in 7 cuts, 294 sizes. None was sold out o
 
 - **`sanforized`:** taken from the `DENIM //` line where it says "sanforized". Otherwise it's `true` from the [FAQ](https://www.rogueterritory.com/pages/faq): "Our denim is sanforized (pre-shrunk) unless otherwise noted". That applies to stanton-11oz-stealth, strider-11oz-stealth, strider-13-5oz-indigo-x-black, strider-stealth-wash, and the four River and Vintage Wash products.
 - **`sold`:** River Wash, Vintage Wash, Stealth Wash and Rinsed are `"one-washed"`; the rest are `"raw"`.
+- **`finish`:** decided from each page's description. On this run that gave 24 raw, 1 rinsed and 5 washed.
+  - **Washed (5):**
+    - The Stanton and Strider **River Wash**: "a unique wash with distressing to mimic a decades old well-loved pair".
+    - The Stanton and Strider **Vintage Wash**: "a medium wash that captures the natural fade progression".
+    - The Strider **Stealth Wash**: it "highlights the unique fading potential" of the black denim and is "a jumpstart on your fade journey". *Slightly doubtful:* the page doesn't name a technique such as a stonewash, but it presents the wash as fading.
+  - **Rinsed (1):** Strider 15oz Rinsed Indigo, "pre-rinsed … to give these jeans a softer broken-in feel. The rinse brings out the natural indigo color". There's no fading.
+  - **Raw (24):** everything else. Their pages describe raw denim with no garment wash.
 - **`shrinkage`:** always `null`. The FAQ's advice to add 0.5″ to the inseam when hemming raw denim is general advice, not a product figure.
 - **Prices:** sale items have a `compare_at_price`, which is the list price and what's recorded. Variants with `compare_at_price` "0.00" are ignored.
 
