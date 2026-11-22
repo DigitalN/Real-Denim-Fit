@@ -7,7 +7,7 @@ Every step works in one folder: `--work DIR`, or by default `<tmp>/real-denim-fi
 ## 1. Fetch
 
 ```sh
-python3 tools/catalogue/rogue-territory/extract.py fetch --work <scratchpad>/catalogue-rogue-territory
+python3 catalogue/rogue-territory/tools/extract.py fetch --work <scratchpad>/catalogue-rogue-territory
 ```
 
 - Downloads `products.json` and keeps the products tagged `DENIM` whose fabric line says "denim". Herringbone, canvas and the like are listed as excluded.
@@ -31,7 +31,7 @@ Write `reads/<chart>-a.json` (your read) and `reads/<chart>-b.json` (a fresh sub
 ## 3. Compare
 
 ```sh
-python3 tools/catalogue/rogue-territory/extract.py compare --work <same folder>
+python3 catalogue/rogue-territory/tools/extract.py compare --work <same folder>
 ```
 
 - Compares A and B cell by cell.
@@ -43,7 +43,7 @@ python3 tools/catalogue/rogue-territory/extract.py compare --work <same folder>
 ## 4. Build
 
 ```sh
-python3 tools/catalogue/rogue-territory/extract.py build --work <same folder>
+python3 catalogue/rogue-territory/tools/extract.py build --work <same folder>
 ```
 
 - Writes `brand.json` and one file per cut to `catalogue/rogue-territory/` (or `--out DIR`), from the agreed cells only.
@@ -60,4 +60,4 @@ python3 tools/catalogue/rogue-territory/extract.py build --work <same folder>
 - `--offline`: for `fetch`, use only what's already in the work folder
 - `--no-enlarge`: for `fetch`, skip the `sips` copies
 
-See [`catalogue/rogue-territory/EXTRACTING.md`](../../../catalogue/rogue-territory/EXTRACTING.md) for the site's quirks.
+See [`catalogue/rogue-territory/EXTRACTING.md`](../EXTRACTING.md) for the site's quirks.

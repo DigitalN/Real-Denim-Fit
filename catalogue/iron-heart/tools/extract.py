@@ -3,9 +3,9 @@
 
 Usage (from the repo root; Python 3.9+ standard library only):
 
-    python3 tools/catalogue/iron-heart/extract.py                  # fetch, then write catalogue/iron-heart/
-    python3 tools/catalogue/iron-heart/extract.py --offline        # rebuild from the cache, no network
-    python3 tools/catalogue/iron-heart/extract.py --only ih-634s   # print one product's JSON, write nothing
+    python3 catalogue/iron-heart/tools/extract.py                  # fetch, then write catalogue/iron-heart/
+    python3 catalogue/iron-heart/tools/extract.py --offline        # rebuild from the cache, no network
+    python3 catalogue/iron-heart/tools/extract.py --only ih-634s   # print one product's JSON, write nothing
 
 Options: --date YYYY-MM-DD (the "seen" date, default today), --cache DIR (downloads,
 default <tmp>/real-denim-fit/iron-heart/<date>), --out DIR (default catalogue/iron-heart).

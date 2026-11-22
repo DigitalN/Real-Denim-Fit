@@ -198,23 +198,23 @@ These are errors in N&F's own charts. Check each one again on the next run: N&F 
 
 ## How to rerun
 
-Use [`tools/catalogue/naked-and-famous/nf_catalogue.py`](../../tools/catalogue/naked-and-famous/nf_catalogue.py). It's Python 3 standard library only, and its header says how to run it. From the repository root:
+Use [`catalogue/naked-and-famous/tools/nf_catalogue.py`](tools/nf_catalogue.py). It's Python 3 standard library only, and its header says how to run it. From the repository root:
 
 ```bash
-python3 tools/catalogue/naked-and-famous/nf_catalogue.py fetch --cache ~/nf-cache
+python3 catalogue/naked-and-famous/tools/nf_catalogue.py fetch --cache ~/nf-cache
 ```
 
 ```bash
-python3 tools/catalogue/naked-and-famous/nf_catalogue.py build --cache ~/nf-cache
+python3 catalogue/naked-and-famous/tools/nf_catalogue.py build --cache ~/nf-cache
 ```
 
 ```bash
-python3 tools/catalogue/naked-and-famous/nf_catalogue.py check
+python3 catalogue/naked-and-famous/tools/nf_catalogue.py check
 ```
 
 1. **`fetch`** saves today's `products.json` and every in-scope product page into the cache, 3 s apart. It skips pages already cached unless you pass `--refresh`, and records the date each page was read.
 2. **`build`** rewrites the cut files from the cache.
-   - It follows every rule in this file, plus the manual calls in [`decisions.json`](../../tools/catalogue/naked-and-famous/decisions.json): cuts, lines and labels, exclusion rules, and numbers left out, each with its reason.
+   - It follows every rule in this file, plus the manual calls in [`decisions.json`](tools/decisions.json): cuts, lines and labels, exclusion rules, and numbers left out, each with its reason.
    - Products N&F no longer lists stay, marked `"discontinued"`.
    - It writes `report.json` in the cache: every product included or skipped, every number left out and why, and every flag.
    - It exits 2 while anything is flagged: a new cut, a chart typo, a description that never calls the fabric denim, or a fabric it can't read. Decide each flag in `decisions.json` (or add an exclusion rule), then run `build` again. Re-check the old calls too: N&F may fix its charts.

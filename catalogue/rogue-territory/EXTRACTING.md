@@ -53,14 +53,14 @@ Last full run: 2026-11-20. 30 products in 7 cuts, 294 sizes. None was sold out o
 
 ## How to rerun
 
-The script does everything except read the images. See [`tools/catalogue/rogue-territory/README.md`](../../tools/catalogue/rogue-territory/README.md) for details.
+The script does everything except read the images. See [`catalogue/rogue-territory/tools/README.md`](tools/README.md) for details.
 
 ```sh
-python3 tools/catalogue/rogue-territory/extract.py fetch   --work <scratchpad>/catalogue-rogue-territory
+python3 catalogue/rogue-territory/tools/extract.py fetch   --work <scratchpad>/catalogue-rogue-territory
 # read every chart twice, independently: reads/<chart>-a.json and reads/<chart>-b.json
-python3 tools/catalogue/rogue-territory/extract.py compare --work <scratchpad>/catalogue-rogue-territory
+python3 catalogue/rogue-territory/tools/extract.py compare --work <scratchpad>/catalogue-rogue-territory
 # give any disputed cells to a third reader (reads/<chart>-c.json), then compare again
-python3 tools/catalogue/rogue-territory/extract.py build   --work <scratchpad>/catalogue-rogue-territory
+python3 catalogue/rogue-territory/tools/extract.py build   --work <scratchpad>/catalogue-rogue-territory
 ```
 
 - **`fetch`:**

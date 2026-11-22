@@ -4,14 +4,14 @@ Last full run: 2026-11-21, en-US store, USD. Dry jeans only (see "What's in"), m
 
 ## How to rerun
 
-The tools are in `tools/catalogue/nudie/`. The top of each file explains it. `WORK` is any scratch folder; it caches pages, so a rerun only fetches what's missing.
+The tools are in `catalogue/nudie/tools/`. The top of each file explains it. `WORK` is any scratch folder; it caches pages, so a rerun only fetches what's missing.
 
 1. **Cookies (the user does this).** Open a Nudie product page in the built-in browser. Ask the user to click **Size Guide → Update Cookie Settings** and accept. Never click the consent dialog yourself.
 2. **Widget key.** Run `widget.js` in that tab. It should return `consent.ok: true` and an `apiKey`. With no key, the consent isn't in place, so go back to step 1.
-3. **Products.** Run `python3 tools/catalogue/nudie/fetch_products.py WORK`. It makes about 300 page requests, 2 s apart, so the first run takes about 15 minutes.
+3. **Products.** Run `python3 catalogue/nudie/tools/fetch_products.py WORK`. It makes about 300 page requests, 2 s apart, so the first run takes about 15 minutes.
    - Then read `WORK/classification.tsv`, especially the rows marked "flagged Dry but never called dry or raw" and any products that are new since the last run.
-4. **Measurements.** Run `python3 tools/catalogue/nudie/fetch_virtusize.py WORK --api-key KEY`. Don't commit the key anywhere.
-5. **Build.** Run `python3 tools/catalogue/nudie/build.py WORK --seen YYYY-MM-DD`. It writes `catalogue/nudie/` and prints a report: products with no Virtusize data, sizes missing from Virtusize, name differences, products in `SKIP`, and charts identical to a different cut's.
+4. **Measurements.** Run `python3 catalogue/nudie/tools/fetch_virtusize.py WORK --api-key KEY`. Don't commit the key anywhere.
+5. **Build.** Run `python3 catalogue/nudie/tools/build.py WORK --seen YYYY-MM-DD`. It writes `catalogue/nudie/` and prints a report: products with no Virtusize data, sizes missing from Virtusize, name differences, products in `SKIP`, and charts identical to a different cut's.
    - A chart that matches another cut's in every size prints a WARNING until the wrong product is added to `SKIP` in `build.py`, with its reason. Matching charts within one cut are normal, because Nudie shares one chart across a cut's fabrics.
 6. **Spot-check.** Call `window.nudieOpenWidget("<uri>")` (defined by `widget.js`), pick a size and compare the labels with the files.
 

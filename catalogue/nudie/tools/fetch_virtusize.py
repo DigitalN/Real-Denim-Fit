@@ -1,7 +1,7 @@
 """Fetch the Virtusize measurement data behind each Nudie product's Size Guide widget.
 
 Usage (Python 3, standard library only):
-    python3 tools/catalogue/nudie/fetch_virtusize.py WORKDIR --api-key KEY
+    python3 catalogue/nudie/tools/fetch_virtusize.py WORKDIR --api-key KEY
 
     WORKDIR    the folder fetch_products.py wrote products.json into
     --api-key  window.vs.apiKey from a nudiejeans.com product page, read with widget.js AFTER

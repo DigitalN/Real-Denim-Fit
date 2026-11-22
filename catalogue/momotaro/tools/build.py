@@ -1,7 +1,7 @@
 """Build catalogue/momotaro/*.json from the output of scrape.js.
 
 Usage (Python 3, standard library only):
-    python3 tools/catalogue/momotaro/build.py momotaro-raw.json [--out catalogue/momotaro] [--seen YYYY-MM-DD]
+    python3 catalogue/momotaro/tools/build.py momotaro-raw.json [--out catalogue/momotaro] [--seen YYYY-MM-DD]
 
     momotaro-raw.json  what scrape.js produced (window.__momotaro.raw) in a tab on momotaro-jeans.com
     --out              where to write brand.json and one file per cut (default: catalogue/momotaro)

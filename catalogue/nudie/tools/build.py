@@ -1,7 +1,7 @@
 """Build catalogue/nudie/*.json from what fetch_products.py and fetch_virtusize.py saved.
 
 Usage (Python 3, standard library only):
-    python3 tools/catalogue/nudie/build.py WORKDIR [--out catalogue/nudie] [--seen YYYY-MM-DD] [--only URI,...]
+    python3 catalogue/nudie/tools/build.py WORKDIR [--out catalogue/nudie] [--seen YYYY-MM-DD] [--only URI,...]
 
     WORKDIR  the folder holding products.json, fits.json, vs/ and vs-sp/
     --out    where to write brand.json and one file per cut (default: catalogue/nudie)

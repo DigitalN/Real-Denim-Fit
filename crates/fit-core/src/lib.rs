@@ -1,6 +1,6 @@
 //! The matching core of Real Denim Fit.
 //!
-//! Words follow `GLOSSARY.md`. The design is in `docs/PLAN.md` and the
+//! Words follow `docs/GLOSSARY.md`. The design is in `docs/PLAN.md` and the
 //! decisions behind it in `docs/adr/`.
 
 pub mod after_wash;

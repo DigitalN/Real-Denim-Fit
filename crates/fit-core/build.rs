@@ -1,13 +1,15 @@
 //! Builds the catalogue and ease table into the binary.
 //!
-//! The catalogue comes from `catalogue/` at the repo root, or from the
+//! The ease table and Levi's body chart come from this crate's own `data/`
+//! folder. The catalogue comes from `catalogue/` at the repo root, or from the
 //! folder in `RDF_CATALOGUE_DIR` when it's set (used to try fixtures). A
 //! relative `RDF_CATALOGUE_DIR` is taken from the repo root. A folder that
 //! can't be read stops the build rather than building in an empty catalogue.
 use std::{env, fs, path::Path, path::PathBuf};
 
 fn main() {
-    let repo = Path::new(env!("CARGO_MANIFEST_DIR")).join("../..");
+    let crate_dir = Path::new(env!("CARGO_MANIFEST_DIR"));
+    let repo = crate_dir.join("../..");
     println!("cargo:rerun-if-env-changed=RDF_CATALOGUE_DIR");
     let catalogue: PathBuf = match env::var("RDF_CATALOGUE_DIR") {
         Ok(dir) if Path::new(&dir).is_absolute() => PathBuf::from(dir),
@@ -45,19 +47,19 @@ fn main() {
         out += &format!("    ({rel:?}, include_str!({:?})),\n", path.display().to_string());
     }
     out += "];\n";
-    let ease = repo
+    let ease = crate_dir
         .join("data/ease-table.json")
         .canonicalize()
-        .expect("data/ease-table.json");
+        .expect("crates/fit-core/data/ease-table.json");
     println!("cargo:rerun-if-changed={}", ease.display());
     out += &format!(
         "pub const EASE_TABLE: &str = include_str!({:?});\n",
         ease.display().to_string()
     );
-    let levis = repo
+    let levis = crate_dir
         .join("data/levis-body-chart.json")
         .canonicalize()
-        .expect("data/levis-body-chart.json");
+        .expect("crates/fit-core/data/levis-body-chart.json");
     println!("cargo:rerun-if-changed={}", levis.display());
     out += &format!(
         "pub const LEVIS_BODY_CHART: &str = include_str!({:?});\n",

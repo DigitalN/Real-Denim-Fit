@@ -3,7 +3,7 @@
 `extract.py` rebuilds `catalogue/3sixteen/` from 3sixteen.com. It needs only Python 3.9 or later with its standard library (macOS's built-in `/usr/bin/python3` works), and no browser.
 
 ```sh
-python3 tools/catalogue/3sixteen/extract.py
+python3 catalogue/3sixteen/tools/extract.py
 ```
 
 **What it does:**
@@ -32,4 +32,4 @@ python3 tools/catalogue/3sixteen/extract.py
 - `--out DIR`: write somewhere other than `catalogue/3sixteen/`
 - `--only HANDLE`: build one product, print its JSON and write nothing
 
-See [`catalogue/3sixteen/EXTRACTING.md`](../../../catalogue/3sixteen/EXTRACTING.md) for the site's quirks.
+See [`catalogue/3sixteen/EXTRACTING.md`](../EXTRACTING.md) for the site's quirks.
