@@ -53,7 +53,7 @@ much it counts. Anything too tight for you is left out, however little it counts
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/fit-dark.png">
-  <img alt="The desired fit, regular tapered: room, leg shape and rise as choices, and five importance dots for each measurement" src="docs/screenshots/fit-light.png">
+  <img alt="The desired fit, regular straight: room, leg shape and rise as choices, and five importance dots for each measurement" src="docs/screenshots/fit-light.png">
 </picture>
 
 ## Judged after the first wash
@@ -67,7 +67,7 @@ number to the page it came from, with the date it was seen.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/product-dark.png">
-  <img alt="A product, Nudie Jeans Steady Eddie II: its fabric and shrinkage, its as-sold and after-wash measurements side by side, and where each number comes from" src="docs/screenshots/product-light.png">
+  <img alt="A product, Nudie Jeans Rad Rufus: its fabric and shrinkage, its as-sold and after-wash measurements side by side, and where each number comes from" src="docs/screenshots/product-light.png">
 </picture>
 
 ## Know a pair that fits? Add it

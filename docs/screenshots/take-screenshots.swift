@@ -17,7 +17,8 @@
 //
 // The window is invisible (1% opaque, and clicks go through it) but on screen and in front,
 // because WebKit draws checkboxes and radio buttons faded in a window that's off screen or in
-// the background. So it takes the keyboard focus for the half minute it runs.
+// the background. So it takes the keyboard focus for the half minute it runs. The page ignores
+// the pointer, so nothing shows as hovered wherever it is.
 //
 // The app has no theme switch of its own: dark mode comes only from prefers-color-scheme in
 // ui/styles.css, so each picture is taken once with the view's appearance set to Aqua (light)
@@ -158,7 +159,11 @@ final class Shooter: NSObject, WKNavigationDelegate {
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        after(2.0, next)
+        // The window ignores clicks, but WebKit still follows the pointer, so a row under
+        // wherever it happens to be would show as hovered. Nothing on the page reacts to it.
+        view.evaluateJavaScript("document.documentElement.style.pointerEvents = 'none'") { _, _ in
+            self.after(2.0, self.next)
+        }
     }
 
     func after(_ seconds: TimeInterval, _ fn: @escaping () -> Void) {

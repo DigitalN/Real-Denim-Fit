@@ -19,7 +19,7 @@
   },
   "desiredFit": {
     "room": "regular",
-    "leg_shape": "tapered",
+    "leg_shape": "straight",
     "rise": null,
     "importance": {
       "thigh": 5,
