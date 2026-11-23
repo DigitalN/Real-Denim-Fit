@@ -4,8 +4,36 @@
     {
       "name": "preview",
       "runtimeExecutable": "cargo",
-      "runtimeArgs": ["run", "-q", "-p", "real-denim-fit", "--example", "preview", "--", "1420"],
+      "runtimeArgs": [
+        "run",
+        "-q",
+        "-p",
+        "real-denim-fit",
+        "--example",
+        "preview",
+        "--",
+        "1420"
+      ],
       "port": 1420
+    },
+    {
+      "name": "preview-example",
+      "runtimeExecutable": "cargo",
+      "runtimeArgs": [
+        "run",
+        "-q",
+        "-p",
+        "real-denim-fit",
+        "--example",
+        "preview",
+        "--",
+        "1421"
+      ],
+      "env": {
+        "RDF_STATE_FILE": "target/example-state.json"
+      },
+      "port": 1421,
+      "autoPort": false
     }
   ]
 }

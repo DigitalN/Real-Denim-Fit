@@ -5,8 +5,11 @@
 //!
 //! Then open http://localhost:1420. What you enter is kept in
 //! target/preview-state.json, not in the app's own data. Set
-//! RDF_CATALOGUE_DIR at build time to try another catalogue folder, and
-//! RDF_GUIDE_DIR to serve the measuring guide from another folder.
+//! RDF_STATE_FILE to keep it in another file instead (it's read and
+//! written like the app's own, so point it at a copy of anything you want
+//! to keep as it is), RDF_CATALOGUE_DIR at build time to try another
+//! catalogue folder, and RDF_GUIDE_DIR to serve the measuring guide from
+//! another folder.
 
 use std::io::{BufRead, BufReader, Read, Write};
 use std::net::{TcpListener, TcpStream};
@@ -23,8 +26,16 @@ fn parse<T: serde::de::DeserializeOwned>(args: &Value, k: &str) -> Result<T, Str
     serde_json::from_value(args.get(k).cloned().unwrap_or(Value::Null)).map_err(|e| format!("{k}: {e}"))
 }
 
+/// Where what you enter is kept: RDF_STATE_FILE, or target/preview-state.json.
+fn state_file() -> PathBuf {
+    match std::env::var_os("RDF_STATE_FILE") {
+        Some(path) => PathBuf::from(path),
+        None => root().join("target/preview-state.json"),
+    }
+}
+
 fn handle(cmd: &str, args: Value, data: &app::Data) -> Result<Value, String> {
-    let state = root().join("target/preview-state.json");
+    let state = state_file();
     let arg = |k: &str| args.get(k).cloned().unwrap_or(Value::Null);
     let to = |v: Result<Value, serde_json::Error>| v.map_err(|e| e.to_string());
     match cmd {

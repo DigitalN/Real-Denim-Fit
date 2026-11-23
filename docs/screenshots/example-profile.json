@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "onboarded": true,
+  "settings": {
+    "units": "in",
+    "currency": "USD",
+    "tryOnBrands": []
+  },
+  "body": {
+    "waist": 83.82,
+    "seat": 101.6,
+    "thigh_top": 59.69,
+    "thigh_1in": 57.15,
+    "inseam_wanted": 81.28,
+    "leg_12in": 40.64,
+    "leg_13in": 39.37,
+    "leg_14in": 38.1,
+    "leg_half_inseam": 38.735
+  },
+  "desiredFit": {
+    "room": "regular",
+    "leg_shape": "tapered",
+    "rise": null,
+    "importance": {
+      "thigh": 5,
+      "leg_opening": 2
+    }
+  },
+  "pairs": [
+    {
+      "id": "pair-example-501",
+      "name": "Old Levi's 501",
+      "source": {
+        "kind": "measured",
+        "readings": {
+          "waist": 42.545,
+          "front_rise": 29.21,
+          "back_rise": 39.37,
+          "seat": 54.61,
+          "thigh_crotch": 33.02,
+          "thigh_1in": 31.75,
+          "inseam": 81.28,
+          "knee_12in": 24.13,
+          "knee_13in": 23.495,
+          "knee_14in": 22.86,
+          "knee_half_inseam": 23.1775,
+          "leg_opening": 20.955
+        }
+      },
+      "feel": {
+        "thigh": "too-tight"
+      },
+      "notes": ""
+    }
+  ],
+  "activePairId": "pair-example-501",
+  "filters": {
+    "excluded_brands": [],
+    "price_min": null,
+    "price_max": null,
+    "try_on_only": false,
+    "mens": true,
+    "womens": true,
+    "weight_min": null,
+    "weight_max": null,
+    "sanforized_only": false,
+    "no_stretch": false,
+    "include_washed": false,
+    "current_only": true,
+    "show_other_shapes_and_rises": false
+  }
+}

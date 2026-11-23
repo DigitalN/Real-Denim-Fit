@@ -12,6 +12,6 @@ Desktop app (Tauri 2) that recommends raw denim jeans in a size from body measur
 
 - The matching core is `crates/fit-core`, built test-first: add behaviour through a failing test in `crates/fit-core/tests/` first.
 - `cargo test --workspace` runs everything, including catalogue validation. CI also runs `cargo clippy --workspace --all-targets -- -D warnings` and `cargo fmt --all --check`.
-- To see the screens without building the app, run `cargo run -p real-denim-fit --example preview` and open http://localhost:1420 (same Rust behind them). `RDF_CATALOGUE_DIR` and `RDF_GUIDE_DIR` point it at other folders.
+- To see the screens without building the app, run `cargo run -p real-denim-fit --example preview` and open http://localhost:1420 (same Rust behind them). `RDF_CATALOGUE_DIR` and `RDF_GUIDE_DIR` point it at other folders, and `RDF_STATE_FILE` at another saved-state file.
 - The app never calls Claude, never adds shop links, stock, sale prices or product photos, and its only network use is the update check (ADRs 0002, 0003, 0007).
 - Catalogue updates: `/update-catalogue <brand>`. Releases: `/release`.
