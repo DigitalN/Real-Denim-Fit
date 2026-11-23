@@ -170,16 +170,18 @@ The tests include catalogue validation: every number has a link and a date, numb
 **One brand per PR.** Only these change:
 - this brand's `catalogue/<brand-id>/` folder, including its script in `tools/`
 - `catalogue/exchange-rates.json`
+- for a new brand only, `README.md` (step 1 below)
 
-1. Update `EXTRACTING.md`:
+1. **For a new brand,** update `README.md` in the same PR: the number of brands in the pitch at the top ("jeans from six brands") and the brand list under **Also**.
+2. Update `EXTRACTING.md`:
    - what you learned, and any quirks
    - what was skipped or left out, and why
    - any change to the script
    - "Last full run: <today>"
-2. Run `git status` and check that nothing outside those paths changed.
-3. Commit: `Update <Brand name> catalogue (<YYYY-MM-DD>)`, or `Add <Brand name> to the catalogue` for a new brand.
-4. Push: `git push -u origin HEAD`.
-5. Open the PR: `gh pr create --base main --title "<same as the commit>" --body-file <working folder>/pr.md`, with a body like this:
+3. Run `git status` and check that nothing outside those paths changed.
+4. Commit: `Update <Brand name> catalogue (<YYYY-MM-DD>)`, or `Add <Brand name> to the catalogue` for a new brand.
+5. Push: `git push -u origin HEAD`.
+6. Open the PR: `gh pr create --base main --title "<same as the commit>" --body-file <working folder>/pr.md`, with a body like this:
 
 ```markdown
 ## Verification
