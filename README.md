@@ -101,13 +101,16 @@ and a link to its own page ([ADR 0003](docs/adr/0003-no-shopping-information.md)
 [ADR 0007](docs/adr/0007-no-product-photos.md)). The only thing it sends over the internet is
 a check for updates when it opens.
 
-## Why an app?
+## Why an app, not a website
 
-A website costs money to host and work to keep running. An app doesn't: you download it once
-and it runs on your computer. It's open source, so if you'd like it as a website, you're
-welcome to take it and host it yourself. The screens are plain HTML, CSS and JavaScript, and
-[preview.rs](src-tauri/examples/preview.rs) already serves them to a browser with the same Rust
-behind them.
+A website brings the cost and complexity of hosting it. An app doesn't: you download it once
+and it runs on your computer, so there's nothing to host and nothing of yours to send anywhere.
+
+It's open source, so anyone who wants to host it can. The screens in [`ui/`](ui) are plain
+HTML, CSS and JavaScript with no build step, and
+`cargo run -p real-denim-fit --example preview` already serves them in a browser, backed by
+the same Rust as the app. That's a starting point, not a ready-made site: the preview keeps one
+person's measurements in one file, so a public site would need its own storage for each visitor.
 
 ## Install
 
