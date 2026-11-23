@@ -172,7 +172,7 @@ The tests include catalogue validation: every number has a link and a date, numb
 - `catalogue/exchange-rates.json`
 - for a new brand only, `README.md` (step 1 below)
 
-1. **For a new brand,** update `README.md` in the same PR: the number of brands in the pitch at the top ("jeans from six brands") and the brand list under **Also**.
+1. **For a new brand,** update `README.md` in the same PR: the number of brands in the pitch at the top ("jeans from six brands") and the brand list under **Also**. The repo's GitHub About box repeats both: its description is the README's tagline and pitch, and it has one topic per brand. The About box isn't a file, so it can't go in the PR. Put the command that updates it in the PR body instead (step 6), and don't run it before the PR is merged.
 2. Update `EXTRACTING.md`:
    - what you learned, and any quirks
    - what was skipped or left out, and why
@@ -208,5 +208,12 @@ The tests include catalogue validation: every number has a link and a date, numb
 - **Prices:** <changes, or "unchanged">
 ```
 
+- **For a new brand,** end the body with an **After merging** section that holds the exact command for the About box. Copy the README's new tagline and pitch into it word for word. For the topic, use the brand's name in lowercase with hyphens, as the brand is known, such as `nudie-jeans`:
+
+  ```sh
+  gh repo edit DigitalN/Real-Denim-Fit --description "<the README's tagline and pitch>" --add-topic <brand-topic>
+  ```
+
 - Every count comes from the scripts' results, not from memory.
 - Give the user the PR's link and the one-line result of the verification, for example: "Verified: 412 numbers, sample check 100% after one re-extraction, 3 left out." If anything was left out, say so plainly.
+- **For a new brand,** also tell the user that the About box keeps the old brand count until the **After merging** command runs, and offer to run it once they've merged the PR. Run it only when they say so.
